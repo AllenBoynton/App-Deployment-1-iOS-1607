@@ -8,24 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713A1D246EC400477EA2 /* AppDelegate.swift */; };
-		0990713D1D246EC400477EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713C1D246EC400477EA2 /* ViewController.swift */; };
+		0990713D1D246EC400477EA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713C1D246EC400477EA2 /* MainViewController.swift */; };
 		099071401D246EC400477EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0990713E1D246EC400477EA2 /* Main.storyboard */; };
 		099071421D246EC400477EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099071411D246EC400477EA2 /* Assets.xcassets */; };
 		099071451D246EC400477EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099071431D246EC400477EA2 /* LaunchScreen.storyboard */; };
-		099071521D246FD800477EA2 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099071511D246FD800477EA2 /* MultipeerConnectivity.framework */; };
 		099071541D246FE400477EA2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099071531D246FE400477EA2 /* AVFoundation.framework */; };
+		099071561D26FA7F00477EA2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099071551D26FA7F00477EA2 /* WebKit.framework */; };
+		0990715F1D27324F00477EA2 /* splash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0990715E1D27324F00477EA2 /* splash.wav */; };
+		099071661D273ED000477EA2 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071651D273ED000477EA2 /* MenuTableViewController.swift */; };
+		099071681D273FE400477EA2 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071671D273FE400477EA2 /* MenuTableViewCell.swift */; };
+		0990716A1D28B56F00477EA2 /* EquipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071691D28B56F00477EA2 /* EquipTableViewCell.swift */; };
+		0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990716B1D28B64900477EA2 /* EquipTableViewController.swift */; };
+		0990716F1D2988F600477EA2 /* SlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990716E1D2988F600477EA2 /* SlideMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		099071371D246EC400477EA2 /* PoolBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0990713A1D246EC400477EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0990713C1D246EC400477EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0990713C1D246EC400477EA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0990713F1D246EC400477EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		099071411D246EC400477EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		099071441D246EC400477EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		099071461D246EC400477EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		099071511D246FD800477EA2 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		099071531D246FE400477EA2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		099071551D26FA7F00477EA2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0990715E1D27324F00477EA2 /* splash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = splash.wav; sourceTree = "<group>"; };
+		099071611D273DC200477EA2 /* PoolBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoolBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
+		099071651D273ED000477EA2 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		099071671D273FE400477EA2 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		099071691D28B56F00477EA2 /* EquipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipTableViewCell.swift; sourceTree = "<group>"; };
+		0990716B1D28B64900477EA2 /* EquipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipTableViewController.swift; sourceTree = "<group>"; };
+		0990716D1D2988F600477EA2 /* SlideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuViewController.h; sourceTree = "<group>"; };
+		0990716E1D2988F600477EA2 /* SlideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,8 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099071561D26FA7F00477EA2 /* WebKit.framework in Frameworks */,
 				099071541D246FE400477EA2 /* AVFoundation.framework in Frameworks */,
-				099071521D246FD800477EA2 /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +78,7 @@
 				0990714D1D246F1600477EA2 /* App */,
 				099071501D246F9700477EA2 /* Resources */,
 				0990714F1D246F3E00477EA2 /* Storyboards */,
+				099071601D273D8200477EA2 /* SlideMenuViewController */,
 				0990714E1D246F2300477EA2 /* ViewControllers */,
 			);
 			path = PoolBuddy;
@@ -72,8 +87,8 @@
 		0990714C1D246F0900477EA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				099071551D26FA7F00477EA2 /* WebKit.framework */,
 				099071531D246FE400477EA2 /* AVFoundation.framework */,
-				099071511D246FD800477EA2 /* MultipeerConnectivity.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,7 +104,9 @@
 		0990714E1D246F2300477EA2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0990713C1D246EC400477EA2 /* ViewController.swift */,
+				0990716B1D28B64900477EA2 /* EquipTableViewController.swift */,
+				099071691D28B56F00477EA2 /* EquipTableViewCell.swift */,
+				0990713C1D246EC400477EA2 /* MainViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -107,9 +124,22 @@
 			isa = PBXGroup;
 			children = (
 				099071461D246EC400477EA2 /* Info.plist */,
+				0990715E1D27324F00477EA2 /* splash.wav */,
 				099071411D246EC400477EA2 /* Assets.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		099071601D273D8200477EA2 /* SlideMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0990716D1D2988F600477EA2 /* SlideMenuViewController.h */,
+				0990716E1D2988F600477EA2 /* SlideMenuViewController.m */,
+				099071611D273DC200477EA2 /* PoolBuddy-Bridging-Header.h */,
+				099071651D273ED000477EA2 /* MenuTableViewController.swift */,
+				099071671D273FE400477EA2 /* MenuTableViewCell.swift */,
+			);
+			name = SlideMenuViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				099071451D246EC400477EA2 /* LaunchScreen.storyboard in Resources */,
+				0990715F1D27324F00477EA2 /* splash.wav in Resources */,
 				099071421D246EC400477EA2 /* Assets.xcassets in Resources */,
 				099071401D246EC400477EA2 /* Main.storyboard in Resources */,
 			);
@@ -184,8 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0990713D1D246EC400477EA2 /* ViewController.swift in Sources */,
+				099071661D273ED000477EA2 /* MenuTableViewController.swift in Sources */,
+				0990713D1D246EC400477EA2 /* MainViewController.swift in Sources */,
 				0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */,
+				0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */,
+				0990716F1D2988F600477EA2 /* SlideMenuViewController.m in Sources */,
+				0990716A1D28B56F00477EA2 /* EquipTableViewCell.swift in Sources */,
+				099071681D273FE400477EA2 /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +336,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PoolBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.PoolBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoolBuddy/PoolBuddy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -311,10 +350,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PoolBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.PoolBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoolBuddy/PoolBuddy-Bridging-Header.h";
 			};
 			name = Release;
 		};
