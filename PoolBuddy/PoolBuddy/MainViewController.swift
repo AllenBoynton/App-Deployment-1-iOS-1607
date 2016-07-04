@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class MainViewController: UITableViewController {
+class MainViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
