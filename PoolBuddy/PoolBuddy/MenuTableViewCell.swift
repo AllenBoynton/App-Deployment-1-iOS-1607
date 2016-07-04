@@ -10,8 +10,8 @@ import UIKit
 
 class MenuTableViewCell: UITableViewCell {
 
-    @IBOutlet var menuImages: [UIImageView]!
-    @IBOutlet var menuLabels: [UILabel]!
+    @IBOutlet var menuImages: UIImageView!
+    @IBOutlet var menuLabels: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

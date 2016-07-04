@@ -1,11 +1,10 @@
 //
-//  SlideMenuViewController
+//  SWRevealViewController.h
 //  PoolBuddy
 //
-//  Created by Allen Boynton on 6/29/16.
-//  Copyright © 2016 Full Sail. All rights reserved.
+//  Allen Boynton on 6/29/16.
 //
-//
+
 #import <UIKit/UIKit.h>
 
 @class SWRevealViewController;
@@ -284,6 +283,12 @@ extern NSString* const SWSegueRightIdentifier; // this is @"sw_right"
 @end
 
 
+//#pragma mark - SWRevealViewControllerSegue (DEPRECATED)
+//
+//@interface SWRevealViewControllerSegue : UIStoryboardSegue     // DEPRECATED: USE SWRevealViewControllerSegueSetController instead
+//@property (nonatomic, strong) void(^performBlock)( SWRevealViewControllerSegue* segue, UIViewController* svc, UIViewController* dvc );
+//@end
+
 /*
  
  Copyright (c) 2013 Joan Lluch <joan.lluch@sweetwilliamsl.com>
@@ -421,4 +426,3 @@ extern NSString* const SWSegueRightIdentifier; // this is @"sw_right"
  - No release notes were updated for previous versions.
  
  */
-

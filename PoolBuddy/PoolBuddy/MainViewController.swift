@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  PoolBuddy
 //
 //  Created by Allen Boynton on 6/29/16.
@@ -27,21 +27,6 @@ class MainViewController: UITableViewController {
         }
         
     }
-
-//    // MARK: - Table view data source
-//    
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        return 1
-//    }
-//    
-//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 7
-//    }
-//    
-//    
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("equipment_cell", forIndexPath: indexPath) as! MenuTableViewCell
-//        
 
     // Sound files
     func prepareAudios() {

@@ -16,10 +16,11 @@
 		099071561D26FA7F00477EA2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099071551D26FA7F00477EA2 /* WebKit.framework */; };
 		0990715F1D27324F00477EA2 /* splash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0990715E1D27324F00477EA2 /* splash.wav */; };
 		099071661D273ED000477EA2 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071651D273ED000477EA2 /* MenuTableViewController.swift */; };
-		099071681D273FE400477EA2 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071671D273FE400477EA2 /* MenuTableViewCell.swift */; };
-		0990716A1D28B56F00477EA2 /* EquipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071691D28B56F00477EA2 /* EquipTableViewCell.swift */; };
 		0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990716B1D28B64900477EA2 /* EquipTableViewController.swift */; };
-		0990716F1D2988F600477EA2 /* SlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990716E1D2988F600477EA2 /* SlideMenuViewController.m */; };
+		099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */; };
+		099071751D29D18200477EA2 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071741D29D18200477EA2 /* MenuTableViewCell.swift */; };
+		099071781D29D36F00477EA2 /* PoolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071771D29D36F00477EA2 /* PoolData.swift */; };
+		0990717B1D29EF1C00477EA2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990717A1D29EF1C00477EA2 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +36,12 @@
 		0990715E1D27324F00477EA2 /* splash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = splash.wav; sourceTree = "<group>"; };
 		099071611D273DC200477EA2 /* PoolBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoolBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
 		099071651D273ED000477EA2 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
-		099071671D273FE400477EA2 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
-		099071691D28B56F00477EA2 /* EquipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipTableViewCell.swift; sourceTree = "<group>"; };
 		0990716B1D28B64900477EA2 /* EquipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipTableViewController.swift; sourceTree = "<group>"; };
-		0990716D1D2988F600477EA2 /* SlideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuViewController.h; sourceTree = "<group>"; };
-		0990716E1D2988F600477EA2 /* SlideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuViewController.m; sourceTree = "<group>"; };
+		099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipTableViewCell.swift; sourceTree = "<group>"; };
+		099071741D29D18200477EA2 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		099071771D29D36F00477EA2 /* PoolData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolData.swift; sourceTree = "<group>"; };
+		099071791D29EF1C00477EA2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		0990717A1D29EF1C00477EA2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,9 @@
 			children = (
 				0990714D1D246F1600477EA2 /* App */,
 				099071501D246F9700477EA2 /* Resources */,
+				099071761D29D34900477EA2 /* Protocols */,
 				0990714F1D246F3E00477EA2 /* Storyboards */,
-				099071601D273D8200477EA2 /* SlideMenuViewController */,
+				099071601D273D8200477EA2 /* SWRevealViewController */,
 				0990714E1D246F2300477EA2 /* ViewControllers */,
 			);
 			path = PoolBuddy;
@@ -105,7 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				0990716B1D28B64900477EA2 /* EquipTableViewController.swift */,
-				099071691D28B56F00477EA2 /* EquipTableViewCell.swift */,
+				099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */,
+				099071651D273ED000477EA2 /* MenuTableViewController.swift */,
+				099071741D29D18200477EA2 /* MenuTableViewCell.swift */,
 				0990713C1D246EC400477EA2 /* MainViewController.swift */,
 			);
 			name = ViewControllers;
@@ -130,16 +135,22 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		099071601D273D8200477EA2 /* SlideMenuViewController */ = {
+		099071601D273D8200477EA2 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0990716D1D2988F600477EA2 /* SlideMenuViewController.h */,
-				0990716E1D2988F600477EA2 /* SlideMenuViewController.m */,
+				099071791D29EF1C00477EA2 /* SWRevealViewController.h */,
+				0990717A1D29EF1C00477EA2 /* SWRevealViewController.m */,
 				099071611D273DC200477EA2 /* PoolBuddy-Bridging-Header.h */,
-				099071651D273ED000477EA2 /* MenuTableViewController.swift */,
-				099071671D273FE400477EA2 /* MenuTableViewCell.swift */,
 			);
-			name = SlideMenuViewController;
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		099071761D29D34900477EA2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				099071771D29D36F00477EA2 /* PoolData.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,11 +228,12 @@
 			files = (
 				099071661D273ED000477EA2 /* MenuTableViewController.swift in Sources */,
 				0990713D1D246EC400477EA2 /* MainViewController.swift in Sources */,
+				099071781D29D36F00477EA2 /* PoolData.swift in Sources */,
+				0990717B1D29EF1C00477EA2 /* SWRevealViewController.m in Sources */,
+				099071751D29D18200477EA2 /* MenuTableViewCell.swift in Sources */,
 				0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */,
 				0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */,
-				0990716F1D2988F600477EA2 /* SlideMenuViewController.m in Sources */,
-				0990716A1D28B56F00477EA2 /* EquipTableViewCell.swift in Sources */,
-				099071681D273FE400477EA2 /* MenuTableViewCell.swift in Sources */,
+				099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +390,7 @@
 				0990714B1D246EC400477EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

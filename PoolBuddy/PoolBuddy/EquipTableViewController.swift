@@ -10,13 +10,18 @@ import UIKit
 
 class EquipTableViewController: UITableViewController {
     
-    @IBOutlet weak var menuButton: UIBarButtonItem!
+    var equipImage: [UIImage] = []
+    var equipLabel: [String] = []
     
-    //    var equipmentImageArray: [UIImage]!
+    
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        equipImage = [UIImage(named: "sandfilter")!]
+        equipLabel = ["Pool Filters"]
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
@@ -37,11 +42,11 @@ class EquipTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("equipment_cell", forIndexPath: indexPath)
-//        cell.textLabel?.text = equipmentLabel.text
-//        let equipmentImage1 = UIImage(named: "checklist")
-//        cell.imageView!.image = equipmentImage1
-//
+        let cell = tableView.dequeueReusableCellWithIdentifier("equipment_cell", forIndexPath: indexPath) as! EquipTableViewCell
+        
+        cell.equipmentImage.image = equipImage[indexPath.row]
+        cell.equipmentLabel.text = equipLabel[indexPath.row]
+        
         return cell
     }
 
