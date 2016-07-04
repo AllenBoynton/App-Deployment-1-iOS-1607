@@ -19,8 +19,8 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
             
-        menuImage = [UIImage(named: "equipment1")!]
-    
+        menuImage = [UIImage(named: "sandfilter")!, UIImage(named: "chemicals1")!, UIImage(named: "chemicals1")!, UIImage(named: "chemicals1")!, UIImage(named: "chemicals1")!, UIImage(named: "chemicals1")!]
+        menuItemLabel = ["Pool Equipment", "Pool Chemicals", "Water Chemistry", "Basic Maintenance", "Problems Gallery", "Live Chat"]
     }
     
     // MARK: - Table view data source
@@ -30,7 +30,7 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuImage.count
+        return menuItemLabel.count
     }
     
     
@@ -38,7 +38,7 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = tableView.dequeueReusableCellWithIdentifier("menu_cell", forIndexPath: indexPath) as! MenuTableViewCell
         
         cell.imageView!.image = menuImage[indexPath.row]
-        cell.textLabel!.text = "Pool Equipment"
+        cell.textLabel!.text = menuItemLabel[indexPath.row]
         
         return cell
     }

@@ -20,7 +20,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="scD-1E-Til">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="equipment_cell" rowHeight="85" id="5fg-vn-wp6" customClass="EquipTableViewCell" customModule="PoolBuddy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="85"/>
@@ -41,6 +41,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="Kfv-WZ-6vV" firstAttribute="leading" secondItem="orN-gh-iK1" secondAttribute="trailing" constant="20" id="0Ft-bQ-FWs"/>
                                                 <constraint firstAttribute="bottom" secondItem="Kfv-WZ-6vV" secondAttribute="bottom" id="DsA-UZ-oly"/>
@@ -51,6 +52,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="Kfv-WZ-6vV" secondAttribute="trailing" id="y5d-M5-hPM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="equipmentImage" destination="orN-gh-iK1" id="Rog-75-Gro"/>
                                             <outlet property="equipmentLabel" destination="Kfv-WZ-6vV" id="c8s-nP-nff"/>
@@ -63,7 +65,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="XjI-2q-kQl">
                         <barButtonItem key="leftBarButtonItem" image="Image" id="vVm-H3-Frp">
@@ -133,41 +135,48 @@
         <scene sceneID="uvg-T3-Ked">
             <objects>
                 <tableViewController id="9gR-ax-IPX" customClass="MenuTableViewController" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="10" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" id="pF9-cQ-7mC">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="10" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="pF9-cQ-7mC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="r7W-Om-Hud">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menu_cell" rowHeight="55" id="0GC-dS-AF4" customClass="MenuTableViewCell" customModule="PoolBuddy" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="55"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menu_cell" rowHeight="75" id="0GC-dS-AF4" customClass="MenuTableViewCell" customModule="PoolBuddy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="600" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0GC-dS-AF4" id="XV6-pE-cAM">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="54.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjj-wY-MgJ" userLabel="Menu Section">
-                                            <rect key="frame" x="86" y="0.0" width="514" height="54.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Sections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjj-wY-MgJ" userLabel="Menu Section">
+                                            <rect key="frame" x="105" y="0.0" width="495" height="74.5"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vLs-Mc-lB1" userLabel="Section Image">
-                                            <rect key="frame" x="20" y="4" width="46" height="46"/>
+                                            <rect key="frame" x="20" y="5" width="65" height="65"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="vLs-Mc-lB1" secondAttribute="height" multiplier="1:1" id="sFs-hn-5zJ"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="vLs-Mc-lB1" firstAttribute="leading" secondItem="XV6-pE-cAM" secondAttribute="leading" constant="20" id="Sfp-VM-eYa"/>
                                         <constraint firstItem="Rjj-wY-MgJ" firstAttribute="leading" secondItem="vLs-Mc-lB1" secondAttribute="trailing" constant="20" id="hJ8-hg-d9x"/>
-                                        <constraint firstAttribute="bottom" secondItem="vLs-Mc-lB1" secondAttribute="bottom" constant="4.5" id="k1U-9l-Te1"/>
-                                        <constraint firstItem="vLs-Mc-lB1" firstAttribute="top" secondItem="XV6-pE-cAM" secondAttribute="top" constant="4" id="oAk-Me-5oE"/>
+                                        <constraint firstAttribute="bottom" secondItem="vLs-Mc-lB1" secondAttribute="bottom" constant="5" id="k1U-9l-Te1"/>
+                                        <constraint firstItem="vLs-Mc-lB1" firstAttribute="top" secondItem="XV6-pE-cAM" secondAttribute="top" constant="5" id="oAk-Me-5oE"/>
                                         <constraint firstAttribute="trailing" secondItem="Rjj-wY-MgJ" secondAttribute="trailing" id="v9K-A2-r8D"/>
                                         <constraint firstItem="Rjj-wY-MgJ" firstAttribute="top" secondItem="XV6-pE-cAM" secondAttribute="top" id="wFD-br-jLd"/>
                                         <constraint firstAttribute="bottom" secondItem="Rjj-wY-MgJ" secondAttribute="bottom" id="ySp-dO-QlK"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outletCollection property="menuImages" destination="vLs-Mc-lB1" id="X7g-hE-XnQ"/>
                                     <outletCollection property="menuLabels" destination="Rjj-wY-MgJ" id="c6u-NF-EVz"/>
