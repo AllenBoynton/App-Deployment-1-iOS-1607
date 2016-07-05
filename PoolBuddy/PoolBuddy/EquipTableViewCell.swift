@@ -9,6 +9,8 @@
 import UIKit
 
 class EquipTableViewCell: UITableViewCell {
+    
+    var equipmentDetail: PoolData! = nil
 
     @IBOutlet weak var equipmentImage: UIImageView!
     @IBOutlet weak var equipmentLabel: UILabel!

@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */; };
+		0940F53C1D2AC10A00BFA91C /* ChemicalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */; };
+		0940F53E1D2AC16200BFA91C /* WChemistryTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53D1D2AC16200BFA91C /* WChemistryTableVC.swift */; };
+		0940F5401D2AC18400BFA91C /* WChemistryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53F1D2AC18400BFA91C /* WChemistryTableViewCell.swift */; };
+		0940F5421D2AC1C400BFA91C /* GalleryCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5411D2AC1C400BFA91C /* GalleryCollectionVC.swift */; };
+		0940F5441D2AC26C00BFA91C /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5431D2AC26C00BFA91C /* GalleryCollectionViewCell.swift */; };
+		0940F5461D2AC28F00BFA91C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0940F5451D2AC28F00BFA91C /* EventKit.framework */; };
+		0940F5481D2AC35D00BFA91C /* GalleryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5471D2AC35D00BFA91C /* GalleryDetailVC.swift */; };
+		0940F54A1D2AC38900BFA91C /* ChemistryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5491D2AC38900BFA91C /* ChemistryDetailVC.swift */; };
+		0940F54C1D2AC3B900BFA91C /* ChemicalDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F54B1D2AC3B900BFA91C /* ChemicalDetailVC.swift */; };
+		0940F54E1D2AC3E600BFA91C /* EquipmentDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F54D1D2AC3E600BFA91C /* EquipmentDetailVC.swift */; };
+		0940F5501D2AF7F400BFA91C /* MaintTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F54F1D2AF7F400BFA91C /* MaintTableVC.swift */; };
+		0940F5521D2B007400BFA91C /* PlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5511D2B007400BFA91C /* PlannerViewController.swift */; };
+		0940F5541D2B031400BFA91C /* MaintenanceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5531D2B031400BFA91C /* MaintenanceDetailVC.swift */; };
+		0940F5561D2B040700BFA91C /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5551D2B040700BFA91C /* CalculatorVC.swift */; };
+		0940F55A1D2B076400BFA91C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5591D2B076400BFA91C /* ChatViewController.swift */; };
+		0940F55C1D2B078500BFA91C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0940F55B1D2B078500BFA91C /* MessageUI.framework */; };
 		0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713A1D246EC400477EA2 /* AppDelegate.swift */; };
 		0990713D1D246EC400477EA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713C1D246EC400477EA2 /* MainViewController.swift */; };
 		099071401D246EC400477EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0990713E1D246EC400477EA2 /* Main.storyboard */; };
@@ -18,12 +35,28 @@
 		099071661D273ED000477EA2 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071651D273ED000477EA2 /* MenuTableViewController.swift */; };
 		0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990716B1D28B64900477EA2 /* EquipTableViewController.swift */; };
 		099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */; };
-		099071751D29D18200477EA2 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071741D29D18200477EA2 /* MenuTableViewCell.swift */; };
 		099071781D29D36F00477EA2 /* PoolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071771D29D36F00477EA2 /* PoolData.swift */; };
 		0990717B1D29EF1C00477EA2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990717A1D29EF1C00477EA2 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableVC.swift; sourceTree = "<group>"; };
+		0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableViewCell.swift; sourceTree = "<group>"; };
+		0940F53D1D2AC16200BFA91C /* WChemistryTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WChemistryTableVC.swift; sourceTree = "<group>"; };
+		0940F53F1D2AC18400BFA91C /* WChemistryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WChemistryTableViewCell.swift; sourceTree = "<group>"; };
+		0940F5411D2AC1C400BFA91C /* GalleryCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionVC.swift; sourceTree = "<group>"; };
+		0940F5431D2AC26C00BFA91C /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		0940F5451D2AC28F00BFA91C /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		0940F5471D2AC35D00BFA91C /* GalleryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryDetailVC.swift; sourceTree = "<group>"; };
+		0940F5491D2AC38900BFA91C /* ChemistryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemistryDetailVC.swift; sourceTree = "<group>"; };
+		0940F54B1D2AC3B900BFA91C /* ChemicalDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalDetailVC.swift; sourceTree = "<group>"; };
+		0940F54D1D2AC3E600BFA91C /* EquipmentDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentDetailVC.swift; sourceTree = "<group>"; };
+		0940F54F1D2AF7F400BFA91C /* MaintTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTableVC.swift; sourceTree = "<group>"; };
+		0940F5511D2B007400BFA91C /* PlannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlannerViewController.swift; sourceTree = "<group>"; };
+		0940F5531D2B031400BFA91C /* MaintenanceDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailVC.swift; sourceTree = "<group>"; };
+		0940F5551D2B040700BFA91C /* CalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
+		0940F5591D2B076400BFA91C /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0940F55B1D2B078500BFA91C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		099071371D246EC400477EA2 /* PoolBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0990713A1D246EC400477EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0990713C1D246EC400477EA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +71,6 @@
 		099071651D273ED000477EA2 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		0990716B1D28B64900477EA2 /* EquipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipTableViewController.swift; sourceTree = "<group>"; };
 		099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipTableViewCell.swift; sourceTree = "<group>"; };
-		099071741D29D18200477EA2 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		099071771D29D36F00477EA2 /* PoolData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolData.swift; sourceTree = "<group>"; };
 		099071791D29EF1C00477EA2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0990717A1D29EF1C00477EA2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -49,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0940F55C1D2B078500BFA91C /* MessageUI.framework in Frameworks */,
+				0940F5461D2AC28F00BFA91C /* EventKit.framework in Frameworks */,
 				099071561D26FA7F00477EA2 /* WebKit.framework in Frameworks */,
 				099071541D246FE400477EA2 /* AVFoundation.framework in Frameworks */,
 			);
@@ -57,6 +91,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0940F5311D2ABF5A00BFA91C /* EquipmentViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0940F54D1D2AC3E600BFA91C /* EquipmentDetailVC.swift */,
+				0990716B1D28B64900477EA2 /* EquipTableViewController.swift */,
+				099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */,
+			);
+			name = EquipmentViewControllers;
+			sourceTree = "<group>";
+		};
+		0940F5321D2ABF7B00BFA91C /* ChemicalViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0940F54B1D2AC3B900BFA91C /* ChemicalDetailVC.swift */,
+				0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */,
+				0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */,
+			);
+			name = ChemicalViewControllers;
+			sourceTree = "<group>";
+		};
+		0940F5331D2ABF9000BFA91C /* ChemistryViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0940F5491D2AC38900BFA91C /* ChemistryDetailVC.swift */,
+				0940F53D1D2AC16200BFA91C /* WChemistryTableVC.swift */,
+				0940F53F1D2AC18400BFA91C /* WChemistryTableViewCell.swift */,
+			);
+			name = ChemistryViewControllers;
+			sourceTree = "<group>";
+		};
+		0940F5341D2ABFAE00BFA91C /* MaintViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0940F5531D2B031400BFA91C /* MaintenanceDetailVC.swift */,
+				0940F54F1D2AF7F400BFA91C /* MaintTableVC.swift */,
+			);
+			name = MaintViewControllers;
+			sourceTree = "<group>";
+		};
+		0940F5351D2AC01700BFA91C /* PlannerViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0940F5511D2B007400BFA91C /* PlannerViewController.swift */,
+			);
+			name = PlannerViewControllers;
+			sourceTree = "<group>";
+		};
+		0940F5361D2AC02E00BFA91C /* GalleryViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0940F5471D2AC35D00BFA91C /* GalleryDetailVC.swift */,
+				0940F5411D2AC1C400BFA91C /* GalleryCollectionVC.swift */,
+				0940F5431D2AC26C00BFA91C /* GalleryCollectionViewCell.swift */,
+			);
+			name = GalleryViewControllers;
+			sourceTree = "<group>";
+		};
+		0940F5371D2AC04100BFA91C /* CalculatorViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0940F5551D2B040700BFA91C /* CalculatorVC.swift */,
+			);
+			name = CalculatorViewControllers;
+			sourceTree = "<group>";
+		};
+		0940F5381D2AC05500BFA91C /* MessageViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0940F5591D2B076400BFA91C /* ChatViewController.swift */,
+			);
+			name = MessageViewControllers;
+			sourceTree = "<group>";
+		};
 		0990712E1D246EC400477EA2 = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +187,17 @@
 				0990714D1D246F1600477EA2 /* App */,
 				099071501D246F9700477EA2 /* Resources */,
 				099071761D29D34900477EA2 /* Protocols */,
-				0990714F1D246F3E00477EA2 /* Storyboards */,
 				099071601D273D8200477EA2 /* SWRevealViewController */,
-				0990714E1D246F2300477EA2 /* ViewControllers */,
+				0940F5381D2AC05500BFA91C /* MessageViewControllers */,
+				0940F5371D2AC04100BFA91C /* CalculatorViewControllers */,
+				0940F5361D2AC02E00BFA91C /* GalleryViewControllers */,
+				0940F5351D2AC01700BFA91C /* PlannerViewControllers */,
+				0940F5341D2ABFAE00BFA91C /* MaintViewControllers */,
+				0940F5331D2ABF9000BFA91C /* ChemistryViewControllers */,
+				0940F5321D2ABF7B00BFA91C /* ChemicalViewControllers */,
+				0940F5311D2ABF5A00BFA91C /* EquipmentViewControllers */,
+				0990714E1D246F2300477EA2 /* MenuViewControllers */,
+				0990714F1D246F3E00477EA2 /* Storyboards */,
 			);
 			path = PoolBuddy;
 			sourceTree = "<group>";
@@ -90,6 +205,8 @@
 		0990714C1D246F0900477EA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0940F55B1D2B078500BFA91C /* MessageUI.framework */,
+				0940F5451D2AC28F00BFA91C /* EventKit.framework */,
 				099071551D26FA7F00477EA2 /* WebKit.framework */,
 				099071531D246FE400477EA2 /* AVFoundation.framework */,
 			);
@@ -104,16 +221,13 @@
 			name = App;
 			sourceTree = "<group>";
 		};
-		0990714E1D246F2300477EA2 /* ViewControllers */ = {
+		0990714E1D246F2300477EA2 /* MenuViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0990716B1D28B64900477EA2 /* EquipTableViewController.swift */,
-				099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */,
 				099071651D273ED000477EA2 /* MenuTableViewController.swift */,
-				099071741D29D18200477EA2 /* MenuTableViewCell.swift */,
 				0990713C1D246EC400477EA2 /* MainViewController.swift */,
 			);
-			name = ViewControllers;
+			name = MenuViewControllers;
 			sourceTree = "<group>";
 		};
 		0990714F1D246F3E00477EA2 /* Storyboards */ = {
@@ -228,12 +342,26 @@
 			files = (
 				099071661D273ED000477EA2 /* MenuTableViewController.swift in Sources */,
 				0990713D1D246EC400477EA2 /* MainViewController.swift in Sources */,
+				0940F55A1D2B076400BFA91C /* ChatViewController.swift in Sources */,
+				0940F5521D2B007400BFA91C /* PlannerViewController.swift in Sources */,
+				0940F5401D2AC18400BFA91C /* WChemistryTableViewCell.swift in Sources */,
+				0940F5501D2AF7F400BFA91C /* MaintTableVC.swift in Sources */,
+				0940F5561D2B040700BFA91C /* CalculatorVC.swift in Sources */,
+				0940F53E1D2AC16200BFA91C /* WChemistryTableVC.swift in Sources */,
 				099071781D29D36F00477EA2 /* PoolData.swift in Sources */,
+				0940F5441D2AC26C00BFA91C /* GalleryCollectionViewCell.swift in Sources */,
+				0940F54A1D2AC38900BFA91C /* ChemistryDetailVC.swift in Sources */,
+				0940F53C1D2AC10A00BFA91C /* ChemicalTableViewCell.swift in Sources */,
 				0990717B1D29EF1C00477EA2 /* SWRevealViewController.m in Sources */,
-				099071751D29D18200477EA2 /* MenuTableViewCell.swift in Sources */,
+				0940F5541D2B031400BFA91C /* MaintenanceDetailVC.swift in Sources */,
+				0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */,
 				0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */,
 				0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */,
+				0940F54C1D2AC3B900BFA91C /* ChemicalDetailVC.swift in Sources */,
+				0940F5421D2AC1C400BFA91C /* GalleryCollectionVC.swift in Sources */,
 				099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */,
+				0940F54E1D2AC3E600BFA91C /* EquipmentDetailVC.swift in Sources */,
+				0940F5481D2AC35D00BFA91C /* GalleryDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

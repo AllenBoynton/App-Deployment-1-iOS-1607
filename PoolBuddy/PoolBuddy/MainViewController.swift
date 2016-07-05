@@ -9,6 +9,14 @@
 import UIKit
 import AVFoundation
 
+// Global Identifiers
+let equipment = "equipment_cell"
+let chemicals = "chemical_cell"
+let chemistry = "water_chemistry_cell"
+let maintenance = "maint_cell"
+let photo = "photoCell"
+
+
 class MainViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -25,7 +33,7 @@ class MainViewController: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
+        self.revealViewController().rearViewRevealWidth = 325
     }
 
     // Sound files

@@ -10,13 +10,19 @@ import UIKit
 
 class EquipTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var equipmentDetail: PoolData! = nil
+    
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    @IBOutlet weak var equipmentTitle: UINavigationItem!
+    
+    
     var equipImage: [UIImage] = []
     var equipLabel: [String] = []
     
+    var screenTitle: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +35,9 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        self.revealViewController().rearViewRevealWidth = 325
 
+        equipmentTitle!.title = screenTitle
     }
 
     // MARK: - Table view data source
@@ -43,10 +51,10 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("equipment_cell", forIndexPath: indexPath) as! EquipTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(equipment, forIndexPath: indexPath) as! EquipTableViewCell
         
-        cell.imageView!.image = equipImage[indexPath.row]
-        cell.textLabel!.text = equipLabel[indexPath.row]
+        cell.equipmentImage.image = equipImage[indexPath.row]
+        cell.equipmentLabel.text = equipLabel[indexPath.row]
         
         return cell
     }
