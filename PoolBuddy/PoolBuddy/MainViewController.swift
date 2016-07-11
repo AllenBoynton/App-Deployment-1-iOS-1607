@@ -15,6 +15,8 @@ let chemicals = "chemical_cell"
 let chemistry = "water_chemistry_cell"
 let maintenance = "maint_cell"
 let photo = "photoCell"
+let gallerySegue = "gallerySegue"
+let cellHeader = "header"
 
 
 class MainViewController: UIViewController {

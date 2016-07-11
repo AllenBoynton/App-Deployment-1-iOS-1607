@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageName</key>
+		<string>Green Algae</string>
+		<key>group</key>
+		<string>Algae</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Mustard Yellow Algae</string>
+		<key>group</key>
+		<string>Algae</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Black Algae</string>
+		<key>group</key>
+		<string>Algae</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Red Brown Metal Rust Stains</string>
+		<key>group</key>
+		<string>Metal</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Blue Green Black Copper Stains</string>
+		<key>group</key>
+		<string>Metal</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Rusty Brown Green-Brown Iron Stains</string>
+		<key>group</key>
+		<string>Metal</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Brownish-Black Purple Manganese Stains</string>
+		<key>group</key>
+		<string>Metal</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Organic Brown Green Stains</string>
+		<key>group</key>
+		<string>Organic</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Red Blue Berry Seed Stains</string>
+		<key>group</key>
+		<string>Organic</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Light Covered Surface Debris</string>
+		<key>group</key>
+		<string>Organic</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Extremely Dirty Pool with Stains</string>
+		<key>group</key>
+		<string>Other</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Identifying Stains</string>
+		<key>group</key>
+		<string>Other</string>
+	</dict>
+</array>
+</plist>

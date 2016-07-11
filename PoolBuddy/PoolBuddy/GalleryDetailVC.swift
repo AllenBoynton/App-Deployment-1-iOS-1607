@@ -10,26 +10,31 @@ import UIKit
 
 class GalleryDetailVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // Outlets for the text view & image of problem pool
+    @IBOutlet weak var poolDescription: UITextView!
+    @IBOutlet weak var poolImage: UIImageView!
+    
+    // DataSource for details in this VC
+    var poolDetail: SearchItems? {
+        didSet {
+            configureView()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Assigns the segue delegate to the view and image of this VC
+    func configureView() {
+        if let poolDetail = poolDetail {
+            if let poolDescription = poolDescription, poolImage = poolImage {
+                poolDescription.text = poolDetail.imageName
+                poolImage.image = UIImage(named: poolDetail.imageName)
+                title = poolDetail.group
+            }
+        }
     }
-    */
-
+    
+    // Function is called to display the configure view
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configureView()
+    }
 }

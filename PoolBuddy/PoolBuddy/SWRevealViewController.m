@@ -3,7 +3,7 @@
 //  PoolBuddy
 //
 //  Allen Boynton on 6/29/16.
-//
+//  Open code to simply operate the sliding menu button. Copywrite information at bottom.
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -677,18 +677,9 @@ const int FrontViewPositionNone = 0xff;
 
 - (void)loadView
 {
-    // Do not call super, to prevent the apis from unfruitful looking for inexistent xibs!
-    //[super loadView];
-    
     // load any defined front/rear controllers from the storyboard before
     [self loadStoryboardControllers];
     
-    // This is what Apple used to tell us to set as the initial frame, which is of course totally irrelevant
-    // with view controller containment patterns, let's leave it for the sake of it!
-    // CGRect frame = [[UIScreen mainScreen] applicationFrame];
-    
-    // On iOS7 the applicationFrame does not return the whole screen. This is possibly a bug.
-    // As a workaround we use the screen bounds, this still works on iOS6, any zero based frame would work anyway!
     CGRect frame = [[UIScreen mainScreen] bounds];
 
     // create a custom content view for the controller
@@ -722,28 +713,15 @@ const int FrontViewPositionNone = 0xff;
 {
     [super viewDidAppear:animated];
 
-    // Uncomment the following code if you want the child controllers
-    // to be loaded at this point.
-    //
-    // We leave this commented out because we think loading childs here is conceptually wrong.
-    // Instead, we refrain view loads until necesary, for example we may never load
-    // the rear controller view -or the front controller view- if it is never displayed.
-    //
-    // If you need to manipulate views of any of your child controllers in an override
-    // of this method, you can load yourself the views explicitly on your overriden method.
-    // However we discourage it as an app following the MVC principles should never need to do so
-        
-//  [_frontViewController view];
-//  [_rearViewController view];
-
-    // we store at this point the view's user interaction state as we may temporarily disable it
-    // and resume it back to the previous state, it is possible to override this behaviour by
-    // intercepting it on the panGestureBegan and panGestureEnded delegates
     _userInteractionStore = _contentView.userInteractionEnabled;
 }
 
-
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 90000
 - (NSUInteger)supportedInterfaceOrientations
+#else
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+#endif
+
 {
     // we could have simply not implemented this, but we choose to call super to make explicit that we
     // want the default behavior.
@@ -1861,58 +1839,6 @@ NSString * const SWSegueRightIdentifier = @"sw_right";
 }
 
 @end
-
-
-//#pragma mark - SWRevealViewControllerSegue Class
-//
-//@implementation SWRevealViewControllerSegue  // DEPRECATED
-//
-//- (void)perform
-//{
-//    if ( _performBlock )
-//        _performBlock( self, self.sourceViewController, self.destinationViewController );
-//}
-//
-//@end
-//
-//
-//#pragma mark Storyboard support
-//
-//@implementation SWRevealViewController(deprecated)
-//
-//- (void)prepareForSegue:(SWRevealViewControllerSegue *)segue sender:(id)sender   // TO REMOVE: DEPRECATED IMPLEMENTATION
-//{
-//    // This method is required for compatibility with SWRevealViewControllerSegue, now deprecated.
-//    // It can be simply removed when using SWRevealViewControllerSegueSetController and SWRevealViewControlerSeguePushController
-//    
-//    NSString *identifier = segue.identifier;
-//    if ( [segue isKindOfClass:[SWRevealViewControllerSegue class]] && sender == nil )
-//    {
-//        if ( [identifier isEqualToString:SWSegueRearIdentifier] )
-//        {
-//            segue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc)
-//            {
-//                [self _setRearViewController:dvc animated:NO];
-//            };
-//        }
-//        else if ( [identifier isEqualToString:SWSegueFrontIdentifier] )
-//        {
-//            segue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc)
-//            {
-//                [self _setFrontViewController:dvc animated:NO];
-//            };
-//        }
-//        else if ( [identifier isEqualToString:SWSegueRightIdentifier] )
-//        {
-//            segue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc)
-//            {
-//                [self _setRightViewController:dvc animated:NO];
-//            };
-//        }
-//    }
-//}
-//
-//@end
 
 /*
  

@@ -10,7 +10,5 @@ import UIKit
 
 class GalleryCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imageView: UIImageView!
-    
-    @IBOutlet weak var photoDescription: UILabel!
+    @IBOutlet weak var galleryImages: UIImageView!
 }
