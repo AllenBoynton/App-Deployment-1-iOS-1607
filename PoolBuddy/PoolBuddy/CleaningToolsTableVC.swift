@@ -1,5 +1,5 @@
 //
-//  ChemiicalTableVC.swift
+//  CleaningToolsTableVC.swift
 //  PoolBuddy
 //
 //  Created by Allen Boynton on 7/4/16.
@@ -8,23 +8,23 @@
 
 import UIKit
 
-class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     // MARK: - Data Source
     
     // Gives us access to the pool product inventory info listed in PoolCategory
-    lazy var poolChemicals: [PoolCategory] = {
-        return PoolCategory.poolChemicals()
+    lazy var maintenanceEquipment: [PoolCategory] = {
+        return PoolCategory.maintenanceEquipment()
     }()
-    
+
     //
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -32,33 +32,33 @@ class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         }
         self.revealViewController().rearViewRevealWidth = 325
         
-        navigationItem.title = "Pool Chemicals"
+        navigationItem.title = "Cleaning Tools"
     }
-    
+
     // MARK: - UITableViewDataSource
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let poolCategory = poolChemicals[section]
+        let poolCategory = maintenanceEquipment[section]
         return poolCategory.category
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return poolChemicals.count
+        return maintenanceEquipment.count
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let poolCategory = poolChemicals[section]
+        let poolCategory = maintenanceEquipment[section]
         return poolCategory.products.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(chemicals, forIndexPath: indexPath) as! ChemicalTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cleaningTools, forIndexPath: indexPath) as! CleaningToolsTableViewCell
         
-        let poolCategory = poolChemicals[indexPath.section]
+        let poolCategory = maintenanceEquipment[indexPath.section]
         let product = poolCategory.products[indexPath.row]
         
-        cell.chemicalImage.image = UIImage(named: product.image)
-        cell.chemicalLabel.text = product.label
+        cell.toolsImage.image = UIImage(named: product.image)
+        cell.toolsLabel.text = product.label
         
         return cell
     }
@@ -69,11 +69,11 @@ class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     // Passing data
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Accessing segue by calling the segue identifier
-        if segue.identifier == chemSegue {
-            let destination = segue.destinationViewController as! ChemicalDetailVC
+        if segue.identifier == toolSegue {
+            let destination = segue.destinationViewController as! CleaningToolsDetailVC
             if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell) {
                 
-                let poolCategory = poolChemicals[indexPath.section]
+                let poolCategory = maintenanceEquipment[indexPath.section]
                 let product = poolCategory.products[indexPath.row]
                 
                 destination.productImage = UIImage(named: product.image)

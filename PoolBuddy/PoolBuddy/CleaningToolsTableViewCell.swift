@@ -1,19 +1,19 @@
 //
-//  EquipTableViewCell.swift
+//  CleaningToolsTableViewCell.swift
 //  PoolBuddy
 //
-//  Created by Allen Boynton on 7/2/16.
+//  Created by Allen Boynton on 7/4/16.
 //  Copyright © 2016 Full Sail. All rights reserved.
 //
 
 import UIKit
 
-class EquipTableViewCell: UITableViewCell {
+class CleaningToolsTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var equipmentImage: UIImageView!
-    @IBOutlet weak var equipmentLabel: UILabel!
+    @IBOutlet weak var toolsImage: UIImageView!
+    @IBOutlet weak var toolsLabel: UILabel!
     
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }

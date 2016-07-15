@@ -1,17 +1,17 @@
 //
-//  EquipTableViewCell.swift
+//  WaterChemTableViewCell.swift
 //  PoolBuddy
 //
-//  Created by Allen Boynton on 7/2/16.
+//  Created by Allen Boynton on 7/4/16.
 //  Copyright © 2016 Full Sail. All rights reserved.
 //
 
 import UIKit
 
-class EquipTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var equipmentImage: UIImageView!
-    @IBOutlet weak var equipmentLabel: UILabel!
+class WaterChemTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var wChemistryImage: UIImageView!    
+    @IBOutlet weak var wChemistryLabel: UILabel!
     
     
     override func awakeFromNib() {

@@ -10,25 +10,20 @@ import UIKit
 
 class EquipTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var equipmentDetail: PoolData! = nil
+    // MARK: - Data Source
     
+    // Gives us access to the pool product inventory info listed in PoolCategory
+    lazy var poolEquipment: [PoolCategory] = {
+        return PoolCategory.poolEquipment()
+    }()
+    
+    // Outlets for table view screen
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBOutlet weak var equipmentTitle: UINavigationItem!
-    
-    
-    var equipImage: [UIImage] = []
-    var equipLabel: [String] = []
-    
-    var screenTitle: String = ""
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        equipImage = [UIImage(named: "sandfilter")!]
-        equipLabel = ["Pool Filters"]
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
@@ -37,37 +32,55 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         self.revealViewController().rearViewRevealWidth = 325
 
-        equipmentTitle!.title = screenTitle
+        navigationItem.title = "Pool Equipment"
     }
 
-    // MARK: - Table view data source
+    
+    // MARK: - UITableViewDataSource
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let poolCategory = poolEquipment[section]
+        return poolCategory.category
+    }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return poolEquipment.count
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return equipLabel.count
+        let poolCategory = poolEquipment[section]
+        return poolCategory.products.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(equipment, forIndexPath: indexPath) as! EquipTableViewCell
         
-        cell.equipmentImage.image = equipImage[indexPath.row]
-        cell.equipmentLabel.text = equipLabel[indexPath.row]
+        let poolCategory = poolEquipment[indexPath.section]
+        let product = poolCategory.products[indexPath.row]
+        
+        cell.equipmentImage.image = UIImage(named: product.image)
+        cell.equipmentLabel.text = product.label
         
         return cell
     }
 
     
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Passing data
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        // Accessing segue by calling the segue identifier
+        if segue.identifier == equipSegue {
+            let destination = segue.destinationViewController as! EquipmentDetailVC
+            if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell) {
+                
+                let poolCategory = poolEquipment[indexPath.section]
+                let product = poolCategory.products[indexPath.row]
+            
+                destination.productImage = UIImage(named: product.image)
+                destination.detailTitle = product.label
+                destination.descriptions = product.description
+            }
+        }
     }
-    */
-
 }

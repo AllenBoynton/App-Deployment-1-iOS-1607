@@ -6,73 +6,73 @@
 		<key>imageName</key>
 		<string>Green Algae</string>
 		<key>group</key>
-		<string>Algae</string>
+		<string>Pools with Colored Algae</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Mustard Yellow Algae</string>
 		<key>group</key>
-		<string>Algae</string>
+		<string>Pools with Colored Algae</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Black Algae</string>
 		<key>group</key>
-		<string>Algae</string>
+		<string>Pools with Colored Algae</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Red Brown Metal Rust Stains</string>
 		<key>group</key>
-		<string>Metal</string>
+		<string>Pools with Metal Stains</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Blue Green Black Copper Stains</string>
 		<key>group</key>
-		<string>Metal</string>
+		<string>Pools with Metal Stains</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Rusty Brown Green-Brown Iron Stains</string>
 		<key>group</key>
-		<string>Metal</string>
+		<string>Pools with Metal Stains</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Brownish-Black Purple Manganese Stains</string>
 		<key>group</key>
-		<string>Metal</string>
+		<string>Pools with Metal Stains</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Organic Brown Green Stains</string>
 		<key>group</key>
-		<string>Organic</string>
+		<string>Pools with Organic Stains</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Red Blue Berry Seed Stains</string>
 		<key>group</key>
-		<string>Organic</string>
+		<string>Pools with Organic Stains</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Light Covered Surface Debris</string>
 		<key>group</key>
-		<string>Organic</string>
+		<string>Pools with Organic Stains</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Extremely Dirty Pool with Stains</string>
 		<key>group</key>
-		<string>Other</string>
+		<string>Pools with Dirty Water </string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Identifying Stains</string>
 		<key>group</key>
-		<string>Other</string>
+		<string>Pools with Dirty Water</string>
 	</dict>
 </array>
 </plist>

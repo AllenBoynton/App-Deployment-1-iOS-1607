@@ -11,8 +11,14 @@ import AVFoundation
 
 // Global Identifiers
 let equipment = "equipment_cell"
+let filter = "filter_cell"
+let equipSegue = "toDetailVC"
 let chemicals = "chemical_cell"
+let chemSegue = "toDetailVC"
 let chemistry = "water_chemistry_cell"
+let wChemSegue = "toDetailVC"
+let cleaningTools = "tools_cell"
+let toolSegue = "toDetailVC"
 let maintenance = "maint_cell"
 let photo = "photoCell"
 let gallerySegue = "gallerySegue"

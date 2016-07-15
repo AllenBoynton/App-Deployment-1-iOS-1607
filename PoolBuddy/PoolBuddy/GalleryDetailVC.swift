@@ -14,6 +14,8 @@ class GalleryDetailVC: UIViewController {
     @IBOutlet weak var poolDescription: UITextView!
     @IBOutlet weak var poolImage: UIImageView!
     
+    @IBOutlet weak var navTitle: UINavigationItem!
+    
     // DataSource for details in this VC
     var poolDetail: SearchItems? {
         didSet {
@@ -27,7 +29,7 @@ class GalleryDetailVC: UIViewController {
             if let poolDescription = poolDescription, poolImage = poolImage {
                 poolDescription.text = poolDetail.imageName
                 poolImage.image = UIImage(named: poolDetail.imageName)
-                title = poolDetail.group
+                navTitle.title = poolDetail.group
             }
         }
     }

@@ -27,7 +27,7 @@ class CalculatorVC: UIViewController {
         }
         self.revealViewController().rearViewRevealWidth = 325
         
-        calculatorTitle!.title = screenTitle
+        navigationItem.title = screenTitle
         
     }
 

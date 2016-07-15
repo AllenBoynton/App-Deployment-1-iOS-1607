@@ -10,11 +10,14 @@ import Foundation
 
 class PoolData {
     
-    var image: String = ""
     var label: String = ""
+    var image: String = ""
+    var description: String = ""
     
-    init(image: String, label: String) {
-        self.image = image
+    init(label: String, image: String, description: String) {
+        
         self.label = label
+        self.image = image
+        self.description = description
     }
 }

@@ -9,27 +9,23 @@
 import UIKit
 
 class EquipmentDetailVC: UIViewController {
-
+    
+    @IBOutlet weak var equipmentImage: UIImageView!
+    @IBOutlet weak var equipmentText: UITextView!
+    
+//    @IBOutlet weak var sideImage1: UIImageView!
+//    @IBOutlet weak var sideImage2: UIImageView!
+    
+    var detailTitle: String = ""
+    var productImage: UIImage!
+    var descriptions: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Using passed data to add to detail view
+        navigationItem.title = detailTitle
+        equipmentImage.image = productImage
+        equipmentText.text = descriptions
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

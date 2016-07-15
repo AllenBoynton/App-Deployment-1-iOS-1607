@@ -1,5 +1,5 @@
 //
-//  ChemicalDetailVC.swift
+//  WaterChemDetailVC.swift
 //  PoolBuddy
 //
 //  Created by Allen Boynton on 7/4/16.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ChemicalDetailVC: UIViewController {
+class WaterChemDetailVC: UIViewController {
 
-    @IBOutlet weak var chemicalImage: UIImageView!    
-    @IBOutlet weak var chemicalText: UITextView!
+    @IBOutlet weak var waterChemImage: UIImageView!    
+    @IBOutlet weak var WaterChemText: UITextView!
     
     @IBOutlet weak var sideImage1: UIImageView!
     @IBOutlet weak var sideImage2: UIImageView!
@@ -25,7 +25,7 @@ class ChemicalDetailVC: UIViewController {
         
         // Using passed data to add to detail view
         navigationItem.title = detailTitle
-        chemicalImage.image = productImage
-        chemicalText.text = descriptions
-    }    
+        waterChemImage.image = productImage
+        WaterChemText.text = descriptions
+    }
 }
