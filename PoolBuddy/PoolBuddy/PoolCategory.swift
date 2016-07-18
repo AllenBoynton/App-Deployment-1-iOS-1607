@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class PoolCategory {
     
     // Stored properties
@@ -20,7 +19,6 @@ class PoolCategory {
         category = menu
         products = group
     }
-    
     
     // Class arrays of same category for sections
     

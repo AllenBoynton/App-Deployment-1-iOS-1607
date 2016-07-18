@@ -15,7 +15,7 @@ class DataSource {
         populateData()
     }
     
-    // Delegate for DogGroup and creates property for both pools & groups
+    // Delegate for SearchItems and creates property for both pools & groups
     var pools: [SearchItems] = []
     var groups: [String] = []
     
@@ -58,7 +58,7 @@ class DataSource {
         }
     }
     
-    // MARK: Assigns dogs in their groups
+    // MARK: Assigns images in their groups
     
     func poolsInGroup(index: Int) -> [SearchItems] {
         let item = groups[index]

@@ -6,65 +6,71 @@
 		<key>imageName</key>
 		<string>Green Algae</string>
 		<key>group</key>
-		<string>Pools with Colored Algae</string>
+		<string>Pools with Algae Problems</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Mustard Yellow Algae</string>
 		<key>group</key>
-		<string>Pools with Colored Algae</string>
+		<string>Pools with Algae Problems</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
 		<string>Black Algae</string>
 		<key>group</key>
-		<string>Pools with Colored Algae</string>
+		<string>Pools with Algae Problems</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>Red Brown Metal Rust Stains</string>
+		<string>Metal Rust Stains</string>
 		<key>group</key>
-		<string>Pools with Metal Stains</string>
+		<string>Pools with Metal Problems</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>Blue Green Black Copper Stains</string>
+		<string>Copper Metal Stains</string>
 		<key>group</key>
-		<string>Pools with Metal Stains</string>
+		<string>Pools with Metal Problems</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>Rusty Brown Green-Brown Iron Stains</string>
+		<string>Iron Metal Stains</string>
 		<key>group</key>
-		<string>Pools with Metal Stains</string>
+		<string>Pools with Metal Problems</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>Brownish-Black Purple Manganese Stains</string>
+		<string>Manganese Metal Stains</string>
 		<key>group</key>
-		<string>Pools with Metal Stains</string>
+		<string>Pools with Metal Problems</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>Organic Brown Green Stains</string>
+		<string>Oily Water Line</string>
 		<key>group</key>
-		<string>Pools with Organic Stains</string>
+		<string>Pools with Organic Problems</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>Red Blue Berry Seed Stains</string>
+		<string>Organic Stains</string>
 		<key>group</key>
-		<string>Pools with Organic Stains</string>
+		<string>Pools with Organic Problems</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>Light Covered Surface Debris</string>
+		<string>Organic Berry Stains</string>
 		<key>group</key>
-		<string>Pools with Organic Stains</string>
+		<string>Pools with Organic Problems</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>Extremely Dirty Pool with Stains</string>
+		<string>Surface Debris</string>
+		<key>group</key>
+		<string>Pools with Dirty Water</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Extremely Dirty</string>
 		<key>group</key>
 		<string>Pools with Dirty Water </string>
 	</dict>
