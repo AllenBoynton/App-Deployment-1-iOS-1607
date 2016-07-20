@@ -16,6 +16,9 @@ class WaterChemTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        wChemistryImage.layer.borderWidth = 2
+        wChemistryImage.layer.borderColor = UIColor.blackColor().CGColor
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

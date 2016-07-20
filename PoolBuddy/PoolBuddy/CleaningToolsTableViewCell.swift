@@ -16,6 +16,9 @@ class CleaningToolsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        toolsImage.layer.borderWidth = 2
+        toolsImage.layer.borderColor = UIColor.blackColor().CGColor
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

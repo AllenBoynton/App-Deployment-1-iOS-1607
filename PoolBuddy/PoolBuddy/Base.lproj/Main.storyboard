@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7fG-W1-ux4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7fG-W1-ux4">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,29 +25,30 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="scD-1E-Til">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="equipment_cell" rowHeight="85" id="5fg-vn-wp6" customClass="EquipTableViewCell" customModule="PoolBuddy" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="equipment_cell" rowHeight="85" id="5fg-vn-wp6" customClass="EquipTableViewCell" customModule="PoolBuddy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5fg-vn-wp6" id="hKy-ga-9LZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="84.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="orN-gh-iK1">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfv-WZ-6vV">
+                                                    <rect key="frame" x="105" y="0.0" width="495" height="84.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="orN-gh-iK1">
                                                     <rect key="frame" x="20" y="10" width="65" height="65"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="orN-gh-iK1" secondAttribute="height" multiplier="1:1" id="GhF-xY-fFJ"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfv-WZ-6vV">
-                                                    <rect key="frame" x="105" y="0.0" width="462" height="84.5"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="Kfv-WZ-6vV" firstAttribute="leading" secondItem="orN-gh-iK1" secondAttribute="trailing" constant="20" id="0Ft-bQ-FWs"/>
                                                 <constraint firstAttribute="bottom" secondItem="Kfv-WZ-6vV" secondAttribute="bottom" id="DsA-UZ-oly"/>
@@ -84,8 +85,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pool Equipment" id="XjI-2q-kQl">
-                        <barButtonItem key="leftBarButtonItem" image="Image" id="vVm-H3-Frp">
-                            <color key="tintColor" red="0.039215686274509803" green="0.37647058823529411" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="vVm-H3-Frp">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -114,14 +115,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POOL BUDDY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NjX-KJ-sY5">
                                         <rect key="frame" x="30" y="0.0" width="570" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="2" height="-2"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="NjX-KJ-sY5" secondAttribute="bottom" id="4v4-La-M2c"/>
                                     <constraint firstAttribute="height" constant="30" id="Ib0-2C-3Bc"/>
@@ -133,6 +133,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-7W-p3b">
                                 <rect key="frame" x="0.0" y="94" width="600" height="506"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqS-D8-SYS" userLabel="Ghost View">
+                                <rect key="frame" x="0.0" y="94" width="600" height="506"/>
+                                <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-Z2-AWJ">
                                 <rect key="frame" x="200" y="124" width="200" height="200"/>
                                 <constraints>
@@ -142,10 +146,9 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-kF-ycO">
                                 <rect key="frame" x="20" y="344" width="560" height="236"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -154,6 +157,8 @@
                         <constraints>
                             <constraint firstItem="sVm-kF-ycO" firstAttribute="leading" secondItem="6q6-5W-7nd" secondAttribute="leading" constant="20" id="AVb-Bq-zZJ"/>
                             <constraint firstItem="f8C-Z2-AWJ" firstAttribute="top" secondItem="Xth-Nd-NCB" secondAttribute="bottom" constant="30" id="EJp-ZJ-070"/>
+                            <constraint firstItem="cqS-D8-SYS" firstAttribute="top" secondItem="Xth-Nd-NCB" secondAttribute="bottom" id="EMM-e4-iLw"/>
+                            <constraint firstAttribute="trailing" secondItem="cqS-D8-SYS" secondAttribute="trailing" id="IZZ-OX-4Ct"/>
                             <constraint firstItem="F2l-SB-Adp" firstAttribute="top" secondItem="cy4-7W-p3b" secondAttribute="bottom" id="KPm-eW-x0U"/>
                             <constraint firstItem="F2l-SB-Adp" firstAttribute="top" secondItem="sVm-kF-ycO" secondAttribute="bottom" constant="20" id="Sqj-dq-8Qa"/>
                             <constraint firstItem="f8C-Z2-AWJ" firstAttribute="centerX" secondItem="6q6-5W-7nd" secondAttribute="centerX" id="T5U-AF-ch5"/>
@@ -164,6 +169,8 @@
                             <constraint firstItem="Xth-Nd-NCB" firstAttribute="leading" secondItem="6q6-5W-7nd" secondAttribute="leading" id="owh-Gv-aCQ"/>
                             <constraint firstItem="cy4-7W-p3b" firstAttribute="leading" secondItem="6q6-5W-7nd" secondAttribute="leading" id="qDJ-sF-JlK"/>
                             <constraint firstItem="Xth-Nd-NCB" firstAttribute="top" secondItem="rUb-7Y-59Q" secondAttribute="bottom" id="qle-rB-ofg"/>
+                            <constraint firstItem="F2l-SB-Adp" firstAttribute="top" secondItem="cqS-D8-SYS" secondAttribute="bottom" id="v0u-L6-R57"/>
+                            <constraint firstItem="cqS-D8-SYS" firstAttribute="leading" secondItem="6q6-5W-7nd" secondAttribute="leading" id="vJR-g1-tu6"/>
                             <constraint firstItem="cy4-7W-p3b" firstAttribute="top" secondItem="Xth-Nd-NCB" secondAttribute="bottom" id="ymz-k7-cIT"/>
                         </constraints>
                     </view>
@@ -239,12 +246,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pool Buddy" id="Hrn-MM-Elh">
-                        <barButtonItem key="leftBarButtonItem" image="Image" id="dXp-08-VkH">
+                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="dXp-08-VkH">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="menuButton:" destination="BYZ-38-t0r" id="jEa-bJ-x07"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Lp4-ms-C0y"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Lp4-ms-C0y">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="dXp-08-VkH" id="2oC-6w-3ez"/>
@@ -334,7 +344,6 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Equipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjj-wY-MgJ" userLabel="Equipment Section">
                                                     <rect key="frame" x="105" y="10" width="495" height="64.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equipment1" translatesAutoresizingMaskIntoConstraints="NO" id="vLs-Mc-lB1" userLabel="Section Image">
@@ -370,7 +379,6 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Chemicals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1N-G8-OGe" userLabel="Chemicals Section">
                                                     <rect key="frame" x="105" y="0.0" width="495" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicals1" translatesAutoresizingMaskIntoConstraints="NO" id="XWq-9L-l3J" userLabel="Section Image">
@@ -406,7 +414,6 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Chemistry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6E-pc-J95" userLabel="Chemistry Section">
                                                     <rect key="frame" x="105" y="0.0" width="495" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testKit" translatesAutoresizingMaskIntoConstraints="NO" id="QsC-Tw-db3" userLabel="Section Image">
@@ -442,7 +449,6 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Tools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G85-bc-w7t" userLabel="Equipment Section">
                                                     <rect key="frame" x="105" y="10" width="495" height="64.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Surface Debris" translatesAutoresizingMaskIntoConstraints="NO" id="EhE-A7-uYK" userLabel="Section Image">
@@ -478,7 +484,6 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routine Maintenance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5D-fO-gje" userLabel="Maintenance Section">
                                                     <rect key="frame" x="105" y="0.0" width="495" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service" translatesAutoresizingMaskIntoConstraints="NO" id="j96-cJ-1yD" userLabel="Section Image">
@@ -511,7 +516,6 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Planner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gve-Rb-c4H" userLabel="Planner Section">
                                                     <rect key="frame" x="105" y="0.0" width="495" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planner" translatesAutoresizingMaskIntoConstraints="NO" id="h2R-TA-nLB" userLabel="Section Image">
@@ -708,13 +712,13 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ny-L1-Ot0">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="chemical_cell" rowHeight="85" id="05u-l4-VSK" userLabel="chemical_cell" customClass="ChemicalTableViewCell" customModule="PoolBuddy" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="chemical_cell" rowHeight="85" id="05u-l4-VSK" userLabel="chemical_cell" customClass="ChemicalTableViewCell" customModule="PoolBuddy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="05u-l4-VSK" id="4fA-ub-pnT">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="84.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lvH-wg-BwM" userLabel="Chemical Image">
@@ -725,13 +729,12 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc6-lb-tvq" userLabel="Chemical Label">
-                                                    <rect key="frame" x="105" y="0.0" width="462" height="84.5"/>
+                                                    <rect key="frame" x="105" y="0.0" width="495" height="84.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="lvH-wg-BwM" firstAttribute="top" secondItem="4fA-ub-pnT" secondAttribute="top" constant="10" id="4or-ik-bka"/>
                                                 <constraint firstAttribute="bottom" secondItem="lvH-wg-BwM" secondAttribute="bottom" constant="10" id="G2Y-0d-bMf"/>
@@ -768,8 +771,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pool Chemicals" id="nEz-Rh-3a2">
-                        <barButtonItem key="leftBarButtonItem" image="Image" id="7xq-YX-L9w">
-                            <color key="tintColor" red="0.039215686270000001" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="7xq-YX-L9w">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -798,14 +801,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POOL BUDDY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNF-lt-85t">
                                         <rect key="frame" x="30" y="0.0" width="570" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="2" height="-2"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="bNF-lt-85t" secondAttribute="bottom" id="2se-8O-btv"/>
                                     <constraint firstItem="bNF-lt-85t" firstAttribute="top" secondItem="hZi-Sm-DI0" secondAttribute="top" id="WHO-JO-xIS"/>
@@ -827,10 +829,9 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYD-wB-RTD">
                                 <rect key="frame" x="20" y="344" width="560" height="236"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zf-tJ-NOK">
@@ -850,25 +851,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W5b-GW-SWX">
-                                <rect key="frame" x="20" y="149" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="afJ-T5-uIz"/>
-                                    <constraint firstAttribute="width" constant="150" id="yvm-0u-wUW"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sm2-RR-K6j">
-                                <rect key="frame" x="430" y="149" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="1PD-jO-vAL"/>
-                                    <constraint firstAttribute="height" constant="150" id="xh6-ak-ceN"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RBp-ii-06c" firstAttribute="centerX" secondItem="Htb-uB-sIt" secondAttribute="centerX" id="5Xz-fl-kof"/>
-                            <constraint firstItem="RBp-ii-06c" firstAttribute="centerY" secondItem="W5b-GW-SWX" secondAttribute="centerY" id="Fzr-Zs-KPj"/>
                             <constraint firstItem="7zf-tJ-NOK" firstAttribute="leading" secondItem="Htb-uB-sIt" secondAttribute="leading" id="HLh-ET-tJk"/>
                             <constraint firstItem="Me4-k2-KkJ" firstAttribute="leading" secondItem="Htb-uB-sIt" secondAttribute="leading" id="SbI-yX-bfL"/>
                             <constraint firstItem="hZi-Sm-DI0" firstAttribute="top" secondItem="V5G-IH-Fea" secondAttribute="bottom" id="Sob-zv-9wI"/>
@@ -879,21 +865,16 @@
                             <constraint firstAttribute="trailing" secondItem="7zf-tJ-NOK" secondAttribute="trailing" id="aV2-gS-QR0"/>
                             <constraint firstItem="J51-EO-5EP" firstAttribute="top" secondItem="MYD-wB-RTD" secondAttribute="bottom" constant="20" id="alJ-Pq-dgN"/>
                             <constraint firstItem="hZi-Sm-DI0" firstAttribute="leading" secondItem="Htb-uB-sIt" secondAttribute="leading" id="dFS-02-HaG"/>
-                            <constraint firstItem="MYD-wB-RTD" firstAttribute="leading" secondItem="W5b-GW-SWX" secondAttribute="leading" id="gkk-nB-dzj"/>
                             <constraint firstItem="Me4-k2-KkJ" firstAttribute="top" secondItem="hZi-Sm-DI0" secondAttribute="bottom" id="jQ1-Ae-EwG"/>
                             <constraint firstItem="MYD-wB-RTD" firstAttribute="leading" secondItem="Htb-uB-sIt" secondAttribute="leading" constant="20" id="l1j-mW-vXS"/>
                             <constraint firstItem="J51-EO-5EP" firstAttribute="top" secondItem="Me4-k2-KkJ" secondAttribute="bottom" id="m6v-CC-TVX"/>
-                            <constraint firstItem="sm2-RR-K6j" firstAttribute="trailing" secondItem="MYD-wB-RTD" secondAttribute="trailing" id="mht-mR-imH"/>
                             <constraint firstAttribute="trailing" secondItem="hZi-Sm-DI0" secondAttribute="trailing" id="pwH-tu-4oi"/>
                             <constraint firstItem="7zf-tJ-NOK" firstAttribute="top" secondItem="Htb-uB-sIt" secondAttribute="top" constant="20" id="sio-br-g57"/>
-                            <constraint firstItem="sm2-RR-K6j" firstAttribute="centerY" secondItem="W5b-GW-SWX" secondAttribute="centerY" id="w5K-QD-RCb"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="chemicalImage" destination="RBp-ii-06c" id="wFx-MG-I1z"/>
                         <outlet property="chemicalText" destination="MYD-wB-RTD" id="udZ-gi-00f"/>
-                        <outlet property="sideImage1" destination="W5b-GW-SWX" id="EKG-4s-51B"/>
-                        <outlet property="sideImage2" destination="sm2-RR-K6j" id="eaa-bC-yeS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6YM-6C-41r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -962,13 +943,13 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ynS-9c-AcL">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="water_chemistry_cell" rowHeight="85" id="CDd-Kk-Ej9" userLabel="water_chemistry_cell" customClass="WaterChemTableViewCell" customModule="PoolBuddy" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="water_chemistry_cell" rowHeight="85" id="CDd-Kk-Ej9" userLabel="water_chemistry_cell" customClass="WaterChemTableViewCell" customModule="PoolBuddy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CDd-Kk-Ej9" id="cF2-Rt-0QZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="84.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5s9-ef-6Zk" userLabel="Chemistry Image">
@@ -978,13 +959,12 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6D-qj-kSV" userLabel="Chemistry Label">
-                                                    <rect key="frame" x="105" y="0.0" width="462" height="84.5"/>
+                                                    <rect key="frame" x="105" y="0.0" width="495" height="84.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="e6D-qj-kSV" secondAttribute="trailing" id="0We-Ab-Aoo"/>
                                                 <constraint firstItem="5s9-ef-6Zk" firstAttribute="top" secondItem="cF2-Rt-0QZ" secondAttribute="top" constant="10" id="8cf-n9-C9d"/>
@@ -1011,10 +991,11 @@
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" title="Water Chemistry" id="3HD-BQ-ixH">
-                        <barButtonItem key="leftBarButtonItem" image="Image" id="W3d-bA-sZ8">
-                            <color key="tintColor" red="0.039215686270000001" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="W3d-bA-sZ8">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="menuButton" destination="W3d-bA-sZ8" id="9pZ-ob-PwL"/>
                         <outlet property="tableView" destination="ynS-9c-AcL" id="i4n-Pt-xXg"/>
@@ -1038,17 +1019,16 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFZ-lc-Kys" userLabel="Pool Buddy View">
                                 <rect key="frame" x="0.0" y="64" width="600" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="EN6-Ir-YSc"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POOL BUDDY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="940-T5-1uE">
                                 <rect key="frame" x="30" y="64" width="570" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="-2"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="rZ3-sa-gpE">
@@ -1063,26 +1043,11 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uq-4D-hRv">
                                 <rect key="frame" x="20" y="344" width="560" height="236"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="64P-mx-BLl">
-                                <rect key="frame" x="20" y="149" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Dpj-7B-DY4"/>
-                                    <constraint firstAttribute="height" constant="150" id="w5r-td-LH7"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fg4-9e-wjN">
-                                <rect key="frame" x="430" y="149" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="nEE-q1-C36"/>
-                                    <constraint firstAttribute="width" constant="150" id="rvC-qG-5us"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1093,27 +1058,21 @@
                             <constraint firstItem="rZ3-sa-gpE" firstAttribute="top" secondItem="GFZ-lc-Kys" secondAttribute="bottom" id="OA8-XD-LsE"/>
                             <constraint firstItem="9Uq-4D-hRv" firstAttribute="top" secondItem="ehv-cO-3Vb" secondAttribute="bottom" constant="20" id="PtX-6u-m2j"/>
                             <constraint firstItem="rZ3-sa-gpE" firstAttribute="leading" secondItem="LSe-1S-8bo" secondAttribute="leading" id="U2x-7U-WDe"/>
-                            <constraint firstItem="ehv-cO-3Vb" firstAttribute="centerY" secondItem="64P-mx-BLl" secondAttribute="centerY" id="U5h-FO-iTi"/>
                             <constraint firstAttribute="trailing" secondItem="9Uq-4D-hRv" secondAttribute="trailing" constant="20" id="b2m-3I-dF5"/>
                             <constraint firstItem="GFZ-lc-Kys" firstAttribute="top" secondItem="Arn-bi-Kpc" secondAttribute="bottom" id="buO-PO-9uQ"/>
                             <constraint firstAttribute="trailing" secondItem="rZ3-sa-gpE" secondAttribute="trailing" id="ct6-4G-wvI"/>
                             <constraint firstAttribute="trailing" secondItem="GFZ-lc-Kys" secondAttribute="trailing" id="e0n-3N-CjR"/>
                             <constraint firstItem="940-T5-1uE" firstAttribute="leading" secondItem="LSe-1S-8bo" secondAttribute="leading" constant="30" id="eI6-M4-BNC"/>
-                            <constraint firstItem="9Uq-4D-hRv" firstAttribute="leading" secondItem="64P-mx-BLl" secondAttribute="leading" id="eM2-BH-b6X"/>
                             <constraint firstAttribute="trailing" secondItem="940-T5-1uE" secondAttribute="trailing" id="ehf-v3-RuG"/>
                             <constraint firstItem="940-T5-1uE" firstAttribute="top" secondItem="Arn-bi-Kpc" secondAttribute="bottom" id="feY-jC-zGI"/>
-                            <constraint firstItem="fg4-9e-wjN" firstAttribute="centerY" secondItem="64P-mx-BLl" secondAttribute="centerY" id="g9S-9W-yMm"/>
                             <constraint firstItem="JaV-B0-wYe" firstAttribute="top" secondItem="rZ3-sa-gpE" secondAttribute="bottom" id="hFD-Wz-caY"/>
                             <constraint firstItem="ehv-cO-3Vb" firstAttribute="centerX" secondItem="LSe-1S-8bo" secondAttribute="centerX" id="hlv-cB-SUP"/>
-                            <constraint firstItem="fg4-9e-wjN" firstAttribute="trailing" secondItem="9Uq-4D-hRv" secondAttribute="trailing" id="sKz-xi-5xf"/>
                             <constraint firstItem="ehv-cO-3Vb" firstAttribute="top" secondItem="GFZ-lc-Kys" secondAttribute="bottom" constant="30" id="w9j-YQ-umR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9YS-zg-y9W"/>
                     <connections>
                         <outlet property="WaterChemText" destination="9Uq-4D-hRv" id="yYH-U1-hOq"/>
-                        <outlet property="sideImage1" destination="64P-mx-BLl" id="xkH-g7-GdU"/>
-                        <outlet property="sideImage2" destination="fg4-9e-wjN" id="ioc-3l-N1Z"/>
                         <outlet property="waterChemImage" destination="ehv-cO-3Vb" id="FIS-ol-giL"/>
                     </connections>
                 </viewController>
@@ -1126,6 +1085,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UhZ-Py-xIP" userLabel="Water Chemistry Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ReW-0m-a6a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1157,7 +1117,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AZJ-7F-Mml">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tools_cell" rowHeight="85" id="JUT-50-XjY" customClass="CleaningToolsTableViewCell" customModule="PoolBuddy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="85"/>
@@ -1172,11 +1132,10 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ8-si-VT9" userLabel="Tools Label">
                                                     <rect key="frame" x="104.5" y="0.0" width="495.5" height="84.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="NJ8-si-VT9" firstAttribute="leading" secondItem="EFa-at-1QI" secondAttribute="trailing" constant="20" id="64Q-tI-vCG"/>
                                                 <constraint firstItem="EFa-at-1QI" firstAttribute="top" secondItem="Vz8-xY-LxF" secondAttribute="top" constant="10" id="FfZ-Ez-jY1"/>
@@ -1215,8 +1174,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cleaning Tools" id="XWk-uc-XLe">
-                        <barButtonItem key="leftBarButtonItem" image="Image" id="wNG-QW-ZZ3">
-                            <color key="tintColor" red="0.039215686270000001" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="wNG-QW-ZZ3">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1242,17 +1201,16 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjm-kB-tKm">
                                 <rect key="frame" x="0.0" y="64" width="600" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="dSC-9h-bTr"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POOL BUDDY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="orI-Aq-YoX">
                                 <rect key="frame" x="30" y="64" width="570" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="-2"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="AaC-ex-Pki">
@@ -1267,10 +1225,9 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXR-Ml-QXb">
                                 <rect key="frame" x="20" y="344" width="560" height="236"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pj-o9-qsz">
@@ -1282,20 +1239,6 @@
                                     <navigationItem title="Title" id="VxY-dR-MGx"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RYd-8W-UUG">
-                                <rect key="frame" x="20" y="149" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="hz1-ck-BHt"/>
-                                    <constraint firstAttribute="width" constant="150" id="mNb-jC-zhw"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fgB-nL-r5e">
-                                <rect key="frame" x="430" y="149" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="tVN-aR-aM3"/>
-                                    <constraint firstAttribute="height" constant="150" id="uwb-lS-NEM"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="AaC-ex-Pki" firstAttribute="leading" secondItem="OR7-0d-ByI" secondAttribute="leading" id="0kT-L6-YUw"/>
@@ -1303,17 +1246,13 @@
                             <constraint firstItem="AXR-Ml-QXb" firstAttribute="leading" secondItem="OR7-0d-ByI" secondAttribute="leading" constant="20" id="3zs-eu-ru6"/>
                             <constraint firstItem="orI-Aq-YoX" firstAttribute="top" secondItem="7ZU-Pv-1CU" secondAttribute="bottom" id="4Bs-c2-coj"/>
                             <constraint firstItem="6pj-o9-qsz" firstAttribute="leading" secondItem="OR7-0d-ByI" secondAttribute="leading" id="5DS-Vu-tvq"/>
-                            <constraint firstItem="1xi-0N-1iv" firstAttribute="centerY" secondItem="RYd-8W-UUG" secondAttribute="centerY" id="AmK-mL-h4p"/>
                             <constraint firstAttribute="trailing" secondItem="6pj-o9-qsz" secondAttribute="trailing" id="C8B-zf-WwB"/>
-                            <constraint firstItem="fgB-nL-r5e" firstAttribute="trailing" secondItem="AXR-Ml-QXb" secondAttribute="trailing" id="GeI-Bm-xEh"/>
                             <constraint firstItem="AXR-Ml-QXb" firstAttribute="top" secondItem="1xi-0N-1iv" secondAttribute="bottom" constant="20" id="HZm-bg-lbb"/>
                             <constraint firstItem="AaC-ex-Pki" firstAttribute="top" secondItem="orI-Aq-YoX" secondAttribute="bottom" id="KOQ-Sf-djz"/>
                             <constraint firstItem="wjm-kB-tKm" firstAttribute="leading" secondItem="OR7-0d-ByI" secondAttribute="leading" id="Ot6-cy-RJf"/>
                             <constraint firstItem="orI-Aq-YoX" firstAttribute="leading" secondItem="OR7-0d-ByI" secondAttribute="leading" constant="30" id="XDP-ON-cxm"/>
                             <constraint firstAttribute="trailing" secondItem="AXR-Ml-QXb" secondAttribute="trailing" constant="20" id="aYX-oQ-5Rn"/>
                             <constraint firstAttribute="trailing" secondItem="orI-Aq-YoX" secondAttribute="trailing" id="g7E-Gd-PPW"/>
-                            <constraint firstItem="fgB-nL-r5e" firstAttribute="centerY" secondItem="RYd-8W-UUG" secondAttribute="centerY" id="hnl-ku-vph"/>
-                            <constraint firstItem="AXR-Ml-QXb" firstAttribute="leading" secondItem="RYd-8W-UUG" secondAttribute="leading" id="n0h-ZA-lfb"/>
                             <constraint firstAttribute="trailing" secondItem="wjm-kB-tKm" secondAttribute="trailing" id="pEF-pF-XQm"/>
                             <constraint firstItem="1xi-0N-1iv" firstAttribute="centerX" secondItem="OR7-0d-ByI" secondAttribute="centerX" id="raY-WN-Vw5"/>
                             <constraint firstItem="nz8-js-krx" firstAttribute="top" secondItem="AXR-Ml-QXb" secondAttribute="bottom" constant="20" id="rl1-5W-Z1h"/>
@@ -1327,8 +1266,6 @@
                     <connections>
                         <outlet property="cleaningImage" destination="1xi-0N-1iv" id="5zC-7X-8Gu"/>
                         <outlet property="cleaningText" destination="AXR-Ml-QXb" id="hOf-Wr-8is"/>
-                        <outlet property="sideImage1" destination="RYd-8W-UUG" id="tLv-m5-GXN"/>
-                        <outlet property="sideImage2" destination="fgB-nL-r5e" id="LOg-cd-nw2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F7V-8x-N0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1352,7 +1289,7 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqw-Ug-BkO">
                                 <rect key="frame" x="20" y="84" width="560" height="496"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                 <string key="text">Weekly pool maintenance of your
 pool can be a daunting list of 
 tasks.
@@ -1376,8 +1313,7 @@ even needing a Planner, but until
 then… Use the Weekly Planner.
 
 Good Luck!</string>
-                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1393,10 +1329,12 @@ Good Luck!</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Weekly Planner" id="gQQ-Lz-05a">
-                        <barButtonItem key="leftBarButtonItem" image="Image" id="lWb-WE-mis">
-                            <color key="tintColor" red="0.039215686270000001" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="lWb-WE-mis">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="WFc-WW-FUL"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" style="done" id="WFc-WW-FUL">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="lWb-WE-mis" id="8mA-0V-YJU"/>
@@ -1440,16 +1378,15 @@ Good Luck!</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omx-MK-mag">
                                 <rect key="frame" x="0.0" y="64" width="600" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POOL BUDDY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OvX-Rp-5Wz">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POOL BUDDY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OvX-Rp-5Wz">
                                         <rect key="frame" x="20" y="0.0" width="580" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="2" height="-2"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="OvX-Rp-5Wz" firstAttribute="leading" secondItem="Omx-MK-mag" secondAttribute="leading" constant="20" id="JRY-Vd-iIa"/>
                                     <constraint firstAttribute="trailing" secondItem="OvX-Rp-5Wz" secondAttribute="trailing" id="ONa-IT-r3D"/>
@@ -1470,10 +1407,9 @@ Good Luck!</string>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwx-kb-7fo">
                                 <rect key="frame" x="20" y="344" width="560" height="236"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApL-nM-nSe">
@@ -1534,52 +1470,63 @@ Good Luck!</string>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMY-ol-IY3" userLabel="Ghost View">
+                                <rect key="frame" x="0.0" y="134" width="600" height="466"/>
+                                <color key="backgroundColor" white="1" alpha="0.45000000000000001" colorSpace="calibratedWhite"/>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wow-e0-d3v">
                                 <rect key="frame" x="0.0" y="104" width="600" height="496"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="Tba-IV-wOj">
-                                    <size key="itemSize" width="110" height="140"/>
+                                    <size key="itemSize" width="110" height="110"/>
                                     <size key="headerReferenceSize" width="50" height="30"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="FEy-3e-Pq7" customClass="GalleryCollectionViewCell" customModule="PoolBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="40" width="110" height="140"/>
+                                        <rect key="frame" x="10" y="40" width="110" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="110" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V1N-cD-2om" userLabel="Gallery Images">
-                                                    <rect key="frame" x="5" y="5" width="100" height="100"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="V1N-cD-2om" secondAttribute="height" multiplier="1:1" id="Kg9-Xk-Jb1"/>
-                                                    </constraints>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Extremely Dirty" translatesAutoresizingMaskIntoConstraints="NO" id="V1N-cD-2om" userLabel="Gallery Images">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="90"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IC3-zC-lVv">
-                                                    <rect key="frame" x="5" y="110" width="100" height="25"/>
-                                                    <color key="backgroundColor" red="0.039215686270000001" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IC3-zC-lVv">
+                                                    <rect key="frame" x="0.0" y="90" width="110" height="20"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="Dwm-Qy-mh8"/>
+                                                    </constraints>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" firstLineHeadIndent="2" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="IC3-zC-lVv" firstAttribute="top" secondItem="V1N-cD-2om" secondAttribute="bottom" constant="5" id="4Sc-bR-ZlW"/>
-                                            <constraint firstAttribute="trailing" secondItem="V1N-cD-2om" secondAttribute="trailing" constant="5" id="7yr-9o-Dnp"/>
-                                            <constraint firstItem="V1N-cD-2om" firstAttribute="top" secondItem="FEy-3e-Pq7" secondAttribute="top" constant="5" id="BgW-vX-hfO"/>
-                                            <constraint firstItem="IC3-zC-lVv" firstAttribute="leading" secondItem="FEy-3e-Pq7" secondAttribute="leading" constant="5" id="EFm-RX-H6c"/>
-                                            <constraint firstAttribute="trailing" secondItem="IC3-zC-lVv" secondAttribute="trailing" constant="5" id="G4r-Cz-LFt"/>
-                                            <constraint firstAttribute="bottom" secondItem="IC3-zC-lVv" secondAttribute="bottom" constant="5" id="Vpl-bz-C3T"/>
-                                            <constraint firstItem="V1N-cD-2om" firstAttribute="leading" secondItem="FEy-3e-Pq7" secondAttribute="leading" constant="5" id="xSt-Q2-n7u"/>
+                                            <constraint firstItem="IC3-zC-lVv" firstAttribute="top" secondItem="V1N-cD-2om" secondAttribute="bottom" id="0Dl-RG-s0O"/>
+                                            <constraint firstItem="V1N-cD-2om" firstAttribute="top" secondItem="FEy-3e-Pq7" secondAttribute="top" id="QUc-cE-aRA"/>
+                                            <constraint firstAttribute="trailing" secondItem="V1N-cD-2om" secondAttribute="trailing" id="RJ4-88-NbP"/>
+                                            <constraint firstItem="V1N-cD-2om" firstAttribute="leading" secondItem="FEy-3e-Pq7" secondAttribute="leading" id="b0R-Of-96g"/>
+                                            <constraint firstAttribute="bottom" secondItem="IC3-zC-lVv" secondAttribute="bottom" id="fbF-d7-AU7"/>
+                                            <constraint firstItem="IC3-zC-lVv" firstAttribute="leading" secondItem="FEy-3e-Pq7" secondAttribute="leading" id="oAm-uY-GLT"/>
+                                            <constraint firstAttribute="trailing" secondItem="IC3-zC-lVv" secondAttribute="trailing" id="shy-1j-Dww"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="galleryImages" destination="V1N-cD-2om" id="Bq5-Mt-vBn"/>
-                                            <outlet property="imageName" destination="IC3-zC-lVv" id="lqc-Ub-Tt2"/>
+                                            <outlet property="imageLabel" destination="IC3-zC-lVv" id="yHD-4Y-77a"/>
                                             <segue destination="DDN-0h-iH2" kind="show" identifier="gallerySegue" id="2nA-gM-TPh"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1614,22 +1561,26 @@ Good Luck!</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2wF-id-hus" firstAttribute="top" secondItem="duG-ay-5F1" secondAttribute="top" constant="64" id="5Yj-UF-mSq"/>
+                            <constraint firstItem="qMY-ol-IY3" firstAttribute="leading" secondItem="duG-ay-5F1" secondAttribute="leading" id="75A-4d-Sb7"/>
                             <constraint firstItem="2wF-id-hus" firstAttribute="leading" secondItem="duG-ay-5F1" secondAttribute="leading" id="92j-SM-5Ww"/>
+                            <constraint firstItem="N6n-hX-6aa" firstAttribute="top" secondItem="qMY-ol-IY3" secondAttribute="bottom" id="9nO-oD-Oer"/>
                             <constraint firstItem="wow-e0-d3v" firstAttribute="top" secondItem="TJs-kE-0q8" secondAttribute="bottom" id="Bi8-eM-wVI"/>
                             <constraint firstItem="N6n-hX-6aa" firstAttribute="top" secondItem="2wF-id-hus" secondAttribute="bottom" id="GdO-c2-0YI"/>
+                            <constraint firstAttribute="trailing" secondItem="qMY-ol-IY3" secondAttribute="trailing" id="GlC-8E-NAb"/>
                             <constraint firstAttribute="trailing" secondItem="2wF-id-hus" secondAttribute="trailing" id="I1b-hP-cr2"/>
                             <constraint firstItem="wow-e0-d3v" firstAttribute="top" secondItem="R84-iR-Zxe" secondAttribute="bottom" constant="40" id="IDe-9o-QQ6"/>
                             <constraint firstAttribute="trailing" secondItem="TJs-kE-0q8" secondAttribute="trailing" id="ML7-bq-gRc"/>
                             <constraint firstItem="TJs-kE-0q8" firstAttribute="leading" secondItem="duG-ay-5F1" secondAttribute="leading" id="MtL-cx-G6X"/>
                             <constraint firstItem="N6n-hX-6aa" firstAttribute="top" secondItem="wow-e0-d3v" secondAttribute="bottom" id="PXo-Wz-fQG"/>
                             <constraint firstAttribute="trailing" secondItem="wow-e0-d3v" secondAttribute="trailing" id="TSO-Eu-T1j"/>
+                            <constraint firstItem="qMY-ol-IY3" firstAttribute="top" secondItem="TJs-kE-0q8" secondAttribute="bottom" constant="30" id="TUf-e3-8mh"/>
                             <constraint firstItem="TJs-kE-0q8" firstAttribute="top" secondItem="R84-iR-Zxe" secondAttribute="bottom" id="iQv-h7-SYX"/>
                             <constraint firstItem="wow-e0-d3v" firstAttribute="leading" secondItem="duG-ay-5F1" secondAttribute="leading" id="vUn-IJ-roF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pool Problems Gallery" id="DdT-Jf-JHr">
-                        <barButtonItem key="leftBarButtonItem" image="Image" id="aiG-iF-HvD">
-                            <color key="tintColor" red="0.039215686270000001" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="aiG-iF-HvD">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1655,8 +1606,8 @@ Good Luck!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pool Calculator" id="5b1-eV-Urh">
-                        <barButtonItem key="leftBarButtonItem" image="Image" id="c4I-g0-AtF">
-                            <color key="tintColor" red="0.039215686270000001" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="c4I-g0-AtF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1682,7 +1633,7 @@ Good Luck!</string>
                     </view>
                     <navigationItem key="navigationItem" title="Live Pool Buddy Chat" id="hcs-1N-piB">
                         <barButtonItem key="leftBarButtonItem" image="Image" id="Tlr-eU-4sP">
-                            <color key="tintColor" red="0.039215686270000001" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1769,6 +1720,7 @@ Good Luck!</string>
     </scenes>
     <resources>
         <image name="Beautiful Abstract_12" width="960" height="800"/>
+        <image name="Extremely Dirty" width="390" height="389"/>
         <image name="Image" width="22" height="22"/>
         <image name="Surface Debris" width="600" height="599"/>
         <image name="calculator" width="225" height="225"/>
@@ -1781,4 +1733,5 @@ Good Luck!</string>
         <image name="service" width="400" height="400"/>
         <image name="testKit" width="660" height="658"/>
     </resources>
+    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
 </document>

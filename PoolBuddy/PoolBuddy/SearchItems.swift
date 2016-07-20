@@ -12,11 +12,22 @@ import UIKit
 
 class SearchItems {
     
-    var imageName: String
-    var group: String
+    // Keeping images private so no one can change them
+    private var _imageName: String!
+    private var _group: String!
+    
+    var imageName: String {
+        
+        return _imageName
+    }
+    
+    var group: String {
+        
+        return _group
+    }
     
     init(imageName: String, group: String) {
-        self.imageName = imageName
-        self.group = group
+        self._imageName = imageName
+        self._group = group
     }
 }

@@ -16,6 +16,9 @@ class ChemicalTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        chemicalImage.layer.borderWidth = 2
+        chemicalImage.layer.borderColor = UIColor.blackColor().CGColor
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

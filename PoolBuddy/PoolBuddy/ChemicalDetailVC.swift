@@ -13,8 +13,6 @@ class ChemicalDetailVC: UIViewController {
     @IBOutlet weak var chemicalImage: UIImageView!    
     @IBOutlet weak var chemicalText: UITextView!
     
-    @IBOutlet weak var sideImage1: UIImageView!
-    @IBOutlet weak var sideImage2: UIImageView!
     
     var detailTitle: String = ""
     var productImage: UIImage!
@@ -27,5 +25,11 @@ class ChemicalDetailVC: UIViewController {
         navigationItem.title = detailTitle
         chemicalImage.image = productImage
         chemicalText.text = descriptions
+        
+        chemicalImage.layer.borderWidth = 2
+        chemicalImage.layer.borderColor = UIColor.blackColor().CGColor
+        
+        chemicalText.layer.borderWidth = 2
+        chemicalText.layer.borderColor = UIColor.blackColor().CGColor
     }    
 }

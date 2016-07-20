@@ -13,8 +13,6 @@ class EquipmentDetailVC: UIViewController {
     @IBOutlet weak var equipmentImage: UIImageView!
     @IBOutlet weak var equipmentText: UITextView!
     
-//    @IBOutlet weak var sideImage1: UIImageView!
-//    @IBOutlet weak var sideImage2: UIImageView!
     
     var detailTitle: String = ""
     var productImage: UIImage!
@@ -27,5 +25,11 @@ class EquipmentDetailVC: UIViewController {
         navigationItem.title = detailTitle
         equipmentImage.image = productImage
         equipmentText.text = descriptions
+        
+        equipmentImage.layer.borderWidth = 2
+        equipmentImage.layer.borderColor = UIColor.blackColor().CGColor
+        
+        equipmentText.layer.borderWidth = 2
+        equipmentText.layer.borderColor = UIColor.blackColor().CGColor
     }
 }

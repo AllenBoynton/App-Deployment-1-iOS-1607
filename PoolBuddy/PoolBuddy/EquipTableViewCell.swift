@@ -16,6 +16,9 @@ class EquipTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        equipmentImage.layer.borderWidth = 2
+        equipmentImage.layer.borderColor = UIColor.blackColor().CGColor
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

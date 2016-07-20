@@ -36,6 +36,13 @@ class GalleryDetailVC: UIViewController {
     // Function is called to display the configure view
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configureView()
+        
+        poolImage.layer.borderWidth = 2
+        poolImage.layer.borderColor = UIColor.blackColor().CGColor
+        
+        poolDescription.layer.borderWidth = 2
+        poolDescription.layer.borderColor = UIColor.blackColor().CGColor
     }
 }

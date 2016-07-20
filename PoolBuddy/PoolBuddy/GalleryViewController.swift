@@ -8,14 +8,13 @@
 
 import UIKit
 
-class GalleryViewController: UIViewController, UISearchControllerDelegate, UISearchBarDelegate, UICollectionViewDelegate, UIScrollViewDelegate {
+class GalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchControllerDelegate, UISearchBarDelegate, UIScrollViewDelegate {
     
     // Stored properties passed in from class Datasource
     var searchItems: [SearchItems] = []
     var filteredSearch: [SearchItems] = []
     let dataSource = DataSource()
     
-    var isDataFiltered: Bool = false
     
     // Outlet for the display of collectionView
     @IBOutlet weak var collectionView: UICollectionView!
@@ -57,7 +56,7 @@ class GalleryViewController: UIViewController, UISearchControllerDelegate, UISea
         //setup the search controller
         searchController = ({
             let searchController = UISearchController(searchResultsController: nil)
-            searchController.searchResultsUpdater = self
+//            searchController.searchResultsUpdater = self
             searchController.hidesNavigationBarDuringPresentation = true
             searchController.dimsBackgroundDuringPresentation = false
             
@@ -65,8 +64,7 @@ class GalleryViewController: UIViewController, UISearchControllerDelegate, UISea
             searchController.searchBar.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
             self.searchBarContainer?.addSubview(searchController.searchBar)
             
-            // SearchBar setup
-            searchController.searchBar.scopeButtonTitles = ["All", "Pools with Algae Problems", "Pools with Metal Problems", "Pools with Organic Stains", "Pools with Dirty Water"]
+            // SearchBar delegate
             searchController.searchBar.delegate = self
             
             // Possible bug fix
@@ -74,6 +72,64 @@ class GalleryViewController: UIViewController, UISearchControllerDelegate, UISea
             
             return searchController
         })()
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(photo, forIndexPath: indexPath) as! GalleryCollectionViewCell
+        
+        cell.layer.borderWidth = 2
+        cell.layer.borderColor = UIColor.blackColor().CGColor
+        
+        let searchItem: SearchItems
+        if searchController.active && searchController.searchBar.text != "" {
+            searchItem = filteredSearch[indexPath.row]
+        } else {
+            searchItem = searchItems[indexPath.row]
+        }
+        
+        // Sourcing data from datasource within poolsInGroup
+        //        let pools: [SearchItems] = dataSource.poolsInGroup(indexPath.section)
+        //        let pool = pools[indexPath.row]
+        //
+        //        let imageName = pool.imageName
+        //
+        //        cell.galleryImages.image = UIImage(named: searchItem.imageName)
+        //        cell.imageLabel.text = imageName
+        
+        return cell
+    }
+    
+    
+    // MARK: UICollectionViewDataSource
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if searchController.active {// || searchController.searchBar.text != "" {
+            print(filteredSearch.count)
+            return filteredSearch.count
+        }
+        print(dataSource.numberOfRowsInEachGroup(section))
+        return dataSource.numberOfRowsInEachGroup(section)
+    }
+    
+
+    func searchString(string: String, searchTerm: String) -> Array<AnyObject> {
+        var matches:Array<AnyObject> = []
+        do {
+            let regex = try NSRegularExpression(pattern: searchTerm, options: [.CaseInsensitive, .AllowCommentsAndWhitespace])
+            let range = NSMakeRange(0, string.characters.count)
+            matches = regex.matchesInString(string, options: [], range: range)
+        } catch _ {
+        }
+        return matches
     }
     
     func searchIsEmpty() -> Bool {
@@ -84,21 +140,23 @@ class GalleryViewController: UIViewController, UISearchControllerDelegate, UISea
         return true
     }
     
-    func filterContentForSearchText(searchText: String, scope: String = "All") {
-        
-        if searchIsEmpty() {
-            isDataFiltered = false
-        } else {
-            filteredSearch = searchItems.filter { searchItem in
-                if (self.searchController?.searchBar.text) != nil {
-                    let categoryMatch = (scope == "All") || (searchItem.group == scope)
-                    return  categoryMatch && searchItem.imageName.lowercaseString.containsString(searchText.lowercaseString)
-                }
-                return false
-            }
-            isDataFiltered = true
-        }
-    }
+//    func filterData() {
+//        
+//        if searchIsEmpty() {
+//            isDataFiltered = false
+//        } else {
+//            filteredSearch = searchItems.filter ({ (string) -> Bool in
+//                if let searchTerm = self.searchController?.searchBar.text {
+//                    let searchImageMatches = self.searchString(string, searchTerm: searchTerm).count > 0
+//                    if searchImageMatches {
+//                        return true
+//                    }
+//                }
+//                return false
+//            })
+//            isDataFiltered = true
+//        }
+//    }
     
     
     //MARK: UIScrollViewDelegate
@@ -109,45 +167,6 @@ class GalleryViewController: UIViewController, UISearchControllerDelegate, UISea
         searchController?.searchBar.resignFirstResponder()
     }
 
-    
-    // MARK: UICollectionViewDataSource
-
-    // MARK: Collection View
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return dataSource.numberOfGroups() //dataSource.groups.count
-    }
-
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if searchController.active {// || searchController.searchBar.text != "" {
-            print(filteredSearch.count)
-            return filteredSearch.count
-        }
-        print(dataSource.numberOfRowsInEachGroup(section))
-        return dataSource.numberOfRowsInEachGroup(section)
-    }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(photo, forIndexPath: indexPath) as! GalleryCollectionViewCell
-        
-        let searchItem: SearchItems
-        if searchController.active && searchController.searchBar.text != "" {
-            searchItem = filteredSearch[indexPath.row]
-        } else {
-            searchItem = searchItems[indexPath.row]
-        }
-        
-        // Sourcing data from datasource within poolsInGroup
-        let pools: [SearchItems] = dataSource.poolsInGroup(indexPath.section)
-        let pool = pools[indexPath.row]
-        
-        let imageName = pool.imageName
-        
-        cell.galleryImages.image = UIImage(named: searchItem.imageName)
-        cell.imageName.text = imageName
-        
-        return cell
-    }
     
     // MARK: Header protocol
     
@@ -205,15 +224,15 @@ class GalleryViewController: UIViewController, UISearchControllerDelegate, UISea
     }
 }
 
-// This class extension allows for the array to be of different counts due to search results
-extension GalleryViewController: UISearchResultsUpdating {
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
-        let searchBar = searchController.searchBar
-        let scope = searchBar.scopeButtonTitles?[searchBar.selectedScopeButtonIndex]
-        filterContentForSearchText(searchController.searchBar.text!, scope: scope!)
-    }
-    
-    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
-    }
-}
+//// This class extension allows for the array to be of different counts due to search results
+//extension GalleryViewController: UISearchResultsUpdating {
+//    func updateSearchResultsForSearchController(searchController: UISearchController) {
+//        let searchBar = searchController.searchBar
+//        let scope = searchBar.scopeButtonTitles?[searchBar.selectedScopeButtonIndex]
+//        filteredSearch(searchController.searchBar.text!, scope: scope!)
+//    }
+//    
+//    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+//        filteredSearch(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+//    }
+//}

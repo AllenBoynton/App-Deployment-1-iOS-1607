@@ -27,7 +27,6 @@
 		0940F5601D2ED03000BFA91C /* SearchItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F55F1D2ED03000BFA91C /* SearchItems.swift */; };
 		0940F5631D2ED14B00BFA91C /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5621D2ED14B00BFA91C /* GalleryViewController.swift */; };
 		0940F5651D2F005500BFA91C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5641D2F005500BFA91C /* DataSource.swift */; };
-		0940F5671D2F00AF00BFA91C /* PoolGallery.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0940F5661D2F00AF00BFA91C /* PoolGallery.plist */; };
 		0940F59E1D38315C00BFA91C /* PoolCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F59D1D38315C00BFA91C /* PoolCategory.swift */; };
 		0940F5A01D3883DB00BFA91C /* CleaningToolsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F59F1D3883DB00BFA91C /* CleaningToolsTableViewCell.swift */; };
 		0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713A1D246EC400477EA2 /* AppDelegate.swift */; };
@@ -65,7 +64,6 @@
 		0940F55F1D2ED03000BFA91C /* SearchItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItems.swift; sourceTree = "<group>"; };
 		0940F5621D2ED14B00BFA91C /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		0940F5641D2F005500BFA91C /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		0940F5661D2F00AF00BFA91C /* PoolGallery.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PoolGallery.plist; sourceTree = "<group>"; };
 		0940F59D1D38315C00BFA91C /* PoolCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolCategory.swift; sourceTree = "<group>"; };
 		0940F59F1D3883DB00BFA91C /* CleaningToolsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningToolsTableViewCell.swift; sourceTree = "<group>"; };
 		099071371D246EC400477EA2 /* PoolBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,7 +263,6 @@
 				099071461D246EC400477EA2 /* Info.plist */,
 				0990715E1D27324F00477EA2 /* splash.wav */,
 				099071411D246EC400477EA2 /* Assets.xcassets */,
-				0940F5661D2F00AF00BFA91C /* PoolGallery.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -349,7 +346,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0940F5671D2F00AF00BFA91C /* PoolGallery.plist in Resources */,
 				099071451D246EC400477EA2 /* LaunchScreen.storyboard in Resources */,
 				0990715F1D27324F00477EA2 /* splash.wav in Resources */,
 				099071421D246EC400477EA2 /* Assets.xcassets in Resources */,

@@ -13,8 +13,6 @@ class CleaningToolsDetailVC: UIViewController {
     @IBOutlet weak var cleaningImage: UIImageView!
     @IBOutlet weak var cleaningText: UITextView!
     
-    @IBOutlet weak var sideImage1: UIImageView!
-    @IBOutlet weak var sideImage2: UIImageView!
     
     var detailTitle: String = ""
     var productImage: UIImage!
@@ -28,6 +26,10 @@ class CleaningToolsDetailVC: UIViewController {
         cleaningImage.image = productImage
         cleaningText.text = descriptions
         
+        cleaningImage.layer.borderWidth = 2
+        cleaningImage.layer.borderColor = UIColor.blackColor().CGColor
         
+        cleaningText.layer.borderWidth = 2
+        cleaningText.layer.borderColor = UIColor.blackColor().CGColor
     }
 }
