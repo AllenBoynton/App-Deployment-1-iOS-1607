@@ -11,7 +11,7 @@
 		0940F53C1D2AC10A00BFA91C /* ChemicalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */; };
 		0940F53E1D2AC16200BFA91C /* WaterChemTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53D1D2AC16200BFA91C /* WaterChemTableVC.swift */; };
 		0940F5401D2AC18400BFA91C /* WaterChemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53F1D2AC18400BFA91C /* WaterChemTableViewCell.swift */; };
-		0940F5441D2AC26C00BFA91C /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5431D2AC26C00BFA91C /* GalleryCollectionViewCell.swift */; };
+		0940F5441D2AC26C00BFA91C /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5431D2AC26C00BFA91C /* GalleryCell.swift */; };
 		0940F5461D2AC28F00BFA91C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0940F5451D2AC28F00BFA91C /* EventKit.framework */; };
 		0940F5481D2AC35D00BFA91C /* GalleryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5471D2AC35D00BFA91C /* GalleryDetailVC.swift */; };
 		0940F54A1D2AC38900BFA91C /* WaterChemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5491D2AC38900BFA91C /* WaterChemDetailVC.swift */; };
@@ -24,9 +24,8 @@
 		0940F55A1D2B076400BFA91C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5591D2B076400BFA91C /* ChatViewController.swift */; };
 		0940F55C1D2B078500BFA91C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0940F55B1D2B078500BFA91C /* MessageUI.framework */; };
 		0940F55E1D2EC93600BFA91C /* HeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F55D1D2EC93600BFA91C /* HeaderReusableView.swift */; };
-		0940F5601D2ED03000BFA91C /* SearchItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F55F1D2ED03000BFA91C /* SearchItems.swift */; };
+		0940F5601D2ED03000BFA91C /* SearchImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F55F1D2ED03000BFA91C /* SearchImages.swift */; };
 		0940F5631D2ED14B00BFA91C /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5621D2ED14B00BFA91C /* GalleryViewController.swift */; };
-		0940F5651D2F005500BFA91C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5641D2F005500BFA91C /* DataSource.swift */; };
 		0940F59E1D38315C00BFA91C /* PoolCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F59D1D38315C00BFA91C /* PoolCategory.swift */; };
 		0940F5A01D3883DB00BFA91C /* CleaningToolsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F59F1D3883DB00BFA91C /* CleaningToolsTableViewCell.swift */; };
 		0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713A1D246EC400477EA2 /* AppDelegate.swift */; };
@@ -48,7 +47,7 @@
 		0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableViewCell.swift; sourceTree = "<group>"; };
 		0940F53D1D2AC16200BFA91C /* WaterChemTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterChemTableVC.swift; sourceTree = "<group>"; };
 		0940F53F1D2AC18400BFA91C /* WaterChemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterChemTableViewCell.swift; sourceTree = "<group>"; };
-		0940F5431D2AC26C00BFA91C /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		0940F5431D2AC26C00BFA91C /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		0940F5451D2AC28F00BFA91C /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		0940F5471D2AC35D00BFA91C /* GalleryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryDetailVC.swift; sourceTree = "<group>"; };
 		0940F5491D2AC38900BFA91C /* WaterChemDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterChemDetailVC.swift; sourceTree = "<group>"; };
@@ -61,9 +60,8 @@
 		0940F5591D2B076400BFA91C /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0940F55B1D2B078500BFA91C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0940F55D1D2EC93600BFA91C /* HeaderReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderReusableView.swift; sourceTree = "<group>"; };
-		0940F55F1D2ED03000BFA91C /* SearchItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItems.swift; sourceTree = "<group>"; };
+		0940F55F1D2ED03000BFA91C /* SearchImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchImages.swift; sourceTree = "<group>"; };
 		0940F5621D2ED14B00BFA91C /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
-		0940F5641D2F005500BFA91C /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		0940F59D1D38315C00BFA91C /* PoolCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolCategory.swift; sourceTree = "<group>"; };
 		0940F59F1D3883DB00BFA91C /* CleaningToolsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningToolsTableViewCell.swift; sourceTree = "<group>"; };
 		099071371D246EC400477EA2 /* PoolBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,7 +151,7 @@
 				0940F55D1D2EC93600BFA91C /* HeaderReusableView.swift */,
 				0940F5471D2AC35D00BFA91C /* GalleryDetailVC.swift */,
 				0940F5621D2ED14B00BFA91C /* GalleryViewController.swift */,
-				0940F5431D2AC26C00BFA91C /* GalleryCollectionViewCell.swift */,
+				0940F5431D2AC26C00BFA91C /* GalleryCell.swift */,
 			);
 			name = GalleryViewControllers;
 			sourceTree = "<group>";
@@ -177,7 +175,7 @@
 		0940F5611D2ED0C000BFA91C /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				0940F5641D2F005500BFA91C /* DataSource.swift */,
+				0940F59D1D38315C00BFA91C /* PoolCategory.swift */,
 			);
 			name = DataSource;
 			sourceTree = "<group>";
@@ -204,13 +202,13 @@
 			children = (
 				0990714D1D246F1600477EA2 /* App */,
 				099071501D246F9700477EA2 /* Resources */,
-				099071761D29D34900477EA2 /* Protocols */,
+				099071761D29D34900477EA2 /* Model */,
 				0940F5611D2ED0C000BFA91C /* DataSource */,
 				099071601D273D8200477EA2 /* SWRevealViewController */,
 				0940F5381D2AC05500BFA91C /* MessageViewControllers */,
 				0940F5371D2AC04100BFA91C /* CalculatorViewControllers */,
-				0940F5361D2AC02E00BFA91C /* GalleryViewControllers */,
 				0940F5351D2AC01700BFA91C /* PlannerViewControllers */,
+				0940F5361D2AC02E00BFA91C /* GalleryViewControllers */,
 				0940F5341D2ABFAE00BFA91C /* MaintViewControllers */,
 				0940F5331D2ABF9000BFA91C /* ChemistryViewControllers */,
 				0940F5321D2ABF7B00BFA91C /* ChemicalViewControllers */,
@@ -277,14 +275,13 @@
 			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
-		099071761D29D34900477EA2 /* Protocols */ = {
+		099071761D29D34900477EA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0940F55F1D2ED03000BFA91C /* SearchItems.swift */,
+				0940F55F1D2ED03000BFA91C /* SearchImages.swift */,
 				099071771D29D36F00477EA2 /* PoolData.swift */,
-				0940F59D1D38315C00BFA91C /* PoolCategory.swift */,
 			);
-			name = Protocols;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,18 +362,17 @@
 				0940F5521D2B007400BFA91C /* PlannerViewController.swift in Sources */,
 				0940F5401D2AC18400BFA91C /* WaterChemTableViewCell.swift in Sources */,
 				0940F5501D2AF7F400BFA91C /* CleaningToolsTableVC.swift in Sources */,
-				0940F5601D2ED03000BFA91C /* SearchItems.swift in Sources */,
+				0940F5601D2ED03000BFA91C /* SearchImages.swift in Sources */,
 				0940F5561D2B040700BFA91C /* CalculatorVC.swift in Sources */,
 				0940F53E1D2AC16200BFA91C /* WaterChemTableVC.swift in Sources */,
 				099071781D29D36F00477EA2 /* PoolData.swift in Sources */,
-				0940F5441D2AC26C00BFA91C /* GalleryCollectionViewCell.swift in Sources */,
+				0940F5441D2AC26C00BFA91C /* GalleryCell.swift in Sources */,
 				0940F54A1D2AC38900BFA91C /* WaterChemDetailVC.swift in Sources */,
 				0940F53C1D2AC10A00BFA91C /* ChemicalTableViewCell.swift in Sources */,
 				0990717B1D29EF1C00477EA2 /* SWRevealViewController.m in Sources */,
 				0940F5541D2B031400BFA91C /* CleaningToolsDetailVC.swift in Sources */,
 				0940F5A01D3883DB00BFA91C /* CleaningToolsTableViewCell.swift in Sources */,
 				0940F5631D2ED14B00BFA91C /* GalleryViewController.swift in Sources */,
-				0940F5651D2F005500BFA91C /* DataSource.swift in Sources */,
 				0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */,
 				0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */,
 				0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */,
