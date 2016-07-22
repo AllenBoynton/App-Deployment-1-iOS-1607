@@ -14,14 +14,12 @@ class ChemicalTableViewCell: UITableViewCell {
     @IBOutlet weak var chemicalLabel: UILabel!
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        chemicalImage.layer.borderWidth = 2
-        chemicalImage.layer.borderColor = UIColor.blackColor().CGColor
-    }
+    var searchImages: SearchImages!
     
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)        
+    func configureCell(searchImages: SearchImages) {
+        self.searchImages = searchImages
+        
+        chemicalImage.image = UIImage(named: "\(self.searchImages.image)")
+        chemicalLabel.text = self.searchImages.image
     }
 }

@@ -16,7 +16,7 @@ class GalleryDetailVC: UIViewController {
     
     
     // DataSource for details in this VC
-    var poolDetail: SearchItems? {
+    var poolData: PoolData? {
         didSet {
             configureView()
         }
@@ -24,11 +24,11 @@ class GalleryDetailVC: UIViewController {
     
     // Assigns the segue delegate to the view and image of this VC
     func configureView() {
-        if let poolDetail = poolDetail {
+        if let poolDetail = poolData {
             if let poolDescription = poolDescription, poolImage = poolImage {
-                poolDescription.text = poolDetail.imageName
-                poolImage.image = UIImage(named: poolDetail.imageName)
-                navigationItem.title = poolDetail.imageName
+                poolDescription.text = poolDetail.description
+                poolImage.image = UIImage(named: poolDetail.image)
+                navigationItem.title = poolDetail.label
             }
         }
     }
@@ -39,6 +39,7 @@ class GalleryDetailVC: UIViewController {
         
         configureView()
         
+        poolImage.layer.cornerRadius = 4
         poolImage.layer.borderWidth = 2
         poolImage.layer.borderColor = UIColor.blackColor().CGColor
         

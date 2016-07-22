@@ -14,14 +14,13 @@ class CleaningToolsTableViewCell: UITableViewCell {
     @IBOutlet weak var toolsLabel: UILabel!
     
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    var searchImages: SearchImages!
+    
+    func configureCell(searchImages: SearchImages) {
+        self.searchImages = searchImages
         
-        toolsImage.layer.borderWidth = 2
-        toolsImage.layer.borderColor = UIColor.blackColor().CGColor
+        toolsImage.image = UIImage(named: "\(self.searchImages.image)")
+        toolsLabel.text = self.searchImages.image
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
 }

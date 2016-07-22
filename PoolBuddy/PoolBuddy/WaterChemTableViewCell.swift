@@ -14,14 +14,13 @@ class WaterChemTableViewCell: UITableViewCell {
     @IBOutlet weak var wChemistryLabel: UILabel!
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    var searchImages: SearchImages!
+    
+    func configureCell(searchImages: SearchImages) {
+        self.searchImages = searchImages
         
-        wChemistryImage.layer.borderWidth = 2
-        wChemistryImage.layer.borderColor = UIColor.blackColor().CGColor
+        wChemistryImage.image = UIImage(named: "\(self.searchImages.image)")
+        wChemistryLabel.text = self.searchImages.image
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
 }

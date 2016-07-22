@@ -26,9 +26,7 @@ class CleaningToolsDetailVC: UIViewController {
         cleaningImage.image = productImage
         cleaningText.text = descriptions
         
-        cleaningImage.layer.borderWidth = 2
-        cleaningImage.layer.borderColor = UIColor.blackColor().CGColor
-        
+        cleaningText.layer.cornerRadius = 4
         cleaningText.layer.borderWidth = 2
         cleaningText.layer.borderColor = UIColor.blackColor().CGColor
     }

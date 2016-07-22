@@ -26,9 +26,7 @@ class EquipmentDetailVC: UIViewController {
         equipmentImage.image = productImage
         equipmentText.text = descriptions
         
-        equipmentImage.layer.borderWidth = 2
-        equipmentImage.layer.borderColor = UIColor.blackColor().CGColor
-        
+        equipmentText.layer.cornerRadius = 4
         equipmentText.layer.borderWidth = 2
         equipmentText.layer.borderColor = UIColor.blackColor().CGColor
     }

@@ -26,9 +26,7 @@ class WaterChemDetailVC: UIViewController {
         waterChemImage.image = productImage
         waterChemText.text = descriptions
         
-        waterChemImage.layer.borderWidth = 2
-        waterChemImage.layer.borderColor = UIColor.blackColor().CGColor
-        
+        waterChemText.layer.cornerRadius = 4
         waterChemText.layer.borderWidth = 2
         waterChemText.layer.borderColor = UIColor.blackColor().CGColor
     }

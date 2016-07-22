@@ -14,14 +14,12 @@ class EquipTableViewCell: UITableViewCell {
     @IBOutlet weak var equipmentLabel: UILabel!
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    var searchImages: SearchImages!
+    
+    func configureCell(searchImages: SearchImages) {
+        self.searchImages = searchImages
         
-        equipmentImage.layer.borderWidth = 2
-        equipmentImage.layer.borderColor = UIColor.blackColor().CGColor
-    }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        equipmentImage.image = UIImage(named: "\(self.searchImages.image)")
+        equipmentLabel.text = self.searchImages.image
     }
 }

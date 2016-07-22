@@ -26,9 +26,7 @@ class ChemicalDetailVC: UIViewController {
         chemicalImage.image = productImage
         chemicalText.text = descriptions
         
-        chemicalImage.layer.borderWidth = 2
-        chemicalImage.layer.borderColor = UIColor.blackColor().CGColor
-        
+        chemicalText.layer.cornerRadius = 4
         chemicalText.layer.borderWidth = 2
         chemicalText.layer.borderColor = UIColor.blackColor().CGColor
     }    
