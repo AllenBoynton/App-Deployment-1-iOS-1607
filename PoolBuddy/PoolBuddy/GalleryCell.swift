@@ -11,9 +11,9 @@ import UIKit
 class GalleryCell: UICollectionViewCell {
     
     @IBOutlet weak var galleryImages: UIImageView!
-    @IBOutlet weak var imageLabel: InsetLabel!
+    @IBOutlet weak var imageLabel: UILabel!
     
-    var imageData: ImageData!
+    var data: ImageData!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -24,10 +24,10 @@ class GalleryCell: UICollectionViewCell {
     }
     
     func configureCell(imageData: ImageData) {
-        self.imageData = imageData
+        self.data = imageData
         
-        galleryImages.image = UIImage(named: "\(self.imageData.image)")
-        imageLabel.text = self.imageData.image.capitalizedString
+        galleryImages.image = UIImage(named: "\(self.data.image)")
+        imageLabel.text = self.data.image.capitalizedString
     }
 }
 

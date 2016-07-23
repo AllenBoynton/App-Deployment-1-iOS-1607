@@ -16,7 +16,7 @@ class GalleryDetailVC: UIViewController {
     
     
     // DataSource for details in this VC
-    var poolDetail: PoolData? {
+    var poolDetail: ImageData? {
         didSet {
             configureView()
         }
@@ -26,9 +26,9 @@ class GalleryDetailVC: UIViewController {
     func configureView() {
         if let poolDetail = poolDetail {
             if let poolDescription = poolDescription, poolImage = poolImage {
-                poolDescription.text = poolDetail.description
+                poolDescription.text = poolDetail.image
                 poolImage.image = UIImage(named: poolDetail.image)
-                navigationItem.title = poolDetail.label
+                navigationItem.title = poolDetail.image
             }
         }
     }

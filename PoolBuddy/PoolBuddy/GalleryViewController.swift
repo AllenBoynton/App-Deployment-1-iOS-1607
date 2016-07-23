@@ -37,24 +37,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
         self.revealViewController().rearViewRevealWidth = 325
         
-        // Gallery array that is setup in Pools.plist
-//        imageData = [
-//            ImageData(image: "Green Algae", group: "Pools with Algae Problems"),
-//            ImageData(image: "Mustard Yellow Algae", group: "Pools with Algae Problems"),
-//            ImageData(image: "Black Algae", group: "Pools with Algae Problems"),
-//            ImageData(image: "Metal Rust Stains", group: "Pools with Organic Stains"),
-//            ImageData(image: "Copper Metal Stains", group: "Pools with Organic Stains"),
-//            ImageData(image: "Iron Metal Stains", group: "Pools with Organic Stains"),
-//            ImageData(image: "Manganese Metal Stains", group: "Pools with Organic Stains"),
-//            ImageData(image: "Oily Water Line", group: "Pools with Metal Problems"),
-//            ImageData(image: "Organic Stains", group: "Pools with Metal Problems"),
-//            ImageData(image: "Organic Berry Stains", group: "Pools with Metal Problems"),
-//            ImageData(image: "Cloudy Water", group: "Pools with Dirty Water"),
-//            ImageData(image: "Surface Debris", group: "Pools with Dirty Water"),
-//            ImageData(image: "Extremely Dirty", group: "Pools with Dirty Water"),
-//            ImageData(image: "Identifying Stains", group: "Pools with Dirty Water")
-//        ]
-        
         // Create collection view delegate
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -64,7 +46,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         //Setup the search controller
         searchController = ({
             let searchController = UISearchController(searchResultsController: nil)
-//            searchController.searchResultsUpdater = self
+            searchController.searchResultsUpdater = self
             searchController.hidesNavigationBarDuringPresentation = true
             searchController.dimsBackgroundDuringPresentation = false
 
@@ -82,21 +64,17 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         })()
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
-    }
-    
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> Int {
-        
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        print("Groups: \(dataSource.groups.count)")
         return dataSource.groups.count
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-     
         if inSearchMode {
             return filteredSearch.count
         }
-        return imageData.count
+        print("Images: \(dataSource.pools.count)")
+        return dataSource.pools.count
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -130,8 +108,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             if inSearchMode {
                 data = filteredSearch[indexPath.row]
             } else {
-                data = imageData[indexPath.row]
+                data = dataSource.pools[indexPath.row]
             }
+        
             cell.configureCell(data)
             return cell
             
@@ -151,10 +130,8 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         let pools: [ImageData] = dataSource.poolsInGroup(indexPath.section)
         let pool = pools[indexPath.row]
         
-        let groups = pool.group
-        
         // Displays group protocol to header view label
-        headerView.sectionTitle.text = groups
+        headerView.sectionTitle.text = pool.group
         
         return headerView
     }
@@ -184,7 +161,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     //MARK: - UISearchBarDelegate
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchBar.text == nil || searchBar.text == "" {
+        if searchBar.text == nil {// || searchBar.text == "" {
             inSearchMode = false
             view.endEditing(true)
             collectionView.reloadData()
@@ -207,33 +184,34 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     
 
     // MARK: Segue to details
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == gallerySegue {
-//            if let indexPath = collectionView.indexPathForCell(sender as! UICollectionViewCell) {
-//                let data: ImageData
-//                if searchController.active && searchController.searchBar.text != "" {
-//                    data = filteredSearch[indexPath.row]
-//                    print(data)
-//                }
-//                let destination = segue.destinationViewController as! GalleryDetailVC
-//                destination.filteredDetail = data
-//                destination.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
-//                destination.navigationItem.leftItemsSupplementBackButton = true
-//            }
-//        }
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == gallerySegue {
+            if let indexPath = collectionView.indexPathForCell(sender as! UICollectionViewCell) {
+                let data: ImageData
+                if searchController.active && searchController.searchBar.text != "" {
+                    data = filteredSearch[indexPath.row]
+                } else {
+                    data = imageData[indexPath.row]
+                }
+                let destination = segue.destinationViewController as! GalleryDetailVC
+                destination.poolDetail = data
+            }
+        }
+    }
+    
+    func filterContentForSearchText(searchText: String) {
+        filteredSearch = imageData.filter { data in
+            return data.image.lowercaseString.containsString(searchText.lowercaseString)
+        }
+        collectionView.reloadData()
+    }
 }
 
-//// This class extension allows for the array to be of different counts due to search results
-//extension GalleryViewController: UISearchResultsUpdating {
-//    
-//    func updateSearchResultsForSearchController(searchController: UISearchController) {
-//        filteredSearch.removeAll(keepCapacity: false)
-//        
-//        let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text!)
-//        let array = (poolData as NSArray).filteredArrayUsingPredicate(searchPredicate)
-//        filteredSearch = array as! [ImageData]
-//        
-//        self.collectionView.reloadData()
-//    }
-//}
+// This class extension allows for the array to be of different counts due to search results
+extension GalleryViewController: UISearchResultsUpdating {
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+        self.collectionView.reloadData()
+    }
+}
