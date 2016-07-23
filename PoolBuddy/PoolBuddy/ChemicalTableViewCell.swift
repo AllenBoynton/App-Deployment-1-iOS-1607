@@ -14,12 +14,12 @@ class ChemicalTableViewCell: UITableViewCell {
     @IBOutlet weak var chemicalLabel: UILabel!
     
     
-    var searchImages: SearchImages!
+    var poolData: PoolData!
     
-    func configureCell(searchImages: SearchImages) {
-        self.searchImages = searchImages
+    func configureCell(poolData: PoolData) {
+        self.poolData = poolData
         
-        chemicalImage.image = UIImage(named: "\(self.searchImages.image)")
-        chemicalLabel.text = self.searchImages.image
+        chemicalImage.image = UIImage(named: "\(self.poolData.image)")
+        chemicalLabel.text = self.poolData.label
     }
 }

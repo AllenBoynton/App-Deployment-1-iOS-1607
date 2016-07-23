@@ -201,7 +201,7 @@
 			children = (
 				0990714D1D246F1600477EA2 /* App */,
 				099071501D246F9700477EA2 /* Resources */,
-				099071761D29D34900477EA2 /* Model */,
+				099071761D29D34900477EA2 /* Initiators */,
 				0940F5611D2ED0C000BFA91C /* DataSource */,
 				099071601D273D8200477EA2 /* SWRevealViewController */,
 				0940F5381D2AC05500BFA91C /* MessageViewControllers */,
@@ -275,13 +275,13 @@
 			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
-		099071761D29D34900477EA2 /* Model */ = {
+		099071761D29D34900477EA2 /* Initiators */ = {
 			isa = PBXGroup;
 			children = (
-				099071771D29D36F00477EA2 /* PoolData.swift */,
 				098F963B1D42FF8700E1B157 /* ImageData.swift */,
+				099071771D29D36F00477EA2 /* PoolData.swift */,
 			);
-			name = Model;
+			name = Initiators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

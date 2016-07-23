@@ -10,17 +10,14 @@ import UIKit
 
 class GalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchControllerDelegate, UISearchBarDelegate, UIScrollViewDelegate {
     
-//    // Gives us access to the pool and groups listed in PoolGroups
-//    lazy var poolGallery: [ImageData] = {
-//        return ImageData.poolGallery()
-//    }()
-
-    // Stored properties passed in from class Datasource
-    let dataSource = DataSource()
+    var imageData = [ImageData]()
+    var filteredSearch = [ImageData]()
     
-    // Stored properties passed in from class Datasource
-    var filteredSearch: [ImageData] = []
+    var poolData = [PoolData]()
     
+    var dataSource = DataSource()
+    
+    var inSearchMode = false
     
     // Outlet for the display of collectionView
     @IBOutlet weak var collectionView: UICollectionView!
@@ -39,6 +36,24 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         self.revealViewController().rearViewRevealWidth = 325
+        
+        // Gallery array that is setup in Pools.plist
+//        imageData = [
+//            ImageData(image: "Green Algae", group: "Pools with Algae Problems"),
+//            ImageData(image: "Mustard Yellow Algae", group: "Pools with Algae Problems"),
+//            ImageData(image: "Black Algae", group: "Pools with Algae Problems"),
+//            ImageData(image: "Metal Rust Stains", group: "Pools with Organic Stains"),
+//            ImageData(image: "Copper Metal Stains", group: "Pools with Organic Stains"),
+//            ImageData(image: "Iron Metal Stains", group: "Pools with Organic Stains"),
+//            ImageData(image: "Manganese Metal Stains", group: "Pools with Organic Stains"),
+//            ImageData(image: "Oily Water Line", group: "Pools with Metal Problems"),
+//            ImageData(image: "Organic Stains", group: "Pools with Metal Problems"),
+//            ImageData(image: "Organic Berry Stains", group: "Pools with Metal Problems"),
+//            ImageData(image: "Cloudy Water", group: "Pools with Dirty Water"),
+//            ImageData(image: "Surface Debris", group: "Pools with Dirty Water"),
+//            ImageData(image: "Extremely Dirty", group: "Pools with Dirty Water"),
+//            ImageData(image: "Identifying Stains", group: "Pools with Dirty Water")
+//        ]
         
         // Create collection view delegate
         collectionView.delegate = self
@@ -67,25 +82,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         })()
     }
     
-    
-    // MARK: UICollectionViewDataSource
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        
-        if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(photo, forIndexPath: indexPath) as? GalleryCell {
-            
-            let pools: [ImageData] = dataSource.poolsInGroup(indexPath.section)
-            let pool = pools[indexPath.row]
-            
-            let imageData = ImageData(image: pool.image, group: pool.group)
-            cell.configureCell(imageData)
-            return cell
-            
-        } else {
-            return UICollectionViewCell()
-        }
-    }
-    
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
     }
@@ -97,7 +93,10 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
      
-        return dataSource.numberOfRowsInEachGroup(section)
+        if inSearchMode {
+            return filteredSearch.count
+        }
+        return imageData.count
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -120,15 +119,27 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         return 11.0
     }
     
+    // MARK: UICollectionViewDataSource
     
-    //MARK: UIScrollViewDelegate
-    
-    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        // Dismiss the keyboard if the search results are scrolled
-        searchController?.searchBar.resignFirstResponder()
+        if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(photo, forIndexPath: indexPath) as? GalleryCell {
+            
+            let data: ImageData!
+            
+            if inSearchMode {
+                data = filteredSearch[indexPath.row]
+            } else {
+                data = imageData[indexPath.row]
+            }
+            cell.configureCell(data)
+            return cell
+            
+        } else {
+            return UICollectionViewCell()
+        }
     }
-
+    
     
     // MARK: Header protocol
     
@@ -136,14 +147,14 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: cellHeader, forIndexPath: indexPath) as! HeaderReusableView
         
-        // Sourcing data from datasource within dogsingroup to isolate the group protocol
+        // Sourcing data from datasource within poolsingroup to isolate the group protocol
         let pools: [ImageData] = dataSource.poolsInGroup(indexPath.section)
         let pool = pools[indexPath.row]
         
-        let group = pool.group
+        let groups = pool.group
         
         // Displays group protocol to header view label
-        headerView.sectionTitle.text = group
+        headerView.sectionTitle.text = groups
         
         return headerView
     }
@@ -156,6 +167,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        view.endEditing(true)
         // Dismiss the keyboard
         searchBar.resignFirstResponder()
     }
@@ -167,34 +179,61 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         // Dismiss the keyboard
         searchBar.resignFirstResponder()
     }
+    
+    
+    //MARK: - UISearchBarDelegate
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == nil || searchBar.text == "" {
+            inSearchMode = false
+            view.endEditing(true)
+            collectionView.reloadData()
+        } else {
+            inSearchMode = true
+            let search = searchBar.text!.lowercaseString
+            
+            filteredSearch = imageData.filter({$0.image.rangeOfString(search) != nil})
+            collectionView.reloadData()
+        }
+    }
+    
+
+    // MARK: - UIScrollViewDelegate
+    
+    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        // Dismiss the keyboard if the search results are scrolled
+        searchController?.searchBar.resignFirstResponder()
+    }
+    
+
     // MARK: Segue to details
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        if segue.identifier == gallerySegue {
 //            if let indexPath = collectionView.indexPathForCell(sender as! UICollectionViewCell) {
-//                let imageData: ImageData
+//                let data: ImageData
 //                if searchController.active && searchController.searchBar.text != "" {
-//                    imageData = filteredSearch[indexPath.row]
-//                } else {
-//                    imageData = dataSource[indexPath.row]
+//                    data = filteredSearch[indexPath.row]
+//                    print(data)
 //                }
-//                let controller = segue.destinationViewController as! GalleryDetailVC
-//                controller.poolDetail = poolItem
-//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
-//                controller.navigationItem.leftItemsSupplementBackButton = true
+//                let destination = segue.destinationViewController as! GalleryDetailVC
+//                destination.filteredDetail = data
+//                destination.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+//                destination.navigationItem.leftItemsSupplementBackButton = true
 //            }
 //        }
 //    }
 }
 
-// This class extension allows for the array to be of different counts due to search results
+//// This class extension allows for the array to be of different counts due to search results
 //extension GalleryViewController: UISearchResultsUpdating {
-//    func updateSearchResultsForSearchController(searchController: UISearchController) {
-//        let searchBar = searchController.searchBar
-//        let scope = searchBar.scopeButtonTitles?[searchBar.selectedScopeButtonIndex]
-//        filteredSearch(searchController.searchBar.text!, scope: scope!)
-//    }
 //    
-//    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-//        filteredSearch(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+//    func updateSearchResultsForSearchController(searchController: UISearchController) {
+//        filteredSearch.removeAll(keepCapacity: false)
+//        
+//        let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text!)
+//        let array = (poolData as NSArray).filteredArrayUsingPredicate(searchPredicate)
+//        filteredSearch = array as! [ImageData]
+//        
+//        self.collectionView.reloadData()
 //    }
 //}

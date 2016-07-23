@@ -14,13 +14,13 @@ class WaterChemTableViewCell: UITableViewCell {
     @IBOutlet weak var wChemistryLabel: UILabel!
     
     
-    var searchImages: SearchImages!
+    var poolData: PoolData!
     
-    func configureCell(searchImages: SearchImages) {
-        self.searchImages = searchImages
+    func configureCell(poolData: PoolData) {
+        self.poolData = poolData
         
-        wChemistryImage.image = UIImage(named: "\(self.searchImages.image)")
-        wChemistryLabel.text = self.searchImages.image
+        wChemistryImage.image = UIImage(named: "\(self.poolData.image)")
+        wChemistryLabel.text = self.poolData.label
     }
 
 }

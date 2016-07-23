@@ -9,14 +9,12 @@
 import Foundation
 
 class PoolCategory {
-    
     // Stored properties
-    var category: String!
+    var menuItem: String!
     var products: [PoolData]
     
     init(menu: String, group: [PoolData]) {
-        
-        category = menu
+        menuItem = menu
         products = group
     }
     
@@ -24,31 +22,26 @@ class PoolCategory {
     
     // Create categories of each item in Equipment menu
     class func poolEquipment() -> [PoolCategory] {
-        
         return [self.poolFilters(), self.poolPumps(), self.poolEquipment()]
     }
     
     // Create categories of each item in Chemical menu
     class func poolChemicals() -> [PoolCategory] {
-        
         return [self.chlorineTypes(), self.poolChemicals()]
     }
     
     // Create categories of each item in Chemical menu
     class func waterChemistry() -> [PoolCategory] {
-        
         return [self.waterChemistry()]
     }
     
     // Create categories of each item in Chemical menu
     class func maintenanceEquipment() -> [PoolCategory] {
-        
-        return [self.maintenanceEquipment()]
+        return [self.cleaningEquipment()]
     }
     
     // Create categories of each item in Chemical menu
     class func poolMaintenance() -> [PoolCategory] {
-        
         return [self.poolMaintenance()]
     }
 
@@ -96,7 +89,7 @@ class PoolCategory {
     }
     
     // All rows within the Maintenance Equipment category
-    private class func maintenanceEquipment() -> PoolCategory {
+    private class func cleaningEquipment() -> PoolCategory {
         
         var products = [PoolData]()
         
@@ -111,7 +104,7 @@ class PoolCategory {
         products.append(PoolData(label: "Skimmer Parts", image: "skimmerBasket", description: "Safety stuff"))
         
         
-        return PoolCategory(menu: "Maintenance Equipment", group: products)
+        return PoolCategory(menu: "Cleaning Equipment", group: products)
     }
     
     // All rows within the Chlorine category

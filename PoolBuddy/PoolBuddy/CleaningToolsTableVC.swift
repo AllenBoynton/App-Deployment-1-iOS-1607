@@ -39,7 +39,7 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let poolCategory = maintenanceEquipment[section]
-        return poolCategory.category
+        return poolCategory.menuItem
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -57,9 +57,8 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
         let poolCategory = maintenanceEquipment[indexPath.section]
         let product = poolCategory.products[indexPath.row]
         
-        cell.toolsImage.image = UIImage(named: product.image)
-        cell.toolsLabel.text = product.label
-        
+        let poolData = PoolData(label: product.label, image: product.image, description: "")
+        cell.configureCell(poolData)
         return cell
     }
     

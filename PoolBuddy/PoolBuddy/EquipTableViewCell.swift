@@ -14,12 +14,12 @@ class EquipTableViewCell: UITableViewCell {
     @IBOutlet weak var equipmentLabel: UILabel!
     
     
-    var searchImages: SearchImages!
+    var poolData: PoolData!
     
-    func configureCell(searchImages: SearchImages) {
-        self.searchImages = searchImages
+    func configureCell(poolData: PoolData) {
+        self.poolData = poolData
         
-        equipmentImage.image = UIImage(named: "\(self.searchImages.image)")
-        equipmentLabel.text = self.searchImages.image
+        equipmentImage.image = UIImage(named: "\(self.poolData.image)")
+        equipmentLabel.text = self.poolData.label
     }
 }

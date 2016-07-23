@@ -73,8 +73,8 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="scD-1E-Til" firstAttribute="leading" secondItem="5pH-aE-eLB" secondAttribute="leading" id="Drz-dU-kfE"/>
                             <constraint firstItem="Eey-yW-TWa" firstAttribute="leading" secondItem="5pH-aE-eLB" secondAttribute="leading" id="Mhz-ja-NKp"/>
@@ -372,8 +372,43 @@
                                             <segue destination="uTV-Ga-Q7w" kind="custom" identifier="equipment" customClass="SWRevealViewControllerSeguePushController" id="ejB-NG-BRi"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="1k0-y6-zTD" userLabel="chemicals_cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="tac-2S-WWh" userLabel="tools_cell">
                                         <rect key="frame" x="0.0" y="119" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tac-2S-WWh" id="aPX-Yd-2Yi">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Tools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G85-bc-w7t" userLabel="Equipment Section">
+                                                    <rect key="frame" x="105" y="10" width="495" height="64.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Surface Debris" translatesAutoresizingMaskIntoConstraints="NO" id="EhE-A7-uYK" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="65" height="65"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="EhE-A7-uYK" secondAttribute="height" multiplier="1:1" id="lwI-LC-eQX"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="G85-bc-w7t" secondAttribute="trailing" id="39h-8S-tZd"/>
+                                                <constraint firstItem="EhE-A7-uYK" firstAttribute="leading" secondItem="aPX-Yd-2Yi" secondAttribute="leading" constant="20" id="Jbh-fh-ovD"/>
+                                                <constraint firstItem="EhE-A7-uYK" firstAttribute="top" secondItem="aPX-Yd-2Yi" secondAttribute="top" constant="5" id="Lgl-xo-I5b"/>
+                                                <constraint firstItem="G85-bc-w7t" firstAttribute="leading" secondItem="EhE-A7-uYK" secondAttribute="trailing" constant="20" id="QkW-mw-AlQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="G85-bc-w7t" secondAttribute="bottom" id="UrK-EJ-gX7"/>
+                                                <constraint firstItem="G85-bc-w7t" firstAttribute="top" secondItem="aPX-Yd-2Yi" secondAttribute="top" constant="10" id="hw7-jJ-dCN"/>
+                                                <constraint firstAttribute="bottom" secondItem="EhE-A7-uYK" secondAttribute="bottom" constant="5" id="oko-ih-RRE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="Thm-hY-FWv" kind="custom" identifier="toolSegue" customClass="SWRevealViewControllerSeguePushController" id="2y5-mQ-ZTZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="1k0-y6-zTD" userLabel="chemicals_cell">
+                                        <rect key="frame" x="0.0" y="194" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1k0-y6-zTD" id="2gh-e7-Cwf">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
@@ -408,7 +443,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="KbD-gT-3Lx" userLabel="chemistry_cell">
-                                        <rect key="frame" x="0.0" y="194" width="600" height="75"/>
+                                        <rect key="frame" x="0.0" y="269" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KbD-gT-3Lx" id="M8f-xN-q1V">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
@@ -440,41 +475,6 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="UhZ-Py-xIP" kind="custom" identifier="water_chemistry" customClass="SWRevealViewControllerSeguePushController" id="uVp-nR-A8X"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="tac-2S-WWh" userLabel="tools_cell">
-                                        <rect key="frame" x="0.0" y="269" width="600" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tac-2S-WWh" id="aPX-Yd-2Yi">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Tools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G85-bc-w7t" userLabel="Equipment Section">
-                                                    <rect key="frame" x="105" y="10" width="495" height="64.5"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Surface Debris" translatesAutoresizingMaskIntoConstraints="NO" id="EhE-A7-uYK" userLabel="Section Image">
-                                                    <rect key="frame" x="20" y="5" width="65" height="65"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="EhE-A7-uYK" secondAttribute="height" multiplier="1:1" id="lwI-LC-eQX"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="G85-bc-w7t" secondAttribute="trailing" id="39h-8S-tZd"/>
-                                                <constraint firstItem="EhE-A7-uYK" firstAttribute="leading" secondItem="aPX-Yd-2Yi" secondAttribute="leading" constant="20" id="Jbh-fh-ovD"/>
-                                                <constraint firstItem="EhE-A7-uYK" firstAttribute="top" secondItem="aPX-Yd-2Yi" secondAttribute="top" constant="5" id="Lgl-xo-I5b"/>
-                                                <constraint firstItem="G85-bc-w7t" firstAttribute="leading" secondItem="EhE-A7-uYK" secondAttribute="trailing" constant="20" id="QkW-mw-AlQ"/>
-                                                <constraint firstAttribute="bottom" secondItem="G85-bc-w7t" secondAttribute="bottom" id="UrK-EJ-gX7"/>
-                                                <constraint firstItem="G85-bc-w7t" firstAttribute="top" secondItem="aPX-Yd-2Yi" secondAttribute="top" constant="10" id="hw7-jJ-dCN"/>
-                                                <constraint firstAttribute="bottom" secondItem="EhE-A7-uYK" secondAttribute="bottom" constant="5" id="oko-ih-RRE"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Thm-hY-FWv" kind="custom" identifier="toolSegue" customClass="SWRevealViewControllerSeguePushController" id="2y5-mQ-ZTZ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="Uno-Of-Xi0" userLabel="maint_cell">
@@ -509,43 +509,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="ML0-Au-Q1F" userLabel="events_cell">
-                                        <rect key="frame" x="0.0" y="419" width="600" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ML0-Au-Q1F" id="o2Z-mJ-eDl">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Planner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gve-Rb-c4H" userLabel="Planner Section">
-                                                    <rect key="frame" x="105" y="0.0" width="495" height="74.5"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planner" translatesAutoresizingMaskIntoConstraints="NO" id="h2R-TA-nLB" userLabel="Section Image">
-                                                    <rect key="frame" x="20" y="5" width="65" height="65"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="h2R-TA-nLB" secondAttribute="height" multiplier="1:1" id="51F-xB-TJP"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstItem="gve-Rb-c4H" firstAttribute="leading" secondItem="h2R-TA-nLB" secondAttribute="trailing" constant="20" id="Iky-2K-ZED"/>
-                                                <constraint firstItem="gve-Rb-c4H" firstAttribute="top" secondItem="o2Z-mJ-eDl" secondAttribute="top" id="IvC-tG-gJy"/>
-                                                <constraint firstAttribute="bottom" secondItem="h2R-TA-nLB" secondAttribute="bottom" constant="5" id="Mae-jX-SBV"/>
-                                                <constraint firstItem="h2R-TA-nLB" firstAttribute="top" secondItem="o2Z-mJ-eDl" secondAttribute="top" constant="5" id="PiJ-X0-VH1"/>
-                                                <constraint firstAttribute="bottom" secondItem="gve-Rb-c4H" secondAttribute="bottom" id="Vrs-j4-1oT"/>
-                                                <constraint firstItem="h2R-TA-nLB" firstAttribute="leading" secondItem="o2Z-mJ-eDl" secondAttribute="leading" constant="20" id="WAs-zh-WE3"/>
-                                                <constraint firstAttribute="trailing" secondItem="gve-Rb-c4H" secondAttribute="trailing" id="u7W-I3-S4e"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="tyo-JB-ITk" kind="custom" identifier="planner" customClass="SWRevealViewControllerSeguePushController" id="H5H-z5-fX8"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="KV2-nh-ONM" userLabel="calculator_cell">
-                                        <rect key="frame" x="0.0" y="494" width="600" height="75"/>
+                                        <rect key="frame" x="0.0" y="419" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KV2-nh-ONM" id="x96-26-05r">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
@@ -578,6 +543,41 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="fPQ-QG-XKE" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="7hz-Lq-6Ur"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="ML0-Au-Q1F" userLabel="events_cell">
+                                        <rect key="frame" x="0.0" y="494" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ML0-Au-Q1F" id="o2Z-mJ-eDl">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Planner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gve-Rb-c4H" userLabel="Planner Section">
+                                                    <rect key="frame" x="105" y="0.0" width="495" height="74.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planner" translatesAutoresizingMaskIntoConstraints="NO" id="h2R-TA-nLB" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="65" height="65"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="h2R-TA-nLB" secondAttribute="height" multiplier="1:1" id="51F-xB-TJP"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="gve-Rb-c4H" firstAttribute="leading" secondItem="h2R-TA-nLB" secondAttribute="trailing" constant="20" id="Iky-2K-ZED"/>
+                                                <constraint firstItem="gve-Rb-c4H" firstAttribute="top" secondItem="o2Z-mJ-eDl" secondAttribute="top" id="IvC-tG-gJy"/>
+                                                <constraint firstAttribute="bottom" secondItem="h2R-TA-nLB" secondAttribute="bottom" constant="5" id="Mae-jX-SBV"/>
+                                                <constraint firstItem="h2R-TA-nLB" firstAttribute="top" secondItem="o2Z-mJ-eDl" secondAttribute="top" constant="5" id="PiJ-X0-VH1"/>
+                                                <constraint firstAttribute="bottom" secondItem="gve-Rb-c4H" secondAttribute="bottom" id="Vrs-j4-1oT"/>
+                                                <constraint firstItem="h2R-TA-nLB" firstAttribute="leading" secondItem="o2Z-mJ-eDl" secondAttribute="leading" constant="20" id="WAs-zh-WE3"/>
+                                                <constraint firstAttribute="trailing" secondItem="gve-Rb-c4H" secondAttribute="trailing" id="u7W-I3-S4e"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="tyo-JB-ITk" kind="custom" identifier="planner" customClass="SWRevealViewControllerSeguePushController" id="H5H-z5-fX8"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="QjZ-EY-RBR" userLabel="gallery_cell">
@@ -767,8 +767,8 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="k2r-aL-lGH" secondAttribute="trailing" id="0mb-aU-4Cq"/>
                             <constraint firstItem="k2r-aL-lGH" firstAttribute="leading" secondItem="CHb-7c-qp7" secondAttribute="leading" id="4vp-bA-Uj0"/>
@@ -953,7 +953,7 @@
                         <viewControllerLayoutGuide type="top" id="1MY-11-bIS"/>
                         <viewControllerLayoutGuide type="bottom" id="eJz-Ja-erC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aC3-xR-9wU">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="aC3-xR-9wU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1010,8 +1010,8 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Water Chemistry" id="3HD-BQ-ixH">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="W3d-bA-sZ8">
@@ -1195,8 +1195,8 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="u6U-ba-0Jz" firstAttribute="top" secondItem="SsT-O8-ffd" secondAttribute="bottom" id="1lT-is-Omj"/>
                             <constraint firstItem="AZJ-7F-Mml" firstAttribute="top" secondItem="SsT-O8-ffd" secondAttribute="bottom" id="4se-LO-k6f"/>
@@ -1608,9 +1608,6 @@ Good Luck!</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="2Mb-1p-9Zf"/>
                                 </constraints>
-                                <connections>
-                                    <segue destination="MnB-nv-BpM" kind="embed" id="iCQ-mR-bQT"/>
-                                </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1775,23 +1772,6 @@ Good Luck!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFI-HA-eFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="595" y="2632"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="F89-Ba-oKW">
-            <objects>
-                <viewController id="MnB-nv-BpM" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TYQ-kk-T0S"/>
-                        <viewControllerLayoutGuide type="bottom" id="is1-25-UUa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ey8-LQ-1ol">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zqQ-Or-lvv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>

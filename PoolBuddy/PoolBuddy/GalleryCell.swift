@@ -11,7 +11,7 @@ import UIKit
 class GalleryCell: UICollectionViewCell {
     
     @IBOutlet weak var galleryImages: UIImageView!
-    @IBOutlet weak var imageLabel: UILabel!
+    @IBOutlet weak var imageLabel: InsetLabel!
     
     var imageData: ImageData!
     
@@ -28,5 +28,11 @@ class GalleryCell: UICollectionViewCell {
         
         galleryImages.image = UIImage(named: "\(self.imageData.image)")
         imageLabel.text = self.imageData.image.capitalizedString
+    }
+}
+
+class InsetLabel: UILabel {
+    override func drawTextInRect(rect: CGRect) {
+        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)))
     }
 }

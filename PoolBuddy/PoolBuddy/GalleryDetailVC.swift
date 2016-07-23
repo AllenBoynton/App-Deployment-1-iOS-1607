@@ -16,7 +16,7 @@ class GalleryDetailVC: UIViewController {
     
     
     // DataSource for details in this VC
-    var poolData: PoolData? {
+    var poolDetail: PoolData? {
         didSet {
             configureView()
         }
@@ -24,7 +24,7 @@ class GalleryDetailVC: UIViewController {
     
     // Assigns the segue delegate to the view and image of this VC
     func configureView() {
-        if let poolDetail = poolData {
+        if let poolDetail = poolDetail {
             if let poolDescription = poolDescription, poolImage = poolImage {
                 poolDescription.text = poolDetail.description
                 poolImage.image = UIImage(named: poolDetail.image)

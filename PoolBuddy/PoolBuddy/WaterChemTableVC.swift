@@ -39,7 +39,7 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let poolCategory = waterChemistry[section]
-        return poolCategory.category
+        return poolCategory.menuItem
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -57,9 +57,8 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         let poolCategory = waterChemistry[indexPath.section]
         let product = poolCategory.products[indexPath.row]
         
-        cell.wChemistryImage.image = UIImage(named: product.image)
-        cell.wChemistryLabel.text = product.label
-        
+        let poolData = PoolData(label: product.label, image: product.image, description: "")
+        cell.configureCell(poolData)
         return cell
     }
     

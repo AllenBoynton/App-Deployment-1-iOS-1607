@@ -40,7 +40,7 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let poolCategory = poolEquipment[section]
-        return poolCategory.category
+        return poolCategory.menuItem
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -54,13 +54,12 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(equipment, forIndexPath: indexPath) as! EquipTableViewCell
-        
+                
         let poolCategory = poolEquipment[indexPath.section]
         let product = poolCategory.products[indexPath.row]
         
-        cell.equipmentImage.image = UIImage(named: product.image)
-        cell.equipmentLabel.text = product.label
-        
+        let poolData = PoolData(label: product.label, image: product.image, description: "")
+        cell.configureCell(poolData)
         return cell
     }
 

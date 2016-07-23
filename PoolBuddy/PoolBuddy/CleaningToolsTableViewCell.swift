@@ -14,13 +14,13 @@ class CleaningToolsTableViewCell: UITableViewCell {
     @IBOutlet weak var toolsLabel: UILabel!
     
 
-    var searchImages: SearchImages!
+    var poolData: PoolData!
     
-    func configureCell(searchImages: SearchImages) {
-        self.searchImages = searchImages
+    func configureCell(poolData: PoolData) {
+        self.poolData = poolData
         
-        toolsImage.image = UIImage(named: "\(self.searchImages.image)")
-        toolsLabel.text = self.searchImages.image
+        toolsImage.image = UIImage(named: "\(self.poolData.image)")
+        toolsLabel.text = self.poolData.label
     }
 
 }
