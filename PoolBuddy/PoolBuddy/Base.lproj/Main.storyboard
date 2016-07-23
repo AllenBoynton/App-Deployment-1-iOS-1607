@@ -1550,7 +1550,7 @@ Good Luck!</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="lT9-As-cHz"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1780,6 +1780,10 @@ Good Luck!</string>
         <scene sceneID="F89-Ba-oKW">
             <objects>
                 <viewController id="MnB-nv-BpM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TYQ-kk-T0S"/>
+                        <viewControllerLayoutGuide type="bottom" id="is1-25-UUa"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ey8-LQ-1ol">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
