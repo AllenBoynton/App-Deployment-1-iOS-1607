@@ -11,7 +11,7 @@ import Foundation
 class PoolCategory {
     
     // Stored properties
-    var category: String
+    var category: String!
     var products: [PoolData]
     
     init(menu: String, group: [PoolData]) {

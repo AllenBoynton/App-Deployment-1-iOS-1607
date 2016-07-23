@@ -13,18 +13,20 @@ class GalleryCell: UICollectionViewCell {
     @IBOutlet weak var galleryImages: UIImageView!
     @IBOutlet weak var imageLabel: UILabel!
     
-    var searchImages: SearchImages!
+    var imageData: ImageData!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         layer.cornerRadius = 5.0
+        layer.borderWidth = 2
+        layer.borderColor = UIColor.blackColor().CGColor
     }
     
-    func configureCell(searchImages: SearchImages) {
-        self.searchImages = searchImages
+    func configureCell(imageData: ImageData) {
+        self.imageData = imageData
         
-        galleryImages.image = UIImage(named: "\(self.searchImages.image)")
-        imageLabel.text = self.searchImages.image.capitalizedString
+        galleryImages.image = UIImage(named: "\(self.imageData.image)")
+        imageLabel.text = self.imageData.image.capitalizedString
     }
 }
