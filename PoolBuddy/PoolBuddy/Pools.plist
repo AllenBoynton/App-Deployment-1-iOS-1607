@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>Green Algae</string>
+		<key>group</key>
+		<string>Pools with Algae Problems</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Mustard Yellow Algae</string>
+		<key>group</key>
+		<string>Pools with Algae Problems</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Black Algae</string>
+		<key>group</key>
+		<string>Pools with Algae Problems</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Metal Rust Stains</string>
+		<key>group</key>
+		<string>Pools with Metal Problems</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Copper Metal Stains</string>
+		<key>group</key>
+		<string>Pools with Metal Problems</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Iron Metal Stains</string>
+		<key>group</key>
+		<string>Pools with Metal Problems</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Manganese Metal Stains</string>
+		<key>group</key>
+		<string>Pools with Metal Problems</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Oily Water Line</string>
+		<key>group</key>
+		<string>Pools with Organic Stains</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Organic Stains</string>
+		<key>group</key>
+		<string>Pools with Organic Stains</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Organic Berry Stains</string>
+		<key>group</key>
+		<string>Pools with Organic Stains</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Surface Debris</string>
+		<key>group</key>
+		<string>Pools with Dirty Water</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Extremely Dirty</string>
+		<key>group</key>
+		<string>Pools with Dirty Water</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Cloudy Water</string>
+		<key>group</key>
+		<string>Pools with Dirty Water</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Identifying Stains</string>
+		<key>group</key>
+		<string>Pools with Dirty Water</string>
+	</dict>
+</array>
+</plist>
