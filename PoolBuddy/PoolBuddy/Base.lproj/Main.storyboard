@@ -319,6 +319,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="Sz0-1b-YGA"/>
                                                     </constraints>
+                                                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <items>
                                                         <navigationItem title="Pool Buddy Menu" id="voT-5D-LIQ"/>
                                                     </items>
@@ -666,10 +667,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tAB-oH-fJc" userLabel="Home Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A4p-l7-kT5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="A4p-l7-kT5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -688,10 +689,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uTV-Ga-Q7w" userLabel="Equipment Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fcu-ru-uc1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Fcu-ru-uc1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -934,7 +935,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="M5m-b6-oTf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1121,7 +1122,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ReW-0m-a6a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1400,7 +1401,7 @@ Good Luck!</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ecW-QW-Wnb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1541,7 +1542,7 @@ Good Luck!</string>
                                             <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waterLine" translatesAutoresizingMaskIntoConstraints="NO" id="V1N-cD-2om" userLabel="Gallery Images">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="V1N-cD-2om" userLabel="Gallery Images">
                                                     <rect key="frame" x="0.0" y="0.0" width="110" height="90"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IC3-zC-lVv">
@@ -1705,7 +1706,7 @@ Good Luck!</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zS5-3q-uUM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1724,7 +1725,7 @@ Good Luck!</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1UW-Ob-PQB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1743,7 +1744,7 @@ Good Luck!</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hD2-BS-ces">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1762,7 +1763,7 @@ Good Luck!</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TVc-Ky-EPV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1786,8 +1787,8 @@ Good Luck!</string>
         <image name="planner" width="140" height="140"/>
         <image name="poolwater2" width="1080" height="1920"/>
         <image name="service" width="400" height="400"/>
+        <image name="splash" width="120" height="120"/>
         <image name="testKit" width="660" height="658"/>
-        <image name="waterLine" width="238" height="212"/>
     </resources>
     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
 </document>

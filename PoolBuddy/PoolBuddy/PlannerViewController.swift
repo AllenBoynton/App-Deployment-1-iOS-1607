@@ -13,10 +13,6 @@ class PlannerViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBOutlet weak var plannerTitle: UINavigationItem!
-    
-    var screenTitle: String = ""
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +25,7 @@ class PlannerViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         self.revealViewController().rearViewRevealWidth = 325
-        
-        plannerTitle!.title = screenTitle
-
+    
     }
 
     
