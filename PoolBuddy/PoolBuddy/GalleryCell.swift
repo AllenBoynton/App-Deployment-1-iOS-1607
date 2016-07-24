@@ -11,7 +11,7 @@ import UIKit
 class GalleryCell: UICollectionViewCell {
     
     @IBOutlet weak var galleryImages: UIImageView!
-    @IBOutlet weak var imageLabel: UILabel!
+    @IBOutlet weak var imageLabel: InsetLabel!
     
     var data: ImageData!
     
@@ -23,12 +23,12 @@ class GalleryCell: UICollectionViewCell {
         layer.borderColor = UIColor.blackColor().CGColor
     }
     
-    func configureCell(imageData: ImageData) {
-        self.data = imageData
-        
-        galleryImages.image = UIImage(named: "\(self.data.image)")
-        imageLabel.text = self.data.image.capitalizedString
-    }
+//    func configureCell(imageData: ImageData) {
+//        self.data = imageData
+//        
+//        galleryImages.image = UIImage(named: "\(self.data.image)")
+//        imageLabel.text = self.data.image.capitalizedString
+//    }
 }
 
 class InsetLabel: UILabel {

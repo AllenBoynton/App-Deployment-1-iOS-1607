@@ -6,8 +6,9 @@
 //  Copyright © 2016 Full Sail. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
+// Populates data within arrays assigned in plist
 class DataSource {
     
     init() {
@@ -15,8 +16,8 @@ class DataSource {
     }
     
     // Delegate for ImageData and creates property for both images & groups
-    var pools = [ImageData]()
-    var groups = [String]()
+    var pools: [ImageData] = []
+    var groups: [String] = []
     
     // Determines how many cells in a sections
     func numberOfRowsInEachGroup(index: Int) -> Int {
@@ -61,9 +62,9 @@ class DataSource {
     
     func poolsInGroup(index: Int) -> [ImageData] {
         let item = groups[index]
-        let filteredSearch = pools.filter { (pool: ImageData) -> Bool in
+        let filteredPools = pools.filter { (pool: ImageData) -> Bool in
             return pool.group == item
         }
-        return filteredSearch
+        return filteredPools
     }
 }

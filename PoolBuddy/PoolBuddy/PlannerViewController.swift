@@ -20,6 +20,8 @@ class PlannerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "Pool Reminders"
 
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()

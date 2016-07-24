@@ -24,6 +24,8 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "Cleaning Tools"
 
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
@@ -31,8 +33,6 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         self.revealViewController().rearViewRevealWidth = 325
-        
-        navigationItem.title = "Cleaning Tools"
     }
 
     // MARK: - UITableViewDataSource

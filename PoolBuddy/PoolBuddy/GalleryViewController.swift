@@ -11,7 +11,7 @@ import UIKit
 class GalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchControllerDelegate, UISearchBarDelegate, UIScrollViewDelegate {
     
     var imageData = [ImageData]()
-    var filteredSearch = [ImageData]()
+    var filteredPools = [ImageData]()
     
     var poolData = [PoolData]()
     
@@ -30,6 +30,8 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Pool Problems Search Gallery"
+        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -41,7 +43,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         collectionView.delegate = self
         collectionView.dataSource = self
                 
-        navigationItem.title = "Pool Problems Search Gallery"
         
         //Setup the search controller
         searchController = ({
@@ -53,7 +54,8 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             // Setup the search bar
             searchController.searchBar.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
             self.searchBarContainer.addSubview(searchController.searchBar)
-
+            searchController.searchBar.returnKeyType = UIReturnKeyType.Done
+            
             // SearchBar delegate
             searchController.searchBar.delegate = self
 
@@ -71,11 +73,15 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if inSearchMode {
-            return filteredSearch.count
+            return filteredPools.count
         }
-        print("Images: \(dataSource.pools.count)")
-        return dataSource.pools.count
+        print("Images: \(dataSource.poolsInGroup(section).count)")
+        let pools = dataSource.poolsInGroup(section).count
+        
+        return pools
     }
+    
+    
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
@@ -103,17 +109,25 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(photo, forIndexPath: indexPath) as? GalleryCell {
             
-            let data: ImageData!
-            
             if inSearchMode {
-                data = filteredSearch[indexPath.row]
+                let pool = filteredPools[indexPath.row]
+                let image = pool.image
+                
+                // Displays name protocol to cell image and label
+                cell.galleryImages.image = UIImage(named: image)
+                cell.imageLabel.text = image
+                
             } else {
-                data = dataSource.pools[indexPath.row]
+                let pools: [ImageData] = dataSource.poolsInGroup(indexPath.section)
+                let pool = pools[indexPath.row]
+                
+                let image = pool.image
+                
+                // Displays name protocol to cell image and label
+                cell.galleryImages.image = UIImage(named: image)
+                cell.imageLabel.text = image
             }
-        
-            cell.configureCell(data)
             return cell
-            
         } else {
             return UICollectionViewCell()
         }
@@ -129,47 +143,37 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         // Sourcing data from datasource within poolsingroup to isolate the group protocol
         let pools: [ImageData] = dataSource.poolsInGroup(indexPath.section)
         let pool = pools[indexPath.row]
-        
+        let group = pool.group
         // Displays group protocol to header view label
-        headerView.sectionTitle.text = pool.group
+        headerView.sectionTitle.text = group
         
         return headerView
     }
     
     // Search bar attributes
     
-    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
-        // Dismiss the keyboard
-        searchBar.resignFirstResponder()
-    }
-    
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        view.endEditing(true)
-        // Dismiss the keyboard
-        searchBar.resignFirstResponder()
-    }
-    
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        view.endEditing(true)
         // Clear any search criteria
-        searchBar.text = ""
+        searchController.searchBar.text = ""
         
         // Dismiss the keyboard
-        searchBar.resignFirstResponder()
+        searchController.searchBar.resignFirstResponder()
     }
     
     
     //MARK: - UISearchBarDelegate
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchBar.text == nil {// || searchBar.text == "" {
+        if searchController.searchBar.text == nil || searchController.searchBar.text == "" {
             inSearchMode = false
             view.endEditing(true)
             collectionView.reloadData()
         } else {
             inSearchMode = true
-            let search = searchBar.text!.lowercaseString
+            let lower = searchController.searchBar.text!.lowercaseString
             
-            filteredSearch = imageData.filter({$0.image.rangeOfString(search) != nil})
+            filteredPools = imageData.filter({$0.image.rangeOfString(lower) != nil})
             collectionView.reloadData()
         }
     }
@@ -189,7 +193,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             if let indexPath = collectionView.indexPathForCell(sender as! UICollectionViewCell) {
                 let data: ImageData
                 if searchController.active && searchController.searchBar.text != "" {
-                    data = filteredSearch[indexPath.row]
+                    data = filteredPools[indexPath.row]
                 } else {
                     data = imageData[indexPath.row]
                 }
@@ -200,7 +204,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func filterContentForSearchText(searchText: String) {
-        filteredSearch = imageData.filter { data in
+        filteredPools = imageData.filter { data in
             return data.image.lowercaseString.containsString(searchText.lowercaseString)
         }
         collectionView.reloadData()
