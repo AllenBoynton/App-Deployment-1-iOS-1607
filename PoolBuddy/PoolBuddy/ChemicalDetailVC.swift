@@ -29,5 +29,8 @@ class ChemicalDetailVC: UIViewController {
         chemicalText.layer.cornerRadius = 4
         chemicalText.layer.borderWidth = 2
         chemicalText.layer.borderColor = UIColor.blackColor().CGColor
+        
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
     }    
 }

@@ -25,14 +25,16 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Cleaning Tools"
-
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         self.revealViewController().rearViewRevealWidth = 325
+        
+        navigationItem.title = "Cleaning Tools"
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
     }
 
     // MARK: - UITableViewDataSource

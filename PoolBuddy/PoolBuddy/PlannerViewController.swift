@@ -18,6 +18,8 @@ class PlannerViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Pool Reminders"
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
 
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()

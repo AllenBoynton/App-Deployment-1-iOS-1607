@@ -31,6 +31,8 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         super.viewDidLoad()
         
         navigationItem.title = "Pool Problems Search Gallery"
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
@@ -81,8 +83,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         return pools
     }
     
-    
-    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
         return CGSizeMake(110, 110)
@@ -114,8 +114,8 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
                 let image = pool.image
                 
                 // Displays name protocol to cell image and label
-                cell.galleryImages.image = UIImage(named: image)
-                cell.imageLabel.text = image
+                let imageData = ImageData(image: image, group: "")
+                cell.configureCell(imageData)
                 
             } else {
                 let pools: [ImageData] = dataSource.poolsInGroup(indexPath.section)
@@ -123,9 +123,8 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
                 
                 let image = pool.image
                 
-                // Displays name protocol to cell image and label
-                cell.galleryImages.image = UIImage(named: image)
-                cell.imageLabel.text = image
+                let imageData = ImageData(image: image, group: "")
+                cell.configureCell(imageData)
             }
             return cell
         } else {
@@ -191,14 +190,14 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == gallerySegue {
             if let indexPath = collectionView.indexPathForCell(sender as! UICollectionViewCell) {
-                let data: ImageData
+                let imageData: ImageData
                 if searchController.active && searchController.searchBar.text != "" {
-                    data = filteredPools[indexPath.row]
+                    imageData = filteredPools[indexPath.row]
                 } else {
-                    data = imageData[indexPath.row]
+                    imageData = dataSource.pools[indexPath.row]
                 }
                 let destination = segue.destinationViewController as! GalleryDetailVC
-                destination.poolDetail = data
+                destination.poolDetail = imageData
             }
         }
     }

@@ -32,7 +32,9 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
         self.revealViewController().rearViewRevealWidth = 325
         
-        navigationItem.title = "Water Chemistry"
+        navigationItem.title = "Water Balance"
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
     }
 
     // MARK: - UITableViewDataSource

@@ -32,7 +32,9 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         self.revealViewController().rearViewRevealWidth = 325
 
-        navigationItem.title = "Pool Equipment"
+        navigationItem.title = "Equipment"
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
     }
 
     

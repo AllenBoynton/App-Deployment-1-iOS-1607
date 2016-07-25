@@ -45,5 +45,8 @@ class GalleryDetailVC: UIViewController {
         
         poolDescription.layer.borderWidth = 2
         poolDescription.layer.borderColor = UIColor.blackColor().CGColor
+        
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
     }
 }

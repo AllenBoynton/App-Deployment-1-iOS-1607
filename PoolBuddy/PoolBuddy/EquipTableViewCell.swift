@@ -13,7 +13,6 @@ class EquipTableViewCell: UITableViewCell {
     @IBOutlet weak var equipmentImage: UIImageView!
     @IBOutlet weak var equipmentLabel: UILabel!
     
-    
     var poolData: PoolData!
     
     func configureCell(poolData: PoolData) {

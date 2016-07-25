@@ -41,7 +41,10 @@ class MainViewController: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        self.revealViewController().rearViewRevealWidth = 325
+        self.revealViewController().rearViewRevealWidth = 350
+        
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
     }
 
     // Sound files
