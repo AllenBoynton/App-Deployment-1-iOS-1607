@@ -33,6 +33,10 @@
 		098F96441D4561DC00E1B157 /* KittenSlant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 098F96431D4561DC00E1B157 /* KittenSlant.ttf */; };
 		098F96461D456FFE00E1B157 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F96451D456FFE00E1B157 /* HelpViewController.swift */; };
 		098F964C1D45949B00E1B157 /* EquipScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F964B1D45949B00E1B157 /* EquipScrollCell.swift */; };
+		098F964E1D45F5F300E1B157 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F964D1D45F5F300E1B157 /* Global.swift */; };
+		098F96501D45F64800E1B157 /* Cal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F964F1D45F64800E1B157 /* Cal.swift */; };
+		098F96521D45F98C00E1B157 /* PoolCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F96511D45F98C00E1B157 /* PoolCalendarVC.swift */; };
+		098F96541D47053D00E1B157 /* ChemicalScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F96531D47053D00E1B157 /* ChemicalScrollCell.swift */; };
 		0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713A1D246EC400477EA2 /* AppDelegate.swift */; };
 		0990713D1D246EC400477EA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713C1D246EC400477EA2 /* MainViewController.swift */; };
 		099071401D246EC400477EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0990713E1D246EC400477EA2 /* Main.storyboard */; };
@@ -75,6 +79,10 @@
 		098F96431D4561DC00E1B157 /* KittenSlant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KittenSlant.ttf; sourceTree = "<group>"; };
 		098F96451D456FFE00E1B157 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		098F964B1D45949B00E1B157 /* EquipScrollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipScrollCell.swift; sourceTree = "<group>"; };
+		098F964D1D45F5F300E1B157 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		098F964F1D45F64800E1B157 /* Cal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cal.swift; sourceTree = "<group>"; };
+		098F96511D45F98C00E1B157 /* PoolCalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolCalendarVC.swift; sourceTree = "<group>"; };
+		098F96531D47053D00E1B157 /* ChemicalScrollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalScrollCell.swift; sourceTree = "<group>"; };
 		099071371D246EC400477EA2 /* PoolBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0990713A1D246EC400477EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0990713C1D246EC400477EA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +127,7 @@
 		0940F5321D2ABF7B00BFA91C /* ChemicalViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				098F96531D47053D00E1B157 /* ChemicalScrollCell.swift */,
 				0940F54B1D2AC3B900BFA91C /* ChemicalDetailVC.swift */,
 				0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */,
 				0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */,
@@ -150,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				0940F5511D2B007400BFA91C /* PlannerViewController.swift */,
+				098F96511D45F98C00E1B157 /* PoolCalendarVC.swift */,
 			);
 			name = PlannerViewControllers;
 			sourceTree = "<group>";
@@ -293,6 +303,8 @@
 		099071761D29D34900477EA2 /* Initiators */ = {
 			isa = PBXGroup;
 			children = (
+				098F964F1D45F64800E1B157 /* Cal.swift */,
+				098F964D1D45F5F300E1B157 /* Global.swift */,
 				098F963B1D42FF8700E1B157 /* ImageData.swift */,
 				099071771D29D36F00477EA2 /* PoolData.swift */,
 			);
@@ -380,6 +392,7 @@
 				0940F5401D2AC18400BFA91C /* WaterChemTableViewCell.swift in Sources */,
 				0940F5501D2AF7F400BFA91C /* CleaningToolsTableVC.swift in Sources */,
 				0940F5561D2B040700BFA91C /* CalculatorVC.swift in Sources */,
+				098F96541D47053D00E1B157 /* ChemicalScrollCell.swift in Sources */,
 				0940F53E1D2AC16200BFA91C /* WaterChemTableVC.swift in Sources */,
 				099071781D29D36F00477EA2 /* PoolData.swift in Sources */,
 				098F96421D4560D100E1B157 /* csv.swift in Sources */,
@@ -394,9 +407,12 @@
 				0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */,
 				0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */,
 				0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */,
+				098F96501D45F64800E1B157 /* Cal.swift in Sources */,
 				098F96401D455CFB00E1B157 /* MenuTableVC.swift in Sources */,
 				098F964C1D45949B00E1B157 /* EquipScrollCell.swift in Sources */,
 				098F963A1D42C95800E1B157 /* DataSource.swift in Sources */,
+				098F964E1D45F5F300E1B157 /* Global.swift in Sources */,
+				098F96521D45F98C00E1B157 /* PoolCalendarVC.swift in Sources */,
 				0940F54C1D2AC3B900BFA91C /* ChemicalDetailVC.swift in Sources */,
 				0940F59E1D38315C00BFA91C /* PoolCategory.swift in Sources */,
 				0940F55E1D2EC93600BFA91C /* HeaderReusableView.swift in Sources */,

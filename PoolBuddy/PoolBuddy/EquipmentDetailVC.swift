@@ -17,28 +17,41 @@ class EquipmentDetailVC: UIViewController, UICollectionViewDelegate, UICollectio
         return PoolCategory.poolEquipment()
     }()
         
+    @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet weak var imageViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageViewTrailingConstraint: NSLayoutConstraint!
+    
     // Outlets for table view screen
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var equipmentImg: UIImageView!
+    @IBOutlet weak var equipmentImg2: UIImageView!
     @IBOutlet weak var equipmentTxt: UITextView!
+    @IBOutlet weak var equipmentLabel: UILabel!
     
     
     var detailTitle: String = ""
+    var detailLabel: String = ""
     var productImage: UIImage!
+    var productImage2: UIImage!
     var descriptions: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        scrollView.contentSize.height = 800
+        
         // Using passed data to add to detail view
         navigationItem.title = detailTitle
+        equipmentLabel.text = detailLabel
         equipmentImg.image = productImage
+        equipmentImg2.image = productImage2
         equipmentTxt.text = descriptions
         
-        equipmentTxt.layer.cornerRadius = 4
-        equipmentTxt.layer.borderWidth = 2
-        equipmentTxt.layer.borderColor = UIColor.blackColor().CGColor
+        collectionView.layer.borderWidth = 1
+        collectionView.layer.borderColor = UIColor.blackColor().CGColor
         
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
@@ -57,28 +70,21 @@ class EquipmentDetailVC: UIViewController, UICollectionViewDelegate, UICollectio
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("equipScrollCell", forIndexPath: indexPath) as! EquipScrollCell
-        
+//        cell.layer.borderWidth = 1
+//        cell.layer.borderColor = UIColor.blackColor().CGColor
+//        
         let poolCategory = poolEquipment[indexPath.section]
         let product = poolCategory.products[indexPath.row]
         
-        let poolData = PoolData(label: product.label, image: product.image, description: "")
-        cell.configureCell(poolData)
+        // Use collectionView to populate this details view
+//        navigationItem.title = product.label
+//        equipmentImg.image = UIImage(named: product.image)
+//        equipmentTxt.text = product.description
+        let scrollData = PoolData(label: product.label, image: product.image, label2: product.label2, image2: product.image2, description: product.description)
+        cell.configureCell(scrollData)
         return cell
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Accessing segue by calling the segue identifier
-//        if segue.identifier == equipSegue {
-            let destination = segue.destinationViewController as! EquipmentDetailVC
-            if let indexPath = self.collectionView.indexPathForCell(sender as! UICollectionViewCell) {
-                
-                let poolCategory = poolEquipment[indexPath.section]
-                let product = poolCategory.products[indexPath.row]
-                
-                destination.productImage = UIImage(named: product.image)
-                destination.detailTitle = product.label
-                destination.descriptions = product.description
-            }
-//        }
+//        let poolData = PoolData(label: product.label, image: product.image, description: "")
+//        cell.configureCell(poolData)
+//        return cell
     }
 }

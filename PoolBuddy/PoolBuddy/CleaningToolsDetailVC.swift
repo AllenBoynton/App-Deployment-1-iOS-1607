@@ -26,10 +26,6 @@ class CleaningToolsDetailVC: UIViewController {
         cleaningImage.image = productImage
         cleaningText.text = descriptions
         
-        cleaningText.layer.cornerRadius = 4
-        cleaningText.layer.borderWidth = 2
-        cleaningText.layer.borderColor = UIColor.blackColor().CGColor
-        
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
     }

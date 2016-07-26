@@ -10,25 +10,29 @@ import UIKit
 
 class ChemicalDetailVC: UIViewController {
 
-    @IBOutlet weak var chemicalImage: UIImageView!    
     @IBOutlet weak var chemicalText: UITextView!
+    @IBOutlet weak var chemicalImage: UIImageView!
+    @IBOutlet weak var chemicalLabel: UITextView!
+    @IBOutlet weak var chemicalImage2: UIImageView!
     
     
     var detailTitle: String = ""
+    var detailLabel: String = ""
     var productImage: UIImage!
+    var productImage2: UIImage!
     var descriptions: String = ""
+    
+    var strings:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Using passed data to add to detail view
         navigationItem.title = detailTitle
+        chemicalLabel.text = detailLabel
         chemicalImage.image = productImage
+        chemicalImage2.image = productImage2
         chemicalText.text = descriptions
-        
-        chemicalText.layer.cornerRadius = 4
-        chemicalText.layer.borderWidth = 2
-        chemicalText.layer.borderColor = UIColor.blackColor().CGColor
         
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])

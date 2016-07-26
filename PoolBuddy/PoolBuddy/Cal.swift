@@ -13,4 +13,8 @@ import EventKit
 class Cal {
     
     static var newCalendar = EKCalendar()
+    
+    init() {
+    
+    }
 }

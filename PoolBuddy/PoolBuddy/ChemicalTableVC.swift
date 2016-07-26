@@ -1,5 +1,5 @@
 //
-//  ChemiicalTableVC.swift
+//  ChemicalTableVC.swift
 //  PoolBuddy
 //
 //  Created by Allen Boynton on 7/4/16.
@@ -59,7 +59,7 @@ class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         let poolCategory = poolChemicals[indexPath.section]
         let product = poolCategory.products[indexPath.row]
         
-        let poolData = PoolData(label: product.label, image: product.image, description: "")
+        let poolData = PoolData(label: product.label, image: product.image, label2: product.label2, image2: product.image2, description: product.description)
         cell.configureCell(poolData)
         return cell
     }
@@ -77,8 +77,10 @@ class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                 let poolCategory = poolChemicals[indexPath.section]
                 let product = poolCategory.products[indexPath.row]
                 
-                destination.productImage = UIImage(named: product.image)
                 destination.detailTitle = product.label
+                destination.productImage = UIImage(named: product.image)
+                destination.detailLabel = product.label2
+                destination.productImage2 = UIImage(named: product.image2)
                 destination.descriptions = product.description
             }
         }

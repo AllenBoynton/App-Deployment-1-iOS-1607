@@ -12,5 +12,9 @@ import EventKit
 
 class Global {
     
-    static let eventStore = EKEventStore()
+    static var eventStore = EKEventStore()
+    
+    init(){
+    
+    }
 }

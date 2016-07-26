@@ -11,14 +11,23 @@ import EventKit
 
 
 // Global Initializers
-let eventsVC = "toSecondVC"
+let eventVC = "toSecondVC"
 
 class PoolCalendarVC: UIViewController {
+    
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "Pool Calendar"
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        self.revealViewController().rearViewRevealWidth = 325
         
         // Create authorization status
         let status = EKEventStore.authorizationStatusForEntityType(.Event)
@@ -43,7 +52,7 @@ class PoolCalendarVC: UIViewController {
         // Area where you want to handle other situations
     }
     
-    @IBAction func createCalendar(sender: UIButton) {
+    @IBAction func createCalendar(sender: UIBarButtonItem) {
         // Check the status
         
         Cal.newCalendar = EKCalendar(forEntityType: .Event, eventStore: Global.eventStore)

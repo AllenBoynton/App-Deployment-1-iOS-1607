@@ -26,10 +26,6 @@ class WaterChemDetailVC: UIViewController {
         waterChemImage.image = productImage
         waterChemText.text = descriptions
         
-        waterChemText.layer.cornerRadius = 4
-        waterChemText.layer.borderWidth = 2
-        waterChemText.layer.borderColor = UIColor.blackColor().CGColor
-        
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
     }

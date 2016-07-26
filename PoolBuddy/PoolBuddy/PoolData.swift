@@ -11,9 +11,11 @@ import Foundation
 // This is in reference to the pool products/items
 
 class PoolData {
-    var _label: String!
-    var _image: String!
-    var _description: String!
+    private var _label: String!
+    private var _image: String!
+    private var _label2: String!
+    private var _image2: String!
+    private var _description: String!
     
     var label: String {
         return _label
@@ -23,13 +25,23 @@ class PoolData {
         return _image
     }
     
+    var label2: String {
+        return _label
+    }
+    
+    var image2: String {
+        return _image2
+    }
+    
     var description: String {
         return _description
     }
     
-    init(label: String, image: String, description: String) {
+    init(label: String, image: String, label2: String, image2: String, description: String) {
         self._label = label
         self._image = image
+        self._label2 = label2
+        self._image2 = image2
         self._description = description
     }
 }
