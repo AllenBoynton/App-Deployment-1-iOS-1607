@@ -29,9 +29,9 @@ class ChemicalDetailVC: UIViewController {
         
         // Using passed data to add to detail view
         navigationItem.title = detailTitle
-        chemicalLabel.text = detailLabel
+        chemicalLabel?.text = detailLabel
         chemicalImage.image = productImage
-        chemicalImage2.image = productImage2
+        chemicalImage2?.image = productImage2
         chemicalText.text = descriptions
         
         navigationController!.navigationBar.titleTextAttributes =

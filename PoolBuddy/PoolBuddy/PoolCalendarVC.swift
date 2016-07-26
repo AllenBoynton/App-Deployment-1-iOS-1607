@@ -5,9 +5,11 @@
 //  Created by Allen Boynton on 7/25/16.
 //  Copyright © 2016 Full Sail. All rights reserved.
 //
-
+import Foundation
 import UIKit
 import EventKit
+import WebKit
+import Alamofire
 
 
 // Global Initializers
@@ -16,6 +18,8 @@ let eventVC = "toSecondVC"
 class PoolCalendarVC: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    @IBOutlet weak var textField: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +53,7 @@ class PoolCalendarVC: UIViewController {
             })
         }
         
-        // Area where you want to handle other situations
+        textField.text = "Weekly pool maintenance of your\npool can be a daunting list of\n tasks.\n\nWe at A & B Pools have listed the\npopular and most imortant tasks\nto help you with your maintenance.\n\nThis is your initial roadmap. You\nmay change the existing tasks to\nbetter suit your schedule or needs\nof your pool. "
     }
     
     @IBAction func createCalendar(sender: UIBarButtonItem) {

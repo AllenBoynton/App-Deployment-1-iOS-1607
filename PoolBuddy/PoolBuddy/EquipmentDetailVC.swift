@@ -45,9 +45,9 @@ class EquipmentDetailVC: UIViewController, UICollectionViewDelegate, UICollectio
         
         // Using passed data to add to detail view
         navigationItem.title = detailTitle
-        equipmentLabel.text = detailLabel
+        equipmentLabel?.text = detailLabel
         equipmentImg.image = productImage
-        equipmentImg2.image = productImage2
+        equipmentImg2?.image = productImage2
         equipmentTxt.text = descriptions
         
         collectionView.layer.borderWidth = 1

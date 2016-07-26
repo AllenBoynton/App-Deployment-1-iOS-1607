@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092DEAA91D4758B300B7C637 /* MaintenanceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */; };
+		092DEAAB1D4758F500B7C637 /* MaintenanceTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092DEAAA1D4758F500B7C637 /* MaintenanceTableVC.swift */; };
+		092DEAAD1D47592600B7C637 /* MaintenanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092DEAAC1D47592600B7C637 /* MaintenanceCell.swift */; };
 		0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */; };
 		0940F53C1D2AC10A00BFA91C /* ChemicalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */; };
 		0940F53E1D2AC16200BFA91C /* WaterChemTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53D1D2AC16200BFA91C /* WaterChemTableVC.swift */; };
@@ -48,9 +51,13 @@
 		099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */; };
 		099071781D29D36F00477EA2 /* PoolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071771D29D36F00477EA2 /* PoolData.swift */; };
 		0990717B1D29EF1C00477EA2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990717A1D29EF1C00477EA2 /* SWRevealViewController.m */; };
+		A913357F9299078CFCC1ACAA /* Pods_PoolBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0950ACFE33D6B5BB2426D0DB /* Pods_PoolBuddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailVC.swift; sourceTree = "<group>"; };
+		092DEAAA1D4758F500B7C637 /* MaintenanceTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceTableVC.swift; sourceTree = "<group>"; };
+		092DEAAC1D47592600B7C637 /* MaintenanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceCell.swift; sourceTree = "<group>"; };
 		0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableVC.swift; sourceTree = "<group>"; };
 		0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableViewCell.swift; sourceTree = "<group>"; };
 		0940F53D1D2AC16200BFA91C /* WaterChemTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterChemTableVC.swift; sourceTree = "<group>"; };
@@ -71,6 +78,7 @@
 		0940F5621D2ED14B00BFA91C /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		0940F59D1D38315C00BFA91C /* PoolCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolCategory.swift; sourceTree = "<group>"; };
 		0940F59F1D3883DB00BFA91C /* CleaningToolsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningToolsTableViewCell.swift; sourceTree = "<group>"; };
+		0950ACFE33D6B5BB2426D0DB /* Pods_PoolBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		098F96391D42C95800E1B157 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		098F963B1D42FF8700E1B157 /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		098F963D1D4300C200E1B157 /* Pools.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Pools.plist; sourceTree = "<group>"; };
@@ -99,6 +107,8 @@
 		099071771D29D36F00477EA2 /* PoolData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolData.swift; sourceTree = "<group>"; };
 		099071791D29EF1C00477EA2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0990717A1D29EF1C00477EA2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C38C8472777C383D75137C8C /* Pods-PoolBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		F66F71243FA1F37067EE3835 /* Pods-PoolBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +117,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				099071541D246FE400477EA2 /* AVFoundation.framework in Frameworks */,
+				A913357F9299078CFCC1ACAA /* Pods_PoolBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092DEAA71D4757E100B7C637 /* MaintenanceTableVC */ = {
+			isa = PBXGroup;
+			children = (
+				092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */,
+				092DEAAA1D4758F500B7C637 /* MaintenanceTableVC.swift */,
+				092DEAAC1D47592600B7C637 /* MaintenanceCell.swift */,
+			);
+			name = MaintenanceTableVC;
+			sourceTree = "<group>";
+		};
 		0940F5311D2ABF5A00BFA91C /* EquipmentViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,14 +166,14 @@
 			name = ChemistryViewControllers;
 			sourceTree = "<group>";
 		};
-		0940F5341D2ABFAE00BFA91C /* MaintViewControllers */ = {
+		0940F5341D2ABFAE00BFA91C /* CleaningToolsVC */ = {
 			isa = PBXGroup;
 			children = (
 				0940F5531D2B031400BFA91C /* CleaningToolsDetailVC.swift */,
 				0940F54F1D2AF7F400BFA91C /* CleaningToolsTableVC.swift */,
 				0940F59F1D3883DB00BFA91C /* CleaningToolsTableViewCell.swift */,
 			);
-			name = MaintViewControllers;
+			name = CleaningToolsVC;
 			sourceTree = "<group>";
 		};
 		0940F5351D2AC01700BFA91C /* PlannerViewControllers */ = {
@@ -206,6 +227,7 @@
 				0990714C1D246F0900477EA2 /* Frameworks */,
 				099071391D246EC400477EA2 /* PoolBuddy */,
 				099071381D246EC400477EA2 /* Products */,
+				22F402FE7628720DFF5D37F3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,9 +251,10 @@
 				0940F5371D2AC04100BFA91C /* CalculatorViewControllers */,
 				0940F5351D2AC01700BFA91C /* PlannerViewControllers */,
 				0940F5361D2AC02E00BFA91C /* GalleryViewControllers */,
-				0940F5341D2ABFAE00BFA91C /* MaintViewControllers */,
+				092DEAA71D4757E100B7C637 /* MaintenanceTableVC */,
 				0940F5331D2ABF9000BFA91C /* ChemistryViewControllers */,
 				0940F5321D2ABF7B00BFA91C /* ChemicalViewControllers */,
+				0940F5341D2ABFAE00BFA91C /* CleaningToolsVC */,
 				0940F5311D2ABF5A00BFA91C /* EquipmentViewControllers */,
 				0990714E1D246F2300477EA2 /* MenuViewControllers */,
 				0990714F1D246F3E00477EA2 /* Storyboards */,
@@ -246,6 +269,7 @@
 				0940F5451D2AC28F00BFA91C /* EventKit.framework */,
 				099071551D26FA7F00477EA2 /* WebKit.framework */,
 				099071531D246FE400477EA2 /* AVFoundation.framework */,
+				0950ACFE33D6B5BB2426D0DB /* Pods_PoolBuddy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,6 +335,15 @@
 			name = Initiators;
 			sourceTree = "<group>";
 		};
+		22F402FE7628720DFF5D37F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C38C8472777C383D75137C8C /* Pods-PoolBuddy.debug.xcconfig */,
+				F66F71243FA1F37067EE3835 /* Pods-PoolBuddy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,9 +351,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 099071491D246EC400477EA2 /* Build configuration list for PBXNativeTarget "PoolBuddy" */;
 			buildPhases = (
+				49BFDE43B34F479688A5503A /* [CP] Check Pods Manifest.lock */,
 				099071331D246EC400477EA2 /* Sources */,
 				099071341D246EC400477EA2 /* Frameworks */,
 				099071351D246EC400477EA2 /* Resources */,
+				6E3840E4B33ABDC0C4347881 /* [CP] Embed Pods Frameworks */,
+				B4851E503DA3EEE6F06D8EED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -381,6 +417,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49BFDE43B34F479688A5503A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E3840E4B33ABDC0C4347881 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4851E503DA3EEE6F06D8EED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		099071331D246EC400477EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -402,6 +486,7 @@
 				0990717B1D29EF1C00477EA2 /* SWRevealViewController.m in Sources */,
 				0940F5541D2B031400BFA91C /* CleaningToolsDetailVC.swift in Sources */,
 				098F963C1D42FF8700E1B157 /* ImageData.swift in Sources */,
+				092DEAA91D4758B300B7C637 /* MaintenanceDetailVC.swift in Sources */,
 				0940F5A01D3883DB00BFA91C /* CleaningToolsTableViewCell.swift in Sources */,
 				0940F5631D2ED14B00BFA91C /* GalleryViewController.swift in Sources */,
 				0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */,
@@ -414,8 +499,10 @@
 				098F964E1D45F5F300E1B157 /* Global.swift in Sources */,
 				098F96521D45F98C00E1B157 /* PoolCalendarVC.swift in Sources */,
 				0940F54C1D2AC3B900BFA91C /* ChemicalDetailVC.swift in Sources */,
+				092DEAAD1D47592600B7C637 /* MaintenanceCell.swift in Sources */,
 				0940F59E1D38315C00BFA91C /* PoolCategory.swift in Sources */,
 				0940F55E1D2EC93600BFA91C /* HeaderReusableView.swift in Sources */,
+				092DEAAB1D4758F500B7C637 /* MaintenanceTableVC.swift in Sources */,
 				099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */,
 				0940F54E1D2AC3E600BFA91C /* EquipmentDetailVC.swift in Sources */,
 				0940F5481D2AC35D00BFA91C /* GalleryDetailVC.swift in Sources */,
@@ -534,6 +621,7 @@
 		};
 		0990714A1D246EC400477EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C38C8472777C383D75137C8C /* Pods-PoolBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -548,6 +636,7 @@
 		};
 		0990714B1D246EC400477EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66F71243FA1F37067EE3835 /* Pods-PoolBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

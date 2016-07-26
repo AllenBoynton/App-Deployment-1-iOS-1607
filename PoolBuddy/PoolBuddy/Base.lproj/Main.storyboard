@@ -177,7 +177,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="85257DB4-D3CC-4CE4-B211-CB8488D403CE" translatesAutoresizingMaskIntoConstraints="NO" id="wsc-wF-6jq" userLabel="Equip Image">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4EBA419C-4369-4C88-966F-3D515B4A7CFB" translatesAutoresizingMaskIntoConstraints="NO" id="wsc-wF-6jq" userLabel="Equip Image">
                                                             <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </imageView>
@@ -242,7 +242,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="sVm-kF-ycO" firstAttribute="top" secondItem="f8C-Z2-AWJ" secondAttribute="bottom" constant="20" id="08s-ar-KiG"/>
                                     <constraint firstAttribute="trailing" secondItem="Xth-Nd-NCB" secondAttribute="trailing" id="1OK-px-ZeJ"/>
@@ -267,6 +267,9 @@
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAH-K5-Duc">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Title" id="tak-6m-bt9" userLabel="Equipment Details">
                                         <barButtonItem key="rightBarButtonItem" title="Menu" style="done" id="hYw-oZ-D2s">
@@ -738,6 +741,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="bg0-2G-zDR" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="tRH-bT-GMR"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="KV2-nh-ONM" userLabel="calculator_cell">
                                         <rect key="frame" x="0.0" y="419" width="600" height="75"/>
@@ -1541,10 +1547,10 @@
             </objects>
             <point key="canvasLocation" x="1921" y="2632"/>
         </scene>
-        <!--Weekly Planner-->
+        <!--Pool Calendar-->
         <scene sceneID="x3K-AA-Z0T">
             <objects>
-                <viewController title="Weekly Planner" id="jT1-98-otZ" customClass="PoolCalendarVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Weekly Planner" id="jT1-98-otZ" userLabel="Pool Calendar" customClass="PoolCalendarVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mVg-hI-eia"/>
                         <viewControllerLayoutGuide type="bottom" id="fOW-qj-s21"/>
@@ -1553,47 +1559,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="wHh-ho-HA2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Qgg-x0-T0b">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqw-Ug-BkO">
-                                <rect key="frame" x="20" y="258.5" width="560" height="321.5"/>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
-                                <string key="text">Weekly pool maintenance of your
-pool can be a daunting list of 
-tasks.
-
-We at A &amp; B Pools have listed the
-popular and most important tasks
-to help you with your maintenance.
-
-This is your initial roadmap. You 
-may change the existing tasks to
-better suit your schedule or needs
-of your pool.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gdp-D0-lqg">
-                                <rect key="frame" x="20" y="64" width="560" height="194"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lk0-1Z-WxK" userLabel="BG View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7La-98-Yjz">
+                                        <rect key="frame" x="20" y="240" width="560" height="276"/>
+                                        <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+                                        <string key="text">Weekly pool maintenance of your pool can be a daunting list of tasks.                                                                                                                                                                                       We at A &amp; B Pools have listed the popular and most imortant tasks to help you with your maintenance.                                                                                                                                                                                     This is your initial roadmap. You may change the existing tasks to better suit your schedule or needs of your pool.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <webView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="nOh-1S-P1r">
+                                        <rect key="frame" x="20" y="20" width="560" height="220"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="fcL-By-wIx"/>
+                                        </constraints>
+                                    </webView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nOh-1S-P1r" firstAttribute="top" secondItem="Lk0-1Z-WxK" secondAttribute="top" constant="20" id="6K5-DY-tOH"/>
+                                    <constraint firstAttribute="bottom" secondItem="7La-98-Yjz" secondAttribute="bottom" constant="20" id="6wF-gZ-vfx"/>
+                                    <constraint firstItem="7La-98-Yjz" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" constant="20" id="J5x-kR-XUq"/>
+                                    <constraint firstAttribute="trailing" secondItem="nOh-1S-P1r" secondAttribute="trailing" constant="20" id="LWv-WZ-f5H"/>
+                                    <constraint firstItem="7La-98-Yjz" firstAttribute="top" secondItem="nOh-1S-P1r" secondAttribute="bottom" id="UXE-YJ-XTz"/>
+                                    <constraint firstItem="nOh-1S-P1r" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" constant="20" id="ZCd-fb-lSQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="7La-98-Yjz" secondAttribute="trailing" constant="20" id="xzq-3Q-Ezi"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="tqw-Ug-BkO" secondAttribute="trailing" constant="20" id="I43-lh-FEN"/>
-                            <constraint firstItem="Gdp-D0-lqg" firstAttribute="top" secondItem="mVg-hI-eia" secondAttribute="bottom" id="Jlg-mQ-OCi"/>
-                            <constraint firstItem="fOW-qj-s21" firstAttribute="top" secondItem="tqw-Ug-BkO" secondAttribute="bottom" constant="20" id="LDo-e8-nho"/>
-                            <constraint firstAttribute="trailing" secondItem="wHh-ho-HA2" secondAttribute="trailing" id="LaT-jt-4Jj"/>
-                            <constraint firstItem="fOW-qj-s21" firstAttribute="top" secondItem="wHh-ho-HA2" secondAttribute="bottom" id="MQj-Y4-WgF"/>
-                            <constraint firstItem="wHh-ho-HA2" firstAttribute="leading" secondItem="EDY-lu-Uag" secondAttribute="leading" id="Qfk-fp-N3x"/>
-                            <constraint firstItem="wHh-ho-HA2" firstAttribute="top" secondItem="mVg-hI-eia" secondAttribute="bottom" id="XiA-LE-paR"/>
-                            <constraint firstItem="Gdp-D0-lqg" firstAttribute="trailing" secondItem="EDY-lu-Uag" secondAttribute="trailingMargin" id="a6G-3V-7j9"/>
-                            <constraint firstItem="tqw-Ug-BkO" firstAttribute="top" secondItem="Gdp-D0-lqg" secondAttribute="bottom" id="aKP-bl-uF8"/>
-                            <constraint firstItem="Gdp-D0-lqg" firstAttribute="leading" secondItem="EDY-lu-Uag" secondAttribute="leadingMargin" id="gAg-GE-YoH"/>
-                            <constraint firstItem="tqw-Ug-BkO" firstAttribute="height" secondItem="wHh-ho-HA2" secondAttribute="height" multiplier="0.6" id="icU-vJ-eHK"/>
-                            <constraint firstItem="tqw-Ug-BkO" firstAttribute="leading" secondItem="EDY-lu-Uag" secondAttribute="leading" constant="20" id="kgX-kw-z1B"/>
+                            <constraint firstItem="fOW-qj-s21" firstAttribute="top" secondItem="Qgg-x0-T0b" secondAttribute="bottom" id="2DE-3C-t8m"/>
+                            <constraint firstItem="Lk0-1Z-WxK" firstAttribute="leading" secondItem="EDY-lu-Uag" secondAttribute="leading" id="KoL-eh-ghU"/>
+                            <constraint firstItem="Qgg-x0-T0b" firstAttribute="top" secondItem="mVg-hI-eia" secondAttribute="bottom" id="QCZ-u8-Dvn"/>
+                            <constraint firstItem="fOW-qj-s21" firstAttribute="top" secondItem="Lk0-1Z-WxK" secondAttribute="bottom" id="TPi-lk-DPd"/>
+                            <constraint firstItem="Qgg-x0-T0b" firstAttribute="leading" secondItem="EDY-lu-Uag" secondAttribute="leading" id="Wyd-td-aCW"/>
+                            <constraint firstAttribute="trailing" secondItem="Lk0-1Z-WxK" secondAttribute="trailing" id="dBe-q9-b0M"/>
+                            <constraint firstAttribute="trailing" secondItem="Qgg-x0-T0b" secondAttribute="trailing" id="xMo-UI-mPJ"/>
+                            <constraint firstItem="Lk0-1Z-WxK" firstAttribute="top" secondItem="mVg-hI-eia" secondAttribute="bottom" id="zIP-fC-p6F"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pool Calendar" id="gQQ-Lz-05a">
@@ -1617,11 +1626,12 @@ of your pool.</string>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="lWb-WE-mis" id="lTz-5r-gsh"/>
+                        <outlet property="textField" destination="7La-98-Yjz" id="Iuc-RM-3eh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsI-AU-B1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1257" y="3327"/>
+            <point key="canvasLocation" x="1257" y="3998"/>
         </scene>
         <!--Pool Reminder-->
         <scene sceneID="45s-CD-e73">
@@ -1639,7 +1649,7 @@ of your pool.</string>
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdX-uD-r4f">
-                                <rect key="frame" x="20" y="258.5" width="560" height="321.5"/>
+                                <rect key="frame" x="20" y="258" width="560" height="321.5"/>
                                 <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
                                 <string key="text">Until you fall into a routine, we at A &amp; B Pools would like to start you off with the basics. You will find some default reminders that should be followed as best you can.
 
@@ -1695,7 +1705,69 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mm-xp-lsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921" y="3327"/>
+            <point key="canvasLocation" x="1921" y="3998"/>
+        </scene>
+        <!--Pool Maintenance View Controller-->
+        <scene sceneID="cBd-sh-H3P">
+            <objects>
+                <viewController id="7cR-AH-iBa" userLabel="Pool Maintenance View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MAu-6d-HZ7"/>
+                        <viewControllerLayoutGuide type="bottom" id="lNF-sh-HZy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k2S-e4-bfv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beautiful Abstract_12" translatesAutoresizingMaskIntoConstraints="NO" id="ger-fN-2JB">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BWf-6g-yUR">
+                                <rect key="frame" x="20" y="84" width="560" height="496"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="70S-hZ-fua">
+                                    <size key="itemSize" width="135" height="135"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="maint_cell" id="35P-Ao-gRh">
+                                        <rect key="frame" x="20" y="20" width="135" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="7cR-AH-iBa" id="dtp-H6-qop"/>
+                                    <outlet property="delegate" destination="7cR-AH-iBa" id="zH3-Mq-yWN"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ger-fN-2JB" secondAttribute="trailing" id="HmC-zd-WQP"/>
+                            <constraint firstItem="lNF-sh-HZy" firstAttribute="top" secondItem="BWf-6g-yUR" secondAttribute="bottom" constant="20" id="QV8-kU-Izz"/>
+                            <constraint firstItem="lNF-sh-HZy" firstAttribute="top" secondItem="ger-fN-2JB" secondAttribute="bottom" id="bPf-zD-iTD"/>
+                            <constraint firstItem="ger-fN-2JB" firstAttribute="top" secondItem="MAu-6d-HZ7" secondAttribute="bottom" id="gNV-OQ-qTK"/>
+                            <constraint firstItem="BWf-6g-yUR" firstAttribute="leading" secondItem="k2S-e4-bfv" secondAttribute="leading" constant="20" id="jMJ-Zm-UKT"/>
+                            <constraint firstItem="ger-fN-2JB" firstAttribute="leading" secondItem="k2S-e4-bfv" secondAttribute="leading" id="kd5-bV-nEr"/>
+                            <constraint firstAttribute="trailing" secondItem="BWf-6g-yUR" secondAttribute="trailing" constant="20" id="mBm-L8-lnb"/>
+                            <constraint firstItem="BWf-6g-yUR" firstAttribute="top" secondItem="MAu-6d-HZ7" secondAttribute="bottom" constant="20" id="p1r-KO-eWe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pool Maintenance" id="jzK-Oy-b2z">
+                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="yZF-PE-bbB">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAG-cO-OU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="3327"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="agG-zG-SeU">
@@ -1713,7 +1785,7 @@ Good Luck!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RrP-DH-IFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595" y="3327"/>
+            <point key="canvasLocation" x="595" y="3998"/>
         </scene>
         <!--Gallery DetailVC-->
         <scene sceneID="Ng4-Np-Due">
@@ -1810,7 +1882,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrQ-V2-926" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955" y="4010"/>
+            <point key="canvasLocation" x="1921" y="4694"/>
         </scene>
         <!--Pool Problems Gallery-->
         <scene sceneID="iF6-oK-qOq">
@@ -1943,7 +2015,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVn-aF-qLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1257" y="4010"/>
+            <point key="canvasLocation" x="1257" y="4694"/>
         </scene>
         <!--Pool Calculator-->
         <scene sceneID="IJS-6u-YH0">
@@ -1971,7 +2043,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pi8-rg-MbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1257" y="4698"/>
+            <point key="canvasLocation" x="1257" y="5358"/>
         </scene>
         <!--Live Chat-->
         <scene sceneID="FGw-mQ-vUD">
@@ -1999,7 +2071,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGV-2x-E7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1257" y="5392"/>
+            <point key="canvasLocation" x="1257" y="6062"/>
         </scene>
         <!--Calculator Navigation Controller-->
         <scene sceneID="ugF-CV-nUY">
@@ -2017,7 +2089,7 @@ Good Luck!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKw-dT-v6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595" y="4698"/>
+            <point key="canvasLocation" x="595" y="5358"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rPh-gY-1kj">
@@ -2035,7 +2107,7 @@ Good Luck!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xmx-Iq-zPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595" y="5392"/>
+            <point key="canvasLocation" x="595" y="6062"/>
         </scene>
         <!--Gallery Navigation Controller-->
         <scene sceneID="Q7P-LM-zK8">
@@ -2053,7 +2125,7 @@ Good Luck!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hla-kp-fyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595" y="4010"/>
+            <point key="canvasLocation" x="595" y="4694"/>
         </scene>
         <!--Cleaning Tools Navigation Controller-->
         <scene sceneID="Bbb-06-sYY">
@@ -2073,9 +2145,27 @@ Good Luck!</string>
             </objects>
             <point key="canvasLocation" x="595" y="2632"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8nv-Mg-TUH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bg0-2G-zDR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="rEx-24-LjX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7cR-AH-iBa" kind="relationship" relationship="rootViewController" id="i1U-5a-i8J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xT-wU-oFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595" y="3327"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="85257DB4-D3CC-4CE4-B211-CB8488D403CE" width="140" height="140">
+        <image name="4EBA419C-4369-4C88-966F-3D515B4A7CFB" width="140" height="140">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
