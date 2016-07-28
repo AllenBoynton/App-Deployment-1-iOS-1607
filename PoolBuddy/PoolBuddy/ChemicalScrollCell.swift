@@ -10,6 +10,7 @@ import UIKit
 
 class ChemicalScrollCell: UICollectionViewCell {
     
+    // Outlets for collection view screen
     @IBOutlet weak var chemicalLabel: UILabel!
     @IBOutlet weak var chemicalImage: UIImageView!
     @IBOutlet weak var chemicalDescription: UITextView!

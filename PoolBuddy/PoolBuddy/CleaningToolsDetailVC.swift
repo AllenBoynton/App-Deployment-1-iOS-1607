@@ -10,9 +10,15 @@ import UIKit
 
 class CleaningToolsDetailVC: UIViewController {
     
-    @IBOutlet weak var cleaningImage: UIImageView!
-    @IBOutlet weak var cleaningText: UITextView!
+    lazy var maintenanceEquipment: [PoolCategory] = {
+        return PoolCategory.maintenanceEquipment()
+    }()
     
+    // Outlets for the text view & image of problem pool
+    @IBOutlet weak var detailImage: UIImageView!
+    @IBOutlet weak var detailText: UITextView!
+    @IBOutlet weak var detailImage2: UIImageView!
+    @IBOutlet weak var detailLabel: UILabel!
     
     var detailTitle: String = ""
     var detailLabel: String = ""
@@ -25,9 +31,8 @@ class CleaningToolsDetailVC: UIViewController {
         
         // Using passed data to add to detail view
         navigationItem.title = detailTitle
-        
-        cleaningImage.image = productImage
-        cleaningText.text = descriptions
+        detailImage.image = productImage
+        detailText.text = descriptions
         
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])

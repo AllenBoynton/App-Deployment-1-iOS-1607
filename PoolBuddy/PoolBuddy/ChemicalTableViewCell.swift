@@ -10,9 +10,9 @@ import UIKit
 
 class ChemicalTableViewCell: UITableViewCell {
 
+    // Outlets for table view screen
     @IBOutlet weak var chemicalImage: UIImageView!
     @IBOutlet weak var chemicalLabel: UILabel!
-    
     
     var poolData: PoolData!
     

@@ -13,32 +13,19 @@ class GalleryDetailVC: UIViewController {
     // Outlets for the text view & image of problem pool
     @IBOutlet weak var poolDescription: UITextView!
     @IBOutlet weak var poolImage: UIImageView!
-    
-    
-    // DataSource for details in this VC
-    var poolDetail: ImageData? {
-        didSet {
-            configureView()
-        }
-    }
-    
-    // Assigns the segue delegate to the view and image of this VC
-    func configureView() {
-        if let poolDetail = poolDetail {
-            if let poolDescription = poolDescription, poolImage = poolImage {
-                poolDescription.text = poolDetail.image
-                poolImage.image = UIImage(named: poolDetail.image)
-                navigationItem.title = poolDetail.image
-            }
-        }
-    }
+
+    var detailTitle: String!
+    var problemImage: UIImage!
+    var descriptions: String!
     
     // Function is called to display the configure view
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureView()
-        
+        navigationItem.title = detailTitle
+        poolImage.image = problemImage
+        poolDescription.text = descriptions
+                
         poolImage.layer.cornerRadius = 4
         poolImage.layer.borderWidth = 2
         poolImage.layer.borderColor = UIColor.blackColor().CGColor

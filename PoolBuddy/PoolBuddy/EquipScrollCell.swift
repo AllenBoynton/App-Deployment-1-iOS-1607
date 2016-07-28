@@ -10,18 +10,15 @@ import UIKit
 
 class EquipScrollCell: UICollectionViewCell {
     
+    // Outlets for collection view screen
     @IBOutlet weak var equipLabel: UILabel!
     @IBOutlet weak var equipImage: UIImageView!
     @IBOutlet weak var equipDescription: UITextView!
     
     var scrollData: PoolData!
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    func configureCell(poolData: PoolData) {
-        self.scrollData = poolData
+        
+    func configureCell(scrollData: PoolData) {
+        self.scrollData = scrollData
         
         equipLabel.text = self.scrollData.label
         equipImage.image = UIImage(named: "\(self.scrollData.image)")

@@ -18,8 +18,8 @@ class GalleryCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        layer.cornerRadius = 5.0
-        layer.borderWidth = 2
+        layer.cornerRadius = 3.0
+        layer.borderWidth = 1
         layer.borderColor = UIColor.blackColor().CGColor
     }
     
@@ -33,6 +33,6 @@ class GalleryCell: UICollectionViewCell {
 
 class InsetLabel: UILabel {
     override func drawTextInRect(rect: CGRect) {
-        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)))
+        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)))
     }
 }

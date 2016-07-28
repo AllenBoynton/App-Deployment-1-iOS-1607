@@ -21,7 +21,6 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -80,10 +79,14 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
                 
                 destination.detailTitle = product.label
                 destination.productImage = UIImage(named: product.image)
-                destination.detailLabel = product.label2
+                destination.detailLabel2 = product.label2
                 destination.productImage2 = UIImage(named: product.image2)
                 destination.descriptions = product.description
             }
         }
     }
+    
+    // Reference to return to this category
+    @IBAction func unwindActionToEquipment(unwindSegue: UIStoryboardSegue) {}
+    
 }

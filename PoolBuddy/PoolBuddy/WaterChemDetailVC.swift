@@ -10,9 +10,13 @@ import UIKit
 
 class WaterChemDetailVC: UIViewController {
 
-    @IBOutlet weak var waterChemImage: UIImageView!    
-    @IBOutlet weak var waterChemText: UITextView!
+    lazy var waterChemistry: [PoolCategory] = {
+        return PoolCategory.waterChemistry()
+    }()
     
+    // Outlets for table view screen
+    @IBOutlet weak var detailImage: UIImageView!
+    @IBOutlet weak var detailText: UITextView!
     
     var detailTitle: String = ""
     var productImage: UIImage!
@@ -23,8 +27,8 @@ class WaterChemDetailVC: UIViewController {
         
         // Using passed data to add to detail view
         navigationItem.title = detailTitle
-        waterChemImage.image = productImage
-        waterChemText.text = descriptions
+        detailImage.image = productImage
+        detailText.text = descriptions
         
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])

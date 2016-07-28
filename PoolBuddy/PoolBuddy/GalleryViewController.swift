@@ -12,8 +12,8 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     var imageData = [ImageData]()
     var filteredPools = [ImageData]()
-    
     var poolData = [PoolData]()
+    var problem = Problems()
     
     var dataSource = DataSource()
     
@@ -112,9 +112,10 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             if inSearchMode {
                 let pool = filteredPools[indexPath.row]
                 let image = pool.image
+                let group = pool.group
                 
                 // Displays name protocol to cell image and label
-                let imageData = ImageData(image: image, group: "")
+                let imageData = ImageData(image: image, group: group)
                 cell.configureCell(imageData)
                 
             } else {
@@ -122,8 +123,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
                 let pool = pools[indexPath.row]
                 
                 let image = pool.image
+                let group = pool.group
                 
-                let imageData = ImageData(image: image, group: "")
+                let imageData = ImageData(image: image, group: group)
                 cell.configureCell(imageData)
             }
             return cell
@@ -189,15 +191,19 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     // MARK: Segue to details
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == gallerySegue {
+            let destination = segue.destinationViewController as! GalleryDetailVC
             if let indexPath = collectionView.indexPathForCell(sender as! UICollectionViewCell) {
                 let imageData: ImageData
+                let problem: Problems
                 if searchController.active && searchController.searchBar.text != "" {
+                    
                     imageData = filteredPools[indexPath.row]
                 } else {
                     imageData = dataSource.pools[indexPath.row]
                 }
-                let destination = segue.destinationViewController as! GalleryDetailVC
-                destination.poolDetail = imageData
+                destination.detailTitle = imageData.image
+                destination.problemImage = UIImage(named: imageData.image)
+                destination.descriptions = problem.problem
             }
         }
     }
@@ -208,6 +214,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
         collectionView.reloadData()
     }
+    
+    
+    @IBAction func unwindActionToPoolProblems(unwindSegue: UIStoryboardSegue) {}
 }
 
 // This class extension allows for the array to be of different counts due to search results

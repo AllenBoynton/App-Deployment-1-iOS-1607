@@ -16,4 +16,9 @@ class HeaderReusableView: UICollectionReusableView {
     // Outlet to create label name for the header
     @IBOutlet weak var sectionTitle: UILabel!
     
+    func viewDidLoad() {
+        viewDidLoad()
+        
+        
+    }
 }

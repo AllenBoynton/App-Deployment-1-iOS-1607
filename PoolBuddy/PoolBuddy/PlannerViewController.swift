@@ -13,6 +13,8 @@ import WebKit
 
 class PlannerViewController: UIViewController {
     
+    @IBOutlet weak var poolImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

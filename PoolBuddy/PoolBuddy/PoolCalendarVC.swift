@@ -21,10 +21,14 @@ class PoolCalendarVC: UIViewController {
     
     @IBOutlet weak var textField: UITextView!
     
+    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "Pool Calendar"
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
@@ -81,4 +85,7 @@ class PoolCalendarVC: UIViewController {
             print(error)
         }
     }
+    
+    
+    @IBAction func unwindActionToReminders(unwindSegue: UIStoryboardSegue) {}
 }

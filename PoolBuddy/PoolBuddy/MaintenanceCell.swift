@@ -2,23 +2,32 @@
 //  MaintenanceCell.swift
 //  PoolBuddy
 //
-//  Created by Allen Boynton on 7/26/16.
+//  Created by Allen Boynton on 7/20/16.
 //  Copyright © 2016 Full Sail. All rights reserved.
 //
 
 import UIKit
 
-class MaintenanceCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+class MaintenanceCell: UICollectionViewCell {
+    
+    // Outlets for collection view screen
+    @IBOutlet weak var maintenanceImage: UIImageView!
+    @IBOutlet weak var maintenanceLabel: UILabel!
+    
+    var poolData: PoolData!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        layer.cornerRadius = 3.0
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.blackColor().CGColor
     }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configureCell(poolData: PoolData) {
+        self.poolData = poolData
+        
+        maintenanceImage.image = UIImage(named: "\(self.poolData.image)")
+        maintenanceLabel.text = self.poolData.label.capitalizedString
     }
-
 }

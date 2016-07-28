@@ -17,10 +17,9 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         return PoolCategory.waterChemistry()
     }()
     
-    //
+    // Outlets for table view screen
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,14 +72,16 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         if segue.identifier == wChemSegue {
             let destination = segue.destinationViewController as! WaterChemDetailVC
             if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell) {
-                
                 let poolCategory = waterChemistry[indexPath.section]
                 let product = poolCategory.products[indexPath.row]
                 
-                destination.productImage = UIImage(named: product.image)
                 destination.detailTitle = product.label
+                destination.productImage = UIImage(named: product.image)
                 destination.descriptions = product.description
             }
         }
     }
+    
+    
+    @IBAction func unwindActionToWaterBalance(unwindSegue: UIStoryboardSegue) {}
 }

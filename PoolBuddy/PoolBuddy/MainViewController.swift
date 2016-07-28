@@ -20,6 +20,7 @@ let wChemSegue = "toDetailVC"
 let cleaningTools = "tools_cell"
 let toolSegue = "toDetailVC"
 let maintenance = "maint_cell"
+let maintSegue = "toMaintDetailVC"
 let photo = "photoCell"
 let gallerySegue = "gallerySegue"
 let cellHeader = "header"
@@ -29,7 +30,6 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-
     // Audio player
     var splash = AVAudioPlayer()
 

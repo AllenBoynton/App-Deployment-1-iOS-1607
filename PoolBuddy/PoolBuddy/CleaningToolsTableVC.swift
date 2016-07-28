@@ -17,10 +17,9 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
         return PoolCategory.maintenanceEquipment()
     }()
 
-    //
+    // Outlets for table view screen
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,14 +72,20 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
         if segue.identifier == toolSegue {
             let destination = segue.destinationViewController as! CleaningToolsDetailVC
             if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell) {
-                
+        
                 let poolCategory = maintenanceEquipment[indexPath.section]
                 let product = poolCategory.products[indexPath.row]
                 
-                destination.productImage = UIImage(named: product.image)
                 destination.detailTitle = product.label
+                destination.productImage = UIImage(named: product.image)
+                destination.detailLabel = product.label2
+                destination.productImage2 = UIImage(named: product.image2)
                 destination.descriptions = product.description
             }
         }
     }
+    
+    
+    @IBAction func unwindActionToTools(unwindSegue: UIStoryboardSegue) {}
+    
 }

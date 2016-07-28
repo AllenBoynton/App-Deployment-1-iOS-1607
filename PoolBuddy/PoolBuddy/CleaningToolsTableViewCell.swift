@@ -10,10 +10,10 @@ import UIKit
 
 class CleaningToolsTableViewCell: UITableViewCell {
     
+    // Outlets for table view screen
     @IBOutlet weak var toolsImage: UIImageView!
     @IBOutlet weak var toolsLabel: UILabel!
     
-
     var poolData: PoolData!
     
     func configureCell(poolData: PoolData) {

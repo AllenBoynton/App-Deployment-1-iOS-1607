@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092789301D49E8CA0059B2CC /* PoolProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927892F1D49E8CA0059B2CC /* PoolProblems.swift */; };
 		092DEAA91D4758B300B7C637 /* MaintenanceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */; };
-		092DEAAB1D4758F500B7C637 /* MaintenanceTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092DEAAA1D4758F500B7C637 /* MaintenanceTableVC.swift */; };
-		092DEAAD1D47592600B7C637 /* MaintenanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092DEAAC1D47592600B7C637 /* MaintenanceCell.swift */; };
 		0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */; };
 		0940F53C1D2AC10A00BFA91C /* ChemicalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */; };
 		0940F53E1D2AC16200BFA91C /* WaterChemTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53D1D2AC16200BFA91C /* WaterChemTableVC.swift */; };
@@ -51,13 +50,16 @@
 		099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */; };
 		099071781D29D36F00477EA2 /* PoolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071771D29D36F00477EA2 /* PoolData.swift */; };
 		0990717B1D29EF1C00477EA2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990717A1D29EF1C00477EA2 /* SWRevealViewController.m */; };
-		A913357F9299078CFCC1ACAA /* Pods_PoolBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0950ACFE33D6B5BB2426D0DB /* Pods_PoolBuddy.framework */; };
+		099383A41D47C67100085A3E /* MaintenanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099383A31D47C67100085A3E /* MaintenanceVC.swift */; };
+		099383A61D47C68E00085A3E /* MaintenanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099383A51D47C68E00085A3E /* MaintenanceCell.swift */; };
+		099383A81D493B7D00085A3E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099383A71D493B7D00085A3E /* CoreLocation.framework */; };
+		099383AC1D493DDA00085A3E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099383AB1D493DDA00085A3E /* Alamofire.framework */; };
+		099383B01D49E2A500085A3E /* Problems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099383AF1D49E2A500085A3E /* Problems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0927892F1D49E8CA0059B2CC /* PoolProblems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolProblems.swift; sourceTree = "<group>"; };
 		092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailVC.swift; sourceTree = "<group>"; };
-		092DEAAA1D4758F500B7C637 /* MaintenanceTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceTableVC.swift; sourceTree = "<group>"; };
-		092DEAAC1D47592600B7C637 /* MaintenanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceCell.swift; sourceTree = "<group>"; };
 		0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableVC.swift; sourceTree = "<group>"; };
 		0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableViewCell.swift; sourceTree = "<group>"; };
 		0940F53D1D2AC16200BFA91C /* WaterChemTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterChemTableVC.swift; sourceTree = "<group>"; };
@@ -78,7 +80,6 @@
 		0940F5621D2ED14B00BFA91C /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		0940F59D1D38315C00BFA91C /* PoolCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolCategory.swift; sourceTree = "<group>"; };
 		0940F59F1D3883DB00BFA91C /* CleaningToolsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningToolsTableViewCell.swift; sourceTree = "<group>"; };
-		0950ACFE33D6B5BB2426D0DB /* Pods_PoolBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		098F96391D42C95800E1B157 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		098F963B1D42FF8700E1B157 /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		098F963D1D4300C200E1B157 /* Pools.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Pools.plist; sourceTree = "<group>"; };
@@ -107,6 +108,11 @@
 		099071771D29D36F00477EA2 /* PoolData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolData.swift; sourceTree = "<group>"; };
 		099071791D29EF1C00477EA2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0990717A1D29EF1C00477EA2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		099383A31D47C67100085A3E /* MaintenanceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceVC.swift; sourceTree = "<group>"; };
+		099383A51D47C68E00085A3E /* MaintenanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceCell.swift; sourceTree = "<group>"; };
+		099383A71D493B7D00085A3E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		099383AB1D493DDA00085A3E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Full Sail/Current Class/Visual Frameworks/Developer/PoolBuddy-flzcgzmjbrtxzwhagsnyinkfwjhx/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		099383AF1D49E2A500085A3E /* Problems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problems.swift; sourceTree = "<group>"; };
 		C38C8472777C383D75137C8C /* Pods-PoolBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		F66F71243FA1F37067EE3835 /* Pods-PoolBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,22 +122,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099383AC1D493DDA00085A3E /* Alamofire.framework in Frameworks */,
+				099383A81D493B7D00085A3E /* CoreLocation.framework in Frameworks */,
 				099071541D246FE400477EA2 /* AVFoundation.framework in Frameworks */,
-				A913357F9299078CFCC1ACAA /* Pods_PoolBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		092DEAA71D4757E100B7C637 /* MaintenanceTableVC */ = {
+		092DEAA71D4757E100B7C637 /* MaintenanceViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */,
-				092DEAAA1D4758F500B7C637 /* MaintenanceTableVC.swift */,
-				092DEAAC1D47592600B7C637 /* MaintenanceCell.swift */,
+				099383A31D47C67100085A3E /* MaintenanceVC.swift */,
+				099383A51D47C68E00085A3E /* MaintenanceCell.swift */,
 			);
-			name = MaintenanceTableVC;
+			name = MaintenanceViewControllers;
 			sourceTree = "<group>";
 		};
 		0940F5311D2ABF5A00BFA91C /* EquipmentViewControllers */ = {
@@ -216,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				098F96391D42C95800E1B157 /* DataSource.swift */,
+				0927892F1D49E8CA0059B2CC /* PoolProblems.swift */,
 				0940F59D1D38315C00BFA91C /* PoolCategory.swift */,
 			);
 			name = DataSource;
@@ -251,7 +259,7 @@
 				0940F5371D2AC04100BFA91C /* CalculatorViewControllers */,
 				0940F5351D2AC01700BFA91C /* PlannerViewControllers */,
 				0940F5361D2AC02E00BFA91C /* GalleryViewControllers */,
-				092DEAA71D4757E100B7C637 /* MaintenanceTableVC */,
+				092DEAA71D4757E100B7C637 /* MaintenanceViewControllers */,
 				0940F5331D2ABF9000BFA91C /* ChemistryViewControllers */,
 				0940F5321D2ABF7B00BFA91C /* ChemicalViewControllers */,
 				0940F5341D2ABFAE00BFA91C /* CleaningToolsVC */,
@@ -265,11 +273,12 @@
 		0990714C1D246F0900477EA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				099383AB1D493DDA00085A3E /* Alamofire.framework */,
+				099383A71D493B7D00085A3E /* CoreLocation.framework */,
 				0940F55B1D2B078500BFA91C /* MessageUI.framework */,
 				0940F5451D2AC28F00BFA91C /* EventKit.framework */,
 				099071551D26FA7F00477EA2 /* WebKit.framework */,
 				099071531D246FE400477EA2 /* AVFoundation.framework */,
-				0950ACFE33D6B5BB2426D0DB /* Pods_PoolBuddy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -329,6 +338,7 @@
 			children = (
 				098F964F1D45F64800E1B157 /* Cal.swift */,
 				098F964D1D45F5F300E1B157 /* Global.swift */,
+				099383AF1D49E2A500085A3E /* Problems.swift */,
 				098F963B1D42FF8700E1B157 /* ImageData.swift */,
 				099071771D29D36F00477EA2 /* PoolData.swift */,
 			);
@@ -482,6 +492,7 @@
 				098F96421D4560D100E1B157 /* csv.swift in Sources */,
 				0940F5441D2AC26C00BFA91C /* GalleryCell.swift in Sources */,
 				0940F54A1D2AC38900BFA91C /* WaterChemDetailVC.swift in Sources */,
+				099383A41D47C67100085A3E /* MaintenanceVC.swift in Sources */,
 				0940F53C1D2AC10A00BFA91C /* ChemicalTableViewCell.swift in Sources */,
 				0990717B1D29EF1C00477EA2 /* SWRevealViewController.m in Sources */,
 				0940F5541D2B031400BFA91C /* CleaningToolsDetailVC.swift in Sources */,
@@ -497,12 +508,13 @@
 				098F964C1D45949B00E1B157 /* EquipScrollCell.swift in Sources */,
 				098F963A1D42C95800E1B157 /* DataSource.swift in Sources */,
 				098F964E1D45F5F300E1B157 /* Global.swift in Sources */,
+				092789301D49E8CA0059B2CC /* PoolProblems.swift in Sources */,
 				098F96521D45F98C00E1B157 /* PoolCalendarVC.swift in Sources */,
+				099383B01D49E2A500085A3E /* Problems.swift in Sources */,
+				099383A61D47C68E00085A3E /* MaintenanceCell.swift in Sources */,
 				0940F54C1D2AC3B900BFA91C /* ChemicalDetailVC.swift in Sources */,
-				092DEAAD1D47592600B7C637 /* MaintenanceCell.swift in Sources */,
 				0940F59E1D38315C00BFA91C /* PoolCategory.swift in Sources */,
 				0940F55E1D2EC93600BFA91C /* HeaderReusableView.swift in Sources */,
-				092DEAAB1D4758F500B7C637 /* MaintenanceTableVC.swift in Sources */,
 				099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */,
 				0940F54E1D2AC3E600BFA91C /* EquipmentDetailVC.swift in Sources */,
 				0940F5481D2AC35D00BFA91C /* GalleryDetailVC.swift in Sources */,
