@@ -29,7 +29,7 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        self.revealViewController().rearViewRevealWidth = 325
+        self.revealViewController().rearViewRevealWidth = 350
 
         navigationItem.title = "Equipment"
         navigationController!.navigationBar.titleTextAttributes =

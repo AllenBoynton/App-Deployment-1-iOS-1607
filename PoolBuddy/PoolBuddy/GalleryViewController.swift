@@ -10,12 +10,13 @@ import UIKit
 
 class GalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchControllerDelegate, UISearchBarDelegate, UIScrollViewDelegate {
     
-    var imageData = [ImageData]()
-    var filteredPools = [ImageData]()
-    var poolData = [PoolData]()
-    var problem = Problems()
+    // Gives us access to the pool product inventory info listed in PoolCategory
+    lazy var poolGallery: [PoolProblems] = {
+        return PoolProblems.poolGallery()
+    }()
     
-    var dataSource = DataSource()
+    var problems = [Problems]()
+    var filteredPools = [Problems]()
     
     var inSearchMode = false
     
@@ -69,18 +70,15 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        print("Groups: \(dataSource.groups.count)")
-        return dataSource.groups.count
+        return poolGallery.count
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if inSearchMode {
             return filteredPools.count
         }
-        print("Images: \(dataSource.poolsInGroup(section).count)")
-        let pools = dataSource.poolsInGroup(section).count
-        
-        return pools
+        let poolProblems = poolGallery[section]
+        return poolProblems.solutions.count
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -110,23 +108,22 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(photo, forIndexPath: indexPath) as? GalleryCell {
             
             if inSearchMode {
-                let pool = filteredPools[indexPath.row]
-                let image = pool.image
-                let group = pool.group
+                let solutions = filteredPools[indexPath.row]
+                let title = solutions.title
+                let image = solutions.image
+                let group = solutions.group
+                let solution = solutions.solution
                 
                 // Displays name protocol to cell image and label
-                let imageData = ImageData(image: image, group: group)
-                cell.configureCell(imageData)
+                let problems = Problems(title: title, image: image, group: group, solution: solution)
+                cell.configureCell(problems)
                 
             } else {
-                let pools: [ImageData] = dataSource.poolsInGroup(indexPath.section)
-                let pool = pools[indexPath.row]
+                let poolProblems = poolGallery[indexPath.section]
+                let solutions = poolProblems.solutions[indexPath.row]
                 
-                let image = pool.image
-                let group = pool.group
-                
-                let imageData = ImageData(image: image, group: group)
-                cell.configureCell(imageData)
+                let problems = Problems(title: solutions.title, image: solutions.image, group: solutions.group, solution: solutions.solution)
+                cell.configureCell(problems)
             }
             return cell
         } else {
@@ -134,7 +131,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
     }
     
-    
+
     // MARK: Header protocol
     
     // Create view for header using supplementary view: CollectionReusableView
@@ -142,9 +139,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: cellHeader, forIndexPath: indexPath) as! HeaderReusableView
         
         // Sourcing data from datasource within poolsingroup to isolate the group protocol
-        let pools: [ImageData] = dataSource.poolsInGroup(indexPath.section)
-        let pool = pools[indexPath.row]
-        let group = pool.group
+        let poolProblems = poolGallery[indexPath.section]
+        let solutions = poolProblems.solutions[indexPath.row]
+        let group = solutions.group
         // Displays group protocol to header view label
         headerView.sectionTitle.text = group
         
@@ -174,7 +171,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             inSearchMode = true
             let lower = searchController.searchBar.text!.lowercaseString
             
-            filteredPools = imageData.filter({$0.image.rangeOfString(lower) != nil})
+            filteredPools = problems.filter({$0.image.rangeOfString(lower) != nil})
             collectionView.reloadData()
         }
     }
@@ -193,24 +190,23 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         if segue.identifier == gallerySegue {
             let destination = segue.destinationViewController as! GalleryDetailVC
             if let indexPath = collectionView.indexPathForCell(sender as! UICollectionViewCell) {
-                let imageData: ImageData
-                let problem: Problems
+                let problems: Problems
                 if searchController.active && searchController.searchBar.text != "" {
-                    
-                    imageData = filteredPools[indexPath.row]
+                    problems = filteredPools[indexPath.row]
                 } else {
-                    imageData = dataSource.pools[indexPath.row]
+                    let poolProblems = poolGallery[indexPath.section]
+                    problems = poolProblems.solutions[indexPath.row]
                 }
-                destination.detailTitle = imageData.image
-                destination.problemImage = UIImage(named: imageData.image)
-                destination.descriptions = problem.problem
+                destination.detailTitle = problems.title
+                destination.problemImage = UIImage(named: problems.image)
+                destination.descriptions = problems.solution
             }
         }
     }
     
     func filterContentForSearchText(searchText: String) {
-        filteredPools = imageData.filter { data in
-            return data.image.lowercaseString.containsString(searchText.lowercaseString)
+        filteredPools = problems.filter { data in
+            return data.title.lowercaseString.containsString(searchText.lowercaseString)
         }
         collectionView.reloadData()
     }

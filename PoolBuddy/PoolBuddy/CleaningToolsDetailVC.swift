@@ -21,7 +21,7 @@ class CleaningToolsDetailVC: UIViewController {
     @IBOutlet weak var detailLabel: UILabel!
     
     var detailTitle: String = ""
-    var detailLabel: String = ""
+    var detailLabel2: String = ""
     var productImage: UIImage!
     var productImage2: UIImage!
     var descriptions: String = ""

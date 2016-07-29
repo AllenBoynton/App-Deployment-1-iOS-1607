@@ -13,7 +13,7 @@ class GalleryCell: UICollectionViewCell {
     @IBOutlet weak var galleryImages: UIImageView!
     @IBOutlet weak var imageLabel: InsetLabel!
     
-    var imageData: ImageData!
+    var problems: Problems!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -23,11 +23,11 @@ class GalleryCell: UICollectionViewCell {
         layer.borderColor = UIColor.blackColor().CGColor
     }
     
-    func configureCell(imageData: ImageData) {
-        self.imageData = imageData
+    func configureCell(problems: Problems) {
+        self.problems = problems
         
-        galleryImages.image = UIImage(named: "\(self.imageData.image)")
-        imageLabel.text = self.imageData.image.capitalizedString
+        galleryImages.image = UIImage(named: "\(self.problems.image)")
+        imageLabel.text = self.problems.title.capitalizedString
     }
 }
 

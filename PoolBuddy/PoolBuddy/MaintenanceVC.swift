@@ -90,11 +90,4 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
 
     @IBAction func unwindActionToMaintenance(unwindSegue: UIStoryboardSegue) {}
     
-    
-    // MARK: UICollectionViewDelegate
-
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
 }

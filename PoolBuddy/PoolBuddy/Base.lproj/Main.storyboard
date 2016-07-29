@@ -198,7 +198,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="E800563E-F4C3-4FD8-9A53-0E415D2A686D" translatesAutoresizingMaskIntoConstraints="NO" id="wsc-wF-6jq" userLabel="Equip Image">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DB6682FA-FC8E-494E-814C-8C0A04215760" translatesAutoresizingMaskIntoConstraints="NO" id="wsc-wF-6jq" userLabel="Equip Image">
                                                                             <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
                                                                             <color key="backgroundColor" white="1" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
                                                                         </imageView>
@@ -1912,14 +1912,14 @@ Good Luck!</string>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="vnP-2o-aeY"/>
                                         </constraints>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-DE-Rpn">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-DE-Rpn">
                                         <rect key="frame" x="20" y="230" width="560" height="237"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-7R-mB9">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloudy Water" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-7R-mB9">
                                         <rect key="frame" x="162.5" y="60" width="275" height="150"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1927,46 +1927,17 @@ Good Luck!</string>
                                             <constraint firstAttribute="height" constant="150" id="urv-lX-zxk"/>
                                         </constraints>
                                     </imageView>
-                                    <tabBar opaque="NO" contentMode="scaleAspectFit" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="bfe-Mn-8pZ">
-                                        <rect key="frame" x="0.0" y="487" width="600" height="49"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="49" id="GUc-je-Vxd"/>
-                                        </constraints>
-                                        <items>
-                                            <tabBarItem title="Equipment" image="Heaters" id="YLu-CV-dRN"/>
-                                            <tabBarItem title="Tools" image="ConcreteVacIcons" id="MT7-NU-V7Q"/>
-                                            <tabBarItem title="Chemicals" image="AlkalinityIcon" id="Jys-14-KQW"/>
-                                            <tabBarItem title="Balance" image="AquachekIcons" id="EsZ-da-I5M"/>
-                                            <tabBarItem title="Reminder" image="plannerIcons" id="3Xb-wa-2cb"/>
-                                            <tabBarItem title="Problems" image="Extremely Dirty Pool with Stains" id="fOF-Qc-548"/>
-                                            <tabBarItem title="Calculator" image="calculatorIcons" id="QcI-xa-fhN"/>
-                                            <tabBarItem title="Chat" image="commentsIcons" id="WnP-Hy-9B9"/>
-                                        </items>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedImageTintColor">
-                                                <color key="value" red="0.40784313725490196" green="0.80784313725490198" blue="0.83137254901960789" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </tabBar>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="pOC-Jn-iQE" secondAttribute="trailing" id="6WI-1C-teS"/>
                                     <constraint firstAttribute="trailing" secondItem="Svc-DE-Rpn" secondAttribute="trailing" constant="20" id="9iQ-NZ-vYN"/>
-                                    <constraint firstItem="bfe-Mn-8pZ" firstAttribute="leading" secondItem="Ytw-44-5rd" secondAttribute="leading" id="Dn4-AA-KpQ"/>
                                     <constraint firstItem="Svc-DE-Rpn" firstAttribute="top" secondItem="oB2-7R-mB9" secondAttribute="bottom" constant="20" id="KDo-ay-0kN"/>
-                                    <constraint firstItem="bfe-Mn-8pZ" firstAttribute="top" secondItem="Svc-DE-Rpn" secondAttribute="bottom" constant="20" id="Lb3-fH-5XT"/>
                                     <constraint firstItem="pOC-Jn-iQE" firstAttribute="top" secondItem="Ytw-44-5rd" secondAttribute="top" id="RIL-h4-qMK"/>
                                     <constraint firstItem="oB2-7R-mB9" firstAttribute="centerX" secondItem="Ytw-44-5rd" secondAttribute="centerX" id="Uc1-4s-kQs"/>
                                     <constraint firstItem="oB2-7R-mB9" firstAttribute="top" secondItem="pOC-Jn-iQE" secondAttribute="bottom" constant="30" id="WnQ-96-iVV"/>
                                     <constraint firstItem="Svc-DE-Rpn" firstAttribute="leading" secondItem="Ytw-44-5rd" secondAttribute="leading" constant="20" id="XPW-Oq-TEb"/>
-                                    <constraint firstAttribute="trailing" secondItem="bfe-Mn-8pZ" secondAttribute="trailing" id="dAK-4d-Eah"/>
                                     <constraint firstItem="pOC-Jn-iQE" firstAttribute="leading" secondItem="Ytw-44-5rd" secondAttribute="leading" id="dkY-5v-3SH"/>
-                                    <constraint firstAttribute="bottom" secondItem="bfe-Mn-8pZ" secondAttribute="bottom" id="m1B-zp-yOY"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -2388,10 +2359,8 @@ Good Luck!</string>
         </scene>
     </scenes>
     <resources>
-        <image name="AlkalinityIcon" width="30" height="30"/>
-        <image name="AquachekIcons" width="22" height="22"/>
-        <image name="ConcreteVacIcons" width="22" height="22"/>
-        <image name="E800563E-F4C3-4FD8-9A53-0E415D2A686D" width="140" height="140">
+        <image name="Cloudy Water" width="1600" height="1200"/>
+        <image name="DB6682FA-FC8E-494E-814C-8C0A04215760" width="140" height="140">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
@@ -3769,15 +3738,11 @@ ZQABQG0AAUBwAAFAdQABQIQAAUCIAAFAjwABQJcAAUCkAAFAqQABQKsAAUCtAAFAsgABQLoAAUC9AAFA
 wgABQMoAAUDNAAFA3wABQOIAAUDnAAAAAAAABAEAAAAAAAAAPgAAAAAAAAAAAAAAAAABQOk
 </mutableData>
         </image>
-        <image name="Extremely Dirty Pool with Stains" width="22" height="22"/>
-        <image name="Heaters" width="29" height="29"/>
         <image name="Image" width="22" height="22"/>
         <image name="Surface Debris" width="600" height="599"/>
         <image name="calculator" width="225" height="225"/>
-        <image name="calculatorIcons" width="22" height="22"/>
         <image name="chemicals1" width="595" height="595"/>
         <image name="comments" width="1024" height="1024"/>
-        <image name="commentsIcons" width="44" height="44"/>
         <image name="equipment1" width="625" height="598"/>
         <image name="fununderwater" width="3696" height="2079"/>
         <image name="gallery" width="400" height="399"/>
@@ -3785,7 +3750,6 @@ wgABQMoAAUDNAAFA3wABQOIAAUDnAAAAAAAABAEAAAAAAAAAPgAAAAAAAAAAAAAAAAABQOk
         <image name="home" width="22" height="22"/>
         <image name="menuScreenshot" width="931" height="1656"/>
         <image name="planner" width="140" height="140"/>
-        <image name="plannerIcons" width="22" height="22"/>
         <image name="poolwater1" width="600" height="870"/>
         <image name="poolwater2" width="1080" height="1920"/>
         <image name="question" width="22" height="22"/>
