@@ -30,8 +30,6 @@
 		098F96401D455CFB00E1B157 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F963F1D455CFB00E1B157 /* MenuTableVC.swift */; };
 		098F96421D4560D100E1B157 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F96411D4560D100E1B157 /* csv.swift */; };
 		098F96441D4561DC00E1B157 /* KittenSlant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 098F96431D4561DC00E1B157 /* KittenSlant.ttf */; };
-		098F96461D456FFE00E1B157 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F96451D456FFE00E1B157 /* HelpViewController.swift */; };
-		098F964C1D45949B00E1B157 /* EquipScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F964B1D45949B00E1B157 /* EquipScrollCell.swift */; };
 		098F964E1D45F5F300E1B157 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F964D1D45F5F300E1B157 /* Global.swift */; };
 		098F96501D45F64800E1B157 /* Cal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F964F1D45F64800E1B157 /* Cal.swift */; };
 		098F96521D45F98C00E1B157 /* PoolCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F96511D45F98C00E1B157 /* PoolCalendarVC.swift */; };
@@ -80,8 +78,6 @@
 		098F963F1D455CFB00E1B157 /* MenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
 		098F96411D4560D100E1B157 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		098F96431D4561DC00E1B157 /* KittenSlant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KittenSlant.ttf; sourceTree = "<group>"; };
-		098F96451D456FFE00E1B157 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
-		098F964B1D45949B00E1B157 /* EquipScrollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipScrollCell.swift; sourceTree = "<group>"; };
 		098F964D1D45F5F300E1B157 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		098F964F1D45F64800E1B157 /* Cal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cal.swift; sourceTree = "<group>"; };
 		098F96511D45F98C00E1B157 /* PoolCalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolCalendarVC.swift; sourceTree = "<group>"; };
@@ -138,7 +134,6 @@
 		0940F5311D2ABF5A00BFA91C /* EquipmentViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				098F964B1D45949B00E1B157 /* EquipScrollCell.swift */,
 				0940F54D1D2AC3E600BFA91C /* EquipmentDetailVC.swift */,
 				0990716B1D28B64900477EA2 /* EquipTableViewController.swift */,
 				099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */,
@@ -287,7 +282,6 @@
 		0990714E1D246F2300477EA2 /* MenuViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				098F96451D456FFE00E1B157 /* HelpViewController.swift */,
 				098F963F1D455CFB00E1B157 /* MenuTableVC.swift */,
 				0990713C1D246EC400477EA2 /* MainViewController.swift */,
 			);
@@ -494,7 +488,6 @@
 				0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */,
 				098F96501D45F64800E1B157 /* Cal.swift in Sources */,
 				098F96401D455CFB00E1B157 /* MenuTableVC.swift in Sources */,
-				098F964C1D45949B00E1B157 /* EquipScrollCell.swift in Sources */,
 				098F964E1D45F5F300E1B157 /* Global.swift in Sources */,
 				092789301D49E8CA0059B2CC /* PoolProblems.swift in Sources */,
 				098F96521D45F98C00E1B157 /* PoolCalendarVC.swift in Sources */,
@@ -506,7 +499,6 @@
 				099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */,
 				0940F54E1D2AC3E600BFA91C /* EquipmentDetailVC.swift in Sources */,
 				0940F5481D2AC35D00BFA91C /* GalleryDetailVC.swift in Sources */,
-				098F96461D456FFE00E1B157 /* HelpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

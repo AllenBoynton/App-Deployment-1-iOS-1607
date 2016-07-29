@@ -79,7 +79,7 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
                 
                 destination.detailTitle = product.label
                 destination.productImage = UIImage(named: product.image)
-                destination.detailLabel2 = product.label2
+                destination.detailLabel = product.label2
                 destination.productImage2 = UIImage(named: product.image2)
                 destination.descriptions = product.description
             }
