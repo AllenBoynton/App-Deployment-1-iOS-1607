@@ -14,17 +14,15 @@ class MaintenanceDetailVC: UIViewController {
     @IBOutlet weak var detailImage: UIImageView!    
     @IBOutlet weak var detailText: UITextView!
     
-    var detailTitle: String = ""
-    var productImage: UIImage!
+    var productTitle: String = ""
+    var productImage = UIImage(named: "")
     var descriptions: String = ""
-    
-    var strings:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Using passed data to add to detail view
-        navigationItem.title = detailTitle
+        navigationItem.title = productTitle
         detailImage.image = productImage
         detailText.text = descriptions
                         

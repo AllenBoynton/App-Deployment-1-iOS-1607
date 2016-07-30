@@ -11,7 +11,6 @@ import Foundation
 class Problems {
     private var _title: String!
     private var _image: String!
-    private var _group: String!
     private var _solution: String!
     
     var title: String {
@@ -22,18 +21,13 @@ class Problems {
         return _image
     }
     
-    var group: String {
-        return _group
-    }
-    
     var solution: String {
         return _solution
     }
     
-    init(title: String, image: String, group: String, solution: String) {
+    init(title: String, image: String, solution: String) {
         self._title = title
         self._image = image
-        self._group = group
         self._solution = solution
     }
 }

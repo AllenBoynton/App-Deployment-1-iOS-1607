@@ -80,7 +80,7 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
                 let poolCategory = poolMaintenance[indexPath.section]
                 let product = poolCategory.products[indexPath.row]
                 
-                destination.detailTitle = product.label
+                destination.productTitle = product.label
                 destination.productImage = UIImage(named: product.image)
                 destination.descriptions = product.description
             }

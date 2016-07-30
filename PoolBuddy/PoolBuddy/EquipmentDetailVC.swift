@@ -10,10 +10,11 @@ import UIKit
 
 class EquipmentDetailVC: UIViewController {
     
-    @IBOutlet weak var detailImage: UIImageView!
-    @IBOutlet weak var detailImage2: UIImageView!
+    // Outlets for the text view & image of problem pool
     @IBOutlet weak var detailText: UITextView!
-    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var detailImage: UIImageView!
+    @IBOutlet weak var detailLabel2: UILabel!
+    @IBOutlet weak var detailImage2: UIImageView!
     
     var productTitle: String!
     var productImage: UIImage!
@@ -30,12 +31,12 @@ class EquipmentDetailVC: UIViewController {
         detailText.text = descriptions
         
         if productLabel == "" || productImage2 == "" {
-            detailLabel.hidden = true
+            detailLabel2.hidden = true
             detailImage2.hidden = true
         } else {
-            detailLabel.hidden = false
+            detailLabel2.hidden = false
             detailImage2.hidden = false
-            detailLabel.text = productLabel
+            detailLabel2.text = productLabel
             detailImage2.image = productImage2
         }
         

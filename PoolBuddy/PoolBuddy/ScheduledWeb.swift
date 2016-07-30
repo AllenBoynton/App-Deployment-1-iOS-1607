@@ -56,6 +56,11 @@ class ScheduledWeb: UIViewController {
     }
     
     @IBAction func myUnwindActionToVideo(unwindSegue: UIStoryboardSegue) {
-        webView.loadRequest(NSURLRequest(URL: NSURL(string: "https://www.youtube.com/watch?v=ShyGKEdX8LM")!))
+        
     }
+    
+    @IBAction func exitWebView(sender: UIBarButtonItem) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }

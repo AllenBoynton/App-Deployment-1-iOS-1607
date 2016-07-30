@@ -113,18 +113,17 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
                 let solutions = filteredPools[indexPath.row]
                 let title = solutions.title
                 let image = solutions.image
-                let group = solutions.group
                 let solution = solutions.solution
                 
                 // Displays name protocol to cell image and label
-                let problems = Problems(title: title, image: image, group: group, solution: solution)
+                let problems = Problems(title: title, image: image, solution: solution)
                 cell.configureCell(problems)
                 
             } else {
                 let poolProblems = poolGallery[indexPath.section]
                 let solutions = poolProblems.solutions[indexPath.row]
                 
-                let problems = Problems(title: solutions.title, image: solutions.image, group: solutions.group, solution: solutions.solution)
+                let problems = Problems(title: solutions.title, image: solutions.image, solution: solutions.solution)
                 cell.configureCell(problems)
             }
             return cell

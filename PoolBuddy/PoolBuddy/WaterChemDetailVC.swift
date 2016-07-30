@@ -14,9 +14,9 @@ class WaterChemDetailVC: UIViewController {
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailText: UITextView!
     
-    var detailTitle: String = ""
+    var detailTitle: String!
     var productImage: UIImage!
-    var descriptions: String = ""
+    var descriptions: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()

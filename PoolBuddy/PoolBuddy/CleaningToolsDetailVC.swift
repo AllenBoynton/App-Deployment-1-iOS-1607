@@ -16,11 +16,11 @@ class CleaningToolsDetailVC: UIViewController {
     @IBOutlet weak var detailImage2: UIImageView!
     @IBOutlet weak var detailLabel2: UILabel!
     
-    var productTitle: String = ""
+    var productTitle: String!
     var productImage: UIImage!
-    var descriptions: String = ""
-    var productLabel: String? = ""
-    var productImage2: UIImage?
+    var descriptions: String!
+    var productLabel: String?
+    var productImage2: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,16 @@ class CleaningToolsDetailVC: UIViewController {
         navigationItem.title = productTitle
         detailImage.image = productImage
         detailText.text = descriptions
-        detailImage2.image = productImage2
-        detailLabel2.text = productLabel
+        
+        if productLabel == "" || productImage2 == "" {
+            detailLabel2.hidden = true
+            detailImage2.hidden = true
+        } else {
+            detailLabel2.hidden = false
+            detailImage2.hidden = false
+            detailLabel2.text = productLabel
+            detailImage2.image = productImage2
+        }
         
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])

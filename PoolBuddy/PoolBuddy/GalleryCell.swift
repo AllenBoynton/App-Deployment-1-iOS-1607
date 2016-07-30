@@ -33,6 +33,6 @@ class GalleryCell: UICollectionViewCell {
 
 class InsetLabel: UILabel {
     override func drawTextInRect(rect: CGRect) {
-        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)))
+        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 10)))
     }
 }

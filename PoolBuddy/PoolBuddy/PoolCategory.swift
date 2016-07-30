@@ -22,7 +22,7 @@ class PoolCategory {
     
     // Create categories of each item in Equipment menu
     class func poolEquipment() -> [PoolCategory] {
-        return [self.poolFilters(), self.poolPumps(), self.poolEquipment()]
+        return [self.poolFilters(), self.poolPumps(), self.poolEquip()]
     }
     
     // Create categories of each item in Chemical menu
@@ -75,7 +75,7 @@ class PoolCategory {
     }
     
     // All rows within the Equipment category
-    private class func poolEquipment() -> PoolCategory {
+    private class func poolEquip() -> PoolCategory {
         
         var products = [PoolData]()
         
@@ -162,9 +162,9 @@ class PoolCategory {
         
         products.append(PoolData(label: "Cyanuric Acid", image: "conditioner", label2: "", image2: "", description: "Protect your chlorine from being destroyed by the sun and reduce monthly costs on chemicals with our Chlorine Stabilizer Water Conditioner. Dosage: 2.5 lbs per 10,000 gallons\n\nPool Chemical Features\n\n\u{2022} 100% cyanuric acid\n\u{2022} Protects chlorine from UV Rays\n\u{2022} Reduces the cost of chlorine\n\nReduce your monthly costs on chemicals while helping to protect the chlorine in your pool from UV rays with our Chlorine Stabilizer Water Conditioner. UV rays can destroy up to 90% of the chlorine added to your pool in just two hours. This Water Conditioner extends the life of chlorine 10 times longer by protecting it from the UV loss. Water Conditioner allows the chlorine to stay in your water longer, which reduces your costs for chlorinating and helps keep your water balanced."))
             
-        products.append(PoolData(label: "Sequestering Agents", image: "sequestering", label2: "", image2: "", description: "Safety stuff"))
+        products.append(PoolData(label: "Sequestering Agents", image: "sequestering", label2: "", image2: "", description: "When used monthly, Ultimate Scale and Stain Control provides the ultimate protection to prevent white calcium and hard silica scale build up - PLUS metal stain control. Add directly to pool water with normal circulation. Depending on the age of the mineral buildup and composition Leslie's Ultimate Scale and Stain Control will remove calcium and metal stain buildup within 2 to 3 weeks. Old, harder composition scales usually take longer and may require a second treatment. Synertec-« polymer technology provides unsurpassed surface protection without phosphates and acids. Dosage: 5 oz per month\n\nPool Chemical Features\n\n\u{2022} Scale and stain remover- 1/2 gal.\n\u{2022} Protects and prevents scale build-up and metal stains\n\u{2022} Easy to use\n\u{2022} Removes scale and calcium build-up"))
         
-        products.append(PoolData(label: "Algaecides", image: "algaecide", label2: "", image2: "", description: "Filter valves"))
+        products.append(PoolData(label: "Algaecides", image: "algaecide", label2: "", image2: "", description: "Algae Control eliminates algae while preventing the future outbreak of algae and slime for a clean and clear pool.\n\nPool Chemical Features\n\n\u{2022} Algaecide & algaestat\n\u{2022} Available in 1 quart, 1/2 gallon, and 1 gallon bottles\n\u{2022} Quickly eliminates algae blooms\n\u{2022} Non-metallic non-staining\n\u{2022} Kills all known types of algae\n\u{2022} Gentle on swimmers and pools\n\u{2022} Non foaming, and highly concentrated\n\u{2022} Pre-blended at 60% strength.\n\nAlgae Control is a powerful quick-acting cleaner that eliminates algae blooms to keep your pool safe. The powerful concentrated formula is one of the strongest on the market and won't foam or stain your pool. A few ounces of Algae Control goes a long way, saving you time and money.\n\nAlgae Control kills all types of algae, including pink algae and stops future algae and slime. Algae Control works great for opening or closing your pool. A couple ounces when closing your pool keeps algae blooms from developing. A couple ounces at the beginning of the season will leave your pool sparkling clean. The formula is a low odor formula that is gentle on swimmers and your pool. Just drop in a few ounces a week and keep your spa, outdoor fountains, vinyl, plaster, fiberglass, and tile pools clean all year.\n\nDosage Instructions:\n\n\u{2022} For pools with visible algae growth, add an initial dose of 11 to 16 oz per 10,000 gallons of water.\n\u{2022} For treatment of freshly cleaned and filled pools, add 6 to 11 oz per 10,000 gallons of water.\n\u{2022} Subsequent additions of 2 to 4 oz per 10,000 gallons of water should be made every 5 to 7 days after initial treatment."))
         
         products.append(PoolData(label: "Water Clarifier", image: "clarifier", label2: "", image2: "", description: "Also called a coagulant or flocculant. A chemical compound used to coagulate, clump or precipitate suspended micro particles so they can be removed by vacuuming or filtration. There are two main types; inorganic salts of aluminum (alum), or organic polyelectrolytes."))
         
