@@ -13,7 +13,7 @@ import EventKitUI
 // Global Initializers
 let eventVC = "toSecondVC"
 
-class PoolCalendarVC: UIViewController {
+class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate {
     
     let eventStore = EKEventStore()
     
@@ -90,7 +90,17 @@ class PoolCalendarVC: UIViewController {
     }
     
     @IBAction func displayChooser(sender: UIBarButtonItem) {
+    
+        let chooser = EKCalendarChooser(selectionStyle: .Single, displayStyle: .AllCalendars, entityType: .Event, eventStore: eventStore)
         
+        chooser.showsCancelButton = true
+        chooser.showsDoneButton = true
+        chooser.delegate = self
+        
+        // "You can choose your own nav VC or this is how to create a new one"
+        let nav = UINavigationController(rootViewController: chooser)
+        
+        presentViewController(chooser, animated: true, completion: nil)
         
     }
     
