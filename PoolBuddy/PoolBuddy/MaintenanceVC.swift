@@ -67,7 +67,6 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
             return UICollectionViewCell()
         }
     }
-    
 
     // MARK: - Navigation
     
@@ -87,7 +86,4 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
             }
         }
     }
-
-    @IBAction func unwindActionToMaintenance(unwindSegue: UIStoryboardSegue) {}
-    
 }

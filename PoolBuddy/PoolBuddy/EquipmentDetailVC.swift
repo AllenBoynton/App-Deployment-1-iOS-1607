@@ -11,34 +11,32 @@ import UIKit
 class EquipmentDetailVC: UIViewController {
     
     @IBOutlet weak var detailImage: UIImageView!
-    @IBOutlet weak var detailImage2: UIImageView?
+    @IBOutlet weak var detailImage2: UIImageView!
     @IBOutlet weak var detailText: UITextView!
-    @IBOutlet weak var detailLabel1: UILabel!
-    @IBOutlet weak var detailLabel2: UILabel?
+    @IBOutlet weak var detailLabel: UILabel!
     
-    var detailTitle: String = ""
+    var productTitle: String!
     var productImage: UIImage!
-    var descriptions: String = ""
-    var detailLabel: String? = ""
+    var descriptions: String!
+    var productLabel: String?
     var productImage2: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Using passed data to add to detail view
-        navigationItem.title = detailTitle
-        detailLabel1.text = detailTitle
+        navigationItem.title = productTitle
         detailImage.image = productImage
         detailText.text = descriptions
         
-        if detailLabel2 == "" || detailLabel2 == nil && detailImage2 == nil {
-            detailLabel2!.hidden = true
-            detailImage2!.hidden = true
+        if productLabel == "" || productImage2 == "" {
+            detailLabel.hidden = true
+            detailImage2.hidden = true
         } else {
-            detailLabel2!.hidden = false
-            detailImage2!.hidden = false
-            detailLabel2!.text = detailLabel
-            detailImage2!.image = productImage2
+            detailLabel.hidden = false
+            detailImage2.hidden = false
+            detailLabel.text = productLabel
+            detailImage2.image = productImage2
         }
         
         navigationController!.navigationBar.titleTextAttributes =

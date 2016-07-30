@@ -10,21 +10,17 @@ import UIKit
 
 class ChemicalDetailVC: UIViewController {
     
-    lazy var poolChemicals: [PoolCategory] = {
-        return PoolCategory.poolChemicals()
-    }()
-
     // Outlets for table view screen
     @IBOutlet weak var detailText: UITextView!
     @IBOutlet weak var detailImage: UIImageView!
-    @IBOutlet weak var detailLabel: UITextView!
+    @IBOutlet weak var detailLabel2: UILabel!
     @IBOutlet weak var detailImage2: UIImageView!
     
-    var detailTitle: String = ""
-    var detailLabel2: String = ""
+    var productTitle: String = ""
     var productImage: UIImage!
-    var productImage2: UIImage!
     var descriptions: String = ""
+    var productLabel: String? = ""
+    var productImage2: UIImage?
     
     var strings:[String] = []
     
@@ -32,11 +28,11 @@ class ChemicalDetailVC: UIViewController {
         super.viewDidLoad()
         
         // Using passed data to add to detail view
-        navigationItem.title = detailTitle
-        detailLabel?.text = detailLabel2
+        navigationItem.title = productTitle
         detailImage.image = productImage
         detailImage2?.image = productImage2
         detailText.text = descriptions
+        detailLabel2.text = productLabel
         
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])

@@ -10,10 +10,6 @@ import UIKit
 
 class WaterChemDetailVC: UIViewController {
 
-    lazy var waterChemistry: [PoolCategory] = {
-        return PoolCategory.waterChemistry()
-    }()
-    
     // Outlets for table view screen
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailText: UITextView!

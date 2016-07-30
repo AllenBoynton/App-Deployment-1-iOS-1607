@@ -33,6 +33,7 @@ class Problems {
     init(title: String, image: String, group: String, solution: String) {
         self._title = title
         self._image = image
+        self._group = group
         self._solution = solution
     }
 }

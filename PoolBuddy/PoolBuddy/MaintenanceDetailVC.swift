@@ -10,10 +10,6 @@ import UIKit
 
 class MaintenanceDetailVC: UIViewController {
     
-    lazy var poolMaintenance: [PoolCategory] = {
-        return PoolCategory.poolMaintenance()
-    }()
-    
     // Outlets for the text view & image of problem pool
     @IBOutlet weak var detailImage: UIImageView!    
     @IBOutlet weak var detailText: UITextView!
@@ -39,5 +35,4 @@ class MaintenanceDetailVC: UIViewController {
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
     }
-
 }

@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Extremely Dirty Pool with Stains 22.jpg",
+      "filename" : "saltWorks.jpeg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Extremely Dirty Pool with Stains 44.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Extremely Dirty Pool with Stains.jpg",
       "scale" : "3x"
     }
   ],

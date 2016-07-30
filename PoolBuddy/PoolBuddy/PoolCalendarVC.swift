@@ -15,13 +15,15 @@ import Alamofire
 // Global Initializers
 let eventVC = "toSecondVC"
 
-class PoolCalendarVC: UIViewController {
+class PoolCalendarVC: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBOutlet weak var textField: UITextView!
     
     @IBOutlet weak var webView: UIWebView!
+    
+    @IBOutlet weak var referenceView: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,8 @@ class PoolCalendarVC: UIViewController {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            referenceView.hidden = true
         }
         self.revealViewController().rearViewRevealWidth = 325
         
@@ -86,6 +90,14 @@ class PoolCalendarVC: UIViewController {
         }
     }
     
+    @IBAction func referenceButton(sender: UIButton) {
+        if referenceView.hidden == false {
+            referenceView.hidden = true
+        } else if referenceView.hidden == true {
+            referenceView.hidden = false
+        }
+        
+    }
     
     @IBAction func unwindActionToReminders(unwindSegue: UIStoryboardSegue) {}
 }

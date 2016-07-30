@@ -10,29 +10,27 @@ import UIKit
 
 class CleaningToolsDetailVC: UIViewController {
     
-    lazy var maintenanceEquipment: [PoolCategory] = {
-        return PoolCategory.maintenanceEquipment()
-    }()
-    
     // Outlets for the text view & image of problem pool
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailText: UITextView!
     @IBOutlet weak var detailImage2: UIImageView!
-    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var detailLabel2: UILabel!
     
-    var detailTitle: String = ""
-    var detailLabel2: String = ""
+    var productTitle: String = ""
     var productImage: UIImage!
-    var productImage2: UIImage!
     var descriptions: String = ""
+    var productLabel: String? = ""
+    var productImage2: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Using passed data to add to detail view
-        navigationItem.title = detailTitle
+        navigationItem.title = productTitle
         detailImage.image = productImage
         detailText.text = descriptions
+        detailImage2.image = productImage2
+        detailLabel2.text = productLabel
         
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])

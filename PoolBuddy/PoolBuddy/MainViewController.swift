@@ -11,25 +11,27 @@ import AVFoundation
 
 // Global Identifiers
 let equipment = "equipment_cell"
-let filter = "filter_cell"
 let equipSegue = "toDetailVC"
+let cleaningTools = "tools_cell"
+let toolSegue = "toDetailVC"
 let chemicals = "chemical_cell"
 let chemSegue = "toDetailVC"
 let chemistry = "water_chemistry_cell"
 let wChemSegue = "toDetailVC"
-let cleaningTools = "tools_cell"
-let toolSegue = "toDetailVC"
 let maintenance = "maint_cell"
 let maintSegue = "toMaintDetailVC"
+let planner = "planner"
+let calculator = "calculator"
 let photo = "photoCell"
 let gallerySegue = "gallerySegue"
+let chat = "chat"
 let cellHeader = "header"
 
 
 class MainViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    
+        
     // Audio player
     var splash = AVAudioPlayer()
 
@@ -65,5 +67,7 @@ class MainViewController: UIViewController {
         prepareAudios()
         splash.play()
     }
+    
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {}
 }
 

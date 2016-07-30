@@ -16,7 +16,4 @@ class MenuTableVC: UITableViewController {
         navigationController?.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
     }
-
-    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {}
-    
 }

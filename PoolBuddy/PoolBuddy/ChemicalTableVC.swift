@@ -76,16 +76,12 @@ class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                 let poolCategory = poolChemicals[indexPath.section]
                 let product = poolCategory.products[indexPath.row]
                 
-                destination.detailTitle = product.label
+                destination.productTitle = product.label
                 destination.productImage = UIImage(named: product.image)
-                destination.detailLabel2 = product.label2
+                destination.productLabel = product.label2
                 destination.productImage2 = UIImage(named: product.image2)
                 destination.descriptions = product.description
             }
         }
     }
-    
-    
-    @IBAction func unwindActionToChemicals(unwindSegue: UIStoryboardSegue) {}
-    
 }

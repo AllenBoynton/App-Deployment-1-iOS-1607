@@ -29,7 +29,7 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        self.revealViewController().rearViewRevealWidth = 350
+        self.revealViewController().rearViewRevealWidth = 325
 
         navigationItem.title = "Equipment"
         navigationController!.navigationBar.titleTextAttributes =
@@ -77,16 +77,12 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
                 let poolCategory = poolEquipment[indexPath.section]
                 let product = poolCategory.products[indexPath.row]
                 
-                destination.detailTitle = product.label
+                destination.productTitle = product.label
                 destination.productImage = UIImage(named: product.image)
-                destination.detailLabel = product.label2
+                destination.productLabel = product.label2
                 destination.productImage2 = UIImage(named: product.image2)
                 destination.descriptions = product.description
             }
         }
     }
-    
-    // Reference to return to this category
-    @IBAction func unwindActionToEquipment(unwindSegue: UIStoryboardSegue) {}
-    
 }

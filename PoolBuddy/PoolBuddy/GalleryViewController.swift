@@ -70,6 +70,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        print("Section: \(poolGallery.count)")
         return poolGallery.count
     }
     
@@ -78,6 +79,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             return filteredPools.count
         }
         let poolProblems = poolGallery[section]
+        print("Items: \(poolProblems.solutions.count)")
         return poolProblems.solutions.count
     }
     
@@ -140,10 +142,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         // Sourcing data from datasource within poolsingroup to isolate the group protocol
         let poolProblems = poolGallery[indexPath.section]
-        let solutions = poolProblems.solutions[indexPath.row]
-        let group = solutions.group
+        let gallery = poolProblems.gallery
         // Displays group protocol to header view label
-        headerView.sectionTitle.text = group
+        headerView.sectionTitle.text = gallery
         
         return headerView
     }
@@ -210,9 +211,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
         collectionView.reloadData()
     }
-    
-    
-    @IBAction func unwindActionToPoolProblems(unwindSegue: UIStoryboardSegue) {}
 }
 
 // This class extension allows for the array to be of different counts due to search results
