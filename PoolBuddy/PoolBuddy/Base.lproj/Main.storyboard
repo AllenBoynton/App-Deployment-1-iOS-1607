@@ -27,7 +27,6 @@
             <string>KittenSlant</string>
             <string>KittenSlant</string>
             <string>KittenSlant</string>
-            <string>KittenSlant</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -2231,30 +2230,15 @@ Good Luck!</string>
                                     <constraint firstAttribute="height" constant="40" id="2Mb-1p-9Zf"/>
                                 </constraints>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocz-Ht-w1D">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="r1D-Tl-r6R"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="18"/>
-                                <state key="normal" title="How to Solve The Most Common Pool Problem - Green Algae"/>
-                                <connections>
-                                    <segue destination="qWP-iG-BRM" kind="unwind" unwindAction="myUnwindActionToVideo:" id="i3R-6d-N4X"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wow-e0-d3v" firstAttribute="top" secondItem="3ND-Ly-aAv" secondAttribute="bottom" id="3zX-5a-QSc"/>
-                            <constraint firstItem="N6n-hX-6aa" firstAttribute="top" secondItem="Ocz-Ht-w1D" secondAttribute="bottom" id="5Dd-l7-1DM"/>
-                            <constraint firstAttribute="trailing" secondItem="Ocz-Ht-w1D" secondAttribute="trailing" id="NZL-E9-G0p"/>
                             <constraint firstItem="2wF-id-hus" firstAttribute="top" secondItem="R84-iR-Zxe" secondAttribute="bottom" id="RKA-g0-sds"/>
                             <constraint firstItem="3ND-Ly-aAv" firstAttribute="leading" secondItem="duG-ay-5F1" secondAttribute="leading" id="VEi-ty-cDc"/>
                             <constraint firstAttribute="trailing" secondItem="wow-e0-d3v" secondAttribute="trailing" id="Wtm-hG-whL"/>
                             <constraint firstItem="N6n-hX-6aa" firstAttribute="top" secondItem="wow-e0-d3v" secondAttribute="bottom" id="cmr-49-fG1"/>
-                            <constraint firstItem="Ocz-Ht-w1D" firstAttribute="leading" secondItem="duG-ay-5F1" secondAttribute="leading" id="duA-NW-sO4"/>
                             <constraint firstItem="wow-e0-d3v" firstAttribute="leading" secondItem="duG-ay-5F1" secondAttribute="leading" id="dz5-x4-PFg"/>
                             <constraint firstItem="2wF-id-hus" firstAttribute="leading" secondItem="duG-ay-5F1" secondAttribute="leading" id="ihk-Pe-rfM"/>
                             <constraint firstItem="3ND-Ly-aAv" firstAttribute="top" secondItem="R84-iR-Zxe" secondAttribute="bottom" id="r4d-1d-HZf"/>
@@ -2275,7 +2259,6 @@ Good Luck!</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVn-aF-qLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="qWP-iG-BRM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="632" y="5583"/>
         </scene>
