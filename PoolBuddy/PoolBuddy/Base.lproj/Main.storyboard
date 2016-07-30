@@ -165,7 +165,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgB-5v-tPX" userLabel="Top BG View">
                                         <rect key="frame" x="146" y="50" width="188" height="188"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-Z2-AWJ">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perflex" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-Z2-AWJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="188" height="188"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </imageView>
@@ -968,7 +968,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tI-hg-jsB" userLabel="Top BG View">
                                         <rect key="frame" x="146" y="60" width="188" height="188"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qFN-tK-hQP">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oxidizer" translatesAutoresizingMaskIntoConstraints="NO" id="qFN-tK-hQP">
                                                 <rect key="frame" x="0.0" y="0.0" width="188" height="188"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1228,7 +1228,7 @@
                                     <constraint firstItem="940-T5-1uE" firstAttribute="leading" secondItem="GFZ-lc-Kys" secondAttribute="leading" constant="30" id="h5B-Xq-eQw"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ehv-cO-3Vb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aquachek" translatesAutoresizingMaskIntoConstraints="NO" id="ehv-cO-3Vb">
                                 <rect key="frame" x="195" y="124" width="210" height="210"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1427,7 +1427,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P36-Lt-4zQ" userLabel="Top BG View">
                                         <rect key="frame" x="146" y="50" width="188" height="188"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1xi-0N-1iv">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leafBagger" translatesAutoresizingMaskIntoConstraints="NO" id="1xi-0N-1iv">
                                                 <rect key="frame" x="0.0" y="0.0" width="188" height="188"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1647,6 +1647,12 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
                                     <segue destination="DhH-vd-JqH" kind="show" identifier="toSecondVC" id="Jzt-vd-hQv"/>
                                 </connections>
                             </barButtonItem>
+                            <barButtonItem title="Enter" style="done" id="Usv-8a-cQX">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="displayChooser:" destination="jT1-98-otZ" id="APY-VQ-2O3"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem style="done" systemItem="add" id="LDa-eh-h03">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -1659,7 +1665,6 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
                         <outlet property="menuButton" destination="lWb-WE-mis" id="lTz-5r-gsh"/>
                         <outlet property="referenceView" destination="YKg-Lg-P2o" id="30X-qA-hQg"/>
                         <outlet property="textField" destination="7La-98-Yjz" id="Iuc-RM-3eh"/>
-                        <outlet property="webView" destination="nOh-1S-P1r" id="IWm-eO-5ZG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsI-AU-B1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1793,20 +1798,12 @@ Good Luck!</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pool Reminder" id="Qdf-Mj-klU">
-                        <rightBarButtonItems>
-                            <barButtonItem style="done" systemItem="compose" id="SXc-Et-E5e">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="createEvent:" destination="DhH-vd-JqH" id="ZB5-RE-qQs"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem style="done" systemItem="add" id="uJa-3G-P7O">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="createReminder:" destination="DhH-vd-JqH" id="lP6-pb-4Xq"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="uJa-3G-P7O">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="createReminder:" destination="DhH-vd-JqH" id="lP6-pb-4Xq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="poolImage" destination="xoG-10-jjJ" id="gPf-jQ-fRI"/>
@@ -1958,7 +1955,7 @@ Good Luck!</string>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="generalmaintenance" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-7R-mB9">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="generalmaintenance" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-7R-mB9">
                                         <rect key="frame" x="105" y="60" width="390" height="134"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
@@ -2444,6 +2441,7 @@ Good Luck!</string>
         <image name="Chemical Safety" width="240" height="198"/>
         <image name="Image" width="22" height="22"/>
         <image name="Surface Debris" width="600" height="599"/>
+        <image name="aquachek" width="400" height="400"/>
         <image name="calculator" width="225" height="225"/>
         <image name="chemicals1" width="595" height="595"/>
         <image name="comments" width="1024" height="1024"/>
@@ -2455,6 +2453,9 @@ Good Luck!</string>
         <image name="generalmaintenance" width="300" height="163"/>
         <image name="genmaint" width="308" height="164"/>
         <image name="home" width="22" height="22"/>
+        <image name="leafBagger" width="450" height="450"/>
+        <image name="oxidizer" width="600" height="600"/>
+        <image name="perflex" width="250" height="250"/>
         <image name="planner" width="140" height="140"/>
         <image name="poolwater1" width="600" height="870"/>
         <image name="poolwater2" width="1080" height="1920"/>

@@ -10,6 +10,8 @@
 		092789301D49E8CA0059B2CC /* PoolProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927892F1D49E8CA0059B2CC /* PoolProblems.swift */; };
 		092DEAA91D4758B300B7C637 /* MaintenanceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */; };
 		093D4E001D4C341600694C28 /* ScheduledWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D4DFF1D4C341600694C28 /* ScheduledWeb.swift */; };
+		093D4E011D4D1DA900694C28 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0940F5451D2AC28F00BFA91C /* EventKit.framework */; };
+		093D4E031D4D2B2800694C28 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093D4E021D4D2B2800694C28 /* EventKitUI.framework */; };
 		0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */; };
 		0940F53C1D2AC10A00BFA91C /* ChemicalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */; };
 		0940F53E1D2AC16200BFA91C /* WaterChemTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F53D1D2AC16200BFA91C /* WaterChemTableVC.swift */; };
@@ -56,6 +58,7 @@
 		0927892F1D49E8CA0059B2CC /* PoolProblems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolProblems.swift; sourceTree = "<group>"; };
 		092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailVC.swift; sourceTree = "<group>"; };
 		093D4DFF1D4C341600694C28 /* ScheduledWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduledWeb.swift; sourceTree = "<group>"; };
+		093D4E021D4D2B2800694C28 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableVC.swift; sourceTree = "<group>"; };
 		0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableViewCell.swift; sourceTree = "<group>"; };
 		0940F53D1D2AC16200BFA91C /* WaterChemTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterChemTableVC.swift; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093D4E031D4D2B2800694C28 /* EventKitUI.framework in Frameworks */,
+				093D4E011D4D1DA900694C28 /* EventKit.framework in Frameworks */,
 				099383AC1D493DDA00085A3E /* Alamofire.framework in Frameworks */,
 				099383A81D493B7D00085A3E /* CoreLocation.framework in Frameworks */,
 				099071541D246FE400477EA2 /* AVFoundation.framework in Frameworks */,
@@ -261,6 +266,7 @@
 		0990714C1D246F0900477EA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				093D4E021D4D2B2800694C28 /* EventKitUI.framework */,
 				099383AB1D493DDA00085A3E /* Alamofire.framework */,
 				099383A71D493B7D00085A3E /* CoreLocation.framework */,
 				0940F55B1D2B078500BFA91C /* MessageUI.framework */,

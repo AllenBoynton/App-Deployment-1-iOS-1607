@@ -5,23 +5,21 @@
 //  Created by Allen Boynton on 7/25/16.
 //  Copyright © 2016 Full Sail. All rights reserved.
 //
-import Foundation
 import UIKit
 import EventKit
-import WebKit
-import Alamofire
+import EventKitUI
 
 
 // Global Initializers
 let eventVC = "toSecondVC"
 
-class PoolCalendarVC: UIViewController, UIWebViewDelegate {
+class PoolCalendarVC: UIViewController {
+    
+    let eventStore = EKEventStore()
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBOutlet weak var textField: UITextView!
-    
-    @IBOutlet weak var webView: UIWebView!
     
     @IBOutlet weak var referenceView: UILabel!
     
@@ -46,8 +44,8 @@ class PoolCalendarVC: UIViewController, UIWebViewDelegate {
         
         if status == .NotDetermined {
             // Request access to calendars
-            Global.eventStore.requestAccessToEntityType(.Event, completion: { (granted, error) -> Void in
-                if error == error {
+            eventStore.requestAccessToEntityType(.Event, completion: { (granted, error) -> Void in
+                if let error = error {
                     print("Request FAILED with ERROR \(error)")
                     return
                 }
@@ -55,7 +53,7 @@ class PoolCalendarVC: UIViewController, UIWebViewDelegate {
                 if granted {
                     print("Granted Access")
                 } else {
-                    // Disable some UI
+                    // Disable some UI - Create Alert that we can't access the Calendar to check settings
                     print("Denied")
                 }
             })
@@ -65,29 +63,35 @@ class PoolCalendarVC: UIViewController, UIWebViewDelegate {
     }
     
     @IBAction func createCalendar(sender: UIBarButtonItem) {
-        // Check the status
-        
-        Cal.newCalendar = EKCalendar(forEntityType: .Event, eventStore: Global.eventStore)
+
+        let calendar = EKCalendar(forEntityType: .Event, eventStore: eventStore)
         
         // Configure
-        Cal.newCalendar.title = "Pool Calendar"
-        Cal.newCalendar.CGColor = UIColor.cyanColor().CGColor
+        calendar.title = "Pool Calendar"
+        calendar.CGColor = UIColor.cyanColor().CGColor
         
-        for source in Global.eventStore.sources {
+        for source in eventStore.sources {
             
             // Find local source
             if source.sourceType == EKSourceType.Local {
-                Cal.newCalendar.source = source
+                calendar.source = source
                 break
             }
         }
         
         // Save calendar to the database
+        
         do {
-            try Global.eventStore.saveCalendar(Cal.newCalendar, commit: true)
-        } catch let error as NSError {
+            try eventStore.saveCalendar(calendar, commit: true)
+        }
+        catch {
             print(error)
         }
+    }
+    
+    @IBAction func displayChooser(sender: UIBarButtonItem) {
+        
+        
     }
     
     @IBAction func referenceButton(sender: UIButton) {
