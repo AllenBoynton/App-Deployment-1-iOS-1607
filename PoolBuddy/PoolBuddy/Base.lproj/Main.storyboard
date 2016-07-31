@@ -25,6 +25,7 @@
             <string>KittenSlant</string>
             <string>KittenSlant</string>
             <string>KittenSlant</string>
+            <string>KittenSlant</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -107,7 +108,7 @@
                             <constraint firstAttribute="trailing" secondItem="scD-1E-Til" secondAttribute="trailing" id="t1a-pf-55A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Equipment" id="XjI-2q-kQl">
+                    <navigationItem key="navigationItem" id="XjI-2q-kQl">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="vVm-H3-Frp">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -250,7 +251,7 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Chemical Details" id="Pyg-hI-F5W">
+                                    <navigationItem id="Pyg-hI-F5W">
                                         <barButtonItem key="rightBarButtonItem" image="home" style="done" id="YY0-Ia-YHK" userLabel="Home">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
@@ -922,7 +923,7 @@
                             <constraint firstItem="9ny-L1-Ot0" firstAttribute="top" secondItem="3ax-io-MHI" secondAttribute="bottom" id="ql0-ib-rh6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Chemicals" id="nEz-Rh-3a2">
+                    <navigationItem key="navigationItem" id="nEz-Rh-3a2">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="7xq-YX-L9w">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -1057,7 +1058,7 @@
                                     <constraint firstAttribute="height" constant="44" id="Z3W-cE-Zbi"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Chemical Details" id="V0F-R8-WDG"/>
+                                    <navigationItem id="V0F-R8-WDG"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -1185,7 +1186,7 @@
                             <constraint firstItem="ynS-9c-AcL" firstAttribute="leading" secondItem="aC3-xR-9wU" secondAttribute="leading" id="tBi-fb-ja9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Water Chemistry" id="3HD-BQ-ixH">
+                    <navigationItem key="navigationItem" id="3HD-BQ-ixH">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="W3d-bA-sZ8">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -1306,7 +1307,7 @@
             </objects>
             <point key="canvasLocation" x="-73" y="2490"/>
         </scene>
-        <!--Cleaning Tools-->
+        <!--Cleaning Tools TableVC-->
         <scene sceneID="E90-ye-dgU">
             <objects>
                 <viewController id="yxU-qD-epu" customClass="CleaningToolsTableVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -1382,7 +1383,7 @@
                             <constraint firstItem="u6U-ba-0Jz" firstAttribute="leading" secondItem="UYy-n5-tqX" secondAttribute="leading" id="p1O-sh-YLl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Cleaning Tools" id="XWk-uc-XLe">
+                    <navigationItem key="navigationItem" id="XWk-uc-XLe">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="wNG-QW-ZZ3">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -1396,10 +1397,10 @@
             </objects>
             <point key="canvasLocation" x="628" y="938"/>
         </scene>
-        <!--Cleaning Tools DetailVC Scene-->
+        <!--Cleaning Tools DetailVC-->
         <scene sceneID="iYo-AO-8eK">
             <objects>
-                <viewController id="D65-Ps-DSN" userLabel="Cleaning Tools DetailVC Scene" customClass="CleaningToolsDetailVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="D65-Ps-DSN" customClass="CleaningToolsDetailVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7ZU-Pv-1CU"/>
                         <viewControllerLayoutGuide type="bottom" id="nz8-js-krx"/>
@@ -1564,10 +1565,10 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7La-98-Yjz">
-                                        <rect key="frame" x="20" y="240" width="560" height="232"/>
+                                        <rect key="frame" x="20" y="240" width="560" height="276"/>
                                         <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Weekly pool maintenance of your pool can be a daunting list of tasks.                                                                                                                                                                                       We at A &amp; B Pools have listed the popular and most imortant tasks to help you with your maintenance.                                                                                                                                                                                     This is your initial roadmap. Above is a video to give you a summary of usual pool tasks to help prioritize..</mutableString>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <string key="text">Weekly pool maintenance of your pool can be a daunting list of tasks.                                                                                                                                                                                       We at A &amp; B Pools have listed the popular and most imortant tasks to help you with your maintenance.                                                                                                                                                                                     This is your initial roadmap. Above is a video to give you a summary of usual pool tasks to help prioritize..</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuR-b0-AZx">
@@ -1589,55 +1590,16 @@
                                         <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="26"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ie0-V0-5cz">
-                                        <rect key="frame" x="0.0" y="492" width="600" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="sbU-UN-t9t"/>
-                                        </constraints>
-                                        <items>
-                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="Y2j-CV-aYt"/>
-                                            <barButtonItem title="Create a Reminder" style="done" id="GOa-as-PEz">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <connections>
-                                                    <action selector="createReminder:" destination="jT1-98-otZ" id="uGu-IA-bE6"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem style="done" systemItem="add" id="LDa-eh-h03">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <connections>
-                                                    <action selector="createReminder:" destination="jT1-98-otZ" id="0nx-34-soq"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </items>
-                                    </toolbar>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-Lg-P2o">
-                                        <rect key="frame" x="40" y="402" width="540" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="COC-Ie-Two"/>
-                                        </constraints>
-                                        <string key="text">Reference:
-Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved July 26, 2016, from http://archive.azcentral.com/home/articles/20130417proper-maintenance-can-keep-your-pool-from-becoming-an-expensive-headache.html Bill Moore, Moore's Pool Service
-</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="ie0-V0-5cz" firstAttribute="top" secondItem="YKg-Lg-P2o" secondAttribute="bottom" constant="20" id="6E8-AV-3h4"/>
                                     <constraint firstItem="cuR-b0-AZx" firstAttribute="top" secondItem="Lk0-1Z-WxK" secondAttribute="top" constant="20" id="88v-rl-zLt"/>
                                     <constraint firstItem="n3q-4M-5I1" firstAttribute="centerY" secondItem="cuR-b0-AZx" secondAttribute="centerY" id="GlY-7F-jHz"/>
-                                    <constraint firstItem="YKg-Lg-P2o" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" constant="40" id="HIH-lW-hUj"/>
-                                    <constraint firstItem="ie0-V0-5cz" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" id="J3P-DC-w0x"/>
                                     <constraint firstItem="7La-98-Yjz" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" constant="20" id="J5x-kR-XUq"/>
                                     <constraint firstItem="n3q-4M-5I1" firstAttribute="centerX" secondItem="Lk0-1Z-WxK" secondAttribute="centerX" id="NA5-RR-Q0W"/>
-                                    <constraint firstAttribute="trailing" secondItem="YKg-Lg-P2o" secondAttribute="trailing" constant="20" id="cAo-lq-rT3"/>
                                     <constraint firstItem="7La-98-Yjz" firstAttribute="top" secondItem="cuR-b0-AZx" secondAttribute="bottom" id="eMr-oK-gid"/>
-                                    <constraint firstItem="ie0-V0-5cz" firstAttribute="top" secondItem="7La-98-Yjz" secondAttribute="bottom" constant="20" id="g7D-Cp-JhD"/>
+                                    <constraint firstAttribute="bottom" secondItem="7La-98-Yjz" secondAttribute="bottom" constant="20" id="fmm-QF-ZOc"/>
                                     <constraint firstItem="n3q-4M-5I1" firstAttribute="width" secondItem="Lk0-1Z-WxK" secondAttribute="width" multiplier="0.5" id="gSK-h0-8Xq"/>
-                                    <constraint firstAttribute="bottom" secondItem="ie0-V0-5cz" secondAttribute="bottom" id="mkb-dh-Ckl"/>
-                                    <constraint firstAttribute="trailing" secondItem="ie0-V0-5cz" secondAttribute="trailing" id="oNS-mZ-F59"/>
                                     <constraint firstAttribute="trailing" secondItem="cuR-b0-AZx" secondAttribute="trailing" constant="20" id="s1h-ZN-hl0"/>
                                     <constraint firstItem="cuR-b0-AZx" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" constant="20" id="smh-2U-IIn"/>
                                     <constraint firstAttribute="trailing" secondItem="7La-98-Yjz" secondAttribute="trailing" constant="20" id="xzq-3Q-Ezi"/>
@@ -1657,11 +1619,11 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
                             <constraint firstItem="Lk0-1Z-WxK" firstAttribute="top" secondItem="mVg-hI-eia" secondAttribute="bottom" id="zIP-fC-p6F"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Common Tasks" id="gQQ-Lz-05a">
+                    <navigationItem key="navigationItem" id="gQQ-Lz-05a">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="lWb-WE-mis">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Calendar &gt;" style="done" id="WFc-WW-FUL">
+                        <barButtonItem key="rightBarButtonItem" title="Next" style="done" id="WFc-WW-FUL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="DhH-vd-JqH" kind="show" identifier="toSecondVC" id="bfO-dO-37X"/>
@@ -1670,7 +1632,6 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="lWb-WE-mis" id="N6b-2j-Kxe"/>
-                        <outlet property="referenceView" destination="YKg-Lg-P2o" id="lQr-pH-c55"/>
                         <outlet property="textField" destination="7La-98-Yjz" id="e8p-db-BUr"/>
                         <segue destination="gQH-lT-YbC" kind="unwind" identifier="toVideo" unwindAction="unwindActionToReminders:" id="mbN-kK-cBo"/>
                     </connections>
@@ -1680,7 +1641,7 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
             </objects>
             <point key="canvasLocation" x="632" y="4034"/>
         </scene>
-        <!--Video Pool School-->
+        <!--Scheduled Web-->
         <scene sceneID="wB9-TI-ydI">
             <objects>
                 <viewController id="vtQ-WX-IqL" customClass="ScheduledWeb" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -1706,7 +1667,7 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
                             <constraint firstItem="tUf-Tk-zrV" firstAttribute="top" secondItem="nOh-1S-P1r" secondAttribute="bottom" id="gVy-Fo-9Hb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Video Pool School" id="dzq-HJ-8g4">
+                    <navigationItem key="navigationItem" id="dzq-HJ-8g4">
                         <leftBarButtonItems>
                             <barButtonItem title="&lt;" id="VpG-5p-KiO">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1749,9 +1710,9 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hx6-yl-nBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="4034"/>
+            <point key="canvasLocation" x="1344" y="4810"/>
         </scene>
-        <!--Pool Calendar-->
+        <!--Pool CalendarVC-->
         <scene sceneID="45s-CD-e73">
             <objects>
                 <viewController id="DhH-vd-JqH" customClass="PoolCalendarVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -1773,7 +1734,7 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdX-uD-r4f">
-                                <rect key="frame" x="20" y="304" width="560" height="232"/>
+                                <rect key="frame" x="20" y="304" width="560" height="276"/>
                                 <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
                                 <string key="text">Until you fall into a routine, we at A &amp; B Pools would like to start you off with the basics. You will find some default reminders that should be followed as best you can.
 
@@ -1790,61 +1751,29 @@ Good Luck!</string>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ZJi-xd-iJK">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="ToO-Mk-Fng"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="XaC-5n-BHU"/>
-                                    <barButtonItem title="Create an Event" style="done" id="NIT-fs-I3d">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <action selector="displayEventEdit:" destination="DhH-vd-JqH" id="q5L-Q7-6hP"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="done" systemItem="add" id="QDc-Tl-GPP">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <action selector="displayEventEdit:" destination="DhH-vd-JqH" id="7YH-yf-Zoa"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xoG-10-jjJ" firstAttribute="top" secondItem="j5S-4e-sgt" secondAttribute="bottom" constant="20" id="8K1-pf-lFB"/>
-                            <constraint firstItem="1yT-oT-Dbp" firstAttribute="top" secondItem="ZJi-xd-iJK" secondAttribute="bottom" id="90p-hW-CyG"/>
                             <constraint firstItem="Bc3-FP-ZNi" firstAttribute="leading" secondItem="v1i-Vf-0z1" secondAttribute="leading" id="A44-8Y-1u4"/>
                             <constraint firstItem="Bc3-FP-ZNi" firstAttribute="top" secondItem="j5S-4e-sgt" secondAttribute="bottom" id="EaA-Xo-92V"/>
                             <constraint firstItem="1yT-oT-Dbp" firstAttribute="top" secondItem="Bc3-FP-ZNi" secondAttribute="bottom" id="GHp-oJ-qPq"/>
                             <constraint firstAttribute="trailing" secondItem="VdX-uD-r4f" secondAttribute="trailing" constant="20" id="Ln5-KO-rYt"/>
-                            <constraint firstAttribute="trailing" secondItem="ZJi-xd-iJK" secondAttribute="trailing" id="MSh-4o-l3e"/>
+                            <constraint firstItem="1yT-oT-Dbp" firstAttribute="top" secondItem="VdX-uD-r4f" secondAttribute="bottom" constant="20" id="QDq-vF-g3g"/>
                             <constraint firstItem="VdX-uD-r4f" firstAttribute="leading" secondItem="v1i-Vf-0z1" secondAttribute="leading" constant="20" id="dQY-Rt-Yuq"/>
                             <constraint firstItem="VdX-uD-r4f" firstAttribute="top" secondItem="xoG-10-jjJ" secondAttribute="bottom" id="kKF-du-y3H"/>
                             <constraint firstItem="xoG-10-jjJ" firstAttribute="trailing" secondItem="v1i-Vf-0z1" secondAttribute="trailingMargin" id="qm3-cu-9Hz"/>
                             <constraint firstAttribute="trailing" secondItem="Bc3-FP-ZNi" secondAttribute="trailing" id="rat-Ds-Vkn"/>
                             <constraint firstItem="xoG-10-jjJ" firstAttribute="leading" secondItem="v1i-Vf-0z1" secondAttribute="leadingMargin" id="siq-05-kgL"/>
-                            <constraint firstItem="ZJi-xd-iJK" firstAttribute="top" secondItem="VdX-uD-r4f" secondAttribute="bottom" constant="20" id="vG6-Ry-zRP"/>
-                            <constraint firstItem="ZJi-xd-iJK" firstAttribute="leading" secondItem="v1i-Vf-0z1" secondAttribute="leading" id="vKC-pQ-mhW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pool Calendar" id="Qdf-Mj-klU">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Enter" style="done" id="Usv-8a-cQX">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="displayChooser:" destination="DhH-vd-JqH" id="fJP-cc-bAt"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem style="done" systemItem="add" id="uJa-3G-P7O">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="createCalendar:" destination="DhH-vd-JqH" id="PaB-dQ-ecu"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                    <navigationItem key="navigationItem" id="Qdf-Mj-klU">
+                        <barButtonItem key="rightBarButtonItem" title="Reminders" style="done" id="Usv-8a-cQX">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="UbE-Th-OIu" kind="show" id="Tln-GP-3p0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="poolImage" destination="xoG-10-jjJ" id="gPf-jQ-fRI"/>
@@ -1854,6 +1783,223 @@ Good Luck!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mm-xp-lsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1344" y="4034"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="fAg-To-Fhq">
+            <objects>
+                <viewController id="UbE-Th-OIu" customClass="EditViewController" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8mc-Of-41c"/>
+                        <viewControllerLayoutGuide type="bottom" id="bae-1Y-x1y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3bF-NM-wEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="agZ-sv-Uhf">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-cc-kJH" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K1q-Tx-hVL">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="reminderCell" textLabel="5JQ-f9-JOr" detailTextLabel="laC-Gu-eM5" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="M8r-81-BFM">
+                                                <rect key="frame" x="0.0" y="28" width="600" height="55"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M8r-81-BFM" id="KfQ-h0-qpN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="533" height="54.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5JQ-f9-JOr">
+                                                            <rect key="frame" x="15" y="0.0" width="44" height="36.5"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="24"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="laC-Gu-eM5">
+                                                            <rect key="frame" x="15" y="36.5" width="49" height="19"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <segue destination="a1F-VZ-fXt" kind="show" identifier="ShowReminderDetails" id="lRR-JU-BWq"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="UbE-Th-OIu" id="cXY-Bg-VmE"/>
+                                            <outlet property="delegate" destination="UbE-Th-OIu" id="JS5-Q9-J5a"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="K1q-Tx-hVL" secondAttribute="bottom" id="Adl-t6-kvT"/>
+                                    <constraint firstItem="K1q-Tx-hVL" firstAttribute="leading" secondItem="Aed-cc-kJH" secondAttribute="leading" id="d1A-qU-cZe"/>
+                                    <constraint firstItem="K1q-Tx-hVL" firstAttribute="top" secondItem="Aed-cc-kJH" secondAttribute="top" id="eex-gD-EJN"/>
+                                    <constraint firstAttribute="trailing" secondItem="K1q-Tx-hVL" secondAttribute="trailing" id="xIQ-Qq-J4W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="agZ-sv-Uhf" firstAttribute="top" secondItem="8mc-Of-41c" secondAttribute="bottom" id="8HD-VV-Yvn"/>
+                            <constraint firstItem="bae-1Y-x1y" firstAttribute="top" secondItem="Aed-cc-kJH" secondAttribute="bottom" id="ADn-RI-tcA"/>
+                            <constraint firstAttribute="trailing" secondItem="agZ-sv-Uhf" secondAttribute="trailing" id="Dj9-ur-dj6"/>
+                            <constraint firstItem="bae-1Y-x1y" firstAttribute="top" secondItem="agZ-sv-Uhf" secondAttribute="bottom" id="cxH-ey-ZWO"/>
+                            <constraint firstItem="Aed-cc-kJH" firstAttribute="top" secondItem="8mc-Of-41c" secondAttribute="bottom" id="hSV-ej-Lvt"/>
+                            <constraint firstItem="Aed-cc-kJH" firstAttribute="leading" secondItem="3bF-NM-wEQ" secondAttribute="leading" id="koD-5q-wDj"/>
+                            <constraint firstAttribute="trailing" secondItem="Aed-cc-kJH" secondAttribute="trailing" id="oUo-Rr-eIO"/>
+                            <constraint firstItem="agZ-sv-Uhf" firstAttribute="leading" secondItem="3bF-NM-wEQ" secondAttribute="leading" id="xkR-IL-fId"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vqm-iN-Rny">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="done" systemItem="edit" id="2Xt-Od-Yb5">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="editTable:" destination="UbE-Th-OIu" id="d5M-Ow-Kvz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pao-6D-OD2">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="fby-nJ-9ug" kind="presentation" identifier="NewReminder" id="8pE-MH-s1O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="K1q-Tx-hVL" id="yp7-fe-ezq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Hr-bT-Op9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040" y="4034"/>
+        </scene>
+        <!--New ReminderVC-->
+        <scene sceneID="xn9-Kc-Ty2">
+            <objects>
+                <viewController id="fby-nJ-9ug" customClass="NewReminderVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YYB-vL-aAZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="8cN-7B-OYG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ieo-tU-iZj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="NZ0-a3-9OF">
+                                <rect key="frame" x="0.0" y="32" width="600" height="536"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bna-nA-QcG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="DJC-id-T9r"/>
+                                </constraints>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="xJp-ZG-uWq" userLabel="New Reminder">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="lax-f8-mYq">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="dismiss:" destination="fby-nJ-9ug" id="Tzm-Dh-MJQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="aku-2p-6PO">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="saveNewReminder:" destination="fby-nJ-9ug" id="4mB-B3-mFP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pM-lQ-osD" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BQJ-1m-Kqa">
+                                        <rect key="frame" x="16" y="97" width="568" height="62"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="afB-YP-Mpm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a79-ef-QVX">
+                                        <rect key="frame" x="10" y="192" width="90" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="07N-P2-v0e"/>
+                                            <constraint firstAttribute="width" constant="90" id="d2H-Pz-2jK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7d-ok-BML">
+                                        <rect key="frame" x="120" y="189" width="460" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gq0-PG-VRG">
+                                        <rect key="frame" x="10" y="44" width="225" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="tQa-6C-8Wi"/>
+                                            <constraint firstAttribute="width" constant="225" id="x9P-7F-Azq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="w7d-ok-BML" firstAttribute="leading" secondItem="a79-ef-QVX" secondAttribute="trailing" constant="20" id="6Jv-Sy-XWp"/>
+                                    <constraint firstItem="a79-ef-QVX" firstAttribute="leading" secondItem="0pM-lQ-osD" secondAttribute="leading" constant="10" id="9DA-X5-bDN"/>
+                                    <constraint firstItem="BQJ-1m-Kqa" firstAttribute="leading" secondItem="0pM-lQ-osD" secondAttribute="leading" constant="16" id="Cgx-2z-7S3"/>
+                                    <constraint firstItem="w7d-ok-BML" firstAttribute="top" secondItem="BQJ-1m-Kqa" secondAttribute="bottom" constant="30" id="Hc0-g1-j8L"/>
+                                    <constraint firstItem="Gq0-PG-VRG" firstAttribute="leading" secondItem="0pM-lQ-osD" secondAttribute="leading" constant="10" id="Ib6-rU-fhb"/>
+                                    <constraint firstItem="a79-ef-QVX" firstAttribute="top" secondItem="BQJ-1m-Kqa" secondAttribute="bottom" constant="33" id="MKl-mS-qMx"/>
+                                    <constraint firstItem="BQJ-1m-Kqa" firstAttribute="centerX" secondItem="0pM-lQ-osD" secondAttribute="centerX" id="RmT-Zc-fUg"/>
+                                    <constraint firstItem="Gq0-PG-VRG" firstAttribute="top" secondItem="0pM-lQ-osD" secondAttribute="top" constant="44" id="SoZ-0F-8GA"/>
+                                    <constraint firstAttribute="trailing" secondItem="w7d-ok-BML" secondAttribute="trailing" constant="20" id="cJa-xy-n6q"/>
+                                    <constraint firstAttribute="trailing" secondItem="BQJ-1m-Kqa" secondAttribute="trailing" constant="16" id="nbQ-MV-9Qf"/>
+                                    <constraint firstItem="BQJ-1m-Kqa" firstAttribute="top" secondItem="Gq0-PG-VRG" secondAttribute="bottom" constant="28" id="ttM-T5-Uqq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0pM-lQ-osD" secondAttribute="trailing" id="CLi-vr-XPb"/>
+                            <constraint firstItem="bna-nA-QcG" firstAttribute="leading" secondItem="ieo-tU-iZj" secondAttribute="leading" id="FiP-Ds-Coe"/>
+                            <constraint firstAttribute="trailing" secondItem="bna-nA-QcG" secondAttribute="trailing" id="Ort-Df-7Fu"/>
+                            <constraint firstItem="0pM-lQ-osD" firstAttribute="top" secondItem="bna-nA-QcG" secondAttribute="bottom" id="gGc-KC-7WF"/>
+                            <constraint firstItem="bna-nA-QcG" firstAttribute="top" secondItem="ieo-tU-iZj" secondAttribute="top" id="hNc-mR-Rcy"/>
+                            <constraint firstItem="8cN-7B-OYG" firstAttribute="top" secondItem="0pM-lQ-osD" secondAttribute="bottom" id="hd1-Oz-pYL"/>
+                            <constraint firstItem="0pM-lQ-osD" firstAttribute="leading" secondItem="ieo-tU-iZj" secondAttribute="leading" id="zIG-Uo-Kwu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateTextField" destination="w7d-ok-BML" id="r92-7c-LN4"/>
+                        <outlet property="reminderTextView" destination="BQJ-1m-Kqa" id="05G-tF-COy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="onb-s2-Rkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040" y="4810"/>
         </scene>
         <!--Pool Maintenance View Controller-->
         <scene sceneID="cBd-sh-H3P">
@@ -1897,7 +2043,7 @@ Good Luck!</string>
                                                         <constraint firstAttribute="height" constant="25" id="d7w-eb-YfX"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="15"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1937,7 +2083,7 @@ Good Luck!</string>
                             <constraint firstItem="BWf-6g-yUR" firstAttribute="top" secondItem="MAu-6d-HZ7" secondAttribute="bottom" constant="20" id="p1r-KO-eWe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pool Maintenance" id="jzK-Oy-b2z">
+                    <navigationItem key="navigationItem" id="jzK-Oy-b2z">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="yZF-PE-bbB">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -2027,7 +2173,7 @@ Good Luck!</string>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Title" id="jEO-XW-UAO"/>
+                                    <navigationItem id="jEO-XW-UAO"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -2180,7 +2326,7 @@ Good Luck!</string>
             </objects>
             <point key="canvasLocation" x="1344" y="5583"/>
         </scene>
-        <!--Pool Problems Gallery-->
+        <!--Gallery View Controller-->
         <scene sceneID="iF6-oK-qOq">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="aiJ-v2-4lT" customClass="GalleryViewController" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -2299,7 +2445,7 @@ Good Luck!</string>
                             <constraint firstAttribute="trailing" secondItem="3ND-Ly-aAv" secondAttribute="trailing" id="xW8-Qo-8UJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pool Problems Gallery" id="DdT-Jf-JHr">
+                    <navigationItem key="navigationItem" id="DdT-Jf-JHr">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="aiG-iF-HvD">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -2314,7 +2460,7 @@ Good Luck!</string>
             </objects>
             <point key="canvasLocation" x="632" y="5583"/>
         </scene>
-        <!--Pool Calculator-->
+        <!--CalculatorVC-->
         <scene sceneID="IJS-6u-YH0">
             <objects>
                 <viewController id="FHX-sr-L6b" customClass="CalculatorVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -2329,7 +2475,7 @@ Good Luck!</string>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Pool Calculator" id="5b1-eV-Urh">
+                    <navigationItem key="navigationItem" id="5b1-eV-Urh">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="c4I-g0-AtF">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -2345,7 +2491,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pi8-rg-MbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="632" y="4821"/>
+            <point key="canvasLocation" x="632" y="4810"/>
         </scene>
         <!--Live Chat-->
         <scene sceneID="FGw-mQ-vUD">
@@ -2362,7 +2508,7 @@ Good Luck!</string>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Live Pool Buddy Chat" id="hcs-1N-piB">
+                    <navigationItem key="navigationItem" id="hcs-1N-piB">
                         <barButtonItem key="leftBarButtonItem" image="Image" id="Tlr-eU-4sP">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -2395,7 +2541,7 @@ Good Luck!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKw-dT-v6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-73" y="4821"/>
+            <point key="canvasLocation" x="-73" y="4810"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rPh-gY-1kj">
@@ -2470,6 +2616,102 @@ Good Luck!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xT-wU-oFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-73" y="3250"/>
+        </scene>
+        <!--Reminder Details Scene-->
+        <scene sceneID="1XL-QE-A2s">
+            <objects>
+                <viewController id="a1F-VZ-fXt" userLabel="Reminder Details Scene" customClass="ReminderDetailsVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2lA-V4-EMD"/>
+                        <viewControllerLayoutGuide type="bottom" id="NsP-iS-Kkk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hhv-Fp-wqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="jYe-Du-OJH">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41l-gQ-nUL" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XWc-il-mbK">
+                                        <rect key="frame" x="120" y="182" width="480" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ynd-vx-YE7">
+                                        <rect key="frame" x="16" y="97" width="568" height="55"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltc-7G-EKU">
+                                        <rect key="frame" x="10" y="185" width="90" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="Boa-Wb-T5o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-Bl-KTi">
+                                        <rect key="frame" x="10" y="44" width="225" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Pw3-rj-D9g"/>
+                                            <constraint firstAttribute="width" constant="225" id="fMt-Yb-gq6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XWc-il-mbK" firstAttribute="top" secondItem="ynd-vx-YE7" secondAttribute="bottom" constant="30" id="1sf-oR-4WM"/>
+                                    <constraint firstItem="XWc-il-mbK" firstAttribute="leading" secondItem="Ltc-7G-EKU" secondAttribute="trailing" constant="20" id="BHM-qH-q7g"/>
+                                    <constraint firstItem="Ltc-7G-EKU" firstAttribute="top" secondItem="ynd-vx-YE7" secondAttribute="bottom" constant="33" id="CiF-Ca-uVu"/>
+                                    <constraint firstItem="sbm-Bl-KTi" firstAttribute="top" secondItem="41l-gQ-nUL" secondAttribute="top" constant="44" id="Oz6-2O-kaJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="XWc-il-mbK" secondAttribute="trailing" id="WjX-K9-IU8"/>
+                                    <constraint firstItem="sbm-Bl-KTi" firstAttribute="leading" secondItem="41l-gQ-nUL" secondAttribute="leading" constant="10" id="acB-k6-U0N"/>
+                                    <constraint firstAttribute="bottom" secondItem="XWc-il-mbK" secondAttribute="bottom" constant="321" id="geu-It-8fI"/>
+                                    <constraint firstItem="Ltc-7G-EKU" firstAttribute="leading" secondItem="sbm-Bl-KTi" secondAttribute="leading" id="k2V-Ov-cO4"/>
+                                    <constraint firstItem="ynd-vx-YE7" firstAttribute="centerX" secondItem="41l-gQ-nUL" secondAttribute="centerX" id="lsE-Z5-VPn"/>
+                                    <constraint firstItem="ynd-vx-YE7" firstAttribute="top" secondItem="sbm-Bl-KTi" secondAttribute="bottom" constant="28" id="oOq-zM-SPU"/>
+                                    <constraint firstItem="ynd-vx-YE7" firstAttribute="leading" secondItem="41l-gQ-nUL" secondAttribute="leading" constant="16" id="q0V-FL-ysP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ltc-7G-EKU" secondAttribute="bottom" constant="327" id="rA7-DT-IQl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jYe-Du-OJH" firstAttribute="top" secondItem="2lA-V4-EMD" secondAttribute="bottom" id="7IK-jj-qDf"/>
+                            <constraint firstItem="NsP-iS-Kkk" firstAttribute="top" secondItem="41l-gQ-nUL" secondAttribute="bottom" id="SZV-ln-IBZ"/>
+                            <constraint firstItem="jYe-Du-OJH" firstAttribute="leading" secondItem="Hhv-Fp-wqZ" secondAttribute="leading" id="UHn-9d-hr1"/>
+                            <constraint firstAttribute="trailing" secondItem="41l-gQ-nUL" secondAttribute="trailing" id="aIP-8K-hYt"/>
+                            <constraint firstItem="41l-gQ-nUL" firstAttribute="leading" secondItem="Hhv-Fp-wqZ" secondAttribute="leading" id="gsk-TK-jFA"/>
+                            <constraint firstItem="NsP-iS-Kkk" firstAttribute="top" secondItem="jYe-Du-OJH" secondAttribute="bottom" id="iHc-7H-qac"/>
+                            <constraint firstItem="41l-gQ-nUL" firstAttribute="top" secondItem="2lA-V4-EMD" secondAttribute="bottom" id="v6a-Uf-ZGP"/>
+                            <constraint firstAttribute="trailing" secondItem="jYe-Du-OJH" secondAttribute="trailing" id="vmm-0F-2df"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sy3-BW-gsd" userLabel="Details">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="avC-JJ-meQ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="saveReminder:" destination="a1F-VZ-fXt" id="G3c-g8-vlf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dateTextField" destination="XWc-il-mbK" id="X14-mS-ufO"/>
+                        <outlet property="reminderTextView" destination="ynd-vx-YE7" id="IBN-Al-Bse"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ZT-WH-dKh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2739" y="4034"/>
         </scene>
     </scenes>
     <resources>

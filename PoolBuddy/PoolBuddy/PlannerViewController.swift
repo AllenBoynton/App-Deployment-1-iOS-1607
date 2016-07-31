@@ -21,8 +21,6 @@ class PlannerViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextView!
     
-    @IBOutlet weak var referenceView: UILabel!
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,54 +39,8 @@ class PlannerViewController: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
-            referenceView.hidden = true
         }
         self.revealViewController().rearViewRevealWidth = 325
-                
-        // Create authorization status
-        let status = EKEventStore.authorizationStatusForEntityType(.Reminder)
         
-        if status == .NotDetermined {
-            // Request access to calendars
-            eventStore.requestAccessToEntityType(.Reminder, completion: { (granted, error) -> Void in
-                if error == error {
-                    print("Request FAILED with ERROR \(error)")
-                    return
-                }
-                if granted {
-                    print("Granted Access")
-                } else {
-                    // Disable some UI
-                    print("Denied")
-                }
-            })
-        }
     }
-    
-    @IBAction func createReminder(sender: UIBarButtonItem) {
-        // Check the status
-        
-        let reminder = EKCalendar(forEntityType: .Reminder, eventStore: eventStore)
-        
-        reminder.title = "Pool Reminders"
-        reminder.CGColor = UIColor.blueColor().CGColor
-        
-        
-        // Save to
-        for source in eventStore.sources {
-            
-            // Find local source
-            if source.sourceType == EKSourceType.Local {
-                reminder.source = source
-                break
-            }
-        }
-        
-        // Save calendar to the database
-        do {
-            try eventStore.saveCalendar(reminder, commit: true)
-        } catch let error as NSError {
-            print(error)
-        }
-    }    
 }
