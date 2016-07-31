@@ -10,7 +10,7 @@ import EventKit
 import EventKitUI
 
 
-class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate {
+class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate, EKEventEditViewDelegate {
     
     let eventStore = EKEventStore()
     
@@ -53,10 +53,11 @@ class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate {
 
         let calendar = EKCalendar(forEntityType: .Event, eventStore: eventStore)
         
-        // Configure
+        // Configure attributes
         calendar.title = "Pool Calendar"
         calendar.CGColor = UIColor.blueColor().CGColor
         
+        // Assigns calendar to local source
         for source in eventStore.sources {
             
             // Find local source
@@ -68,7 +69,7 @@ class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate {
         
         // Save calendar to the database
         do {
-            try eventStore.saveCalendar(calendar, commit: true)
+            try eventStore.saveCalendar(calendar, commit: true) // true = saves immediately
         }
         catch {
             print(error)
@@ -76,15 +77,45 @@ class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate {
     }
     
     @IBAction func displayChooser(sender: UIBarButtonItem) {
-        let chooser = EKCalendarChooser(selectionStyle: .Single, displayStyle: .AllCalendars , entityType: .Event, eventStore: eventStore)
+        let chooser = EKCalendarChooser(selectionStyle: .Multiple, displayStyle: .AllCalendars , entityType: .Event, eventStore: eventStore)
         
         chooser.showsCancelButton = true
         chooser.showsDoneButton = true
         chooser.delegate = self
         
         // "You can choose your own nav VC or this is how to create a new one"
-//        let nav = UINavigationController(rootViewController: chooser)
+        let nav = UINavigationController(rootViewController: chooser)
         
-        presentViewController(chooser, animated: true, completion: nil)
+        presentViewController(nav, animated: true, completion: nil)
+    }
+    
+    // Creates New Event through Events VC edit
+    @IBAction func displayEventEdit(sender: UIBarButtonItem) {
+        let eventVC = EKEventEditViewController()
+        
+        eventVC.eventStore = eventStore
+        eventVC.editViewDelegate = self
+        
+        presentViewController(eventVC, animated: true, completion: nil)
+    }
+    
+    // MARK: - EKEventEditViewDelegate
+    func eventEditViewController(controller: EKEventEditViewController, didCompleteWithAction action: EKEventEditViewAction) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    // MARK: - EKCalendarChooserDelegate
+    func calendarChooserDidCancel(calendarChooser: EKCalendarChooser) {
+        print("Cancel was tapped")
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func calendarChooserDidFinish(calendarChooser: EKCalendarChooser) {
+        print("Done was tapped")
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func calendarChooserSelectionDidChange(calendarChooser: EKCalendarChooser) {
+        presentViewController(calendarChooser, animated: true, completion: nil)
     }
 }

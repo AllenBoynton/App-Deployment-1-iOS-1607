@@ -26,7 +26,7 @@ class PlannerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Common Tasks"
+        navigationItem.title = "Pool Planner"
         
         // Custom nav bar title font and size
         navigationController!.navigationBar.titleTextAttributes =
@@ -72,9 +72,8 @@ class PlannerViewController: UIViewController {
         
         reminder.title = "Pool Reminders"
         reminder.CGColor = UIColor.blueColor().CGColor
-//        reminder.startDateComponents = NSCalendar.currentCalendar().components([.Month, .Day, .Year], fromDate: NSDate())
         
-//        reminder.calendar = calendar
+        
         // Save to
         for source in eventStore.sources {
             
@@ -91,13 +90,5 @@ class PlannerViewController: UIViewController {
         } catch let error as NSError {
             print(error)
         }
-    }
-    
-    @IBAction func referenceButton(sender: UIButton) {
-        if referenceView.hidden == false {
-            referenceView.hidden = true
-        } else if referenceView.hidden == true {
-            referenceView.hidden = false
-        }
-    }
+    }    
 }

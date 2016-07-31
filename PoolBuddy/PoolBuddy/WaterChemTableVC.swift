@@ -40,7 +40,7 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let poolCategory = waterChemistry[section]
-        return poolCategory.menuItem
+        return poolCategory.group
     }
     
     // Changes header BG color and text color

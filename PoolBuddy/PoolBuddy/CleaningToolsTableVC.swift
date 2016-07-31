@@ -40,7 +40,7 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let poolCategory = maintenanceEquipment[section]
-        return poolCategory.menuItem
+        return poolCategory.group
     }
     
     // Changes header BG color and text color
@@ -85,10 +85,10 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
                 let poolCategory = maintenanceEquipment[indexPath.section]
                 let product = poolCategory.products[indexPath.row]
                 
-                destination.productTitle = product.label
-                destination.productImage = UIImage(named: product.image)
-                destination.productLabel = product.label2
-                destination.productImage2 = UIImage(named: product.image2)
+                destination.label = product.label
+                destination.image = UIImage(named: product.image)
+                destination.label2 = product.label2
+                destination.image2 = UIImage(named: product.image2)
                 destination.descriptions = product.description
             }
         }

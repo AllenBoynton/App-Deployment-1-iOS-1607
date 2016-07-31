@@ -16,28 +16,26 @@ class ChemicalDetailVC: UIViewController {
     @IBOutlet weak var detailLabel2: UILabel!
     @IBOutlet weak var detailImage2: UIImageView!
     
-    var productTitle: String!
-    var productImage: UIImage!
+    var label: String!
+    var image: UIImage!
+    var label2: String!
+    var image2: UIImage!
     var descriptions: String!
-    var productLabel: String!
-    var productImage2: UIImage!
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Using passed data to add to detail view
-        navigationItem.title = productTitle
-        detailImage.image = productImage
+        navigationItem.title = label
+        detailImage.image = image
         detailText.text = descriptions
         
-        if productLabel == "" || productImage2 == "" {
-            detailLabel2.hidden = true
-            detailImage2.hidden = true
+        if label2 != "" || image2 != "" {
+            detailLabel2.text = label2
+            detailImage2.image = image2
         } else {
-            detailLabel2.hidden = false
-            detailImage2.hidden = false
-            detailLabel2.text = productLabel
-            detailImage2.image = productImage2
+            detailLabel2.text = "Results in:"
+            detailImage2.image = UIImage(named: "exotic")
         }
         
         detailText.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)

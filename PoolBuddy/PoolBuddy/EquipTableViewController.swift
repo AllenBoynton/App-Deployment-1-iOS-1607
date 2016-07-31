@@ -42,7 +42,7 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let poolCategory = poolEquipment[section]
         
-        return poolCategory.menuItem
+        return poolCategory.group
     }
     
     // Changes header BG color and text color
