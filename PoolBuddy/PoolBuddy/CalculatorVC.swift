@@ -15,22 +15,18 @@ class CalculatorVC: UIViewController {
     
     @IBOutlet weak var calculatorTitle: UINavigationItem!
     
-    var screenTitle: String = ""
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = "Pool Calculator"
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
+        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         self.revealViewController().rearViewRevealWidth = 325
-        
-        navigationItem.title = screenTitle
-        
     }
-
-    
-    @IBAction func unwindActionToCalculator(unwindSegue: UIStoryboardSegue) {}
 }

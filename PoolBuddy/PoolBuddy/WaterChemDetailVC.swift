@@ -26,7 +26,9 @@ class WaterChemDetailVC: UIViewController {
         detailImage.image = productImage
         detailText.text = descriptions
         
+        detailText.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
+        
         navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
     }
 }

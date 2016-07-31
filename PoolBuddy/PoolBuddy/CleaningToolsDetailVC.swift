@@ -40,7 +40,9 @@ class CleaningToolsDetailVC: UIViewController {
             detailImage2.image = productImage2
         }
         
+        detailText.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
+        
         navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
     }
 }

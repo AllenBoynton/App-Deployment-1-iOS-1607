@@ -14,6 +14,6 @@ class MenuTableVC: UITableViewController {
         super.viewDidLoad()
 
         navigationController?.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
     }
 }

@@ -27,7 +27,7 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
 
         navigationItem.title = "Pool Maintenance"
         navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()

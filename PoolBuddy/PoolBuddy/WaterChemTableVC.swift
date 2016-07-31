@@ -33,7 +33,7 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         navigationItem.title = "Water Balance"
         navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
     }
 
     // MARK: - UITableViewDataSource
@@ -41,6 +41,15 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let poolCategory = waterChemistry[section]
         return poolCategory.menuItem
+    }
+    
+    // Changes header BG color and text color
+    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        // Background color
+        view.tintColor = UIColor.init(red: 64/255, green: 224/255, blue: 208/255, alpha: 1.0)
+        // Text Color
+        let header: UITableViewHeaderFooterView = (view as! UITableViewHeaderFooterView)
+        header.textLabel!.textColor = UIColor.blackColor()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

@@ -33,7 +33,7 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
 
         navigationItem.title = "Equipment"
         navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
     }
 
     
@@ -41,9 +41,25 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let poolCategory = poolEquipment[section]
+        
         return poolCategory.menuItem
     }
-
+    
+    // Changes header BG color and text color
+    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        // Background color
+        view.tintColor = UIColor.init(red: 64/255, green: 224/255, blue: 208/255, alpha: 1.0)
+        // Text Color
+        let header: UITableViewHeaderFooterView = (view as! UITableViewHeaderFooterView)
+        header.textLabel!.textColor = UIColor.blackColor()
+        // Another way to set the background color
+        // Note: does not preserve gradient effect of original header
+        // header.contentView.backgroundColor = [UIColor blackColor];
+        // Another way to set the background color
+        // Note: does not preserve gradient effect of original header
+        // header.contentView.backgroundColor = [UIColor blackColor];
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return poolEquipment.count
     }
@@ -77,10 +93,10 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
                 let poolCategory = poolEquipment[indexPath.section]
                 let product = poolCategory.products[indexPath.row]
                 
-                destination.productTitle = product.label
-                destination.productImage = UIImage(named: product.image)
-                destination.productLabel = product.label2
-                destination.productImage2 = UIImage(named: product.image2)
+                destination.label = product.label
+                destination.image = UIImage(named: product.image)
+                destination.label2 = product.label2
+                destination.image2 = UIImage(named: product.image2)
                 destination.descriptions = product.description
             }
         }

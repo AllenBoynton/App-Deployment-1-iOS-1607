@@ -19,7 +19,7 @@ let chemSegue = "toDetailVC"
 let chemistry = "water_chemistry_cell"
 let wChemSegue = "toDetailVC"
 let maintenance = "maint_cell"
-let maintSegue = "toMaintDetailVC"
+let maintSegue = "toDetailVC"
 let planner = "planner"
 let calculator = "calculator"
 let photo = "photoCell"
@@ -46,7 +46,7 @@ class MainViewController: UIViewController {
         self.revealViewController().rearViewRevealWidth = 350
         
         navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
     }
 
     // Sound files
@@ -67,7 +67,5 @@ class MainViewController: UIViewController {
         prepareAudios()
         splash.play()
     }
-    
-    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {}
 }
 

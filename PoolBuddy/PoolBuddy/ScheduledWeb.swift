@@ -19,6 +19,11 @@ class ScheduledWeb: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Video Pool School"
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
+        
+        // Call URL using for the view
         webView.loadRequest(NSURLRequest(URL: NSURL(string: "https://www.youtube.com/watch?v=vMpJGdhrO08")!))
         
     }
@@ -53,10 +58,6 @@ class ScheduledWeb: UIViewController {
     
     func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-    }
-    
-    @IBAction func myUnwindActionToVideo(unwindSegue: UIStoryboardSegue) {
-        
     }
     
     @IBAction func exitWebView(sender: UIBarButtonItem) {

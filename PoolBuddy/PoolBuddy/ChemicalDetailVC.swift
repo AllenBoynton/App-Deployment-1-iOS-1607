@@ -29,7 +29,7 @@ class ChemicalDetailVC: UIViewController {
         navigationItem.title = productTitle
         detailImage.image = productImage
         detailText.text = descriptions
-
+        
         if productLabel == "" || productImage2 == "" {
             detailLabel2.hidden = true
             detailImage2.hidden = true
@@ -40,7 +40,9 @@ class ChemicalDetailVC: UIViewController {
             detailImage2.image = productImage2
         }
         
+        detailText.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
+        
         navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
     }    
 }

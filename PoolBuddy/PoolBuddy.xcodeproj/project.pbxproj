@@ -180,8 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				093D4DFF1D4C341600694C28 /* ScheduledWeb.swift */,
-				0940F5511D2B007400BFA91C /* PlannerViewController.swift */,
 				098F96511D45F98C00E1B157 /* PoolCalendarVC.swift */,
+				0940F5511D2B007400BFA91C /* PlannerViewController.swift */,
 			);
 			name = PlannerViewControllers;
 			sourceTree = "<group>";

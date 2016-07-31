@@ -10,12 +10,20 @@ import Foundation
 
 class PoolCategory {
     // Stored properties
-    var menuItem: String!
-    var products: [PoolData]
+    private var _group: String!
+    private var _products: [PoolData]
     
-    init(menu: String, group: [PoolData]) {
-        menuItem = menu
-        products = group
+    var group: String {
+        return _group
+    }
+    
+    var products: [PoolData] {
+        return _products
+    }
+    
+    init(group: String, products: [PoolData]) {
+        self._group = group
+        self._products = products
     }
     
     // Class arrays of same category for sections
@@ -55,11 +63,11 @@ class PoolCategory {
         
         products.append(PoolData(label: "DE Filter", image: "DEFilter", label2: "DE Perflex", image2: "perflex", description: "Many pool professionals consider D.E. filtration to be the finest, because it is capable of removing smaller particles than either sand or cartridge filters. Clear water can pass through these openings, but particles as small as one to three microns are trapped during the first pass through the media. Pro Grid includes a manual air-relief valve and a top-mounted pressure gauge for easy access and readability. The high-impact grid elements are designed for up-flow filtration and top-down backwashing for maximum efficiency. An integral lift handle and low-profile base make removal of the grid assembly fast and simple. Combining these high-technology features and a 'service-ease' design for an unparalleled filtration value, the D.E. Filter is for the quality conscious pool owner."))
         
-        products.append(PoolData(label: "Sand Filter", image: "sandFilter", label2: "Filter Sand Cleaner", image2: "sandRevitalizer", description: "The sand in a pool sand filter (#20 silica sand; 45 - 55 mm) is specially graded to trap particles in the 20 - 100 micron range. As a sand filter collects dirt, its efficiency increases, trapping more dirt. When your pressure gauge shows a reading 8 - 10 lbs. over the clean, start-up reading, it is time to backwash the captured dirt out of the filter. \nSand filters are known to be the lowest maintenance of the three types of pool filters. You may only need to open up the tank every 5 years or so. DE filters require removing the internal grid assembly at least annually to clean them well, and cartridge filters don't backwash, you remove the cartridge and hose clean every so often, depending on the cartridge filter size. Sand filters are the easiest to operate and maintain.\n\"They say\" that the sand inside a sand filter should be replaced after seven years. Gradual loss of efficiency may be hard to notice. If your sand filter requires frequent backwashing, every week or two, the sand bed may be \"mudballed\", or it may be \"channeled\". It may also \"calcify\" with calcium deposits. Other water balance problems may also contribute to pool filter sand deterioration, but a properly sized sand filter could go over 10 years between sand changes."))
+        products.append(PoolData(label: "Sand Filter", image: "sandFilter", label2: "Sand Filter Revitalizer", image2: "sandRevitalizer", description: "The sand in a pool sand filter (#20 silica sand; 45 - 55 mm) is specially graded to trap particles in the 20 - 100 micron range. As a sand filter collects dirt, its efficiency increases, trapping more dirt. When your pressure gauge shows a reading 8 - 10 lbs. over the clean, start-up reading, it is time to backwash the captured dirt out of the filter. \nSand filters are known to be the lowest maintenance of the three types of pool filters. You may only need to open up the tank every 5 years or so. DE filters require removing the internal grid assembly at least annually to clean them well, and cartridge filters don't backwash, you remove the cartridge and hose clean every so often, depending on the cartridge filter size. Sand filters are the easiest to operate and maintain.\n\"They say\" that the sand inside a sand filter should be replaced after seven years. Gradual loss of efficiency may be hard to notice. If your sand filter requires frequent backwashing, every week or two, the sand bed may be \"mudballed\", or it may be \"channeled\". It may also \"calcify\" with calcium deposits. Other water balance problems may also contribute to pool filter sand deterioration, but a properly sized sand filter could go over 10 years between sand changes."))
         
         products.append(PoolData(label: "Cartridge Filter", image: "cartridgeFilter", label2: "Cartridge Elements", image2: "cleancartridge2", description: "Filter of choice for most spas, and many smaller above ground pools, the cartridge filter is enjoying a resurgence in popularity. The cartridge filter element, an aquatic version of the pleated air filter in your car, traps dirt and particles of 25 - 100 microns in size. The cartridge is removed from the tank and hosed thoroughly, top to bottom, with a high pressure hose to remove dirt when the pressure gauge rises 8 - 10 lbs. above its clean reading. I know some people that take their cartridges to the local self serve car wash place for cleaning, but too much pressure may damage the cartridge. Each time the cartridge filter element is cleaned, some of its filtering ability is reduced.\nThe cartridge should be replaced every 3 - 5 yrs, depending on the work it was asked to do. If the filter was a bit undersized, and had some algae every year and lots of tree debris, etc. then it may last only 1 - 2 years. Nicely sized cartridge filters can operate for 6 months between cleanings and get more than 5 yrs from the cartridges."))
         
-        return PoolCategory(menu: "Pool Filters", group: products)
+        return PoolCategory(group: "Pool Filters", products: products)
     }
     
     // All rows within the Pump category
@@ -71,7 +79,7 @@ class PoolCategory {
         
         products.append(PoolData(label: "Above-Ground Pumps", image: "PowerFloAG", label2: "", image2: "", description: "This smaller, yet powerful pump and motor is what keeps the water flowing through the filter in your Above-Ground Pool. The heart of your circulation system, your pool pump, pulls water from one or more suction ports (i.e., skimmer & main drain), and then pushes it through the filter & heater (if you have one) and back to the pools' return ports."))
         
-        return PoolCategory(menu: "Pool Pumps", group: products)
+        return PoolCategory(group: "Pool Pumps", products: products)
     }
     
     // All rows within the Equipment category
@@ -93,7 +101,7 @@ class PoolCategory {
         
         products.append(PoolData(label: "Recreational", image: "slide", label2: "Diving Board", image2: "diving", description: "The TurboTwister gives you water park thrills in your own backyard! Whether it's the rushing water or thrilling dips and curves that you love, this slide is packed with tons of great features for the entire family, accommodating children and adults, up to 275-lbs. Safety is a top priority; with sturdy molded-in handrails, easy grab sides, and enclosed ladder and steps. Standing over 7' tall at the top of the runway, offering an adjustable, generous water delivery system, slides are scratch resistant, fade resistant and vacuum-formed for strength and durability. Hooks up to a garden hose, plumbs into your pool return system or use with no running water at all.\n\nThe TurboTwister offers simple installation, the lightweight pieces are easily managed, assembling in less than 1 hour (excluding plumbing and mounting to deck), each joint comes complete with built-in sealents for a no-leak guarantee. Available with left or right side curves, and two natural tones, Sandstone and Gray Granite to accommodate the latest in backyard decor."))
         
-        return PoolCategory(menu: "Pool Equipment", group: products)
+        return PoolCategory(group: "Pool Equipment", products: products)
     }
     
     // All rows within the Maintenance Equipment category
@@ -119,7 +127,7 @@ class PoolCategory {
         
         products.append(PoolData(label: "Skimmer Parts", image: "skimmer", label2: "Skimmer Basket", image2: "skimmerBasket", description: "SKIMMER BASKET: A removable basket or strainer placed in the skimmer, which is designed to trap large solids from the water before they get to the pump or filter."))
         
-        return PoolCategory(menu: "Cleaning Equipment", group: products)
+        return PoolCategory(group: "Cleaning Equipment", products: products)
     }
     
     // All rows within the Chemical Safety category
@@ -129,7 +137,7 @@ class PoolCategory {
         
         products.append(PoolData(label: "Chemical Safety", image: "Pool Chemical Safety", label2: "Safety Covers", image2: "safetycover", description: "While pool chemicals are available to solve almost all water problems, they can be dangerous to humans and animals if handled improperly. Chemicals can cause skin and eye damage and can be fatal if swallowed. To keep yourself and your pool safe, follow these pool chemical safety precautions:\n\n\u{2022} Keep all pool products away from children and animals.\n\u{2022} Wear rubber gloves and goggles, and wash clothes and hands immediately after handling chemicals. If your skin comes in contact with any chemicals, flush immediately with cold water for 15 minutes and call a physician.\n\u{2022} Follow the dosage directions and safety precautions listed on the pool product label.\n\u{2022} Store chemicals according to the manufacturer's instructions.\n\u{2022} Never return spilled material to the original container or place in the household garbage.\n\u{2022} Use clean, dry measuring equipment for chemicals. Rinse all measuring equipment after using.\n\u{2022} Don't mix spa, pool or household chemicals together.\n\u{2022} Add chemicals to water. Don't add water to chemicals. Adding water to chemicals contaminates the entire container.\n\u{2022} Don't allow dry chlorine to become damp or wet.\n\u{2022} Keep open flames away from pool chemicals.\n\u{2022} Don't reuse empty containers. Check with local, state and federal regulations for proper disposal.\n\u{2022} Discard any unused chemicals after closing your pool. Follow local ordinances for disposing of hazardous materials. Buy new chemicals when you reopen the pool."))
         
-        return PoolCategory(menu: "Chemical Safety", group: products)
+        return PoolCategory(group: "Chemical Safety", products: products)
     }
 
     // All rows within the Chlorine category
@@ -143,7 +151,7 @@ class PoolCategory {
         
         products.append(PoolData(label: "Chlorine Generator", image: "chlorineGenerator", label2: "How-Diagram", image2: "saltWorks", description: "One of the first alternative sanitizers introduced to the pool and spa industry was the chlorine generator. Chlorine generators are attractive to pool owners simply because they eliminate the need to store, buy, transport and handle chlorine. They are not an alternative to chlorine, but actually make their own chlorine from regular table salt. The pool water passes through a generator cell that creates the chlorine within the pool water.\n\nHow Does It Work?\n\nAs pool water passes through the chlorine generator cell, pumped through by your filter pump, the salt in the water is turned into Hypochlorous acid. Hypochlorous acid is the exact same component that is produced when any chlorine is added to pool water, whether you use sticks, tablets, granular or liquid. As the water returns to the pool, it will introduce the newly produced chlorine, preventing algae, bacteria and killing micro-organisms, creating a safe and sanitary swimming environment.\n\nOK?  How does it really work?\n\nThis mild, pleasant saline water is sanitized through the process of electrolysis, as mentioned above. The electrolytic cell, through the use of a small electric current, breaks down the water into its basic elements, Hydrogen and Oxygen. By adding small quantities of granulated salt (much like household table salt - NaCI), Hypochlorous Acid (common chlorine) is produced. During the process, the Hypochlorous Acid (Chlorine) is ultimately converted back to salt. Thus, the salt does not get \"used up\". Salt only needs to be \"topped off\" once or twice a year and only to replace salt lost due to water splash-out, bather drag off or filter backwashing.\n\nSalt in My Pool?\n\nThe salt level required to maintain a safe, chlorinated pool is about 2500 to 4000 PPM (parts per million). The human body cannot taste salt until the PPM is around 5000. As a reference point, the ocean is around 40000 ppm. The amount of salt in the pool is usually not noticeable. Once the salt is added to the pool, there is no need to add salt on a yearly basis unless the pool is drained or a significant amount of water is removed. Also, the salt level is low enough so there is no danger of equipment corrosion. Chlorine generator users also report the water is softer, leaving a more refreshed feeling after swimming."))
         
-        return PoolCategory(menu: "Chlorine", group: products)
+        return PoolCategory(group: "Chlorine", products: products)
     }
     
     // All rows within the Chemicals category
@@ -176,7 +184,7 @@ class PoolCategory {
             
         products.append(PoolData(label: "Cleaners", image: "sandRevitalizer", label2: "", image2: "", description: "Sand Filter Revitalizer assists your backwashing, removing oils and organics that normally would be missed, resulting in clean and clear water.\n\nPool Filter Accessory Features\n\n\u{2022} Sand Filter Revitalizer\n\u{2022} Eliminates oils and organics from your filter\n\u{2022} Lengthens filter cycle\n\u{2022} Keeps water clear\nSimply pour through skimmer during each backwash. Breaks down the caked-on oils and organics not removed through backwashing alone. The result: longer filter cycles, finer filtration and crystal clear water!"))
         
-        return PoolCategory(menu: "Pool Chemicals", group: products)
+        return PoolCategory(group: "Pool Chemicals", products: products)
     }
     
     // All rows within the Water Chemistry category
@@ -202,7 +210,7 @@ class PoolCategory {
         
         products.append(PoolData(label: "Phosphates", image: "phosphates", label2: "", image2: "", description: "When Phosphates are Present, Algae Grows....\nPhosphate is the main ingredient in fertilizer. Phosphate is plant food, and algae are plants. If you have had persistant trouble with algae, every year - and it always seems to come back, you may have a phosphate problem in your pool. When excess phosphate is present in a swimming pool, the symptoms often include the following:\n\n\t\u{2022} Cloudy, Green Water\n\t\u{2022} Slippery and Slimy Surfaces\n\t\u{2022} Mustard and Green Colored Debris\n\t\u{2022} Excessive Chemical Consumption\n\t\u{2022} Poor Water Quality\n\nRemove the Phosphates and Solve the Problem....\nThe maximum level of phosphate in pool water should be 0.1 ppm. Once the phosphate climbs above this level, the water quality begins to decrease and slime deposits can begin. Fortunately, draining to eliminate the accumulated phosphate is no longer necessary. Natural Chemistry's Phos-Free is a natural mineral compound which effectively and rapidly reduces the level of phosphate in the water. Phos-Free is a natural mineral product which is non-toxic. It is safe to store and use around children."))
         
-        return PoolCategory(menu: "Water Chemistry", group: products)
+        return PoolCategory(group: "Water Chemistry", products: products)
     }
     
     // All rows within the Maintenance category
@@ -230,6 +238,6 @@ class PoolCategory {
         
         products.append(PoolData(label: "Sand Filter Cleaning", image: "sandfiltercleaning", label2: "", image2: "", description: "Of the three types of filters, a sand filter is the easiest to clean on a routine basis. Instead of manually cleaning the system like you do with a cartridge filter, you use water from your pool to rinse all the dirt and debris out of the filter. That water is then discharged through your backwash hose to an area of your choice. This can be your grass or another area of your yard. Avoid backwashing into the street or other drainage area. Often, your city will have regulations preventing this. If you do not want to backwash into your yard, you can call your city and they can provide information where it is acceptable to backwash to.\n\n“How often should I backwash?” is a typical question asked by 90% of pool owners. A good rule of thumb is to backwash once the pressure displayed on your pressure gauge is 8-10 psi over the starting level. Also, backwashing after cleaning up from a large storm, killing an algae bloom, or when trying to treat cloudy water will keep your filter working effectively.\n\nBackwashing your sand filter is a very easy process. All sand filters use the same concept to backwash, but many have setups that vary due to a different manufacturer or model. The following steps will take you through how to backwash your Sand Filter.\n\n1.Shut the system off. This should be the case when working with any type of pool equipment.\n\n2.Unwind your backwash hose, making sure it is tightly clamped to the water outlet.\n\n3.Once the hose is laid down, return to your equipment and find your backwash valve. Most systems have a “Push-Pull” handle. When the handle is in either position, the water will either flow normally through your equipment or flow out of your backwash hose. Labels on your backwash valve will typically have information on which position your valve needs to be in for backwashing. If there are no stickers, look in product documentation or take a picture of the setup and show a local pool professional.\n\nNote – Some systems have multi-port valves instead of “push-pull” valves. Instructions on how to set the valve up for backwashing can either be found on the valve itself or in product documentation.\n\n4.With the system still off, move the backwash valve handle into the backwashing position and lock the handle in place.\n\n5.With the handle locked in the backwash position, turn on your system. You should begin to quickly see water flowing through the backwash hose.\n\n6.Continue backwashing for around 3 minutes or until the water appears clear. When looking at the water flowing out of the hose, you may notice it looking dirty. This is the dirt and debris being removed from the sand in the filter.\n\n7.Turn off the system to stop backwashing.\n\n8.Roll up the hose, removing excess water that is left from backwashing.\n\n9.Return the backwash valve handle to its normal position that allows water to flow through your system and lock it in place.\n\n10.Turn the system on and open up the air relief valve at the top of your filter. Leave this open until water is consistently being released, then close the valve.\n\n11.Shut off the system.\nProducts such as a Sand Filter Revitalizer can be used in conjunction with backwashing in order to remove caked-on oils and organic materials that are left over after backwashing. Refer to the product instructions for application directions."))
         
-        return PoolCategory(menu: "Pool Maintenance", group: products)
+        return PoolCategory(group: "Pool Maintenance", products: products)
     }    
 }

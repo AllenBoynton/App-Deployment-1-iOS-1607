@@ -16,10 +16,12 @@ class ChatViewController: UIViewController {
     
     @IBOutlet weak var chatTitle: UINavigationItem!
     
-    var screenTitle: String = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "Live Tech Chat"
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
@@ -27,11 +29,5 @@ class ChatViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         self.revealViewController().rearViewRevealWidth = 325
-        
-        chatTitle!.title = screenTitle
-        
     }
-    
-    
-    @IBAction func unwindActionToLiveChat(unwindSegue: UIStoryboardSegue) {}
 }

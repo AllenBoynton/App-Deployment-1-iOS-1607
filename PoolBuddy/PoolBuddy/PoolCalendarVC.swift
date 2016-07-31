@@ -10,34 +10,23 @@ import EventKit
 import EventKitUI
 
 
-// Global Initializers
-let eventVC = "toSecondVC"
-
 class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate {
     
     let eventStore = EKEventStore()
     
-    @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var poolImage: UIImageView!
     
-    @IBOutlet weak var textField: UITextView!
-    
-    @IBOutlet weak var referenceView: UILabel!
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "Pool Calendar"
-        navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
         
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
-            referenceView.hidden = true
-        }
-        self.revealViewController().rearViewRevealWidth = 325
+        navigationController!.navigationBar.titleTextAttributes =
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
+        
+        textView.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
         
         // Create authorization status
         let status = EKEventStore.authorizationStatusForEntityType(.Event)
@@ -58,8 +47,6 @@ class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate {
                 }
             })
         }
-        
-        textField.text = "Weekly pool maintenance of your\npool can be a daunting list of\n tasks.\n\nWe at A & B Pools have listed the\npopular and most imortant tasks\nto help you with your maintenance.\n\nThis is your initial roadmap. You\nmay change the existing tasks to\nbetter suit your schedule or needs\nof your pool. "
     }
     
     @IBAction func createCalendar(sender: UIBarButtonItem) {
@@ -68,7 +55,7 @@ class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate {
         
         // Configure
         calendar.title = "Pool Calendar"
-        calendar.CGColor = UIColor.cyanColor().CGColor
+        calendar.CGColor = UIColor.blueColor().CGColor
         
         for source in eventStore.sources {
             
@@ -80,7 +67,6 @@ class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate {
         }
         
         // Save calendar to the database
-        
         do {
             try eventStore.saveCalendar(calendar, commit: true)
         }
@@ -90,28 +76,15 @@ class PoolCalendarVC: UIViewController, EKCalendarChooserDelegate {
     }
     
     @IBAction func displayChooser(sender: UIBarButtonItem) {
-    
-        let chooser = EKCalendarChooser(selectionStyle: .Single, displayStyle: .AllCalendars, entityType: .Event, eventStore: eventStore)
+        let chooser = EKCalendarChooser(selectionStyle: .Single, displayStyle: .AllCalendars , entityType: .Event, eventStore: eventStore)
         
         chooser.showsCancelButton = true
         chooser.showsDoneButton = true
         chooser.delegate = self
         
         // "You can choose your own nav VC or this is how to create a new one"
-        let nav = UINavigationController(rootViewController: chooser)
+//        let nav = UINavigationController(rootViewController: chooser)
         
         presentViewController(chooser, animated: true, completion: nil)
-        
     }
-    
-    @IBAction func referenceButton(sender: UIButton) {
-        if referenceView.hidden == false {
-            referenceView.hidden = true
-        } else if referenceView.hidden == true {
-            referenceView.hidden = false
-        }
-        
-    }
-    
-    @IBAction func unwindActionToReminders(unwindSegue: UIStoryboardSegue) {}
 }

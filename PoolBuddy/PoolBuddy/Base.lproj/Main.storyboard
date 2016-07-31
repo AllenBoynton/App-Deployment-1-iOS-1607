@@ -23,10 +23,6 @@
             <string>KittenSlant</string>
             <string>KittenSlant</string>
             <string>KittenSlant</string>
-            <string>KittenSlant</string>
-            <string>KittenSlant</string>
-            <string>KittenSlant</string>
-            <string>KittenSlant</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -162,6 +158,13 @@
                                             <constraint firstItem="NjX-KJ-sY5" firstAttribute="leading" secondItem="Xth-Nd-NCB" secondAttribute="leading" constant="30" id="xay-Y9-swQ"/>
                                         </constraints>
                                     </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-kF-ycO">
+                                        <rect key="frame" x="30" y="258" width="540" height="248"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgB-5v-tPX" userLabel="Top BG View">
                                         <rect key="frame" x="146" y="50" width="188" height="188"/>
                                         <subviews>
@@ -180,7 +183,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYb-9E-ZrW" userLabel="Right BG View">
-                                        <rect key="frame" x="339" y="125" width="113" height="113"/>
+                                        <rect key="frame" x="334" y="125" width="113" height="113"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equipment1" translatesAutoresizingMaskIntoConstraints="NO" id="W8l-z2-Hc0" userLabel="Right Image">
                                                 <rect key="frame" x="0.0" y="0.0" width="113" height="113"/>
@@ -201,20 +204,13 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-kF-ycO">
-                                        <rect key="frame" x="30" y="258" width="540" height="248"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equipment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-Ee-Y7B">
+                                        <rect key="frame" x="334" y="95" width="113" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equipment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-Ee-Y7B">
-                                        <rect key="frame" x="339" y="100" width="113" height="25"/>
-                                        <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="kKA-pA-Ze9"/>
+                                            <constraint firstAttribute="height" constant="30" id="kKA-pA-Ze9"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -231,7 +227,7 @@
                                     <constraint firstItem="TgB-5v-tPX" firstAttribute="height" secondItem="WaR-Hu-A8f" secondAttribute="height" multiplier="0.35" id="MqB-Mh-RqU"/>
                                     <constraint firstItem="sVm-kF-ycO" firstAttribute="leading" secondItem="WaR-Hu-A8f" secondAttribute="leading" constant="30" id="Obs-bl-qCz"/>
                                     <constraint firstItem="Xth-Nd-NCB" firstAttribute="leading" secondItem="WaR-Hu-A8f" secondAttribute="leading" id="P2k-5x-1mn"/>
-                                    <constraint firstItem="oYb-9E-ZrW" firstAttribute="leading" secondItem="TgB-5v-tPX" secondAttribute="trailing" constant="5" id="XmS-eA-cXm"/>
+                                    <constraint firstItem="oYb-9E-ZrW" firstAttribute="leading" secondItem="TgB-5v-tPX" secondAttribute="trailing" id="XmS-eA-cXm"/>
                                     <constraint firstAttribute="trailing" secondItem="sVm-kF-ycO" secondAttribute="trailing" constant="30" id="ZJV-Q6-64n"/>
                                     <constraint firstItem="oYb-9E-ZrW" firstAttribute="baseline" secondItem="TgB-5v-tPX" secondAttribute="baseline" id="eSC-AV-C39"/>
                                     <constraint firstItem="oYb-9E-ZrW" firstAttribute="height" secondItem="TgB-5v-tPX" secondAttribute="height" multiplier="0.6" id="ehQ-Uk-GGo"/>
@@ -255,9 +251,6 @@
                                     <navigationItem title="Chemical Details" id="Pyg-hI-F5W">
                                         <barButtonItem key="rightBarButtonItem" image="home" style="done" id="YY0-Ia-YHK" userLabel="Home">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <segue destination="86r-2X-BZ6" kind="unwind" unwindAction="myUnwindAction:" id="2LM-bO-lkQ"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -280,14 +273,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="detailImage" destination="f8C-Z2-AWJ" id="cxb-uo-G7F"/>
-                        <outlet property="detailImage2" destination="W8l-z2-Hc0" id="xAP-g0-fkI"/>
-                        <outlet property="detailLabel2" destination="4cJ-Ee-Y7B" id="0bz-2E-opw"/>
-                        <outlet property="detailText" destination="sVm-kF-ycO" id="VY2-YA-9Y6"/>
+                        <outlet property="detailImage" destination="f8C-Z2-AWJ" id="ZpU-TZ-dJt"/>
+                        <outlet property="detailImage2" destination="W8l-z2-Hc0" id="bWe-3u-Xlj"/>
+                        <outlet property="detailLabel2" destination="4cJ-Ee-Y7B" id="5cS-i4-VTk"/>
+                        <outlet property="detailText" destination="sVm-kF-ycO" id="4Zj-zr-OAp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRP-Bt-LQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="86r-2X-BZ6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1339" y="165"/>
         </scene>
@@ -315,8 +307,8 @@
                                 <size key="shadowOffset" width="3" height="-3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABtech Applications, LLC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nRk-WZ-K3R">
-                                <rect key="frame" x="0.0" y="541" width="600" height="38.5"/>
-                                <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="24"/>
+                                <rect key="frame" x="0.0" y="549" width="600" height="30.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
@@ -327,7 +319,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="N5k-sc-wE5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
@@ -360,6 +352,9 @@
                             <connections>
                                 <action selector="menuButton:" destination="BYZ-38-t0r" id="jEa-bJ-x07"/>
                             </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Audio" id="VMs-UX-nYS">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -430,7 +425,11 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </textAttributes>
                                                     <items>
-                                                        <navigationItem id="voT-5D-LIQ"/>
+                                                        <navigationItem id="voT-5D-LIQ">
+                                                            <barButtonItem key="leftBarButtonItem" image="home" id="tcA-6T-YMb">
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </barButtonItem>
+                                                        </navigationItem>
                                                     </items>
                                                 </navigationBar>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Buddy Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bda-fB-Wlp" userLabel="Title Label">
@@ -782,7 +781,6 @@
                             </tableViewSection>
                         </sections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="pTR-dS-jE8"/>
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -984,18 +982,18 @@
                                             <constraint firstAttribute="width" secondItem="8tI-hg-jsB" secondAttribute="height" multiplier="1:1" id="vg4-a4-AX6"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemical Safety" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gD4-Z5-kht">
-                                        <rect key="frame" x="339" y="119" width="103.5" height="25"/>
-                                        <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemical Safety" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gD4-Z5-kht">
+                                        <rect key="frame" x="334" y="114" width="103.5" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="Am5-Xf-nNy"/>
+                                            <constraint firstAttribute="height" constant="30" id="Am5-Xf-nNy"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9iX-as-y3H" userLabel="Right BG View">
-                                        <rect key="frame" x="339" y="144" width="103.5" height="103.5"/>
+                                        <rect key="frame" x="334" y="144" width="103.5" height="103.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chemical Safety" translatesAutoresizingMaskIntoConstraints="NO" id="mpF-Lr-Ahm">
                                                 <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
@@ -1016,7 +1014,7 @@
                                         <rect key="frame" x="30" y="268" width="540" height="238"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -1028,7 +1026,7 @@
                                     <constraint firstItem="mpF-Lr-Ahm" firstAttribute="width" secondItem="gD4-Z5-kht" secondAttribute="width" id="KVb-d0-wq1"/>
                                     <constraint firstItem="8tI-hg-jsB" firstAttribute="top" secondItem="hZi-Sm-DI0" secondAttribute="bottom" constant="30" id="LO3-yj-JYg"/>
                                     <constraint firstItem="MYD-wB-RTD" firstAttribute="leading" secondItem="Jnm-ex-TP6" secondAttribute="leading" constant="30" id="RMH-NC-1ZB"/>
-                                    <constraint firstItem="9iX-as-y3H" firstAttribute="leading" secondItem="8tI-hg-jsB" secondAttribute="trailing" constant="5" id="Rzu-1t-pih"/>
+                                    <constraint firstItem="9iX-as-y3H" firstAttribute="leading" secondItem="8tI-hg-jsB" secondAttribute="trailing" id="Rzu-1t-pih"/>
                                     <constraint firstItem="mpF-Lr-Ahm" firstAttribute="centerX" secondItem="gD4-Z5-kht" secondAttribute="centerX" id="Y6Y-0p-gcb"/>
                                     <constraint firstItem="MYD-wB-RTD" firstAttribute="top" secondItem="8tI-hg-jsB" secondAttribute="bottom" constant="20" id="bPr-qS-4cf"/>
                                     <constraint firstAttribute="trailing" secondItem="hZi-Sm-DI0" secondAttribute="trailing" id="dlu-iz-Wav"/>
@@ -1444,7 +1442,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-bf-hcY" userLabel="Right BG View">
-                                        <rect key="frame" x="339" y="134" width="103.5" height="103.5"/>
+                                        <rect key="frame" x="334" y="134" width="103.5" height="103.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floatingChlorinator" translatesAutoresizingMaskIntoConstraints="NO" id="dM4-6F-hSe" userLabel="Right Image">
                                                 <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
@@ -1466,13 +1464,13 @@
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Tools" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-Uo-FDs">
-                                        <rect key="frame" x="339" y="109" width="103.5" height="25"/>
-                                        <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Tools" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-Uo-FDs">
+                                        <rect key="frame" x="334" y="104" width="103.5" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="COE-r5-eQl"/>
+                                            <constraint firstAttribute="height" constant="30" id="COE-r5-eQl"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1480,7 +1478,7 @@
                                 <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="AXR-Ml-QXb" secondAttribute="trailing" constant="30" id="5fD-bj-o2K"/>
-                                    <constraint firstItem="bgb-bf-hcY" firstAttribute="leading" secondItem="P36-Lt-4zQ" secondAttribute="trailing" constant="5" id="7Q6-Jb-PIH"/>
+                                    <constraint firstItem="bgb-bf-hcY" firstAttribute="leading" secondItem="P36-Lt-4zQ" secondAttribute="trailing" id="7Q6-Jb-PIH"/>
                                     <constraint firstItem="P36-Lt-4zQ" firstAttribute="top" secondItem="wjm-kB-tKm" secondAttribute="bottom" constant="20" id="Cf8-Af-2Ub"/>
                                     <constraint firstItem="bgb-bf-hcY" firstAttribute="height" secondItem="P36-Lt-4zQ" secondAttribute="height" multiplier="0.55" id="DjR-Il-dSq"/>
                                     <constraint firstItem="AXR-Ml-QXb" firstAttribute="leading" secondItem="Xii-Go-pDy" secondAttribute="leading" constant="30" id="EbL-NG-jN3"/>
@@ -1535,10 +1533,10 @@
             </objects>
             <point key="canvasLocation" x="1340" y="938"/>
         </scene>
-        <!--Pool Calendar-->
+        <!--Planner Scene-->
         <scene sceneID="x3K-AA-Z0T">
             <objects>
-                <viewController title="Weekly Planner" id="jT1-98-otZ" userLabel="Pool Calendar" customClass="PoolCalendarVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Weekly Planner" id="jT1-98-otZ" userLabel="Planner Scene" customClass="PlannerViewController" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mVg-hI-eia"/>
                         <viewControllerLayoutGuide type="bottom" id="fOW-qj-s21"/>
@@ -1554,27 +1552,73 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7La-98-Yjz">
-                                        <rect key="frame" x="20" y="240" width="560" height="256"/>
+                                        <rect key="frame" x="20" y="240" width="560" height="232"/>
                                         <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
-                                        <string key="text">Weekly pool maintenance of your pool can be a daunting list of tasks.                                                                                                                                                                                       We at A &amp; B Pools have listed the popular and most imortant tasks to help you with your maintenance.                                                                                                                                                                                     This is your initial roadmap. You may change the existing tasks to better suit your schedule or needs of your pool.</string>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                        <mutableString key="text">Weekly pool maintenance of your pool can be a daunting list of tasks.                                                                                                                                                                                       We at A &amp; B Pools have listed the popular and most imortant tasks to help you with your maintenance.                                                                                                                                                                                     This is your initial roadmap. Above is a video to give you a summary of usual pool tasks to help prioritize..</mutableString>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIX-IF-56M">
-                                        <rect key="frame" x="568" y="504" width="22" height="22"/>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuR-b0-AZx">
+                                        <rect key="frame" x="20" y="20" width="560" height="220"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="22" id="fqm-Gn-KUx"/>
-                                            <constraint firstAttribute="width" constant="22" id="prK-5O-MkR"/>
+                                            <constraint firstAttribute="height" constant="220" id="YEC-qq-tpM"/>
                                         </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="float"/>
                                         <connections>
-                                            <action selector="referenceButton:" destination="jT1-98-otZ" eventType="touchUpInside" id="c5E-ps-z3d"/>
+                                            <segue destination="vtQ-WX-IqL" kind="show" identifier="toVideo" id="v6S-RC-T5W"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-Lg-P2o">
-                                        <rect key="frame" x="50" y="423" width="530" height="73"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Here To See A Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n3q-4M-5I1">
+                                        <rect key="frame" x="150" y="100" width="300" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="73" id="QgO-04-PO8"/>
+                                            <constraint firstAttribute="height" constant="60" id="QFV-cm-Wy5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="26"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ie0-V0-5cz">
+                                        <rect key="frame" x="0.0" y="492" width="600" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="sbU-UN-t9t"/>
+                                        </constraints>
+                                        <items>
+                                            <barButtonItem style="plain" id="NNH-vc-kHZ">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="eIX-IF-56M">
+                                                    <rect key="frame" x="20" y="11" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="22" id="prK-5O-MkR"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="referenceButton:" destination="jT1-98-otZ" eventType="touchUpInside" id="geX-ao-E10"/>
+                                                    </connections>
+                                                </button>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="Y2j-CV-aYt"/>
+                                            <barButtonItem title="Add New Reminder Event" style="done" id="GOa-as-PEz">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="createReminder:" destination="jT1-98-otZ" id="uGu-IA-bE6"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="done" systemItem="add" id="LDa-eh-h03">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="createReminder:" destination="jT1-98-otZ" id="0nx-34-soq"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-Lg-P2o">
+                                        <rect key="frame" x="40" y="402" width="540" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="COC-Ie-Two"/>
                                         </constraints>
                                         <string key="text">Reference:
 Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved July 26, 2016, from http://archive.azcentral.com/home/articles/20130417proper-maintenance-can-keep-your-pool-from-becoming-an-expensive-headache.html Bill Moore, Moore's Pool Service
@@ -1583,42 +1627,24 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuR-b0-AZx">
-                                        <rect key="frame" x="20" y="20" width="560" height="220"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="220" id="YEC-qq-tpM"/>
-                                        </constraints>
-                                        <state key="normal" image="float"/>
-                                        <connections>
-                                            <segue destination="vtQ-WX-IqL" kind="show" id="v6S-RC-T5W"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Here To See A Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n3q-4M-5I1">
-                                        <rect key="frame" x="0.0" y="100" width="600" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="QFV-cm-Wy5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="32"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="n3q-4M-5I1" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" id="5Zh-8c-3am"/>
-                                    <constraint firstAttribute="bottom" secondItem="7La-98-Yjz" secondAttribute="bottom" constant="40" id="6wF-gZ-vfx"/>
+                                    <constraint firstItem="ie0-V0-5cz" firstAttribute="top" secondItem="YKg-Lg-P2o" secondAttribute="bottom" constant="20" id="6E8-AV-3h4"/>
                                     <constraint firstItem="cuR-b0-AZx" firstAttribute="top" secondItem="Lk0-1Z-WxK" secondAttribute="top" constant="20" id="88v-rl-zLt"/>
                                     <constraint firstItem="n3q-4M-5I1" firstAttribute="centerY" secondItem="cuR-b0-AZx" secondAttribute="centerY" id="GlY-7F-jHz"/>
-                                    <constraint firstItem="YKg-Lg-P2o" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" constant="50" id="HIH-lW-hUj"/>
+                                    <constraint firstItem="YKg-Lg-P2o" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" constant="40" id="HIH-lW-hUj"/>
+                                    <constraint firstItem="ie0-V0-5cz" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" id="J3P-DC-w0x"/>
                                     <constraint firstItem="7La-98-Yjz" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" constant="20" id="J5x-kR-XUq"/>
-                                    <constraint firstAttribute="trailing" secondItem="eIX-IF-56M" secondAttribute="trailing" constant="10" id="JjO-xT-XTX"/>
-                                    <constraint firstAttribute="bottom" secondItem="eIX-IF-56M" secondAttribute="bottom" constant="10" id="VdH-nW-Zcn"/>
+                                    <constraint firstItem="n3q-4M-5I1" firstAttribute="centerX" secondItem="Lk0-1Z-WxK" secondAttribute="centerX" id="NA5-RR-Q0W"/>
                                     <constraint firstAttribute="trailing" secondItem="YKg-Lg-P2o" secondAttribute="trailing" constant="20" id="cAo-lq-rT3"/>
                                     <constraint firstItem="7La-98-Yjz" firstAttribute="top" secondItem="cuR-b0-AZx" secondAttribute="bottom" id="eMr-oK-gid"/>
-                                    <constraint firstAttribute="trailing" secondItem="n3q-4M-5I1" secondAttribute="trailing" id="qnp-65-VI1"/>
+                                    <constraint firstItem="ie0-V0-5cz" firstAttribute="top" secondItem="7La-98-Yjz" secondAttribute="bottom" constant="20" id="g7D-Cp-JhD"/>
+                                    <constraint firstItem="n3q-4M-5I1" firstAttribute="width" secondItem="Lk0-1Z-WxK" secondAttribute="width" multiplier="0.5" id="gSK-h0-8Xq"/>
+                                    <constraint firstAttribute="bottom" secondItem="ie0-V0-5cz" secondAttribute="bottom" id="mkb-dh-Ckl"/>
+                                    <constraint firstAttribute="trailing" secondItem="ie0-V0-5cz" secondAttribute="trailing" id="oNS-mZ-F59"/>
                                     <constraint firstAttribute="trailing" secondItem="cuR-b0-AZx" secondAttribute="trailing" constant="20" id="s1h-ZN-hl0"/>
                                     <constraint firstItem="cuR-b0-AZx" firstAttribute="leading" secondItem="Lk0-1Z-WxK" secondAttribute="leading" constant="20" id="smh-2U-IIn"/>
-                                    <constraint firstItem="eIX-IF-56M" firstAttribute="top" secondItem="YKg-Lg-P2o" secondAttribute="bottom" constant="8" id="tps-5e-ki7"/>
                                     <constraint firstAttribute="trailing" secondItem="7La-98-Yjz" secondAttribute="trailing" constant="20" id="xzq-3Q-Ezi"/>
                                 </constraints>
                             </view>
@@ -1636,38 +1662,26 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
                             <constraint firstItem="Lk0-1Z-WxK" firstAttribute="top" secondItem="mVg-hI-eia" secondAttribute="bottom" id="zIP-fC-p6F"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pool Calendar" id="gQQ-Lz-05a">
+                    <navigationItem key="navigationItem" title="Common Tasks" id="gQQ-Lz-05a">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="lWb-WE-mis">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Next" style="done" id="WFc-WW-FUL">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="DhH-vd-JqH" kind="show" identifier="toSecondVC" id="Jzt-vd-hQv"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Enter" style="done" id="Usv-8a-cQX">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="displayChooser:" destination="jT1-98-otZ" id="APY-VQ-2O3"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem style="done" systemItem="add" id="LDa-eh-h03">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="createCalendar:" destination="jT1-98-otZ" id="fNv-IV-g0d"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Calendar &gt;" style="done" id="WFc-WW-FUL">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="DhH-vd-JqH" kind="show" identifier="toSecondVC" id="bfO-dO-37X"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="lWb-WE-mis" id="lTz-5r-gsh"/>
-                        <outlet property="referenceView" destination="YKg-Lg-P2o" id="30X-qA-hQg"/>
-                        <outlet property="textField" destination="7La-98-Yjz" id="Iuc-RM-3eh"/>
+                        <outlet property="menuButton" destination="lWb-WE-mis" id="N6b-2j-Kxe"/>
+                        <outlet property="referenceView" destination="YKg-Lg-P2o" id="lQr-pH-c55"/>
+                        <outlet property="textField" destination="7La-98-Yjz" id="e8p-db-BUr"/>
+                        <segue destination="gQH-lT-YbC" kind="unwind" identifier="toVideo" unwindAction="unwindActionToReminders:" id="mbN-kK-cBo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsI-AU-B1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gQH-lT-YbC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="632" y="4034"/>
         </scene>
@@ -1716,7 +1730,7 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
                             <barButtonItem title="Exit" style="done" id="Kzd-3g-bP8">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="exitWebView:" destination="vtQ-WX-IqL" id="xJA-e0-0EJ"/>
+                                    <action selector="exitWebView:" destination="vtQ-WX-IqL" id="Ul8-nw-Al7"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="refresh" id="3DJ-ez-y5P">
@@ -1742,10 +1756,10 @@ Use a maintenance checklist to keep pool clean and efficient. (n.d.). Retrieved 
             </objects>
             <point key="canvasLocation" x="2068" y="4034"/>
         </scene>
-        <!--Pool Reminder-->
+        <!--Pool Calendar-->
         <scene sceneID="45s-CD-e73">
             <objects>
-                <viewController id="DhH-vd-JqH" customClass="PlannerViewController" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DhH-vd-JqH" customClass="PoolCalendarVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j5S-4e-sgt"/>
                         <viewControllerLayoutGuide type="bottom" id="1yT-oT-Dbp"/>
@@ -1778,7 +1792,7 @@ even needing a Planner, but until
 then… Use the Pool Planner.
 
 Good Luck!</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1797,16 +1811,25 @@ Good Luck!</string>
                             <constraint firstItem="xoG-10-jjJ" firstAttribute="leading" secondItem="v1i-Vf-0z1" secondAttribute="leadingMargin" id="siq-05-kgL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pool Reminder" id="Qdf-Mj-klU">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="uJa-3G-P7O">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="createReminder:" destination="DhH-vd-JqH" id="lP6-pb-4Xq"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Pool Calendar" id="Qdf-Mj-klU">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Enter" style="done" id="Usv-8a-cQX">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="displayChooser:" destination="DhH-vd-JqH" id="fJP-cc-bAt"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="done" systemItem="add" id="uJa-3G-P7O">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="createCalendar:" destination="DhH-vd-JqH" id="PaB-dQ-ecu"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="poolImage" destination="xoG-10-jjJ" id="gPf-jQ-fRI"/>
+                        <outlet property="textView" destination="VdX-uD-r4f" id="w3J-yk-zCv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mm-xp-lsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1873,7 +1896,7 @@ Good Luck!</string>
                                         <connections>
                                             <outlet property="maintenanceImage" destination="p0a-1Z-KTo" id="e1j-fU-TYX"/>
                                             <outlet property="maintenanceLabel" destination="At9-n0-e5X" id="y4y-kw-eEN"/>
-                                            <segue destination="BBC-If-5Fb" kind="show" identifier="toMaintDetailVC" id="jvm-sW-qHw"/>
+                                            <segue destination="BBC-If-5Fb" kind="show" identifier="toDetailVC" id="jvm-sW-qHw"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -2018,6 +2041,8 @@ Good Luck!</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tyo-JB-ITk" userLabel="Planner Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ecW-QW-Wnb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2093,9 +2118,6 @@ Good Luck!</string>
                                     <navigationItem id="cjp-od-bof">
                                         <barButtonItem key="rightBarButtonItem" image="home" style="done" id="aMq-K6-Yql" userLabel="Home">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <segue destination="A5u-FU-80L" kind="unwind" unwindAction="myUnwindAction:" id="7lz-zQ-sdv"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -2132,7 +2154,6 @@ Good Luck!</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrQ-V2-926" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="A5u-FU-80L" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1344" y="5583"/>
         </scene>
@@ -2291,9 +2312,6 @@ Good Luck!</string>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="home" style="done" id="xUc-UJ-Zvt" userLabel="Home">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <segue destination="575-Tn-qzM" kind="unwind" unwindAction="myUnwindAction:" id="t0B-XB-FyA"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -2303,7 +2321,6 @@ Good Luck!</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pi8-rg-MbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="575-Tn-qzM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="632" y="4821"/>
         </scene>
@@ -2328,19 +2345,14 @@ Good Luck!</string>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="home" id="MJZ-Wr-UCg" userLabel="Home">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <segue destination="Z3B-Qd-yLW" kind="unwind" unwindAction="myUnwindAction:" id="Zlc-Je-rni"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="chatTitle" destination="hcs-1N-piB" id="arK-pE-ZQK"/>
                         <outlet property="menuButton" destination="Tlr-eU-4sP" id="fZz-G2-Ivn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGV-2x-E7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Z3B-Qd-yLW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="632" y="6322"/>
         </scene>

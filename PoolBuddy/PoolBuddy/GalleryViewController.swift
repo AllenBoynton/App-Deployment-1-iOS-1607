@@ -33,7 +33,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         navigationItem.title = "Pool Problems Search Gallery"
         navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 22)!])
+            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
