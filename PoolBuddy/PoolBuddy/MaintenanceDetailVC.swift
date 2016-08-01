@@ -14,9 +14,9 @@ class MaintenanceDetailVC: UIViewController {
     @IBOutlet weak var detailImage: UIImageView!    
     @IBOutlet weak var detailText: UITextView!
     
-    var productTitle: String = ""
+    var productTitle: String!
     var productImage = UIImage(named: "")
-    var descriptions: String = ""
+    var descriptions: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +25,6 @@ class MaintenanceDetailVC: UIViewController {
         navigationItem.title = productTitle
         detailImage.image = productImage
         detailText.text = descriptions
-                        
-        detailImage.layer.cornerRadius = 4
-        detailImage.layer.borderWidth = 2
-        detailImage.layer.borderColor = UIColor.blackColor().CGColor
-        
         detailText.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
         
         navigationController!.navigationBar.titleTextAttributes =

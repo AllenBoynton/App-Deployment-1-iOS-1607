@@ -25,12 +25,18 @@ class NewReminderVC: UIViewController {
         
         dateTextField.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
         
-        // Place the following code inside the <em>viewDidLoad</em> method
+        dateTextField.layer.borderWidth = 2
+        dateTextField.layer.borderColor = UIColor.blackColor().CGColor
+        
         datePicker = UIDatePicker()
         datePicker.addTarget(self, action: #selector(NewReminderVC.addDate), forControlEvents: UIControlEvents.ValueChanged)
         datePicker.datePickerMode = UIDatePickerMode.DateAndTime
         dateTextField.inputView = datePicker
+        
         reminderTextView.becomeFirstResponder()
+        reminderTextView.layer.cornerRadius = 3
+        reminderTextView.layer.borderWidth = 2
+        reminderTextView.layer.borderColor = UIColor.blackColor().CGColor
     }
     
     func addDate(){

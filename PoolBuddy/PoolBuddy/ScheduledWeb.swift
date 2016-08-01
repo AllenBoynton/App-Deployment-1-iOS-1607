@@ -8,8 +8,9 @@
 
 import UIKit
 import WebKit
+import SafariServices
 
-class ScheduledWeb: UIViewController {
+class ScheduledWeb: UIViewController, SFSafariViewControllerDelegate {
     
     
     @IBOutlet weak var navigationTitle: UINavigationItem!
@@ -26,6 +27,10 @@ class ScheduledWeb: UIViewController {
         // Call URL using for the view
         webView.loadRequest(NSURLRequest(URL: NSURL(string: "https://www.youtube.com/watch?v=vMpJGdhrO08")!))
         
+    }
+    
+    func safariViewControllerDidFinish(controller: SFSafariViewController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func backAction(sender: AnyObject) {
@@ -60,8 +65,11 @@ class ScheduledWeb: UIViewController {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
     
-    @IBAction func exitWebView(sender: UIBarButtonItem) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func exitWebView(sender: AnyObject) {  // Exits web view
+        if let navController = self.navigationController {
+            navController.popViewControllerAnimated(true)
+        } else {
+            self.navigationController?.popViewControllerAnimated(true)
+        }
     }
-    
 }

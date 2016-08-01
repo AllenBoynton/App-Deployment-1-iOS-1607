@@ -8,17 +8,15 @@
 
 import UIKit
 import EventKit
-import EventKitUI
 
 // Global Initializers
 let eventVC = "toSecondVC"
 
 class PlannerViewController: UIViewController {
-    
-    let eventStore = EKEventStore()
-    
+ 
+    private var urlString:String = "https://www.youtube.com/watch?v=vMpJGdhrO08"
+
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    
     @IBOutlet weak var textField: UITextView!
     
     override func viewDidLoad() {
@@ -42,5 +40,9 @@ class PlannerViewController: UIViewController {
         }
         self.revealViewController().rearViewRevealWidth = 325
         
+    }
+    
+    @IBAction func openWithSafariVC(sender: AnyObject) {
+        //TODO: Open in safari view controller
     }
 }

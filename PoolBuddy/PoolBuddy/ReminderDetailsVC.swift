@@ -27,13 +27,19 @@ class ReminderDetailsVC: UIViewController {
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
         
         dateTextField.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
-        
-        self.reminderTextView.text = self.reminder.title
+        dateTextField.layer.borderWidth = 2
+        dateTextField.layer.borderColor = UIColor.blackColor().CGColor
+                
+        self.reminderTextView?.text = self.reminder.title
         datePicker = UIDatePicker()
         datePicker.addTarget(self, action: #selector(ReminderDetailsVC.addDate), forControlEvents: UIControlEvents.ValueChanged)
         datePicker.datePickerMode = UIDatePickerMode.DateAndTime
         dateTextField.inputView = datePicker
+        
         reminderTextView.becomeFirstResponder()
+        reminderTextView.layer.cornerRadius = 3
+        reminderTextView.layer.borderWidth = 2
+        reminderTextView.layer.borderColor = UIColor.blackColor().CGColor
     }
     
     func addDate(){

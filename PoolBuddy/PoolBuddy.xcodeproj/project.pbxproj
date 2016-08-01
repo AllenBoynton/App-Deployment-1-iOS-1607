@@ -36,8 +36,6 @@
 		098F96401D455CFB00E1B157 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F963F1D455CFB00E1B157 /* MenuTableVC.swift */; };
 		098F96421D4560D100E1B157 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F96411D4560D100E1B157 /* csv.swift */; };
 		098F96441D4561DC00E1B157 /* KittenSlant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 098F96431D4561DC00E1B157 /* KittenSlant.ttf */; };
-		098F964E1D45F5F300E1B157 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F964D1D45F5F300E1B157 /* Global.swift */; };
-		098F96501D45F64800E1B157 /* Cal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F964F1D45F64800E1B157 /* Cal.swift */; };
 		098F96521D45F98C00E1B157 /* PoolCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F96511D45F98C00E1B157 /* PoolCalendarVC.swift */; };
 		0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713A1D246EC400477EA2 /* AppDelegate.swift */; };
 		0990713D1D246EC400477EA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713C1D246EC400477EA2 /* MainViewController.swift */; };
@@ -88,8 +86,6 @@
 		098F963F1D455CFB00E1B157 /* MenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
 		098F96411D4560D100E1B157 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		098F96431D4561DC00E1B157 /* KittenSlant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KittenSlant.ttf; sourceTree = "<group>"; };
-		098F964D1D45F5F300E1B157 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		098F964F1D45F64800E1B157 /* Cal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cal.swift; sourceTree = "<group>"; };
 		098F96511D45F98C00E1B157 /* PoolCalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolCalendarVC.swift; sourceTree = "<group>"; };
 		099071371D246EC400477EA2 /* PoolBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0990713A1D246EC400477EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,9 +131,9 @@
 		092DEAA71D4757E100B7C637 /* MaintenanceViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				099383A51D47C68E00085A3E /* MaintenanceCell.swift */,
 				092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */,
 				099383A31D47C67100085A3E /* MaintenanceVC.swift */,
-				099383A51D47C68E00085A3E /* MaintenanceCell.swift */,
 			);
 			name = MaintenanceViewControllers;
 			sourceTree = "<group>";
@@ -337,8 +333,6 @@
 		099071761D29D34900477EA2 /* Initiators */ = {
 			isa = PBXGroup;
 			children = (
-				098F964F1D45F64800E1B157 /* Cal.swift */,
-				098F964D1D45F5F300E1B157 /* Global.swift */,
 				099383AF1D49E2A500085A3E /* Problems.swift */,
 				099071771D29D36F00477EA2 /* PoolData.swift */,
 			);
@@ -502,9 +496,7 @@
 				0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */,
 				0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */,
 				0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */,
-				098F96501D45F64800E1B157 /* Cal.swift in Sources */,
 				098F96401D455CFB00E1B157 /* MenuTableVC.swift in Sources */,
-				098F964E1D45F5F300E1B157 /* Global.swift in Sources */,
 				092789301D49E8CA0059B2CC /* PoolProblems.swift in Sources */,
 				098F96521D45F98C00E1B157 /* PoolCalendarVC.swift in Sources */,
 				094F624C1D4E1A5000850602 /* ReminderDetailsVC.swift in Sources */,
@@ -641,6 +633,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PoolBuddy/PoolBuddy-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -655,6 +648,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fullsail.PoolBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PoolBuddy/PoolBuddy-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
