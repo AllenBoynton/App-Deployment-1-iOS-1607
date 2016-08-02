@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		092789301D49E8CA0059B2CC /* PoolProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927892F1D49E8CA0059B2CC /* PoolProblems.swift */; };
 		092DEAA91D4758B300B7C637 /* MaintenanceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */; };
-		093D4E001D4C341600694C28 /* ScheduledWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D4DFF1D4C341600694C28 /* ScheduledWeb.swift */; };
 		093D4E011D4D1DA900694C28 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0940F5451D2AC28F00BFA91C /* EventKit.framework */; };
 		093D4E031D4D2B2800694C28 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093D4E021D4D2B2800694C28 /* EventKitUI.framework */; };
 		0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */; };
@@ -53,12 +52,13 @@
 		099383A81D493B7D00085A3E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099383A71D493B7D00085A3E /* CoreLocation.framework */; };
 		099383AC1D493DDA00085A3E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099383AB1D493DDA00085A3E /* Alamofire.framework */; };
 		099383B01D49E2A500085A3E /* Problems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099383AF1D49E2A500085A3E /* Problems.swift */; };
+		0997EDAE1D4FEA570040D354 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0997EDAD1D4FEA570040D354 /* SafariServices.framework */; };
+		0997EDB21D4FEB230040D354 /* CustomWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997EDB11D4FEB230040D354 /* CustomWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0927892F1D49E8CA0059B2CC /* PoolProblems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolProblems.swift; sourceTree = "<group>"; };
 		092DEAA81D4758B300B7C637 /* MaintenanceDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailVC.swift; sourceTree = "<group>"; };
-		093D4DFF1D4C341600694C28 /* ScheduledWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduledWeb.swift; sourceTree = "<group>"; };
 		093D4E021D4D2B2800694C28 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		0940F5391D2AC0E200BFA91C /* ChemicalTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableVC.swift; sourceTree = "<group>"; };
 		0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalTableViewCell.swift; sourceTree = "<group>"; };
@@ -108,6 +108,8 @@
 		099383A71D493B7D00085A3E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		099383AB1D493DDA00085A3E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Full Sail/Current Class/Visual Frameworks/Developer/PoolBuddy-flzcgzmjbrtxzwhagsnyinkfwjhx/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		099383AF1D49E2A500085A3E /* Problems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problems.swift; sourceTree = "<group>"; };
+		0997EDAD1D4FEA570040D354 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		0997EDB11D4FEB230040D354 /* CustomWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWebViewController.swift; sourceTree = "<group>"; };
 		C38C8472777C383D75137C8C /* Pods-PoolBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		F66F71243FA1F37067EE3835 /* Pods-PoolBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0997EDAE1D4FEA570040D354 /* SafariServices.framework in Frameworks */,
 				093D4E031D4D2B2800694C28 /* EventKitUI.framework in Frameworks */,
 				093D4E011D4D1DA900694C28 /* EventKit.framework in Frameworks */,
 				099383AC1D493DDA00085A3E /* Alamofire.framework in Frameworks */,
@@ -181,7 +184,7 @@
 		0940F5351D2AC01700BFA91C /* PlannerViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				093D4DFF1D4C341600694C28 /* ScheduledWeb.swift */,
+				0997EDB11D4FEB230040D354 /* CustomWebViewController.swift */,
 				0943180D1D4E23D30025D71C /* NewReminderVC.swift */,
 				094F624B1D4E1A5000850602 /* ReminderDetailsVC.swift */,
 				094F62491D4E180500850602 /* EditViewController.swift */,
@@ -271,6 +274,7 @@
 		0990714C1D246F0900477EA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0997EDAD1D4FEA570040D354 /* SafariServices.framework */,
 				093D4E021D4D2B2800694C28 /* EventKitUI.framework */,
 				099383AB1D493DDA00085A3E /* Alamofire.framework */,
 				099383A71D493B7D00085A3E /* CoreLocation.framework */,
@@ -493,6 +497,7 @@
 				0943180E1D4E23D30025D71C /* NewReminderVC.swift in Sources */,
 				0940F5A01D3883DB00BFA91C /* CleaningToolsTableViewCell.swift in Sources */,
 				0940F5631D2ED14B00BFA91C /* GalleryViewController.swift in Sources */,
+				0997EDB21D4FEB230040D354 /* CustomWebViewController.swift in Sources */,
 				0940F53A1D2AC0E200BFA91C /* ChemicalTableVC.swift in Sources */,
 				0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */,
 				0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */,
@@ -504,7 +509,6 @@
 				099383A61D47C68E00085A3E /* MaintenanceCell.swift in Sources */,
 				0940F54C1D2AC3B900BFA91C /* ChemicalDetailVC.swift in Sources */,
 				0940F59E1D38315C00BFA91C /* PoolCategory.swift in Sources */,
-				093D4E001D4C341600694C28 /* ScheduledWeb.swift in Sources */,
 				0940F55E1D2EC93600BFA91C /* HeaderReusableView.swift in Sources */,
 				099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */,
 				0940F54E1D2AC3E600BFA91C /* EquipmentDetailVC.swift in Sources */,

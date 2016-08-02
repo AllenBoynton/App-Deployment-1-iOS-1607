@@ -7,12 +7,10 @@
 //
 
 import UIKit
-import EventKit
+import SafariServices
 
-// Global Initializers
-let eventVC = "toSecondVC"
 
-class PlannerViewController: UIViewController {
+class PlannerViewController: UIViewController, SFSafariViewControllerDelegate {
  
     private var urlString:String = "https://www.youtube.com/watch?v=vMpJGdhrO08"
 
@@ -21,8 +19,6 @@ class PlannerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.title = "Pool Planner"
         
         // Custom nav bar title font and size
         navigationController!.navigationBar.titleTextAttributes =
@@ -36,13 +32,18 @@ class PlannerViewController: UIViewController {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
         }
         self.revealViewController().rearViewRevealWidth = 325
-        
     }
     
     @IBAction func openWithSafariVC(sender: AnyObject) {
         //TODO: Open in safari view controller
+        let svc = SFSafariViewController(URL: NSURL(string: self.urlString)!, entersReaderIfAvailable: true)
+        svc.delegate = self
+        self.presentViewController(svc, animated: true, completion: nil)
+    }
+        
+    func safariViewControllerDidFinish(controller: SFSafariViewController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }

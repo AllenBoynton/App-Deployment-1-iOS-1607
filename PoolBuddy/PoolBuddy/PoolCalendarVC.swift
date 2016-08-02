@@ -7,7 +7,6 @@
 //
 import UIKit
 
-
 class PoolCalendarVC: UIViewController {
         
     @IBOutlet weak var poolImage: UIImageView!
@@ -16,7 +15,7 @@ class PoolCalendarVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Pool Calendar"
+//        navigationItem.title = "Pool Calendar"
         
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])

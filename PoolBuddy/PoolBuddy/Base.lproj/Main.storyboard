@@ -6,11 +6,9 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="KittenSlant.ttf">
-            <string>KittenSlant</string>
             <string>KittenSlant</string>
             <string>KittenSlant</string>
             <string>KittenSlant</string>
@@ -108,7 +106,7 @@
                             <constraint firstAttribute="trailing" secondItem="scD-1E-Til" secondAttribute="trailing" id="t1a-pf-55A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XjI-2q-kQl">
+                    <navigationItem key="navigationItem" title="Equipment" id="XjI-2q-kQl">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="vVm-H3-Frp">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -204,7 +202,7 @@
                                         <rect key="frame" x="30" y="258" width="540" height="248"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equipment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-Ee-Y7B">
@@ -239,26 +237,18 @@
                                     <constraint firstItem="TgB-5v-tPX" firstAttribute="top" secondItem="Xth-Nd-NCB" secondAttribute="bottom" constant="20" id="sF6-UQ-KVx"/>
                                 </constraints>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo8-XD-bB8">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xo8-XD-bB8">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Z7I-RV-rej"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="fkk-TX-1eU"/>
                                 </constraints>
-                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem id="Pyg-hI-F5W">
-                                        <barButtonItem key="rightBarButtonItem" image="home" style="done" id="YY0-Ia-YHK" userLabel="Home">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <segue destination="86r-2X-BZ6" kind="unwind" unwindAction="myUnwindAction:" id="2LM-bO-lkQ"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Equipment Details" id="Pyg-hI-F5W"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -286,7 +276,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRP-Bt-LQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="86r-2X-BZ6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1339" y="165"/>
         </scene>
@@ -835,6 +824,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -923,7 +915,7 @@
                             <constraint firstItem="9ny-L1-Ot0" firstAttribute="top" secondItem="3ax-io-MHI" secondAttribute="bottom" id="ql0-ib-rh6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nEz-Rh-3a2">
+                    <navigationItem key="navigationItem" title="Chemicals" id="nEz-Rh-3a2">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="7xq-YX-L9w">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -1027,7 +1019,7 @@
                                         <rect key="frame" x="30" y="268" width="540" height="238"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -1186,7 +1178,7 @@
                             <constraint firstItem="ynS-9c-AcL" firstAttribute="leading" secondItem="aC3-xR-9wU" secondAttribute="leading" id="tBi-fb-ja9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3HD-BQ-ixH">
+                    <navigationItem key="navigationItem" title="Water Balance" id="3HD-BQ-ixH">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="W3d-bA-sZ8">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -1250,7 +1242,7 @@
                                 <rect key="frame" x="30" y="354" width="540" height="216"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1307,7 +1299,7 @@
             </objects>
             <point key="canvasLocation" x="-73" y="2490"/>
         </scene>
-        <!--Cleaning Tools TableVC-->
+        <!--Cleaning Tools-->
         <scene sceneID="E90-ye-dgU">
             <objects>
                 <viewController id="yxU-qD-epu" customClass="CleaningToolsTableVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -1383,7 +1375,7 @@
                             <constraint firstItem="u6U-ba-0Jz" firstAttribute="leading" secondItem="UYy-n5-tqX" secondAttribute="leading" id="p1O-sh-YLl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XWk-uc-XLe">
+                    <navigationItem key="navigationItem" title="Cleaning Tools" id="XWk-uc-XLe">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="wNG-QW-ZZ3">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -1474,7 +1466,7 @@
                                         <rect key="frame" x="30" y="258" width="540" height="248"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Tools" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-Uo-FDs">
@@ -1568,7 +1560,7 @@
                                         <rect key="frame" x="20" y="240" width="560" height="276"/>
                                         <color key="backgroundColor" white="1" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
                                         <string key="text">Weekly pool maintenance of your pool can be a daunting list of tasks.                                                                                                                                                                                       We at A &amp; B Pools have listed the popular and most imortant tasks to help you with your maintenance.                                                                                                                                                                                     This is your initial roadmap. Above is a video to give you a summary of usual pool tasks to help prioritize..</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuR-b0-AZx">
@@ -1619,11 +1611,11 @@
                             <constraint firstItem="Lk0-1Z-WxK" firstAttribute="top" secondItem="mVg-hI-eia" secondAttribute="bottom" id="zIP-fC-p6F"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="gQQ-Lz-05a">
+                    <navigationItem key="navigationItem" title="Planner Video" id="gQQ-Lz-05a">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="lWb-WE-mis">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Next" style="done" id="WFc-WW-FUL">
+                        <barButtonItem key="rightBarButtonItem" title="Continue" style="done" id="WFc-WW-FUL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="DhH-vd-JqH" kind="show" identifier="toSecondVC" id="bfO-dO-37X"/>
@@ -1633,86 +1625,13 @@
                     <connections>
                         <outlet property="menuButton" destination="lWb-WE-mis" id="N6b-2j-Kxe"/>
                         <outlet property="textField" destination="7La-98-Yjz" id="e8p-db-BUr"/>
-                        <segue destination="gQH-lT-YbC" kind="unwind" identifier="toVideo" unwindAction="unwindActionToReminders:" id="mbN-kK-cBo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsI-AU-B1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="gQH-lT-YbC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="632" y="4034"/>
         </scene>
-        <!--Scheduled Web-->
-        <scene sceneID="wB9-TI-ydI">
-            <objects>
-                <viewController id="vtQ-WX-IqL" customClass="ScheduledWeb" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WYu-gr-3uG"/>
-                        <viewControllerLayoutGuide type="bottom" id="tUf-Tk-zrV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d4o-XI-ztn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOh-1S-P1r">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="nOh-1S-P1r" firstAttribute="leading" secondItem="d4o-XI-ztn" secondAttribute="leading" id="FEE-Dr-1GR"/>
-                            <constraint firstItem="nOh-1S-P1r" firstAttribute="top" secondItem="d4o-XI-ztn" secondAttribute="top" id="RJq-xn-alm"/>
-                            <constraint firstAttribute="trailing" secondItem="nOh-1S-P1r" secondAttribute="trailing" id="U3j-l5-Ywp"/>
-                            <constraint firstItem="tUf-Tk-zrV" firstAttribute="top" secondItem="nOh-1S-P1r" secondAttribute="bottom" id="gVy-Fo-9Hb"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="dzq-HJ-8g4">
-                        <leftBarButtonItems>
-                            <barButtonItem title="&lt;" id="VpG-5p-KiO">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="backAction:" destination="vtQ-WX-IqL" id="r57-Xf-Oub"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="&gt;" style="done" id="xKh-6l-Kcy">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="forwardAction:" destination="vtQ-WX-IqL" id="61B-Jk-EXh"/>
-                                </connections>
-                            </barButtonItem>
-                        </leftBarButtonItems>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Exit" style="done" id="Kzd-3g-bP8">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="exitWebView:" destination="vtQ-WX-IqL" id="Ul8-nw-Al7"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="refresh" id="3DJ-ez-y5P">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="refreshAction:" destination="vtQ-WX-IqL" id="sAa-oq-fXR"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="stop" id="Mxu-Uo-tsS">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="stopAction:" destination="vtQ-WX-IqL" id="cvr-sd-XU6"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="navigationTitle" destination="dzq-HJ-8g4" id="7Eu-lY-cK8"/>
-                        <outlet property="webView" destination="nOh-1S-P1r" id="Hk5-9v-jlz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hx6-yl-nBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1344" y="4810"/>
-        </scene>
-        <!--Pool CalendarVC-->
+        <!--Routine Reminder-->
         <scene sceneID="45s-CD-e73">
             <objects>
                 <viewController id="DhH-vd-JqH" customClass="PoolCalendarVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -1748,7 +1667,7 @@ even needing a Planner, but until
 then… Use the Pool Planner.
 
 Good Luck!</string>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1767,7 +1686,7 @@ Good Luck!</string>
                             <constraint firstItem="xoG-10-jjJ" firstAttribute="leading" secondItem="v1i-Vf-0z1" secondAttribute="leadingMargin" id="siq-05-kgL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Qdf-Mj-klU">
+                    <navigationItem key="navigationItem" title="Routine Reminder" id="Qdf-Mj-klU">
                         <barButtonItem key="rightBarButtonItem" title="Reminders" style="done" id="Usv-8a-cQX">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -1784,7 +1703,7 @@ Good Luck!</string>
             </objects>
             <point key="canvasLocation" x="1344" y="4034"/>
         </scene>
-        <!--Edit View Controller-->
+        <!--Pool Reminders-->
         <scene sceneID="fAg-To-Fhq">
             <objects>
                 <viewController id="UbE-Th-OIu" customClass="EditViewController" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -1802,27 +1721,27 @@ Good Luck!</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-cc-kJH" userLabel="Content View">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K1q-Tx-hVL">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K1q-Tx-hVL">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="reminderCell" textLabel="5JQ-f9-JOr" detailTextLabel="laC-Gu-eM5" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="M8r-81-BFM">
-                                                <rect key="frame" x="0.0" y="28" width="600" height="55"/>
+                                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="reminderCell" textLabel="5JQ-f9-JOr" detailTextLabel="laC-Gu-eM5" rowHeight="100" style="IBUITableViewCellStyleSubtitle" id="M8r-81-BFM">
+                                                <rect key="frame" x="0.0" y="28" width="600" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M8r-81-BFM" id="KfQ-h0-qpN">
-                                                    <rect key="frame" x="0.0" y="0.0" width="533" height="54.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="533" height="99.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5JQ-f9-JOr">
-                                                            <rect key="frame" x="15" y="0.0" width="44" height="36.5"/>
+                                                            <rect key="frame" x="15" y="22" width="44" height="36.5"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="24"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="laC-Gu-eM5">
-                                                            <rect key="frame" x="15" y="36.5" width="49" height="19"/>
+                                                            <rect key="frame" x="15" y="58.5" width="49" height="19"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1864,8 +1783,8 @@ Good Luck!</string>
                             <constraint firstItem="agZ-sv-Uhf" firstAttribute="leading" secondItem="3bF-NM-wEQ" secondAttribute="leading" id="xkR-IL-fId"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vqm-iN-Rny">
-                        <barButtonItem key="leftBarButtonItem" title="Item" style="done" systemItem="edit" id="2Xt-Od-Yb5">
+                    <navigationItem key="navigationItem" title="Pool Reminders" id="vqm-iN-Rny">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="edit" id="2Xt-Od-Yb5">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="editTable:" destination="UbE-Th-OIu" id="d5M-Ow-Kvz"/>
@@ -1911,7 +1830,7 @@ Good Luck!</string>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem id="xJp-ZG-uWq" userLabel="New Reminder">
+                                    <navigationItem title="New Reminder" id="xJp-ZG-uWq" userLabel="New Reminder">
                                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="lax-f8-mYq">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
@@ -2097,7 +2016,7 @@ Good Luck!</string>
                             <constraint firstItem="BWf-6g-yUR" firstAttribute="top" secondItem="MAu-6d-HZ7" secondAttribute="bottom" constant="20" id="p1r-KO-eWe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jzK-Oy-b2z">
+                    <navigationItem key="navigationItem" title="Pool Maintenance" id="jzK-Oy-b2z">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="yZF-PE-bbB">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -2154,7 +2073,7 @@ Good Luck!</string>
                                         <rect key="frame" x="20" y="214" width="560" height="292"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="generalmaintenance" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-7R-mB9">
@@ -2220,8 +2139,6 @@ Good Luck!</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tyo-JB-ITk" userLabel="Planner Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="600"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ecW-QW-Wnb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2285,7 +2202,7 @@ Good Luck!</string>
                                 <rect key="frame" x="30" y="344" width="540" height="226"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApL-nM-nSe">
@@ -2340,7 +2257,7 @@ Good Luck!</string>
             </objects>
             <point key="canvasLocation" x="1344" y="5583"/>
         </scene>
-        <!--Gallery View Controller-->
+        <!--Problems Gallery-->
         <scene sceneID="iF6-oK-qOq">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="aiJ-v2-4lT" customClass="GalleryViewController" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -2459,7 +2376,7 @@ Good Luck!</string>
                             <constraint firstAttribute="trailing" secondItem="3ND-Ly-aAv" secondAttribute="trailing" id="xW8-Qo-8UJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DdT-Jf-JHr">
+                    <navigationItem key="navigationItem" title="Problems Gallery" id="DdT-Jf-JHr">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="aiG-iF-HvD">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -2474,7 +2391,7 @@ Good Luck!</string>
             </objects>
             <point key="canvasLocation" x="632" y="5583"/>
         </scene>
-        <!--CalculatorVC-->
+        <!--Pool Calculator-->
         <scene sceneID="IJS-6u-YH0">
             <objects>
                 <viewController id="FHX-sr-L6b" customClass="CalculatorVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -2489,11 +2406,8 @@ Good Luck!</string>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="5b1-eV-Urh">
+                    <navigationItem key="navigationItem" title="Pool Calculator" id="5b1-eV-Urh">
                         <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="c4I-g0-AtF">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="home" style="done" id="xUc-UJ-Zvt" userLabel="Home">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
@@ -2522,11 +2436,8 @@ Good Luck!</string>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="hcs-1N-piB">
+                    <navigationItem key="navigationItem" title="Live Chat" id="hcs-1N-piB">
                         <barButtonItem key="leftBarButtonItem" image="Image" id="Tlr-eU-4sP">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="home" id="MJZ-Wr-UCg" userLabel="Home">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
@@ -2726,7 +2637,7 @@ Good Luck!</string>
                             <constraint firstAttribute="trailing" secondItem="jYe-Du-OJH" secondAttribute="trailing" id="vmm-0F-2df"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="sy3-BW-gsd" userLabel="Details">
+                    <navigationItem key="navigationItem" title="Reminder Details" id="sy3-BW-gsd" userLabel="Details">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="avC-JJ-meQ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>

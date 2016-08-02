@@ -34,7 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let toolBar = UIToolbar.appearance()
         
-        toolBar.tintColor = UIColor.whiteColor() // Bar items
         toolBar.barTintColor = UIColor.blackColor() // Toolbar's color
         
         return true

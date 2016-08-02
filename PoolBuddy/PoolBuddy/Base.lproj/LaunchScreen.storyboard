@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="KittenSlant.ttf">
+            <string>KittenSlant</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -16,7 +22,45 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="bmt-6s-JvM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Buddy" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="eTh-Jl-cj6">
+                                <rect key="frame" x="20" y="192" width="560" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="N73-fG-v4o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="43"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="3" height="-2"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2016 Allen Boynton. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rbk-dj-PhT">
+                                <rect key="frame" x="0.0" y="555" width="600" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="x0X-UV-uwy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eTh-Jl-cj6" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="15d-rL-U9G"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="rbk-dj-PhT" secondAttribute="bottom" constant="20" id="3W8-O6-fVD"/>
+                            <constraint firstItem="bmt-6s-JvM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="63r-3m-8ue"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="bmt-6s-JvM" secondAttribute="bottom" id="91B-61-SFc"/>
+                            <constraint firstItem="bmt-6s-JvM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="OhO-cd-8jx"/>
+                            <constraint firstItem="rbk-dj-PhT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="QxR-HD-n2q"/>
+                            <constraint firstAttribute="trailing" secondItem="bmt-6s-JvM" secondAttribute="trailing" id="Xe2-XR-jze"/>
+                            <constraint firstItem="eTh-Jl-cj6" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="aOd-jo-od2"/>
+                            <constraint firstAttribute="trailing" secondItem="rbk-dj-PhT" secondAttribute="trailing" id="oVd-SF-Z2e"/>
+                            <constraint firstItem="eTh-Jl-cj6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ovX-PS-B5v"/>
+                            <constraint firstItem="eTh-Jl-cj6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-70" id="xFr-rY-b5I"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +68,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="poolwater2" width="1080" height="1920"/>
+    </resources>
 </document>
