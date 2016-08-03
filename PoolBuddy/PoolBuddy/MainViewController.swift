@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
         
     // Audio player
-    var splash = AVAudioPlayer()
+    var audioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,29 +44,31 @@ class MainViewController: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        self.revealViewController().rearViewRevealWidth = 350
+        self.revealViewController().rearViewRevealWidth = 325
         
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
+        
+        prepareAudios()
     }
 
     // Sound files
     func prepareAudios() {
         
-        let audioPath1 = NSBundle.mainBundle().pathForResource("splash", ofType: "wav")
-        let error1: NSError? = nil
+        let path1 = NSBundle.mainBundle().pathForResource("splash.mp3", ofType: nil)!
         do {
-            splash = try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: audioPath1!))
+            audioPlayer = try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path1))
+            audioPlayer.prepareToPlay()
         }
-        catch {
-            print("Something bad happened \(error1). Try catching specific errors to narrow things down")
+        catch let err as NSError {
+            print("Something bad happened \(err). Try catching specific errors to narrow things down")
         }
     }
 
     @IBAction func menuButton(sender: UIBarButtonItem) {
-        // A sound for button
-        prepareAudios()
-        splash.play()
+        // Play sound effect
+        audioPlayer.play()
     }
+    
 }
 

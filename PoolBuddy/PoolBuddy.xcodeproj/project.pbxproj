@@ -41,8 +41,6 @@
 		099071401D246EC400477EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0990713E1D246EC400477EA2 /* Main.storyboard */; };
 		099071421D246EC400477EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099071411D246EC400477EA2 /* Assets.xcassets */; };
 		099071451D246EC400477EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099071431D246EC400477EA2 /* LaunchScreen.storyboard */; };
-		099071541D246FE400477EA2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099071531D246FE400477EA2 /* AVFoundation.framework */; };
-		0990715F1D27324F00477EA2 /* splash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0990715E1D27324F00477EA2 /* splash.wav */; };
 		0990716C1D28B64900477EA2 /* EquipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990716B1D28B64900477EA2 /* EquipTableViewController.swift */; };
 		099071731D29C0ED00477EA2 /* EquipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */; };
 		099071781D29D36F00477EA2 /* PoolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099071771D29D36F00477EA2 /* PoolData.swift */; };
@@ -54,6 +52,8 @@
 		099383B01D49E2A500085A3E /* Problems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099383AF1D49E2A500085A3E /* Problems.swift */; };
 		0997EDAE1D4FEA570040D354 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0997EDAD1D4FEA570040D354 /* SafariServices.framework */; };
 		0997EDB21D4FEB230040D354 /* CustomWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997EDB11D4FEB230040D354 /* CustomWebViewController.swift */; };
+		09DDBDE71D514C26005CB74F /* splash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09DDBDE61D514C26005CB74F /* splash.mp3 */; };
+		09DDBDE91D5162AC005CB74F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09DDBDE81D5162AC005CB74F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,9 +94,7 @@
 		099071411D246EC400477EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		099071441D246EC400477EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		099071461D246EC400477EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		099071531D246FE400477EA2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		099071551D26FA7F00477EA2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		0990715E1D27324F00477EA2 /* splash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = splash.wav; sourceTree = "<group>"; };
 		099071611D273DC200477EA2 /* PoolBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoolBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
 		0990716B1D28B64900477EA2 /* EquipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipTableViewController.swift; sourceTree = "<group>"; };
 		099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipTableViewCell.swift; sourceTree = "<group>"; };
@@ -110,6 +108,8 @@
 		099383AF1D49E2A500085A3E /* Problems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problems.swift; sourceTree = "<group>"; };
 		0997EDAD1D4FEA570040D354 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		0997EDB11D4FEB230040D354 /* CustomWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWebViewController.swift; sourceTree = "<group>"; };
+		09DDBDE61D514C26005CB74F /* splash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = splash.mp3; sourceTree = "<group>"; };
+		09DDBDE81D5162AC005CB74F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C38C8472777C383D75137C8C /* Pods-PoolBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		F66F71243FA1F37067EE3835 /* Pods-PoolBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,12 +119,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DDBDE91D5162AC005CB74F /* AVFoundation.framework in Frameworks */,
 				0997EDAE1D4FEA570040D354 /* SafariServices.framework in Frameworks */,
 				093D4E031D4D2B2800694C28 /* EventKitUI.framework in Frameworks */,
 				093D4E011D4D1DA900694C28 /* EventKit.framework in Frameworks */,
 				099383AC1D493DDA00085A3E /* Alamofire.framework in Frameworks */,
 				099383A81D493B7D00085A3E /* CoreLocation.framework in Frameworks */,
-				099071541D246FE400477EA2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +274,7 @@
 		0990714C1D246F0900477EA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09DDBDE81D5162AC005CB74F /* AVFoundation.framework */,
 				0997EDAD1D4FEA570040D354 /* SafariServices.framework */,
 				093D4E021D4D2B2800694C28 /* EventKitUI.framework */,
 				099383AB1D493DDA00085A3E /* Alamofire.framework */,
@@ -281,7 +282,6 @@
 				0940F55B1D2B078500BFA91C /* MessageUI.framework */,
 				0940F5451D2AC28F00BFA91C /* EventKit.framework */,
 				099071551D26FA7F00477EA2 /* WebKit.framework */,
-				099071531D246FE400477EA2 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -317,7 +317,7 @@
 			children = (
 				098F96411D4560D100E1B157 /* csv.swift */,
 				099071461D246EC400477EA2 /* Info.plist */,
-				0990715E1D27324F00477EA2 /* splash.wav */,
+				09DDBDE61D514C26005CB74F /* splash.mp3 */,
 				098F96431D4561DC00E1B157 /* KittenSlant.ttf */,
 				099071411D246EC400477EA2 /* Assets.xcassets */,
 			);
@@ -415,10 +415,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				099071451D246EC400477EA2 /* LaunchScreen.storyboard in Resources */,
-				0990715F1D27324F00477EA2 /* splash.wav in Resources */,
 				099071421D246EC400477EA2 /* Assets.xcassets in Resources */,
 				099071401D246EC400477EA2 /* Main.storyboard in Resources */,
 				098F96441D4561DC00E1B157 /* KittenSlant.ttf in Resources */,
+				09DDBDE71D514C26005CB74F /* splash.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

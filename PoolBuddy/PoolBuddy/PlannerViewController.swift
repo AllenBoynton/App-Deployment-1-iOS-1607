@@ -17,6 +17,8 @@ class PlannerViewController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextView!
     
+    @IBOutlet weak var contentView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,10 +26,15 @@ class PlannerViewController: UIViewController, SFSafariViewControllerDelegate {
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
         
+        textField.text = "Weekly pool maintenance\nof your pool can be a\ndaunting list of tasks.\n\nWe at A & B Pools\nhave listed the more popular\nand most important tasks to help\nyou with your maintenance.\n\nThis is your initial roadmap.\nYou may change the existing\ntasks to better suit your schedule\nor needs of your pool."
+        textField.textAlignment = NSTextAlignment.Center
         textField.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
+        textField.layer.borderColor = UIColor.blackColor().CGColor
+        textField.layer.borderWidth = 2
         
-        textField.text = "Weekly pool maintenance of your\npool can be a daunting list of\n tasks.\n\nWe at A & B Pools have listed the\npopular and most imortant tasks\nto help you with your maintenance.\n\nThis is your initial roadmap. You\nmay change the existing tasks to\nbetter suit your schedule or needs\nof your pool."
-        
+        contentView.layer.borderWidth = 2
+        contentView.layer.borderColor = UIColor.blackColor().CGColor
+                
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -40,9 +47,10 @@ class PlannerViewController: UIViewController, SFSafariViewControllerDelegate {
         //TODO: Open in safari view controller
         let svc = SFSafariViewController(URL: NSURL(string: self.urlString)!, entersReaderIfAvailable: true)
         svc.delegate = self
+//        svc.view.tintColor = UIColor.blackColor()        
         self.presentViewController(svc, animated: true, completion: nil)
     }
-        
+    
     func safariViewControllerDidFinish(controller: SFSafariViewController) {
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
