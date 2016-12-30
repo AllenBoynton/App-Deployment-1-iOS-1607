@@ -11,11 +11,11 @@ import Foundation
 // This is in reference to the pool products/items
 
 class PoolData {
-    private var _label: String!
-    private var _image: String!
-    private var _label2: String!
-    private var _image2: String!
-    private var _description: String!
+    fileprivate var _label: String!
+    fileprivate var _image: String!
+    fileprivate var _label2: String!
+    fileprivate var _image2: String!
+    fileprivate var _description: String!
     
     var label: String {
         return _label

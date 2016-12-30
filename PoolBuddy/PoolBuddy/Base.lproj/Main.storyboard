@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7fG-W1-ux4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7fG-W1-ux4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -27,10 +30,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Eey-yW-TWa">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="scD-1E-Til">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -38,14 +41,16 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5fg-vn-wp6" id="hKy-ga-9LZ">
-                                            <frame key="frameInset" width="600" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfv-WZ-6vV">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="84.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="orN-gh-iK1">
+                                                    <rect key="frame" x="20" y="10" width="64.5" height="64.5"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -119,16 +124,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-7W-p3b">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WaR-Hu-A8f" userLabel="Ghost View">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xth-Nd-NCB" userLabel="Pool Buddy View">
-                                        <frame key="frameInset" width="600" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pool Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NjX-KJ-sY5">
-                                                <frame key="frameInset" minX="30" width="570" height="30"/>
+                                                <rect key="frame" x="30" y="0.0" width="570" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="20"/>
                                                 <nil key="highlightedColor"/>
@@ -145,10 +150,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TgB-5v-tPX" userLabel="Top BG View">
-                                        <frame key="frameInset" minX="146" minY="50" width="188" height="188"/>
+                                        <rect key="frame" x="146" y="50" width="188" height="188"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="perflex" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-Z2-AWJ">
-                                                <frame key="frameInset" width="188" height="188"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="188" height="188"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
@@ -162,10 +167,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oYb-9E-ZrW" userLabel="Right BG View">
-                                        <frame key="frameInset" minX="339" minY="125" width="113" height="113"/>
+                                        <rect key="frame" x="339" y="125" width="113" height="113"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="equipment1" translatesAutoresizingMaskIntoConstraints="NO" id="W8l-z2-Hc0" userLabel="Right Image">
-                                                <frame key="frameInset" width="113" height="113"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="113"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
@@ -184,14 +189,14 @@
                                         </variation>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-kF-ycO">
-                                        <frame key="frameInset" minX="30" minY="258" width="540" height="248"/>
+                                        <rect key="frame" x="30" y="258" width="540" height="248"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Equipment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-Ee-Y7B">
-                                        <frame key="frameInset" minX="339" minY="95" width="113" height="30"/>
+                                        <rect key="frame" x="339" y="95" width="113" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kKA-pA-Ze9"/>
@@ -223,7 +228,7 @@
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xo8-XD-bB8">
-                                <frame key="frameInset" minY="20" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Z7I-RV-rej"/>
@@ -274,13 +279,13 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nFA-Dp-LXm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="v13-gP-c6J">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pool Buddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Jl-CW-urK">
-                                <frame key="frameInset" minY="193" width="600" height="64"/>
+                                <rect key="frame" x="0.0" y="193" width="600" height="64"/>
                                 <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -288,7 +293,7 @@
                                 <size key="shadowOffset" width="3" height="-3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ABtech Applications, LLC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nRk-WZ-K3R">
-                                <frame key="frameInset" minY="541" width="600" height="38.5"/>
+                                <rect key="frame" x="0.0" y="541" width="600" height="38.5"/>
                                 <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -296,7 +301,7 @@
                                 <size key="shadowOffset" width="2" height="-2"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="by A &amp; B Pools, LLC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7xk-1h-fY3">
-                                <frame key="frameInset" minY="257" width="600" height="30"/>
+                                <rect key="frame" x="0.0" y="257" width="600" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="N5k-sc-wE5"/>
                                 </constraints>
@@ -323,7 +328,7 @@
                             <constraint firstAttribute="trailing" secondItem="7xk-1h-fY3" secondAttribute="trailing" id="qzA-R9-0tF"/>
                             <constraint firstItem="7xk-1h-fY3" firstAttribute="top" secondItem="5Jl-CW-urK" secondAttribute="bottom" id="tHP-PA-5tk"/>
                             <constraint firstItem="v13-gP-c6J" firstAttribute="leading" secondItem="nFA-Dp-LXm" secondAttribute="leading" id="tKJ-A0-loJ"/>
-                            <constraint firstItem="5Jl-CW-urK" firstAttribute="centerY" secondItem="nFA-Dp-LXm" secondAttribute="centerY" constant="-75" id="yKO-qt-lIW"/>
+                            <constraint firstItem="5Jl-CW-urK" firstAttribute="centerY" secondItem="nFA-Dp-LXm" secondAttribute="centerY" id="yKO-qt-lIW"/>
                             <constraint firstItem="5KC-vM-V5k" firstAttribute="top" secondItem="nRk-WZ-K3R" secondAttribute="bottom" constant="20" id="zNG-hF-mlS"/>
                         </constraints>
                     </view>
@@ -384,15 +389,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IiG-A4-IJD" id="R5D-61-Si4">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="704-Mj-bkH" userLabel="Title Section">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXt-zg-Hqm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="Sz0-1b-YGA"/>
                                                     </constraints>
@@ -409,6 +416,7 @@
                                                     </items>
                                                 </navigationBar>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Buddy Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bda-fB-Wlp" userLabel="Title Label">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Nlr-FP-95R"/>
                                                         <constraint firstAttribute="height" constant="44" id="ydu-55-2ek"/>
@@ -438,14 +446,16 @@
                                         <rect key="frame" x="0.0" y="44" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0GC-dS-AF4" id="XV6-pE-cAM">
-                                            <frame key="frameInset" width="600" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Equipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjj-wY-MgJ" userLabel="Equipment Section">
+                                                    <rect key="frame" x="104.5" y="10" width="495.5" height="64.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equipment1" translatesAutoresizingMaskIntoConstraints="NO" id="vLs-Mc-lB1" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="64.5" height="64.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="vLs-Mc-lB1" secondAttribute="height" multiplier="1:1" id="sFs-hn-5zJ"/>
                                                     </constraints>
@@ -471,14 +481,16 @@
                                         <rect key="frame" x="0.0" y="119" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tac-2S-WWh" id="aPX-Yd-2Yi">
-                                            <frame key="frameInset" width="600" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Tools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G85-bc-w7t" userLabel="Equipment Section">
+                                                    <rect key="frame" x="104.5" y="10" width="495.5" height="64.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Surface Debris" translatesAutoresizingMaskIntoConstraints="NO" id="EhE-A7-uYK" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="64.5" height="64.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="EhE-A7-uYK" secondAttribute="height" multiplier="1:1" id="lwI-LC-eQX"/>
                                                     </constraints>
@@ -504,14 +516,16 @@
                                         <rect key="frame" x="0.0" y="194" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1k0-y6-zTD" id="2gh-e7-Cwf">
-                                            <frame key="frameInset" width="600" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Chemicals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1N-G8-OGe" userLabel="Chemicals Section">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicals1" translatesAutoresizingMaskIntoConstraints="NO" id="XWq-9L-l3J" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="64.5" height="64.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="XWq-9L-l3J" secondAttribute="height" multiplier="1:1" id="o9W-Uj-KI1"/>
                                                     </constraints>
@@ -537,14 +551,16 @@
                                         <rect key="frame" x="0.0" y="269" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KbD-gT-3Lx" id="M8f-xN-q1V">
-                                            <frame key="frameInset" width="600" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6E-pc-J95" userLabel="Chemistry Section">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testKit" translatesAutoresizingMaskIntoConstraints="NO" id="QsC-Tw-db3" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="64.5" height="64.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="QsC-Tw-db3" secondAttribute="height" multiplier="1:1" id="IvO-o0-VmQ"/>
                                                     </constraints>
@@ -570,14 +586,16 @@
                                         <rect key="frame" x="0.0" y="344" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uno-Of-Xi0" id="STB-Qn-AJv">
-                                            <frame key="frameInset" width="600" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Maintenance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5D-fO-gje" userLabel="Maintenance Section">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service" translatesAutoresizingMaskIntoConstraints="NO" id="j96-cJ-1yD" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="64.5" height="64.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="j96-cJ-1yD" secondAttribute="height" multiplier="1:1" id="4kL-7g-A2J"/>
                                                     </constraints>
@@ -603,15 +621,17 @@
                                         <rect key="frame" x="0.0" y="419" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KV2-nh-ONM" id="x96-26-05r">
-                                            <frame key="frameInset" width="600" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KG-Cz-ciB" userLabel="Gallery Section">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculator" translatesAutoresizingMaskIntoConstraints="NO" id="DpE-YR-7mP" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="64.5" height="64.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="DpE-YR-7mP" secondAttribute="height" multiplier="1:1" id="spU-f4-foQ"/>
                                                     </constraints>
@@ -637,14 +657,16 @@
                                         <rect key="frame" x="0.0" y="494" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ML0-Au-Q1F" id="o2Z-mJ-eDl">
-                                            <frame key="frameInset" width="600" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gve-Rb-c4H" userLabel="Planner Section">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planner" translatesAutoresizingMaskIntoConstraints="NO" id="h2R-TA-nLB" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="64.5" height="64.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="h2R-TA-nLB" secondAttribute="height" multiplier="1:1" id="51F-xB-TJP"/>
                                                     </constraints>
@@ -670,15 +692,17 @@
                                         <rect key="frame" x="0.0" y="569" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QjZ-EY-RBR" id="LSe-pd-Sg8">
-                                            <frame key="frameInset" width="600" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problems Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hM-bb-WjH" userLabel="Calculator Section">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallery" translatesAutoresizingMaskIntoConstraints="NO" id="vAQ-yL-7XN" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="64.5" height="64.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="vAQ-yL-7XN" secondAttribute="height" multiplier="1:1" id="UlE-qT-CBD"/>
                                                     </constraints>
@@ -704,15 +728,17 @@
                                         <rect key="frame" x="0.0" y="644" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e5i-dv-gUV" id="JT7-Zk-TAg">
-                                            <frame key="frameInset" width="600" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Chat!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9D-p2-foi" userLabel="Chat Section">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="74.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comments" translatesAutoresizingMaskIntoConstraints="NO" id="vLM-xO-aoo" userLabel="Section Image">
+                                                    <rect key="frame" x="20" y="5" width="64.5" height="64.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="vLM-xO-aoo" secondAttribute="height" multiplier="1:1" id="nKe-ah-MiY"/>
                                                     </constraints>
@@ -775,7 +801,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uTV-Ga-Q7w" userLabel="Equipment Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="Fcu-ru-uc1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Fcu-ru-uc1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -805,10 +831,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="k2r-aL-lGH">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ny-L1-Ot0">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -816,16 +842,18 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="05u-l4-VSK" id="4fA-ub-pnT">
-                                            <frame key="frameInset" width="600" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lvH-wg-BwM" userLabel="Chemical Image">
+                                                    <rect key="frame" x="20" y="10" width="64.5" height="64.5"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="lvH-wg-BwM" secondAttribute="height" multiplier="1:1" id="ucs-Js-a2p"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc6-lb-tvq" userLabel="Chemical Label">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="84.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -896,16 +924,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="Me4-k2-KkJ">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jnm-ex-TP6" userLabel="Ghost View">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZi-Sm-DI0" userLabel="Pool Buddy View">
-                                        <frame key="frameInset" width="600" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pool Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNF-lt-85t">
-                                                <frame key="frameInset" minX="30" width="570" height="30"/>
+                                                <rect key="frame" x="30" y="0.0" width="570" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="20"/>
                                                 <nil key="highlightedColor"/>
@@ -922,10 +950,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8tI-hg-jsB" userLabel="Top BG View">
-                                        <frame key="frameInset" minX="146" minY="60" width="188" height="188"/>
+                                        <rect key="frame" x="146" y="60" width="188" height="188"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="oxidizer" translatesAutoresizingMaskIntoConstraints="NO" id="qFN-tK-hQP">
-                                                <frame key="frameInset" width="188" height="188"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="188" height="188"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
@@ -941,7 +969,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chemical Safety" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gD4-Z5-kht">
-                                        <frame key="frameInset" minX="339" minY="114" width="103.5" height="30"/>
+                                        <rect key="frame" x="339" y="114" width="103.5" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Am5-Xf-nNy"/>
@@ -951,10 +979,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9iX-as-y3H" userLabel="Right BG View">
-                                        <frame key="frameInset" minX="339" minY="144" width="103.5" height="103.5"/>
+                                        <rect key="frame" x="339" y="144" width="103.5" height="103.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Chemical Safety" translatesAutoresizingMaskIntoConstraints="NO" id="mpF-Lr-Ahm">
-                                                <frame key="frameInset" width="103.5" height="103.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
@@ -969,7 +997,7 @@
                                         </constraints>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYD-wB-RTD">
-                                        <frame key="frameInset" minX="30" minY="268" width="540" height="238"/>
+                                        <rect key="frame" x="30" y="268" width="540" height="238"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
@@ -998,7 +1026,7 @@
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zf-tJ-NOK">
-                                <frame key="frameInset" minY="20" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Z3W-cE-Zbi"/>
                                 </constraints>
@@ -1066,10 +1094,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Nfk-cJ-lNF">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ynS-9c-AcL">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -1077,16 +1105,18 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CDd-Kk-Ej9" id="cF2-Rt-0QZ">
-                                            <frame key="frameInset" width="600" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5s9-ef-6Zk" userLabel="Chemistry Image">
+                                                    <rect key="frame" x="20" y="10" width="64.5" height="64.5"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="5s9-ef-6Zk" secondAttribute="height" multiplier="1:1" id="4io-MR-Sqt"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6D-qj-kSV" userLabel="Chemistry Label">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="84.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1156,17 +1186,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="rZ3-sa-gpE">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vap-5H-AWl" userLabel="Ghost View">
-                                <frame key="frameInset" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GFZ-lc-Kys" userLabel="Pool Buddy View">
-                                <frame key="frameInset" minY="64" width="600" height="30"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pool Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="940-T5-1uE">
-                                        <frame key="frameInset" minX="30" width="570" height="30"/>
+                                        <rect key="frame" x="30" y="0.0" width="570" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="20"/>
                                         <nil key="highlightedColor"/>
@@ -1183,14 +1213,14 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="aquachek" translatesAutoresizingMaskIntoConstraints="NO" id="ehv-cO-3Vb">
-                                <frame key="frameInset" minX="195" minY="124" width="210" height="210"/>
+                                <rect key="frame" x="195" y="124" width="210" height="210"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ehv-cO-3Vb" secondAttribute="height" multiplier="1:1" id="648-xz-QMj"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uq-4D-hRv">
-                                <frame key="frameInset" minX="30" minY="354" width="540" height="216"/>
+                                <rect key="frame" x="30" y="354" width="540" height="216"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
@@ -1263,10 +1293,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="u6U-ba-0Jz">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AZJ-7F-Mml">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -1274,13 +1304,15 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JUT-50-XjY" id="Vz8-xY-LxF">
-                                            <frame key="frameInset" width="600" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-at-1QI" userLabel="Tools Image">
+                                                    <rect key="frame" x="20" y="10" width="64.5" height="64.5"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ8-si-VT9" userLabel="Tools Label">
+                                                    <rect key="frame" x="104.5" y="0.0" width="495.5" height="84.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1351,16 +1383,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="AaC-ex-Pki">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xii-Go-pDy" userLabel="Ghost View">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wjm-kB-tKm" userLabel="Pool Buddy View">
-                                        <frame key="frameInset" width="600" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pool Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="orI-Aq-YoX">
-                                                <frame key="frameInset" minX="30" width="570" height="30"/>
+                                                <rect key="frame" x="30" y="0.0" width="570" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="20"/>
                                                 <nil key="highlightedColor"/>
@@ -1377,10 +1409,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P36-Lt-4zQ" userLabel="Top BG View">
-                                        <frame key="frameInset" minX="146" minY="50" width="188" height="188"/>
+                                        <rect key="frame" x="146" y="50" width="188" height="188"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="leafBagger" translatesAutoresizingMaskIntoConstraints="NO" id="1xi-0N-1iv">
-                                                <frame key="frameInset" width="188" height="188"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="188" height="188"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
@@ -1396,10 +1428,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-bf-hcY" userLabel="Right BG View">
-                                        <frame key="frameInset" minX="339" minY="134" width="103.5" height="103.5"/>
+                                        <rect key="frame" x="339" y="134" width="103.5" height="103.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="floatingChlorinator" translatesAutoresizingMaskIntoConstraints="NO" id="dM4-6F-hSe" userLabel="Right Image">
-                                                <frame key="frameInset" width="103.5" height="103.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
@@ -1412,14 +1444,14 @@
                                         </constraints>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXR-Ml-QXb">
-                                        <frame key="frameInset" minX="30" minY="258" width="540" height="248"/>
+                                        <rect key="frame" x="30" y="258" width="540" height="248"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cleaning Tools" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-Uo-FDs">
-                                        <frame key="frameInset" minX="339" minY="104" width="103.5" height="30"/>
+                                        <rect key="frame" x="339" y="104" width="103.5" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="COE-r5-eQl"/>
@@ -1451,7 +1483,7 @@
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6pj-o9-qsz">
-                                <frame key="frameInset" minY="20" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="hBV-yy-fnB"/>
                                 </constraints>
@@ -1500,22 +1532,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lk0-1Z-WxK" userLabel="BG View">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Qgg-x0-T0b">
-                                        <frame key="frameInset" width="600" height="536"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7La-98-Yjz">
-                                        <frame key="frameInset" minX="20" minY="237.5" width="560" height="278.5"/>
+                                        <rect key="frame" x="20" y="237.5" width="560" height="278.5"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dmZ-gO-vHX" userLabel="Content View">
-                                        <frame key="frameInset" minX="20" minY="20" width="560" height="187.5"/>
+                                        <rect key="frame" x="20" y="20" width="560" height="187.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuR-b0-AZx">
-                                                <frame key="frameInset" width="560" height="187.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="187.5"/>
                                                 <state key="normal" image="float">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1524,7 +1556,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap Here To See A Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n3q-4M-5I1">
-                                                <frame key="frameInset" minX="8" minY="154.5" width="252" height="25"/>
+                                                <rect key="frame" x="8" y="154.5" width="252" height="25"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="Ihq-fy-Ng7"/>
@@ -1607,16 +1639,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Bc3-FP-ZNi">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fununderwater" translatesAutoresizingMaskIntoConstraints="NO" id="xoG-10-jjJ">
-                                <frame key="frameInset" minX="20" minY="84" width="560" height="220"/>
+                                <rect key="frame" x="20" y="84" width="560" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="ZQp-JF-6et"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdX-uD-r4f">
-                                <frame key="frameInset" minX="20" minY="304" width="560" height="276"/>
+                                <rect key="frame" x="20" y="304" width="560" height="276"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Until you fall into a routine, we at A &amp; B Pools would like to start you off with the basics. You will find some default reminders that should be followed as best you can.
 
@@ -1679,13 +1711,13 @@ Good Luck!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="agZ-sv-Uhf">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-cc-kJH" userLabel="Content View">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K1q-Tx-hVL">
-                                        <frame key="frameInset" width="600" height="536"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
@@ -1693,18 +1725,18 @@ Good Luck!</string>
                                                 <rect key="frame" x="0.0" y="28" width="600" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M8r-81-BFM" id="KfQ-h0-qpN">
-                                                    <frame key="frameInset" width="533" height="99"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="533" height="99"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5JQ-f9-JOr">
-                                                            <frame key="frameInset" minX="15" minY="22" width="44" height="37"/>
+                                                            <rect key="frame" x="15" y="22" width="44" height="37"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="24"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="laC-Gu-eM5">
-                                                            <frame key="frameInset" minX="15" minY="59" width="49" height="19"/>
+                                                            <rect key="frame" x="15" y="59" width="49" height="19"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1781,10 +1813,10 @@ Good Luck!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="NZ0-a3-9OF">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bna-nA-QcG">
-                                <frame key="frameInset" width="600" height="64"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="DJC-id-T9r"/>
                                 </constraints>
@@ -1810,10 +1842,10 @@ Good Luck!</string>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0pM-lQ-osD" userLabel="ContentView">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BQJ-1m-Kqa">
-                                        <frame key="frameInset" minX="16" minY="88" width="568" height="70"/>
+                                        <rect key="frame" x="16" y="88" width="568" height="70"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="afB-YP-Mpm"/>
@@ -1822,6 +1854,7 @@ Good Luck!</string>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a79-ef-QVX">
+                                        <rect key="frame" x="10" y="195" width="90" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="07N-P2-v0e"/>
                                             <constraint firstAttribute="width" constant="90" id="d2H-Pz-2jK"/>
@@ -1831,11 +1864,12 @@ Good Luck!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="w7d-ok-BML">
-                                        <frame key="frameInset" minX="110" minY="193" width="474" height="30"/>
+                                        <rect key="frame" x="110" y="193" width="474" height="30"/>
                                         <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gq0-PG-VRG">
+                                        <rect key="frame" x="10" y="35" width="225" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="tQa-6C-8Wi"/>
                                             <constraint firstAttribute="width" constant="225" id="x9P-7F-Azq"/>
@@ -1845,7 +1879,7 @@ Good Luck!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gallery" translatesAutoresizingMaskIntoConstraints="NO" id="Ahr-NP-Bnu">
-                                        <frame key="frameInset" minX="185.5" minY="265" width="229" height="229"/>
+                                        <rect key="frame" x="185.5" y="265" width="229" height="229"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ahr-NP-Bnu" secondAttribute="height" multiplier="1:1" id="Ctp-PH-lj2"/>
                                         </constraints>
@@ -1908,10 +1942,10 @@ Good Luck!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="ger-fN-2JB">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BWf-6g-yUR">
-                                <frame key="frameInset" minX="20" minY="84" width="560" height="496"/>
+                                <rect key="frame" x="20" y="84" width="560" height="496"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="70S-hZ-fua">
                                     <size key="itemSize" width="135" height="90"/>
@@ -1927,8 +1961,11 @@ Good Luck!</string>
                                             <rect key="frame" x="0.0" y="0.0" width="135" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genmaint" translatesAutoresizingMaskIntoConstraints="NO" id="p0a-1Z-KTo"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genmaint" translatesAutoresizingMaskIntoConstraints="NO" id="p0a-1Z-KTo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="90"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At9-n0-e5X">
+                                                    <rect key="frame" x="0.0" y="65" width="135" height="25"/>
                                                     <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="d7w-eb-YfX"/>
@@ -2000,16 +2037,16 @@ Good Luck!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="xwa-T1-Uv3">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ytw-44-5rd" userLabel="Ghost View">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pOC-Jn-iQE" userLabel="Pool Buddy View">
-                                        <frame key="frameInset" width="600" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pool Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87D-e4-muM">
-                                                <frame key="frameInset" minX="30" width="570" height="30"/>
+                                                <rect key="frame" x="30" y="0.0" width="570" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="20"/>
                                                 <nil key="highlightedColor"/>
@@ -2027,14 +2064,14 @@ Good Luck!</string>
                                         </constraints>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-DE-Rpn">
-                                        <frame key="frameInset" minX="20" minY="214" width="560" height="292"/>
+                                        <rect key="frame" x="20" y="214" width="560" height="292"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="generalmaintenance" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-7R-mB9">
-                                        <frame key="frameInset" minX="105" minY="60" width="390" height="134"/>
+                                        <rect key="frame" x="105" y="60" width="390" height="134"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                 </subviews>
@@ -2054,7 +2091,7 @@ Good Luck!</string>
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="qsK-O3-cG2">
-                                <frame key="frameInset" minY="20" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Bej-RK-pSW"/>
@@ -2122,17 +2159,17 @@ Good Luck!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="LE8-se-Y9t">
-                                <frame key="frameInset" minY="65" width="600" height="535"/>
+                                <rect key="frame" x="0.0" y="65" width="600" height="535"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sa9-nq-o4h" userLabel="Ghost View">
-                                <frame key="frameInset" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Omx-MK-mag" userLabel="Pool Buddy View">
-                                <frame key="frameInset" minY="64" width="600" height="30"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pool Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OvX-Rp-5Wz">
-                                        <frame key="frameInset" minX="20" width="580" height="30"/>
+                                        <rect key="frame" x="20" y="0.0" width="580" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="20"/>
                                         <nil key="highlightedColor"/>
@@ -2149,21 +2186,21 @@ Good Luck!</string>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aFx-O5-KFO">
-                                <frame key="frameInset" minX="200" minY="124" width="200" height="200"/>
+                                <rect key="frame" x="200" y="124" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="SiR-W8-DTz"/>
                                     <constraint firstAttribute="width" constant="200" id="o7p-Ye-EPA"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwx-kb-7fo">
-                                <frame key="frameInset" minX="30" minY="344" width="540" height="226"/>
+                                <rect key="frame" x="30" y="344" width="540" height="226"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ApL-nM-nSe">
-                                <frame key="frameInset" minY="20" width="600" height="45"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="gaN-wo-sl2"/>
                                 </constraints>
@@ -2227,10 +2264,10 @@ Good Luck!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="2wF-id-hus">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="249" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wow-e0-d3v">
-                                <frame key="frameInset" minY="104" width="600" height="496"/>
+                                <rect key="frame" x="0.0" y="104" width="600" height="496"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="Tba-IV-wOj">
@@ -2247,8 +2284,11 @@ Good Luck!</string>
                                             <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="V1N-cD-2om" userLabel="Gallery Images"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="V1N-cD-2om" userLabel="Gallery Images">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="90"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IC3-zC-lVv">
+                                                    <rect key="frame" x="0.0" y="90" width="110" height="20"/>
                                                     <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="lT9-As-cHz"/>
@@ -2282,6 +2322,7 @@ Good Luck!</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pools with Colored Algae" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c21-P5-wwD">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                             <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="22"/>
                                             <nil key="highlightedColor"/>
@@ -2305,7 +2346,7 @@ Good Luck!</string>
                                 </connections>
                             </collectionView>
                             <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ND-Ly-aAv" userLabel="Search Container">
-                                <frame key="frameInset" minY="64" width="600" height="40"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="2Mb-1p-9Zf"/>
@@ -2407,7 +2448,7 @@ Good Luck!</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fPQ-QG-XKE" userLabel="Calculator Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="zS5-3q-uUM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="zS5-3q-uUM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2507,13 +2548,13 @@ Good Luck!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="jYe-Du-OJH">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41l-gQ-nUL" userLabel="ContentView">
-                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XWc-il-mbK">
-                                        <frame key="frameInset" minX="110" minY="188" width="474" height="35"/>
+                                        <rect key="frame" x="110" y="188" width="474" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="8y6-Yo-mHx"/>
                                         </constraints>
@@ -2521,7 +2562,7 @@ Good Luck!</string>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ynd-vx-YE7">
-                                        <frame key="frameInset" minX="16" minY="88" width="568" height="70"/>
+                                        <rect key="frame" x="16" y="88" width="568" height="70"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="jPb-vQ-rwp"/>
@@ -2531,6 +2572,7 @@ Good Luck!</string>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltc-7G-EKU">
+                                        <rect key="frame" x="10" y="191" width="90" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="90" id="Boa-Wb-T5o"/>
                                         </constraints>
@@ -2539,6 +2581,7 @@ Good Luck!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-Bl-KTi">
+                                        <rect key="frame" x="10" y="35" width="225" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Pw3-rj-D9g"/>
                                             <constraint firstAttribute="width" constant="225" id="fMt-Yb-gq6"/>
@@ -2548,7 +2591,7 @@ Good Luck!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gallery" translatesAutoresizingMaskIntoConstraints="NO" id="nUB-rq-cmQ">
-                                        <frame key="frameInset" minX="185.5" minY="265" width="229" height="229"/>
+                                        <rect key="frame" x="185.5" y="265" width="229" height="229"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="nUB-rq-cmQ" secondAttribute="height" multiplier="1:1" id="Qk5-7i-1Vd"/>
                                             <constraint firstAttribute="width" secondItem="nUB-rq-cmQ" secondAttribute="height" multiplier="1:1" id="wBB-6s-saw"/>

@@ -38,31 +38,31 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
 
     // MARK: - UITableViewDataSource
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let poolCategory = waterChemistry[section]
         return poolCategory.group
     }
     
     // Changes header BG color and text color
-    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         // Background color
         view.tintColor = UIColor.init(red: 64/255, green: 224/255, blue: 208/255, alpha: 1.0)
         // Text Color
         let header: UITableViewHeaderFooterView = (view as! UITableViewHeaderFooterView)
-        header.textLabel!.textColor = UIColor.blackColor()
+        header.textLabel!.textColor = UIColor.black
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return waterChemistry.count
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let poolCategory = waterChemistry[section]
         return poolCategory.products.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(chemistry, forIndexPath: indexPath) as! WaterChemTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: chemistry, for: indexPath) as! WaterChemTableViewCell
         
         let poolCategory = waterChemistry[indexPath.section]
         let product = poolCategory.products[indexPath.row]
@@ -76,11 +76,11 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     // MARK: - Navigation
     
     // Passing data
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Accessing segue by calling the segue identifier
         if segue.identifier == wChemSegue {
-            let destination = segue.destinationViewController as! WaterChemDetailVC
-            if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell) {
+            let destination = segue.destination as! WaterChemDetailVC
+            if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
                 let poolCategory = waterChemistry[indexPath.section]
                 let product = poolCategory.products[indexPath.row]
                 

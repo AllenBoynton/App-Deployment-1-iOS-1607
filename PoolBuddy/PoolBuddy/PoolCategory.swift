@@ -10,8 +10,8 @@ import Foundation
 
 class PoolCategory {
     // Stored properties
-    private var _group: String!
-    private var _products: [PoolData]
+    fileprivate var _group: String!
+    fileprivate var _products: [PoolData]
     
     var group: String {
         return _group
@@ -57,7 +57,7 @@ class PoolCategory {
     // Methods for each sub-category of the menu categories
     
     // All rows within the Filter category
-    private class func poolFilters() -> PoolCategory {
+    fileprivate class func poolFilters() -> PoolCategory {
         
         var products = [PoolData]()
         
@@ -71,7 +71,7 @@ class PoolCategory {
     }
     
     // All rows within the Pump category
-    private class func poolPumps() -> PoolCategory {
+    fileprivate class func poolPumps() -> PoolCategory {
         
         var products = [PoolData]()
         
@@ -83,7 +83,7 @@ class PoolCategory {
     }
     
     // All rows within the Equipment category
-    private class func poolEquip() -> PoolCategory {
+    fileprivate class func poolEquip() -> PoolCategory {
         
         var products = [PoolData]()
         
@@ -105,7 +105,7 @@ class PoolCategory {
     }
     
     // All rows within the Maintenance Equipment category
-    private class func cleaningEquipment() -> PoolCategory {
+    fileprivate class func cleaningEquipment() -> PoolCategory {
         
         var products = [PoolData]()
         
@@ -131,7 +131,7 @@ class PoolCategory {
     }
     
     // All rows within the Chemical Safety category
-    private class func chemicalSafety() -> PoolCategory {
+    fileprivate class func chemicalSafety() -> PoolCategory {
         
         var products = [PoolData]()
         
@@ -141,7 +141,7 @@ class PoolCategory {
     }
 
     // All rows within the Chlorine category
-    private class func chlorineTypes() -> PoolCategory {
+    fileprivate class func chlorineTypes() -> PoolCategory {
         
         var products = [PoolData]()
         
@@ -155,7 +155,7 @@ class PoolCategory {
     }
     
     // All rows within the Chemicals category
-    private class func poolChemicals() -> PoolCategory {
+    fileprivate class func poolChemicals() -> PoolCategory {
         
         var products = [PoolData]()
         
@@ -188,7 +188,7 @@ class PoolCategory {
     }
     
     // All rows within the Water Chemistry category
-    private class func waterChemistry() -> PoolCategory {
+    fileprivate class func waterChemistry() -> PoolCategory {
         
         var products = [PoolData]()
         
@@ -214,7 +214,7 @@ class PoolCategory {
     }
     
     // All rows within the Maintenance category
-    private class func poolMaintenance() -> PoolCategory {
+    fileprivate class func poolMaintenance() -> PoolCategory {
         
         var products = [PoolData]()
         

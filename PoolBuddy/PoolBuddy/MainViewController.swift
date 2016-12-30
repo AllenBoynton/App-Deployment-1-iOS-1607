@@ -55,9 +55,9 @@ class MainViewController: UIViewController {
     // Sound files
     func prepareAudios() {
         
-        let path1 = NSBundle.mainBundle().pathForResource("splash.mp3", ofType: nil)!
+        let path1 = Bundle.main.path(forResource: "splash.mp3", ofType: nil)!
         do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path1))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path1))
             audioPlayer.prepareToPlay()
         }
         catch let err as NSError {
@@ -65,7 +65,7 @@ class MainViewController: UIViewController {
         }
     }
 
-    @IBAction func menuButton(sender: UIBarButtonItem) {
+    @IBAction func menuButton(_ sender: UIBarButtonItem) {
         // Play sound effect
         audioPlayer.play()
     }

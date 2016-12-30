@@ -9,9 +9,9 @@
 import Foundation
 
 class Problems {
-    private var _title: String!
-    private var _image: String!
-    private var _solution: String!
+    fileprivate var _title: String!
+    fileprivate var _image: String!
+    fileprivate var _solution: String!
     
     var title: String {
         return _title

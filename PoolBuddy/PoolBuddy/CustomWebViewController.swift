@@ -13,27 +13,27 @@ import SafariServices
 class CustomWebViewController: UIViewController {
     
     var urlString:String?
-    private var webView:UIWebView!
+    fileprivate var webView:UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         webView = UIWebView(frame: self.view.frame)
-        var url:NSURL
+        var url:URL
         
         if let desiredURL = urlString {
-            url = NSURL(string: desiredURL)!
+            url = URL(string: desiredURL)!
         } else {
-            url = NSURL(string: "https://www.youtube.com/watch?v=vMpJGdhrO08")!
+            url = URL(string: "https://www.youtube.com/watch?v=vMpJGdhrO08")!
         }
         
-        webView.loadRequest(NSURLRequest(URL: url))
+        webView.loadRequest(URLRequest(url: url))
         self.view.addSubview(webView)
     }
 
     //Closes the browser and dismisses this view controller.
-    @IBAction func close(sender: AnyObject)
+    @IBAction func close(_ sender: AnyObject)
     {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }

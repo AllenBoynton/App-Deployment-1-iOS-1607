@@ -55,9 +55,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             searchController.dimsBackgroundDuringPresentation = false
 
             // Setup the search bar
-            searchController.searchBar.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+            searchController.searchBar.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
             self.searchBarContainer.addSubview(searchController.searchBar)
-            searchController.searchBar.returnKeyType = UIReturnKeyType.Done
+            searchController.searchBar.returnKeyType = UIReturnKeyType.done
             
             // SearchBar delegate
             searchController.searchBar.delegate = self
@@ -69,12 +69,12 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         })()
     }
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         print("Section: \(poolGallery.count)")
         return poolGallery.count
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if inSearchMode {
             return filteredPools.count
         }
@@ -83,31 +83,31 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         return poolProblems.solutions.count
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSizeMake(110, 110)
+        return CGSize(width: 110, height: 110)
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
         return UIEdgeInsetsMake(11, 11, 11, 11)
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
         return 11.0
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
         return 11.0
     }
     
     // MARK: UICollectionViewDataSource
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(photo, forIndexPath: indexPath) as? GalleryCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: photo, for: indexPath) as? GalleryCell {
             
             if inSearchMode {
                 let solutions = filteredPools[indexPath.row]
@@ -136,8 +136,8 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     // MARK: Header protocol
     
     // Create view for header using supplementary view: CollectionReusableView
-    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: cellHeader, forIndexPath: indexPath) as! HeaderReusableView
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: cellHeader, for: indexPath) as! HeaderReusableView
         
         // Sourcing data from datasource within poolsingroup to isolate the group protocol
         let poolProblems = poolGallery[indexPath.section]
@@ -150,7 +150,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     // Search bar attributes
     
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         view.endEditing(true)
         // Clear any search criteria
         searchController.searchBar.text = ""
@@ -162,16 +162,16 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     //MARK: - UISearchBarDelegate
     
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchController.searchBar.text == nil || searchController.searchBar.text == "" {
             inSearchMode = false
             view.endEditing(true)
             collectionView.reloadData()
         } else {
             inSearchMode = true
-            let lower = searchController.searchBar.text!.lowercaseString
+            let lower = searchController.searchBar.text!.lowercased()
             
-            filteredPools = problems.filter({$0.image.rangeOfString(lower) != nil})
+            filteredPools = problems.filter({$0.image.range(of: lower) != nil})
             collectionView.reloadData()
         }
     }
@@ -179,19 +179,19 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
 
     // MARK: - UIScrollViewDelegate
     
-    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         // Dismiss the keyboard if the search results are scrolled
         searchController?.searchBar.resignFirstResponder()
     }
     
 
     // MARK: Segue to details
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == gallerySegue {
-            let destination = segue.destinationViewController as! GalleryDetailVC
-            if let indexPath = collectionView.indexPathForCell(sender as! UICollectionViewCell) {
+            let destination = segue.destination as! GalleryDetailVC
+            if let indexPath = collectionView.indexPath(for: sender as! UICollectionViewCell) {
                 let problems: Problems
-                if searchController.active && searchController.searchBar.text != "" {
+                if searchController.isActive && searchController.searchBar.text != "" {
                     problems = filteredPools[indexPath.row]
                 } else {
                     let poolProblems = poolGallery[indexPath.section]
@@ -204,9 +204,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
     }
     
-    func filterContentForSearchText(searchText: String) {
+    func filterContentForSearchText(_ searchText: String) {
         filteredPools = problems.filter { data in
-            return data.title.lowercaseString.containsString(searchText.lowercaseString)
+            return data.title.lowercased().contains(searchText.lowercased())
         }
         collectionView.reloadData()
     }
@@ -215,7 +215,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
 // This class extension allows for the array to be of different counts due to search results
 extension GalleryViewController: UISearchResultsUpdating {
     
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
+    func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)
         self.collectionView.reloadData()
     }

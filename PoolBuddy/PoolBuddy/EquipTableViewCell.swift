@@ -19,7 +19,7 @@ class EquipTableViewCell: UITableViewCell {
         super.init(coder: aDecoder)
     }
     
-    func configureCell(poolData: PoolData) {
+    func configureCell(_ poolData: PoolData) {
         self.poolData = poolData
         
         equipmentImage.image = UIImage(named: "\(self.poolData.image)")

@@ -21,13 +21,13 @@ class MaintenanceCell: UICollectionViewCell {
         
         layer.cornerRadius = 3.0
         layer.borderWidth = 1
-        layer.borderColor = UIColor.blackColor().CGColor
+        layer.borderColor = UIColor.black.cgColor
     }
     
-    func configureCell(poolData: PoolData) {
+    func configureCell(_ poolData: PoolData) {
         self.poolData = poolData
         
         maintenanceImage.image = UIImage(named: "\(self.poolData.image)")
-        maintenanceLabel.text = self.poolData.label.capitalizedString
+        maintenanceLabel.text = self.poolData.label.capitalized
     }
 }

@@ -28,7 +28,7 @@ class GalleryDetailVC: UIViewController {
                 
         poolImage.layer.cornerRadius = 4
         poolImage.layer.borderWidth = 2
-        poolImage.layer.borderColor = UIColor.blackColor().CGColor
+        poolImage.layer.borderColor = UIColor.black.cgColor
         
         poolDescription.font = UIFont(name: "KittenSlant", size: 22)
         

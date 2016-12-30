@@ -20,19 +20,19 @@ class GalleryCell: UICollectionViewCell {
         
         layer.cornerRadius = 3.0
         layer.borderWidth = 1
-        layer.borderColor = UIColor.blackColor().CGColor
+        layer.borderColor = UIColor.black.cgColor
     }
     
-    func configureCell(problems: Problems) {
+    func configureCell(_ problems: Problems) {
         self.problems = problems
         
         galleryImages.image = UIImage(named: "\(self.problems.image)")
-        imageLabel.text = self.problems.title.capitalizedString
+        imageLabel.text = self.problems.title.capitalized
     }
 }
 
 class InsetLabel: UILabel {
-    override func drawTextInRect(rect: CGRect) {
-        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 10)))
+    override func drawText(in rect: CGRect) {
+        super.drawText(in: UIEdgeInsetsInsetRect(rect, UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 10)))
     }
 }

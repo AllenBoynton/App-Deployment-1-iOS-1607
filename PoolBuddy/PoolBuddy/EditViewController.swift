@@ -29,78 +29,78 @@ class EditViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.automaticallyAdjustsScrollViewInsets = false
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         self.eventStore = EKEventStore()
         self.reminders = [EKReminder]()
-        self.eventStore.requestAccessToEntityType(EKEntityType.Reminder) { (granted: Bool, error: NSError?) -> Void in
+        self.eventStore.requestAccess(to: EKEntityType.reminder) { (granted: Bool, error: NSError?) -> Void in
             
             if granted{
                 
-                let predicate = self.eventStore.predicateForRemindersInCalendars(nil)
-                self.eventStore.fetchRemindersMatchingPredicate(predicate, completion: { (reminders: [EKReminder]?) -> Void in
+                let predicate = self.eventStore.predicateForReminders(in: nil)
+                self.eventStore.fetchReminders(matching: predicate, completion: { (reminders: [EKReminder]?) -> Void in
                     
                     self.reminders = reminders
-                    dispatch_async(dispatch_get_main_queue()) {
+                    DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
                 })
             } else {
                 print("The app is not permitted to access reminders, make sure to grant permission in the settings and try again")
             }
-        }
+        } as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler
     }
 
-    func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         self.selectedReminder = self.reminders[indexPath.row]
-        self.performSegueWithIdentifier("ShowReminderDetails", sender: self)
+        self.performSegue(withIdentifier: "ShowReminderDetails", sender: self)
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.reminders.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell:UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("reminderCell")
+        let cell:UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "reminderCell")
         let reminder:EKReminder! = self.reminders![indexPath.row]
         cell.textLabel?.text = reminder.title
-        let formatter:NSDateFormatter = NSDateFormatter()
+        let formatter:DateFormatter = DateFormatter()
         formatter.dateFormat = "MM-dd-yyyy"
-        if let dueDate = reminder.dueDateComponents?.date{
-            cell.detailTextLabel?.text = formatter.stringFromDate(dueDate)
+        if let dueDate = (reminder.dueDateComponents as NSDateComponents?)?.date{
+            cell.detailTextLabel?.text = formatter.string(from: dueDate)
         }else{
             cell.detailTextLabel?.text = "N/A"
         }
         return cell
     }
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         let reminder: EKReminder = reminders[indexPath.row]
         do{
-            try eventStore.removeReminder(reminder, commit: true)
-            self.reminders.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
+            try eventStore.remove(reminder, commit: true)
+            self.reminders.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
         }catch{
             print("An error occurred while removing the reminder from the Calendar database: \(error)")
         }        
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowReminderDetails"{
-            let reminderDetailsVC = segue.destinationViewController as! ReminderDetailsVC
+            let reminderDetailsVC = segue.destination as! ReminderDetailsVC
             reminderDetailsVC.reminder = self.selectedReminder
             reminderDetailsVC.eventStore = eventStore
         }else{
-            let newReminderVC = segue.destinationViewController as! NewReminderVC
+            let newReminderVC = segue.destination as! NewReminderVC
             newReminderVC.eventStore = eventStore
         }
     }
     
-    @IBAction func editTable(sender: AnyObject) {
-        tableView.editing = !tableView.editing
-        if tableView.editing{
+    @IBAction func editTable(_ sender: AnyObject) {
+        tableView.isEditing = !tableView.isEditing
+        if tableView.isEditing{
             tableView.setEditing(true, animated: true)
         }else{
             tableView.setEditing(false, animated: true)

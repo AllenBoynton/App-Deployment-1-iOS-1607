@@ -28,18 +28,18 @@ class ReminderDetailsVC: UIViewController {
         
         dateTextField.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
         dateTextField.layer.borderWidth = 2
-        dateTextField.layer.borderColor = UIColor.blackColor().CGColor
+        dateTextField.layer.borderColor = UIColor.black.cgColor
                 
         self.reminderTextView?.text = self.reminder.title
         datePicker = UIDatePicker()
-        datePicker.addTarget(self, action: #selector(ReminderDetailsVC.addDate), forControlEvents: UIControlEvents.ValueChanged)
-        datePicker.datePickerMode = UIDatePickerMode.DateAndTime
+        datePicker.addTarget(self, action: #selector(ReminderDetailsVC.addDate), for: UIControlEvents.valueChanged)
+        datePicker.datePickerMode = UIDatePickerMode.dateAndTime
         dateTextField.inputView = datePicker
         
         reminderTextView.becomeFirstResponder()
         reminderTextView.layer.cornerRadius = 3
         reminderTextView.layer.borderWidth = 2
-        reminderTextView.layer.borderColor = UIColor.blackColor().CGColor
+        reminderTextView.layer.borderColor = UIColor.black.cgColor
     }
     
     func addDate(){
@@ -47,15 +47,15 @@ class ReminderDetailsVC: UIViewController {
     }
     
     // Action to save reminders
-    @IBAction func saveReminder(sender: AnyObject) {
+    @IBAction func saveReminder(_ sender: AnyObject) {
         self.reminder.title = reminderTextView.text
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let dueDateComponents = appDelegate.dateComponentFromNSDate(self.datePicker.date)
         reminder.dueDateComponents = dueDateComponents
         reminder.calendar = self.eventStore.defaultCalendarForNewReminders()
         do {
-            try self.eventStore.saveReminder(reminder, commit: true)
-            self.navigationController?.popToRootViewControllerAnimated(true)
+            try self.eventStore.save(reminder, commit: true)
+            self.navigationController?.popToRootViewController(animated: true)
         }catch{
             print("Error creating and saving new reminder : \(error)")
         }

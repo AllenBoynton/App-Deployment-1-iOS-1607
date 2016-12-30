@@ -26,41 +26,41 @@ class NewReminderVC: UIViewController {
         dateTextField.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
         
         dateTextField.layer.borderWidth = 2
-        dateTextField.layer.borderColor = UIColor.blackColor().CGColor
+        dateTextField.layer.borderColor = UIColor.black.cgColor
         
         datePicker = UIDatePicker()
-        datePicker.addTarget(self, action: #selector(NewReminderVC.addDate), forControlEvents: UIControlEvents.ValueChanged)
-        datePicker.datePickerMode = UIDatePickerMode.DateAndTime
+        datePicker.addTarget(self, action: #selector(NewReminderVC.addDate), for: UIControlEvents.valueChanged)
+        datePicker.datePickerMode = UIDatePickerMode.dateAndTime
         dateTextField.inputView = datePicker
         
         reminderTextView.becomeFirstResponder()
         reminderTextView.layer.cornerRadius = 3
         reminderTextView.layer.borderWidth = 2
-        reminderTextView.layer.borderColor = UIColor.blackColor().CGColor
+        reminderTextView.layer.borderColor = UIColor.black.cgColor
     }
     
     func addDate(){
         self.dateTextField.text = self.datePicker.date.description
     }
     
-    @IBAction func saveNewReminder(sender: AnyObject) {
+    @IBAction func saveNewReminder(_ sender: AnyObject) {
         // 1
         let reminder = EKReminder(eventStore: self.eventStore)
         reminder.title = reminderTextView.text
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let dueDateComponents = appDelegate.dateComponentFromNSDate(self.datePicker.date)
         reminder.dueDateComponents = dueDateComponents
         reminder.calendar = self.eventStore.defaultCalendarForNewReminders()
         // 2
         do {
-            try self.eventStore.saveReminder(reminder, commit: true)
-            dismissViewControllerAnimated(true, completion: nil)
+            try self.eventStore.save(reminder, commit: true)
+            self.dismiss(animated: true, completion: nil)
         }catch{
             print("Error creating and saving new reminder : \(error)")
         }
     }
     
-    @IBAction func dismiss(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func dismiss(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

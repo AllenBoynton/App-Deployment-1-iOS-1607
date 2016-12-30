@@ -20,7 +20,7 @@ class WaterChemTableViewCell: UITableViewCell {
         super.init(coder: aDecoder)
     }
     
-    func configureCell(poolData: PoolData) {
+    func configureCell(_ poolData: PoolData) {
         self.poolData = poolData
         
         wChemistryImage.image = UIImage(named: "\(self.poolData.image)")

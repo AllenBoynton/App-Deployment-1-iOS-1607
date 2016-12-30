@@ -44,17 +44,17 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     
     // MARK: UICollectionViewDataSource
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return poolMaintenance.count
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let poolCategory = poolMaintenance[section]
         return poolCategory.products.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(maintenance, forIndexPath: indexPath) as? MaintenanceCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: maintenance, for: indexPath) as? MaintenanceCell {
             
             let poolCategory = poolMaintenance[indexPath.section]
             let product = poolCategory.products[indexPath.row]
@@ -71,11 +71,11 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     // MARK: - Navigation
     
     // Passing data
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Accessing segue by calling the segue identifier
         if segue.identifier == maintSegue {
-            let destination = segue.destinationViewController as! MaintenanceDetailVC
-            if let indexPath = collectionView.indexPathForCell(sender as! UICollectionViewCell) {
+            let destination = segue.destination as! MaintenanceDetailVC
+            if let indexPath = collectionView.indexPath(for: sender as! UICollectionViewCell) {
 
                 let poolCategory = poolMaintenance[indexPath.section]
                 let product = poolCategory.products[indexPath.row]

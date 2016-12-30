@@ -29,7 +29,7 @@ class PoolProblems {
     
     
     // All rows within the Gallery category
-    private class func poolAlgae() -> PoolProblems {
+    fileprivate class func poolAlgae() -> PoolProblems {
         
         var solutions = [Problems]()
         
@@ -44,7 +44,7 @@ class PoolProblems {
     
     
     // All rows within the Gallery category
-    private class func poolMetals() -> PoolProblems {
+    fileprivate class func poolMetals() -> PoolProblems {
         
         var solutions = [Problems]()
         
@@ -63,7 +63,7 @@ class PoolProblems {
     
     
     // All rows within the Gallery category
-    private class func poolOrganics() -> PoolProblems {
+    fileprivate class func poolOrganics() -> PoolProblems {
         
         var solutions = [Problems]()
         
@@ -78,7 +78,7 @@ class PoolProblems {
     
     
     // All rows within the Gallery category
-    private class func poolDirt() -> PoolProblems {
+    fileprivate class func poolDirt() -> PoolProblems {
         
         var solutions = [Problems]()
         
