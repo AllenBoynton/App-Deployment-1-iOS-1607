@@ -48,7 +48,7 @@ class EditViewController: UIViewController, UITableViewDataSource, UITableViewDe
             } else {
                 print("The app is not permitted to access reminders, make sure to grant permission in the settings and try again")
             }
-        } as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler
+        } as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler
     }
 
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {

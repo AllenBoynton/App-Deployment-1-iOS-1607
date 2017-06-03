@@ -62,14 +62,20 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cleaningTools, for: indexPath) as! CleaningToolsTableViewCell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cleaningTools, for: indexPath) as? CategoryViewCell {
         
-        let poolCategory = maintenanceEquipment[indexPath.section]
-        let product = poolCategory.products[indexPath.row]
-        
-        let poolData = PoolData(label: product.label, image: product.image, label2: product.label2, image2: product.image2, description: product.description)
-        cell.configureCell(poolData)
-        return cell
+            let poolCategory = maintenanceEquipment[indexPath.section]
+            let product = poolCategory.products[indexPath.row]
+            
+            let poolData = PoolData(label: product.label, image: product.image, label2: product.label2, image2: product.image2, description: product.description)
+            cell.configureCell(poolData)
+            
+            return cell
+            
+        } else {
+            
+            return CategoryViewCell()
+        }
     }
     
     
@@ -79,7 +85,7 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Accessing segue by calling the segue identifier
         if segue.identifier == toolSegue {
-            let destination = segue.destination as! CleaningToolsDetailVC
+            let destination = segue.destination as! CategoryDetailsVC
             if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
         
                 let poolCategory = maintenanceEquipment[indexPath.section]

@@ -9,7 +9,7 @@
 import UIKit
 
 
-class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     // MARK: - Data Source
     
@@ -66,6 +66,15 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         } else {
             return UICollectionViewCell()
         }
+    }
+    
+    // MARK: - UICollectionViewDataSource
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let itemWidth: CGFloat = collectionView.frame.width / 2.0 - 10.0 // 4 wide
+        
+        return CGSize(width: itemWidth, height: itemWidth)
     }
 
     // MARK: - Navigation

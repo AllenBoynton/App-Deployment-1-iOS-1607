@@ -70,7 +70,7 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: equipment, for: indexPath) as! EquipTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: equipment, for: indexPath) as! CategoryViewCell
                 
         let poolCategory = poolEquipment[indexPath.section]
         let product = poolCategory.products[indexPath.row]
@@ -87,7 +87,20 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Accessing segue by calling the segue identifier
         if segue.identifier == equipSegue {
-            let destination = segue.destination as! EquipmentDetailVC
+            let destination = segue.destination as! CategoryDetailsVC
+            if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
+                
+                let poolCategory = poolEquipment[indexPath.section]
+                let product = poolCategory.products[indexPath.row]
+                
+                destination.label = product.label
+                destination.image = UIImage(named: product.image)
+                destination.label2 = product.label2
+                destination.image2 = UIImage(named: product.image2)
+                destination.descriptions = product.description
+            }
+        } else if segue.identifier == toolSegue {
+            let destination = segue.destination as! CategoryDetailsVC
             if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
                 
                 let poolCategory = poolEquipment[indexPath.section]

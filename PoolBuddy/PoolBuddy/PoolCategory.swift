@@ -9,11 +9,15 @@
 import Foundation
 
 class PoolCategory {
+    
     // Stored properties
     fileprivate var _group: String!
     fileprivate var _products: [PoolData]
     
     var group: String {
+        if _group == nil {
+            _group = ""
+        }
         return _group
     }
     

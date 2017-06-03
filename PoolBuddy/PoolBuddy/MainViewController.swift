@@ -22,10 +22,8 @@ let maintenance = "maint_cell"
 let maintSegue = "toDetailVC"
 let reminders = "reminderCell"
 let planner = "planner"
-let calculator = "calculator"
 let photo = "photoCell"
 let gallerySegue = "gallerySegue"
-let chat = "chat"
 let cellHeader = "header"
 
 

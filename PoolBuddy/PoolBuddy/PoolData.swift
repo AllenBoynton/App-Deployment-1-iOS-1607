@@ -18,6 +18,9 @@ class PoolData {
     fileprivate var _description: String!
     
     var label: String {
+        if _label == nil {
+            _label = ""
+        }
         return _label
     }
     

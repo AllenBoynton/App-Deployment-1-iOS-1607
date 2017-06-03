@@ -11,12 +11,13 @@ import Foundation
 class PoolProblems {
     
     // Stored properties
-    var gallery: String!
-    var solutions: [Problems]
+    fileprivate var _gallery: String!
+    fileprivate var _solutions: [Problems]
+    
     
     init(gallery: String, problem: [Problems]) {
-        self.gallery = gallery
-        self.solutions = problem
+        self._gallery = gallery
+        self._solutions = problem
     }
     
     
