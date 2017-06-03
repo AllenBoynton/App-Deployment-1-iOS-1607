@@ -21,6 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
+            statusBar.backgroundColor = UIColor.white
+        }
+        UIApplication.shared.statusBarStyle = .lightContent
 
         let navigationBarAppearace = UINavigationBar.appearance()
         
@@ -34,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let toolBar = UIToolbar.appearance()
         
-        toolBar.barTintColor = UIColor.black // Toolbar's color
+        toolBar.barTintColor = UIColor.white // Toolbar's color
         
         return true
     }

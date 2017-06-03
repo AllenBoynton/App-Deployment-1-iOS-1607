@@ -55,13 +55,14 @@ class MainViewController: UIViewController {
     // Sound files
     func prepareAudios() {
         
-        let path1 = Bundle.main.path(forResource: "splash.mp3", ofType: nil)!
+        let path1 = Bundle.main.path(forResource: "splash", ofType: "mp3")!
+        
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path1))
             audioPlayer.prepareToPlay()
         }
         catch let err as NSError {
-            print("Something bad happened \(err). Try catching specific errors to narrow things down")
+            print("audioPlayer error \(err.localizedDescription)")
         }
     }
 

@@ -10,6 +10,7 @@ import UIKit
 
 class EquipTableViewCell: UITableViewCell {
     
+    // Outlets for table view screen
     @IBOutlet weak var equipmentImage: UIImageView!
     @IBOutlet weak var equipmentLabel: UILabel!
     
