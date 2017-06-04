@@ -82,7 +82,7 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     // Passing data
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Accessing segue by calling the segue identifier
-        if segue.identifier == maintSegue {
+        if segue.identifier == toDetailVC {
             let destination = segue.destination as! MaintenanceDetailVC
             if let indexPath = collectionView.indexPath(for: sender as! UICollectionViewCell) {
 

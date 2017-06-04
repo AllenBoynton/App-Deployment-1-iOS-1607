@@ -54,6 +54,7 @@
 		0997EDB21D4FEB230040D354 /* CustomWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997EDB11D4FEB230040D354 /* CustomWebViewController.swift */; };
 		09DDBDE71D514C26005CB74F /* splash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09DDBDE61D514C26005CB74F /* splash.mp3 */; };
 		09DDBDE91D5162AC005CB74F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09DDBDE81D5162AC005CB74F /* AVFoundation.framework */; };
+		0EDBA26F19798933DC108830 /* Pods_PoolBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD68EB4371AECBC15D6BCDB9 /* Pods_PoolBuddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +112,7 @@
 		09DDBDE61D514C26005CB74F /* splash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = splash.mp3; sourceTree = "<group>"; };
 		09DDBDE81D5162AC005CB74F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C38C8472777C383D75137C8C /* Pods-PoolBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		CD68EB4371AECBC15D6BCDB9 /* Pods_PoolBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66F71243FA1F37067EE3835 /* Pods-PoolBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolBuddy/Pods-PoolBuddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 				093D4E011D4D1DA900694C28 /* EventKit.framework in Frameworks */,
 				099383AC1D493DDA00085A3E /* Alamofire.framework in Frameworks */,
 				099383A81D493B7D00085A3E /* CoreLocation.framework in Frameworks */,
+				0EDBA26F19798933DC108830 /* Pods_PoolBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +302,7 @@
 				0940F55B1D2B078500BFA91C /* MessageUI.framework */,
 				0940F5451D2AC28F00BFA91C /* EventKit.framework */,
 				099071551D26FA7F00477EA2 /* WebKit.framework */,
+				CD68EB4371AECBC15D6BCDB9 /* Pods_PoolBuddy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -446,7 +450,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6E3840E4B33ABDC0C4347881 /* [CP] Embed Pods Frameworks */ = {

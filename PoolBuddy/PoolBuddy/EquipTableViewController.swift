@@ -86,7 +86,7 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
     // Passing data
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Accessing segue by calling the segue identifier
-        if segue.identifier == equipSegue {
+        if segue.identifier == toDetailVC {
             let destination = segue.destination as! EquipmentDetailVC
             if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
                 

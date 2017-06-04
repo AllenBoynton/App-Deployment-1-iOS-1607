@@ -78,7 +78,7 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
     // Passing data
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Accessing segue by calling the segue identifier
-        if segue.identifier == toolSegue {
+        if segue.identifier == toDetailVC {
             let destination = segue.destination as! CleaningToolsDetailVC
             if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
         

@@ -33,12 +33,12 @@ class EditViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         self.eventStore = EKEventStore()
         self.reminders = [EKReminder]()
-        self.eventStore.requestAccess(to: EKEntityType.reminder) { (granted: Bool, error: NSError?) -> Void in
+        self.eventStore.requestAccess(to: EKEntityType.reminder, completion: {(granted, error) in
             
-            if granted{
+                if !granted {
                 
-                let predicate = self.eventStore.predicateForReminders(in: nil)
-                self.eventStore.fetchReminders(matching: predicate, completion: { (reminders: [EKReminder]?) -> Void in
+                    let predicate = self.eventStore.predicateForReminders(in: nil)
+                    self.eventStore.fetchReminders(matching: predicate, completion: { (reminders: [EKReminder]?) -> Void in
                     
                     self.reminders = reminders
                     DispatchQueue.main.async {
@@ -48,7 +48,7 @@ class EditViewController: UIViewController, UITableViewDataSource, UITableViewDe
             } else {
                 print("The app is not permitted to access reminders, make sure to grant permission in the settings and try again")
             }
-        } as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler as! EKEventStoreRequestAccessCompletionHandler
+        })
     }
 
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {

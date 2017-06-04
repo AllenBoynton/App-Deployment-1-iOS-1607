@@ -333,7 +333,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pool Buddy" id="Hrn-MM-Elh">
-                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="dXp-08-VkH">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="dXp-08-VkH">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="menuButton:" destination="BYZ-38-t0r" id="jEa-bJ-x07"/>
@@ -2525,6 +2525,7 @@ Good Luck!</string>
         <image name="genmaint" width="308" height="164"/>
         <image name="home" width="22" height="22"/>
         <image name="leafBagger" width="450" height="450"/>
+        <image name="menu" width="22" height="22"/>
         <image name="oxidizer" width="600" height="600"/>
         <image name="perflex" width="250" height="250"/>
         <image name="planner" width="140" height="140"/>

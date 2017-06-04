@@ -78,7 +78,7 @@ class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     // Passing data
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Accessing segue by calling the segue identifier
-        if segue.identifier == chemSegue {
+        if segue.identifier == toDetailVC {
             let destination = segue.destination as! ChemicalDetailVC
             if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
                 

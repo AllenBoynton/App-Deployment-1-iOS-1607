@@ -11,15 +11,11 @@ import AVFoundation
 
 // Global Identifiers
 let equipment = "equipment_cell"
-let equipSegue = "toDetailVC"
+let toDetailVC = "toDetailVC"
 let cleaningTools = "tools_cell"
-let toolSegue = "toDetailVC"
 let chemicals = "chemical_cell"
-let chemSegue = "toDetailVC"
 let chemistry = "water_chemistry_cell"
-let wChemSegue = "toDetailVC"
 let maintenance = "maint_cell"
-let maintSegue = "toDetailVC"
 let reminders = "reminderCell"
 let planner = "planner"
 let calculator = "calculator"
