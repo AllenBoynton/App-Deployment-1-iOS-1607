@@ -177,6 +177,7 @@
 		092BAD641EE3984900D71457 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				092BAD661EE3A98500D71457 /* MaterialView.swift */,
 				0940F55D1D2EC93600BFA91C /* HeaderReusableView.swift */,
 				0940F5431D2AC26C00BFA91C /* GalleryCell.swift */,
 				099383A51D47C68E00085A3E /* MaintenanceCell.swift */,
@@ -184,7 +185,6 @@
 				0940F53B1D2AC10A00BFA91C /* ChemicalTableViewCell.swift */,
 				0940F59F1D3883DB00BFA91C /* CleaningToolsTableViewCell.swift */,
 				099071721D29C0ED00477EA2 /* EquipTableViewCell.swift */,
-				092BAD661EE3A98500D71457 /* MaterialView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -390,13 +390,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Full Sail";
 				TargetAttributes = {
 					099071361D246EC400477EA2 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 979TTQWNS8;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};

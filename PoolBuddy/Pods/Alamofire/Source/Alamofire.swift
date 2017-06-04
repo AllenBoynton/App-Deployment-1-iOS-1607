@@ -144,7 +144,7 @@ public func request(
     - returns: The created request.
 */
 public func request(_ URLRequest: URLRequestConvertible) -> Request {
-    return Manager.sharedInstance.request(URLRequest.URLRequest)
+    return Manager.sharedInstance.request(URLRequest.URLRequest as! URLRequestConvertible)
 }
 
 // MARK: - Upload Methods
@@ -293,7 +293,7 @@ public func upload(
 */
 public func upload(
     _ URLRequest: URLRequestConvertible,
-    multipartFormData: (MultipartFormData) -> Void,
+    multipartFormData: @escaping (MultipartFormData) -> Void,
     encodingMemoryThreshold: UInt64 = Manager.MultipartFormDataEncodingMemoryThreshold,
     encodingCompletion: ((Manager.MultipartFormDataEncodingResult) -> Void)?)
 {

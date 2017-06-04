@@ -88,7 +88,7 @@ extension Manager {
         -> Request
     {
         let mutableURLRequest = URLRequest(method, URLString, headers: headers)
-        let encodedURLRequest = encoding.encode(mutableURLRequest, parameters: parameters).0
+        let encodedURLRequest = encoding.encode(mutableURLRequest as! URLRequestConvertible, parameters: parameters).0
 
         return download(encodedURLRequest, destination: destination)
     }

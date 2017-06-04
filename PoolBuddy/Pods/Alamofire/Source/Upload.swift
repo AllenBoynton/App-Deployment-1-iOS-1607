@@ -105,7 +105,7 @@ extension Manager {
         -> Request
     {
         let mutableURLRequest = URLRequest(method, URLString, headers: headers)
-        return upload(mutableURLRequest, file: file)
+        return upload(mutableURLRequest as! URLRequestConvertible, file: file)
     }
 
     // MARK: Data
@@ -145,7 +145,7 @@ extension Manager {
     {
         let mutableURLRequest = URLRequest(method, URLString, headers: headers)
 
-        return upload(mutableURLRequest, data: data)
+        return upload(mutableURLRequest as! URLRequestConvertible, data: data)
     }
 
     // MARK: Stream
@@ -185,7 +185,7 @@ extension Manager {
     {
         let mutableURLRequest = URLRequest(method, URLString, headers: headers)
 
-        return upload(mutableURLRequest, stream: stream)
+        return upload(mutableURLRequest as! URLRequestConvertible, stream: stream)
     }
 
     // MARK: MultipartFormData
@@ -244,7 +244,7 @@ extension Manager {
         let mutableURLRequest = URLRequest(method, URLString, headers: headers)
 
         return upload(
-            mutableURLRequest,
+            mutableURLRequest as! URLRequestConvertible,
             multipartFormData: multipartFormData,
             encodingMemoryThreshold: encodingMemoryThreshold,
             encodingCompletion: encodingCompletion
@@ -294,7 +294,7 @@ extension Manager {
                 do {
                     let data = try formData.encode()
                     let encodingResult = MultipartFormDataEncodingResult.success(
-                        request: self.upload(URLRequestWithContentType, data: data as Data),
+                        request: self.upload(URLRequestWithContentType as! URLRequestConvertible, data: data as Data),
                         streamingFromDisk: false,
                         streamFileURL: nil
                     )
@@ -316,11 +316,11 @@ extension Manager {
 
                 do {
                     try fileManager.createDirectory(at: directoryURL, withIntermediateDirectories: true, attributes: nil)
-                    try formData.writeEncodedDataToDisk(fileURL!)
+                    try formData.writeEncodedDataToDisk(fileURL)
 
                     DispatchQueue.main.async {
                         let encodingResult = MultipartFormDataEncodingResult.success(
-                            request: self.upload(URLRequestWithContentType, file: fileURL),
+                            request: self.upload(URLRequestWithContentType as! URLRequestConvertible, file: fileURL),
                             streamingFromDisk: true,
                             streamFileURL: fileURL
                         )

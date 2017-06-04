@@ -25,7 +25,6 @@ let planner = "planner"
 let calculator = "calculator"
 let photo = "photoCell"
 let gallerySegue = "gallerySegue"
-let chat = "chat"
 let cellHeader = "header"
 
 

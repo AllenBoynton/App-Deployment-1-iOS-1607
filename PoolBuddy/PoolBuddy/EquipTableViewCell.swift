@@ -15,9 +15,9 @@ class EquipTableViewCell: UITableViewCell {
     
     var poolData: PoolData!
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+//    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//    }
     
     func configureCell(_ poolData: PoolData) {
         self.poolData = poolData
