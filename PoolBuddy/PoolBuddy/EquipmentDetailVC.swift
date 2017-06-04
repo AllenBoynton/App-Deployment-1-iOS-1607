@@ -1,5 +1,5 @@
 //
-//  CategoryDetailsVC.swift
+//  EquipmentDetailVC.swift
 //  PoolBuddy
 //
 //  Created by Allen Boynton on 7/4/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CategoryDetailsVC: UIViewController {
+class EquipmentDetailVC: UIViewController {
     
     // Outlets for the text view & image of problem pool
     @IBOutlet weak var detailText: UITextView!
@@ -29,16 +29,14 @@ class CategoryDetailsVC: UIViewController {
         navigationItem.title = label
         detailImage.image = image
         detailText.text = descriptions
-        detailLabel2.text = label2
-        detailImage2.image = image2
         
-//        if label2 != "" || image2 != nil {
-//            detailLabel2.text = label2
-//            detailImage2.image = image2
-//        } else {
-//            detailLabel2.text = "Results in:"
-//            detailImage2.image = UIImage(named: "exotic")
-//        }
+        if label2 != "" || image2 != "" {
+            detailLabel2.text = label2
+            detailImage2.image = image2
+        } else {
+            detailLabel2.text = "Results in:"
+            detailImage2.image = UIImage(named: "exotic")
+        }
         
         detailText.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
         

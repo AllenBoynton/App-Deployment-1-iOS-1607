@@ -62,7 +62,7 @@ class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: chemicals, for: indexPath) as! CategoryViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: chemicals, for: indexPath) as! ChemicalTableViewCell
         
         let poolCategory = poolChemicals[indexPath.section]
         let product = poolCategory.products[indexPath.row]
@@ -79,7 +79,7 @@ class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Accessing segue by calling the segue identifier
         if segue.identifier == chemSegue {
-            let destination = segue.destination as! CategoryDetailsVC
+            let destination = segue.destination as! ChemicalDetailVC
             if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
                 
                 let poolCategory = poolChemicals[indexPath.section]

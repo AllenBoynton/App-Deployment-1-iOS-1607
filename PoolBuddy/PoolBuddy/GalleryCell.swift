@@ -10,7 +10,6 @@ import UIKit
 
 class GalleryCell: UICollectionViewCell {
     
-    // Outlets for table view screen
     @IBOutlet weak var galleryImages: UIImageView!
     @IBOutlet weak var imageLabel: InsetLabel!
     

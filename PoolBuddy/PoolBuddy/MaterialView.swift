@@ -2,7 +2,7 @@
 //  MaterialView.swift
 //  PoolBuddy
 //
-//  Created by Allen Boynton on 6/2/17.
+//  Created by Allen Boynton on 6/3/17.
 //  Copyright © 2017 Full Sail. All rights reserved.
 //
 
@@ -37,3 +37,4 @@ extension UIView {
         }
     }
 }
+

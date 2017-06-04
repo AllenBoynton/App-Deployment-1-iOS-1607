@@ -25,18 +25,30 @@ class PoolData {
     }
     
     var image: String {
+        if _image == nil {
+            _image = ""
+        }
         return _image
     }
     
     var label2: String {
+        if _label2 == nil {
+            _label2 = ""
+        }
         return _label
     }
     
     var image2: String {
+        if _image2 == nil {
+            _image2 = ""
+        }
         return _image2
     }
     
     var description: String {
+        if _description == nil {
+            _description = ""
+        }
         return _description
     }
     

@@ -30,7 +30,7 @@ class ChemicalDetailVC: UIViewController {
         detailImage.image = image
         detailText.text = descriptions
         
-        if label2 != "" || image2 != nil {
+        if label2 != "" || image2 != "" {
             detailLabel2.text = label2
             detailImage2.image = image2
         } else {

@@ -72,7 +72,7 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let itemWidth: CGFloat = collectionView.frame.width / 2.0 - 10.0 // 4 wide
+        let itemWidth: CGFloat = collectionView.frame.width / 2.0 - 20.0 // 2 wide
         
         return CGSize(width: itemWidth, height: itemWidth)
     }

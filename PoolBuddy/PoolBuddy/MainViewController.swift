@@ -22,8 +22,10 @@ let maintenance = "maint_cell"
 let maintSegue = "toDetailVC"
 let reminders = "reminderCell"
 let planner = "planner"
+let calculator = "calculator"
 let photo = "photoCell"
 let gallerySegue = "gallerySegue"
+let chat = "chat"
 let cellHeader = "header"
 
 
@@ -53,14 +55,13 @@ class MainViewController: UIViewController {
     // Sound files
     func prepareAudios() {
         
-        let path1 = Bundle.main.path(forResource: "splash", ofType: "mp3")!
-        
+        let path1 = Bundle.main.path(forResource: "splash.mp3", ofType: nil)!
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path1))
             audioPlayer.prepareToPlay()
         }
         catch let err as NSError {
-            print("audioPlayer error \(err.localizedDescription)")
+            print("Something bad happened \(err). Try catching specific errors to narrow things down")
         }
     }
 

@@ -9,7 +9,6 @@
 import Foundation
 
 class PoolCategory {
-    
     // Stored properties
     fileprivate var _group: String!
     fileprivate var _products: [PoolData]

@@ -14,14 +14,23 @@ class Problems {
     fileprivate var _solution: String!
     
     var title: String {
+        if _title == nil {
+            _title = ""
+        }
         return _title
     }
     
     var image: String {
+        if _image == nil {
+            _image = ""
+        }
         return _image
     }
     
     var solution: String {
+        if _solution == nil {
+            _solution = ""
+        }
         return _solution
     }
     

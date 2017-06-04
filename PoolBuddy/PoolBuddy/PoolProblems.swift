@@ -14,6 +14,17 @@ class PoolProblems {
     fileprivate var _gallery: String!
     fileprivate var _solutions: [Problems]
     
+    var gallery: String {
+        if _gallery == nil {
+            _gallery = ""
+        }
+        return _gallery
+    }
+    
+    var solutions: [Problems] {
+        
+        return _solutions
+    }
     
     init(gallery: String, problem: [Problems]) {
         self._gallery = gallery

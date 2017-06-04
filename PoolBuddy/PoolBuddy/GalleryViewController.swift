@@ -17,12 +17,13 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     var problems = [Problems]()
     var filteredPools = [Problems]()
+//    var poolProblems = [PoolProblems]()
     
     var inSearchMode = false
     
     // Outlet for the display of collectionView
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var searchBarContainer: UIView!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     
@@ -56,7 +57,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
 
             // Setup the search bar
             searchController.searchBar.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
-            self.searchBarContainer.addSubview(searchController.searchBar)
+            self.searchBar.addSubview(searchController.searchBar)
             searchController.searchBar.returnKeyType = UIReturnKeyType.done
             
             // SearchBar delegate
@@ -78,9 +79,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         if inSearchMode {
             return filteredPools.count
         }
-        let poolProblems = poolGallery[section]
-        print("Items: \(poolProblems.solutions.count)")
-        return poolProblems.solutions.count
+        let poolProblems = [poolGallery[section]]
+        print("Items: \(poolProblems.count)")
+        return poolProblems.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

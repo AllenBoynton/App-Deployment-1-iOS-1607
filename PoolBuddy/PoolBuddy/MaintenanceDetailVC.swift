@@ -25,7 +25,6 @@ class MaintenanceDetailVC: UIViewController {
         navigationItem.title = productTitle
         detailImage.image = productImage
         detailText.text = descriptions
-        
         detailText.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
         
         navigationController!.navigationBar.titleTextAttributes =
