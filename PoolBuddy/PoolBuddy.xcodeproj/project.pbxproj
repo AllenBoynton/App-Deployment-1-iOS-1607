@@ -32,8 +32,10 @@
 		0943180E1D4E23D30025D71C /* NewReminderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943180D1D4E23D30025D71C /* NewReminderVC.swift */; };
 		094F624A1D4E180500850602 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094F62491D4E180500850602 /* EditViewController.swift */; };
 		094F624C1D4E1A5000850602 /* ReminderDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094F624B1D4E1A5000850602 /* ReminderDetailsVC.swift */; };
+		098CCA6B1EE474A400295E0F /* BorderedButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098CCA6A1EE474A400295E0F /* BorderedButtons.swift */; };
+		098CCA6D1EE478F200295E0F /* BorderedLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098CCA6C1EE478F200295E0F /* BorderedLabels.swift */; };
+		098CCA6F1EE4824E00295E0F /* BorderedTextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098CCA6E1EE4824E00295E0F /* BorderedTextViews.swift */; };
 		098F96401D455CFB00E1B157 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F963F1D455CFB00E1B157 /* MenuTableVC.swift */; };
-		098F96421D4560D100E1B157 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F96411D4560D100E1B157 /* csv.swift */; };
 		098F96441D4561DC00E1B157 /* KittenSlant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 098F96431D4561DC00E1B157 /* KittenSlant.ttf */; };
 		098F96521D45F98C00E1B157 /* PoolCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F96511D45F98C00E1B157 /* PoolCalendarVC.swift */; };
 		0990713B1D246EC400477EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990713A1D246EC400477EA2 /* AppDelegate.swift */; };
@@ -84,8 +86,10 @@
 		0943180D1D4E23D30025D71C /* NewReminderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReminderVC.swift; sourceTree = "<group>"; };
 		094F62491D4E180500850602 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		094F624B1D4E1A5000850602 /* ReminderDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderDetailsVC.swift; sourceTree = "<group>"; };
+		098CCA6A1EE474A400295E0F /* BorderedButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButtons.swift; sourceTree = "<group>"; };
+		098CCA6C1EE478F200295E0F /* BorderedLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedLabels.swift; sourceTree = "<group>"; };
+		098CCA6E1EE4824E00295E0F /* BorderedTextViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedTextViews.swift; sourceTree = "<group>"; };
 		098F963F1D455CFB00E1B157 /* MenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
-		098F96411D4560D100E1B157 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		098F96431D4561DC00E1B157 /* KittenSlant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KittenSlant.ttf; sourceTree = "<group>"; };
 		098F96511D45F98C00E1B157 /* PoolCalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolCalendarVC.swift; sourceTree = "<group>"; };
 		099071371D246EC400477EA2 /* PoolBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +184,9 @@
 		092BAD641EE3984900D71457 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				098CCA6E1EE4824E00295E0F /* BorderedTextViews.swift */,
+				098CCA6C1EE478F200295E0F /* BorderedLabels.swift */,
+				098CCA6A1EE474A400295E0F /* BorderedButtons.swift */,
 				092BAD661EE3A98500D71457 /* MaterialView.swift */,
 				0940F55D1D2EC93600BFA91C /* HeaderReusableView.swift */,
 				0940F5431D2AC26C00BFA91C /* GalleryCell.swift */,
@@ -336,7 +343,6 @@
 		099071501D246F9700477EA2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				098F96411D4560D100E1B157 /* csv.swift */,
 				099071461D246EC400477EA2 /* Info.plist */,
 				09DDBDE61D514C26005CB74F /* splash.mp3 */,
 				098F96431D4561DC00E1B157 /* KittenSlant.ttf */,
@@ -499,7 +505,6 @@
 				0940F53E1D2AC16200BFA91C /* WaterChemTableVC.swift in Sources */,
 				099071781D29D36F00477EA2 /* PoolData.swift in Sources */,
 				094F624A1D4E180500850602 /* EditViewController.swift in Sources */,
-				098F96421D4560D100E1B157 /* csv.swift in Sources */,
 				0940F5441D2AC26C00BFA91C /* GalleryCell.swift in Sources */,
 				0940F54A1D2AC38900BFA91C /* WaterChemDetailVC.swift in Sources */,
 				099383A41D47C67100085A3E /* MaintenanceVC.swift in Sources */,
@@ -507,7 +512,10 @@
 				0990717B1D29EF1C00477EA2 /* SWRevealViewController.m in Sources */,
 				0940F5541D2B031400BFA91C /* CleaningToolsDetailVC.swift in Sources */,
 				092DEAA91D4758B300B7C637 /* MaintenanceDetailVC.swift in Sources */,
+				098CCA6F1EE4824E00295E0F /* BorderedTextViews.swift in Sources */,
+				098CCA6D1EE478F200295E0F /* BorderedLabels.swift in Sources */,
 				0943180E1D4E23D30025D71C /* NewReminderVC.swift in Sources */,
+				098CCA6B1EE474A400295E0F /* BorderedButtons.swift in Sources */,
 				0940F5A01D3883DB00BFA91C /* CleaningToolsTableViewCell.swift in Sources */,
 				0940F5631D2ED14B00BFA91C /* GalleryViewController.swift in Sources */,
 				0997EDB21D4FEB230040D354 /* CustomWebViewController.swift in Sources */,

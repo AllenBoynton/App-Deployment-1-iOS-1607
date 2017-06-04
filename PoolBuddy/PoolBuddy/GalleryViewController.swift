@@ -36,12 +36,12 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
         
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        self.revealViewController().rearViewRevealWidth = 325
+//        if self.revealViewController() != nil {
+//            menuButton.target = self.revealViewController()
+//            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//        }
+//        self.revealViewController().rearViewRevealWidth = 325
         
         // Create collection view delegate
         collectionView.delegate = self
@@ -86,7 +86,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 110, height: 110)
+        let itemWidth: CGFloat = collectionView.frame.width / 3.0 - 10.0 // 4 wide
+        
+        return CGSize(width: itemWidth, height: itemWidth)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -210,6 +212,11 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
             return data.title.lowercased().contains(searchText.lowercased())
         }
         collectionView.reloadData()
+    }
+    
+    @IBAction func returnToMainMenu(_ sender: UIBarButtonItem) {
+        
+        dismiss(animated: true, completion: nil)
     }
 }
 

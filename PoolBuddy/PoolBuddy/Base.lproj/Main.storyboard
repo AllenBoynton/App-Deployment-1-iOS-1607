@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7fG-W1-ux4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tAB-oH-fJc">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -97,8 +97,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Equipment" id="XjI-2q-kQl">
-                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="vVm-H3-Frp">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="vVm-H3-Frp">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="mainMenuButtonPressed:" destination="HI1-TC-acS" id="eeY-Q0-oAG"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -150,7 +153,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgB-5v-tPX" userLabel="Top BG View">
-                                        <rect key="frame" x="12" y="50" width="176" height="176"/>
+                                        <rect key="frame" x="2" y="50" width="176" height="176"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perflex" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-Z2-AWJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="176" height="176"/>
@@ -167,7 +170,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYb-9E-ZrW" userLabel="Right BG View">
-                                        <rect key="frame" x="193" y="120.5" width="105.5" height="105.5"/>
+                                        <rect key="frame" x="183" y="120.5" width="105.5" height="105.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equipment1" translatesAutoresizingMaskIntoConstraints="NO" id="W8l-z2-Hc0" userLabel="Right Image">
                                                 <rect key="frame" x="0.0" y="0.0" width="105.5" height="105.5"/>
@@ -187,7 +190,7 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-kF-ycO">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-kF-ycO">
                                         <rect key="frame" x="30" y="246" width="260" height="228"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -195,7 +198,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equipment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-Ee-Y7B">
-                                        <rect key="frame" x="193" y="90.5" width="106" height="30"/>
+                                        <rect key="frame" x="183" y="90.5" width="106" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kKA-pA-Ze9"/>
@@ -211,7 +214,7 @@
                                     <constraint firstItem="W8l-z2-Hc0" firstAttribute="width" secondItem="f8C-Z2-AWJ" secondAttribute="width" multiplier="0.6" id="3jr-ul-bfX"/>
                                     <constraint firstItem="W8l-z2-Hc0" firstAttribute="width" secondItem="4cJ-Ee-Y7B" secondAttribute="width" id="5QT-pW-hb7"/>
                                     <constraint firstAttribute="bottom" secondItem="sVm-kF-ycO" secondAttribute="bottom" constant="30" id="6Bp-Y4-s7a"/>
-                                    <constraint firstItem="TgB-5v-tPX" firstAttribute="centerX" secondItem="WaR-Hu-A8f" secondAttribute="centerX" constant="-60" id="9mM-oG-Us2"/>
+                                    <constraint firstItem="TgB-5v-tPX" firstAttribute="centerX" secondItem="WaR-Hu-A8f" secondAttribute="centerX" constant="-70" id="9mM-oG-Us2"/>
                                     <constraint firstItem="oYb-9E-ZrW" firstAttribute="width" secondItem="TgB-5v-tPX" secondAttribute="width" multiplier="0.6" id="AZf-FS-dcR"/>
                                     <constraint firstAttribute="trailing" secondItem="Xth-Nd-NCB" secondAttribute="trailing" id="FaC-EI-6Jg"/>
                                     <constraint firstItem="oYb-9E-ZrW" firstAttribute="top" secondItem="4cJ-Ee-Y7B" secondAttribute="bottom" id="LkL-tk-biU"/>
@@ -336,42 +339,19 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="dXp-08-VkH">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="menuButton:" destination="BYZ-38-t0r" id="jEa-bJ-x07"/>
+                                <action selector="menuButton:" destination="BYZ-38-t0r" id="7Th-Ic-tbe"/>
+                                <segue destination="uuK-pQ-UNl" kind="show" id="yN1-qL-CfP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="menuButton" destination="dXp-08-VkH" id="2oC-6w-3ez"/>
+                        <outlet property="menuButton" destination="dXp-08-VkH" id="KZ4-7a-7KY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2308" y="7760"/>
-        </scene>
-        <!--Menu Transition VC-->
-        <scene sceneID="LAT-0m-ahD">
-            <objects>
-                <viewController id="7fG-W1-ux4" userLabel="Menu Transition VC" customClass="SWRevealViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L97-vz-Tfv"/>
-                        <viewControllerLayoutGuide type="bottom" id="eQY-Tk-KUl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JJC-wU-JLW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="DJu-lS-HAk"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="tAB-oH-fJc" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="e1I-ci-ZwG"/>
-                        <segue destination="wDQ-89-7ic" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSeguePushController" id="Kei-Kv-DAy"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LER-a2-Wei" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2308" y="6318"/>
+            <point key="canvasLocation" x="-1461" y="6318"/>
         </scene>
         <!--Home Navigation Controller-->
         <scene sceneID="Wck-EV-SGe">
@@ -394,33 +374,34 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VsY-5t-U7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2308" y="7053"/>
+            <point key="canvasLocation" x="-2214" y="6318"/>
         </scene>
         <!--Main Menu-->
         <scene sceneID="iMA-oo-L21">
             <objects>
                 <tableViewController id="uuK-pQ-UNl" customClass="MenuTableVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="mLi-g2-b8B">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="mLi-g2-b8B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="bqe-F0-Y0I">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="equipment_cell" id="wdc-bg-d3L">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wdc-bg-d3L" id="FTX-fO-uPW">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Equipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JK-cL-gL6" userLabel="Equipment Section">
-                                                    <rect key="frame" x="97" y="7" width="215" height="65"/>
+                                                    <rect key="frame" x="112" y="7" width="200" height="80"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equipment1" translatesAutoresizingMaskIntoConstraints="NO" id="ahA-86-fke" userLabel="Section Image">
-                                                    <rect key="frame" x="12" y="2" width="65" height="65"/>
+                                                    <rect key="frame" x="12" y="2" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="ahA-86-fke" secondAttribute="height" multiplier="1:1" id="lJM-lt-lMU"/>
                                                     </constraints>
@@ -442,19 +423,19 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tools_cell" id="AG6-7i-Srr">
-                                        <rect key="frame" x="0.0" y="75" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="90" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AG6-7i-Srr" id="vNr-TI-Kcl">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Tools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLp-Em-Ovc">
-                                                    <rect key="frame" x="95" y="7" width="215" height="65"/>
+                                                    <rect key="frame" x="110" y="7" width="200" height="80"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Surface Debris" translatesAutoresizingMaskIntoConstraints="NO" id="4ny-52-UMR" userLabel="Section Image">
-                                                    <rect key="frame" x="10" y="2" width="65" height="65"/>
+                                                    <rect key="frame" x="10" y="2" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="4ny-52-UMR" secondAttribute="height" multiplier="1:1" id="U1a-Ms-p7f"/>
                                                     </constraints>
@@ -476,19 +457,19 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chemical_cell" id="ZE9-rm-N6f">
-                                        <rect key="frame" x="0.0" y="150" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="180" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZE9-rm-N6f" id="b8V-tS-R0f">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Chemicals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvO-rT-T3r" userLabel="Chemicals Section">
-                                                    <rect key="frame" x="95" y="0.0" width="215" height="75"/>
+                                                    <rect key="frame" x="109.5" y="0.0" width="200.5" height="89.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicals1" translatesAutoresizingMaskIntoConstraints="NO" id="6Fg-VD-yft" userLabel="Section Image">
-                                                    <rect key="frame" x="10" y="5" width="65" height="65"/>
+                                                    <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="6Fg-VD-yft" secondAttribute="height" multiplier="1:1" id="0Ya-Ga-8em"/>
                                                     </constraints>
@@ -510,19 +491,19 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="water_chemistry_cell" id="c0c-Qy-ZxB">
-                                        <rect key="frame" x="0.0" y="225" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="270" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c0c-Qy-ZxB" id="iGS-lD-WBB">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkK-s5-cD1" userLabel="Chemistry Section">
-                                                    <rect key="frame" x="95" y="0.0" width="215" height="75"/>
+                                                    <rect key="frame" x="109.5" y="0.0" width="200.5" height="89.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testKit" translatesAutoresizingMaskIntoConstraints="NO" id="JsI-za-vru" userLabel="Section Image">
-                                                    <rect key="frame" x="10" y="5" width="65" height="65"/>
+                                                    <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="JsI-za-vru" secondAttribute="height" multiplier="1:1" id="YSH-wb-dTa"/>
                                                     </constraints>
@@ -544,19 +525,19 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="maint_cell" id="tNZ-Fp-x2v">
-                                        <rect key="frame" x="0.0" y="300" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="360" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tNZ-Fp-x2v" id="tpD-Zf-Lrt">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Maintenance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wb6-jP-1GM" userLabel="Maintenance Section">
-                                                    <rect key="frame" x="95" y="0.0" width="215" height="75"/>
+                                                    <rect key="frame" x="109.5" y="0.0" width="200.5" height="89.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service" translatesAutoresizingMaskIntoConstraints="NO" id="AQl-Rk-RWl" userLabel="Section Image">
-                                                    <rect key="frame" x="10" y="5" width="65" height="65"/>
+                                                    <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="AQl-Rk-RWl" secondAttribute="height" multiplier="1:1" id="imd-TN-ZU3"/>
                                                     </constraints>
@@ -578,20 +559,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="calculator" id="NPK-Cw-3kH">
-                                        <rect key="frame" x="0.0" y="375" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="450" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NPK-Cw-3kH" id="OFw-1r-2dN">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRn-40-Ifl" userLabel="Calculator Section">
-                                                    <rect key="frame" x="95" y="0.0" width="215" height="75"/>
+                                                    <rect key="frame" x="109.5" y="0.0" width="200.5" height="89.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculator" translatesAutoresizingMaskIntoConstraints="NO" id="9Nz-re-Rq4" userLabel="Section Image">
-                                                    <rect key="frame" x="10" y="5" width="65" height="65"/>
+                                                    <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="9Nz-re-Rq4" secondAttribute="height" multiplier="1:1" id="q2z-nN-Qt0"/>
                                                     </constraints>
@@ -613,19 +594,19 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reminderCell" id="zxG-Dc-URl" userLabel="reminderCell">
-                                        <rect key="frame" x="0.0" y="450" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="540" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zxG-Dc-URl" id="muz-Va-WN0">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTH-2L-6F7" userLabel="Planner Section">
-                                                    <rect key="frame" x="95" y="0.0" width="215" height="75"/>
+                                                    <rect key="frame" x="109.5" y="0.0" width="200.5" height="89.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planner" translatesAutoresizingMaskIntoConstraints="NO" id="pUr-qj-bew" userLabel="Section Image">
-                                                    <rect key="frame" x="10" y="5" width="65" height="65"/>
+                                                    <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="pUr-qj-bew" secondAttribute="height" multiplier="1:1" id="if2-pe-O4G"/>
                                                     </constraints>
@@ -647,20 +628,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" id="nVm-pF-aSi">
-                                        <rect key="frame" x="0.0" y="525" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="630" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nVm-pF-aSi" id="whE-VV-SWI">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problems Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciZ-dW-0BE" userLabel="Gallery Section">
-                                                    <rect key="frame" x="95" y="0.0" width="215" height="75"/>
+                                                    <rect key="frame" x="109.5" y="0.0" width="200.5" height="89.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallery" translatesAutoresizingMaskIntoConstraints="NO" id="gaA-Ac-VEZ" userLabel="Section Image">
-                                                    <rect key="frame" x="10" y="5" width="65" height="65"/>
+                                                    <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="gaA-Ac-VEZ" secondAttribute="height" multiplier="1:1" id="D7P-xd-No8"/>
                                                     </constraints>
@@ -692,6 +673,9 @@
                     <navigationItem key="navigationItem" title="Main Menu" id="lxW-x3-pkI">
                         <barButtonItem key="leftBarButtonItem" image="home" id="vaQ-66-yyk">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="returnToHomeScreenBtnPressed:" destination="uuK-pQ-UNl" id="ebv-6J-Dxq"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
@@ -800,8 +784,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chemicals" id="nEz-Rh-3a2">
-                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="7xq-YX-L9w">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="7xq-YX-L9w">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="mainMenuButtonPressed:" destination="kSj-1o-OQ1" id="lkh-Pn-8v6"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -853,7 +840,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tI-hg-jsB" userLabel="Top BG View">
-                                        <rect key="frame" x="12" y="60" width="176" height="176.5"/>
+                                        <rect key="frame" x="2" y="60" width="176" height="176.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oxidizer" translatesAutoresizingMaskIntoConstraints="NO" id="qFN-tK-hQP">
                                                 <rect key="frame" x="0.0" y="0.0" width="176" height="176.5"/>
@@ -872,7 +859,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemical Safety" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gD4-Z5-kht">
-                                        <rect key="frame" x="193" y="109.5" width="97" height="30"/>
+                                        <rect key="frame" x="183" y="109.5" width="97" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Am5-Xf-nNy"/>
@@ -882,7 +869,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9iX-as-y3H" userLabel="Right BG View">
-                                        <rect key="frame" x="193" y="139.5" width="97" height="97"/>
+                                        <rect key="frame" x="183" y="139.5" width="97" height="97"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chemical Safety" translatesAutoresizingMaskIntoConstraints="NO" id="mpF-Lr-Ahm">
                                                 <rect key="frame" x="0.0" y="0.0" width="97" height="97"/>
@@ -899,7 +886,7 @@
                                             <constraint firstItem="mpF-Lr-Ahm" firstAttribute="top" secondItem="9iX-as-y3H" secondAttribute="top" id="XhG-fb-HnF"/>
                                         </constraints>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYD-wB-RTD">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYD-wB-RTD">
                                         <rect key="frame" x="30" y="256.5" width="260" height="217.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -909,7 +896,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="8tI-hg-jsB" firstAttribute="centerX" secondItem="Jnm-ex-TP6" secondAttribute="centerX" constant="-60" id="1u1-g5-AUu"/>
+                                    <constraint firstItem="8tI-hg-jsB" firstAttribute="centerX" secondItem="Jnm-ex-TP6" secondAttribute="centerX" constant="-70" id="1u1-g5-AUu"/>
                                     <constraint firstItem="hZi-Sm-DI0" firstAttribute="leading" secondItem="Jnm-ex-TP6" secondAttribute="leading" id="70L-2e-nwY"/>
                                     <constraint firstItem="8tI-hg-jsB" firstAttribute="height" secondItem="Jnm-ex-TP6" secondAttribute="height" multiplier="0.35" id="7iw-M1-6eJ"/>
                                     <constraint firstItem="mpF-Lr-Ahm" firstAttribute="width" secondItem="gD4-Z5-kht" secondAttribute="width" id="KVb-d0-wq1"/>
@@ -993,14 +980,14 @@
                         <viewControllerLayoutGuide type="bottom" id="eJz-Ja-erC"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="aC3-xR-9wU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Nfk-cJ-lNF">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ynS-9c-AcL">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -1063,8 +1050,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Water Balance" id="3HD-BQ-ixH">
-                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="W3d-bA-sZ8">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="W3d-bA-sZ8">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="mainMenuButtonPressed:" destination="gXX-HP-7dP" id="fit-e1-HrB"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1085,18 +1075,18 @@
                         <viewControllerLayoutGuide type="bottom" id="JaV-B0-wYe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LSe-1S-8bo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="rZ3-sa-gpE">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vap-5H-AWl" userLabel="Ghost View">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFZ-lc-Kys" userLabel="Pool Buddy View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="940-T5-1uE">
                                         <rect key="frame" x="30" y="0.0" width="290" height="30"/>
@@ -1116,14 +1106,14 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aquachek" translatesAutoresizingMaskIntoConstraints="NO" id="ehv-cO-3Vb">
-                                <rect key="frame" x="60.5" y="124" width="199" height="199"/>
+                                <rect key="frame" x="71.5" y="60" width="177" height="176.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ehv-cO-3Vb" secondAttribute="height" multiplier="1:1" id="648-xz-QMj"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uq-4D-hRv">
-                                <rect key="frame" x="30" y="343" width="260" height="195"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uq-4D-hRv">
+                                <rect key="frame" x="30" y="256.5" width="260" height="217.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
@@ -1170,7 +1160,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UhZ-Py-xIP" userLabel="Water Chemistry Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ReW-0m-a6a">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="ReW-0m-a6a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1192,14 +1182,14 @@
                         <viewControllerLayoutGuide type="bottom" id="USU-nW-RYA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UYy-n5-tqX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="u6U-ba-0Jz">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AZJ-7F-Mml">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -1260,8 +1250,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cleaning Tools" id="XWk-uc-XLe">
-                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="wNG-QW-ZZ3">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="wNG-QW-ZZ3">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="mainMenuButtonPressed:" destination="yxU-qD-epu" id="dWn-mB-JpL"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1282,14 +1275,14 @@
                         <viewControllerLayoutGuide type="bottom" id="nz8-js-krx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OR7-0d-ByI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="AaC-ex-Pki">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xii-Go-pDy" userLabel="Ghost View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjm-kB-tKm" userLabel="Pool Buddy View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
@@ -1312,7 +1305,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P36-Lt-4zQ" userLabel="Top BG View">
-                                        <rect key="frame" x="12" y="50" width="176" height="176.5"/>
+                                        <rect key="frame" x="2" y="50" width="176" height="176.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leafBagger" translatesAutoresizingMaskIntoConstraints="NO" id="1xi-0N-1iv">
                                                 <rect key="frame" x="0.0" y="0.0" width="176" height="176.5"/>
@@ -1331,7 +1324,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-bf-hcY" userLabel="Right BG View">
-                                        <rect key="frame" x="193" y="129.5" width="97" height="97"/>
+                                        <rect key="frame" x="183" y="129.5" width="97" height="97"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floatingChlorinator" translatesAutoresizingMaskIntoConstraints="NO" id="dM4-6F-hSe" userLabel="Right Image">
                                                 <rect key="frame" x="0.0" y="0.0" width="97" height="97"/>
@@ -1346,7 +1339,7 @@
                                             <constraint firstItem="dM4-6F-hSe" firstAttribute="leading" secondItem="bgb-bf-hcY" secondAttribute="leading" id="wYr-N8-ssW"/>
                                         </constraints>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXR-Ml-QXb">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXR-Ml-QXb">
                                         <rect key="frame" x="30" y="246.5" width="260" height="227.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -1354,7 +1347,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Tools" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-Uo-FDs">
-                                        <rect key="frame" x="193" y="99.5" width="97" height="30"/>
+                                        <rect key="frame" x="183" y="99.5" width="97" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="COE-r5-eQl"/>
@@ -1376,7 +1369,7 @@
                                     <constraint firstItem="bgb-bf-hcY" firstAttribute="top" secondItem="0tw-Uo-FDs" secondAttribute="bottom" id="bty-oc-Pks"/>
                                     <constraint firstItem="bgb-bf-hcY" firstAttribute="width" secondItem="P36-Lt-4zQ" secondAttribute="width" multiplier="0.55" id="dsk-d6-v9f"/>
                                     <constraint firstItem="wjm-kB-tKm" firstAttribute="top" secondItem="Xii-Go-pDy" secondAttribute="top" id="fBa-iY-reF"/>
-                                    <constraint firstItem="P36-Lt-4zQ" firstAttribute="centerX" secondItem="Xii-Go-pDy" secondAttribute="centerX" constant="-60" id="fQR-wL-epH"/>
+                                    <constraint firstItem="P36-Lt-4zQ" firstAttribute="centerX" secondItem="Xii-Go-pDy" secondAttribute="centerX" constant="-70" id="fQR-wL-epH"/>
                                     <constraint firstItem="P36-Lt-4zQ" firstAttribute="height" secondItem="Xii-Go-pDy" secondAttribute="height" multiplier="0.35" id="gcc-Bv-8H6"/>
                                     <constraint firstItem="bgb-bf-hcY" firstAttribute="centerX" secondItem="0tw-Uo-FDs" secondAttribute="centerX" id="j0G-QH-jzG"/>
                                     <constraint firstAttribute="bottom" secondItem="AXR-Ml-QXb" secondAttribute="bottom" constant="30" id="kUY-ZI-eNY"/>
@@ -1385,30 +1378,18 @@
                                     <constraint firstItem="wjm-kB-tKm" firstAttribute="leading" secondItem="Xii-Go-pDy" secondAttribute="leading" id="uVG-em-ZvX"/>
                                 </constraints>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pj-o9-qsz">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="hBV-yy-fnB"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem id="VxY-dR-MGx"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AaC-ex-Pki" firstAttribute="leading" secondItem="OR7-0d-ByI" secondAttribute="leading" id="0kT-L6-YUw"/>
                             <constraint firstItem="nz8-js-krx" firstAttribute="top" secondItem="Xii-Go-pDy" secondAttribute="bottom" id="3ai-11-G80"/>
-                            <constraint firstItem="6pj-o9-qsz" firstAttribute="leading" secondItem="OR7-0d-ByI" secondAttribute="leading" id="5DS-Vu-tvq"/>
-                            <constraint firstAttribute="trailing" secondItem="6pj-o9-qsz" secondAttribute="trailing" id="C8B-zf-WwB"/>
                             <constraint firstItem="Xii-Go-pDy" firstAttribute="leading" secondItem="OR7-0d-ByI" secondAttribute="leading" id="C9Z-sG-MAm"/>
                             <constraint firstItem="AaC-ex-Pki" firstAttribute="top" secondItem="7ZU-Pv-1CU" secondAttribute="bottom" id="EbI-EE-aqF"/>
                             <constraint firstItem="Xii-Go-pDy" firstAttribute="top" secondItem="7ZU-Pv-1CU" secondAttribute="bottom" id="HG3-by-bs8"/>
                             <constraint firstAttribute="trailing" secondItem="Xii-Go-pDy" secondAttribute="trailing" id="obE-c6-uad"/>
                             <constraint firstAttribute="trailing" secondItem="AaC-ex-Pki" secondAttribute="trailing" id="sCu-Kv-rEa"/>
                             <constraint firstItem="nz8-js-krx" firstAttribute="top" secondItem="AaC-ex-Pki" secondAttribute="bottom" id="vaN-ef-sxl"/>
-                            <constraint firstItem="6pj-o9-qsz" firstAttribute="top" secondItem="OR7-0d-ByI" secondAttribute="top" constant="20" id="zrM-jN-suQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1431,20 +1412,23 @@
                         <viewControllerLayoutGuide type="bottom" id="fOW-qj-s21"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EDY-lu-Uag">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lk0-1Z-WxK" userLabel="BG View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Qgg-x0-T0b">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7La-98-Yjz">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7La-98-Yjz">
                                         <rect key="frame" x="20" y="226.5" width="280" height="257.5"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmZ-gO-vHX" userLabel="Content View">
                                         <rect key="frame" x="20" y="20" width="280" height="176.5"/>
@@ -1455,6 +1439,9 @@
                                                 <state key="normal" title="Tap Here To See A Video" backgroundImage="float">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="openWithSafariVC:" destination="jT1-98-otZ" eventType="touchUpInside" id="413-Re-wcX"/>
                                                 </connections>
@@ -1497,8 +1484,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Planner Video" id="gQQ-Lz-05a">
-                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="lWb-WE-mis">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="lWb-WE-mis">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="returnToMainMenu:" destination="jT1-98-otZ" id="e8P-sF-Fu7"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Continue" style="done" id="WFc-WW-FUL">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1526,20 +1516,23 @@
                         <viewControllerLayoutGuide type="bottom" id="1yT-oT-Dbp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="v1i-Vf-0z1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Bc3-FP-ZNi">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fununderwater" translatesAutoresizingMaskIntoConstraints="NO" id="xoG-10-jjJ">
-                                <rect key="frame" x="16" y="84" width="288" height="170"/>
+                                <rect key="frame" x="16" y="20" width="288" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="ZQp-JF-6et"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdX-uD-r4f">
-                                <rect key="frame" x="20" y="254" width="280" height="294"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdX-uD-r4f" customClass="RoundedTextViews" customModule="PoolBuddy" customModuleProvider="target">
+                                <rect key="frame" x="20" y="210" width="280" height="274"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Until you fall into a routine, we at A &amp; B Pools would like to start you off with the basics. You will find some default reminders that should be followed as best you can.
 
@@ -1555,6 +1548,9 @@ then… Use the Pool Planner.
 Good Luck!</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1566,7 +1562,7 @@ Good Luck!</string>
                             <constraint firstAttribute="trailing" secondItem="VdX-uD-r4f" secondAttribute="trailing" constant="20" id="Ln5-KO-rYt"/>
                             <constraint firstItem="1yT-oT-Dbp" firstAttribute="top" secondItem="VdX-uD-r4f" secondAttribute="bottom" constant="20" id="QDq-vF-g3g"/>
                             <constraint firstItem="VdX-uD-r4f" firstAttribute="leading" secondItem="v1i-Vf-0z1" secondAttribute="leading" constant="20" id="dQY-Rt-Yuq"/>
-                            <constraint firstItem="VdX-uD-r4f" firstAttribute="top" secondItem="xoG-10-jjJ" secondAttribute="bottom" id="kKF-du-y3H"/>
+                            <constraint firstItem="VdX-uD-r4f" firstAttribute="top" secondItem="xoG-10-jjJ" secondAttribute="bottom" constant="20" id="kKF-du-y3H"/>
                             <constraint firstItem="xoG-10-jjJ" firstAttribute="trailing" secondItem="v1i-Vf-0z1" secondAttribute="trailingMargin" id="qm3-cu-9Hz"/>
                             <constraint firstAttribute="trailing" secondItem="Bc3-FP-ZNi" secondAttribute="trailing" id="rat-Ds-Vkn"/>
                             <constraint firstItem="xoG-10-jjJ" firstAttribute="leading" secondItem="v1i-Vf-0z1" secondAttribute="leadingMargin" id="siq-05-kgL"/>
@@ -1598,14 +1594,14 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="bae-1Y-x1y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3bF-NM-wEQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="agZ-sv-Uhf">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-cc-kJH" userLabel="Content View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K1q-Tx-hVL">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
@@ -1735,14 +1731,18 @@ Good Luck!</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pM-lQ-osD" userLabel="ContentView">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BQJ-1m-Kqa">
+                                    <textView clipsSubviews="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BQJ-1m-Kqa" customClass="RoundedTextViews" customModule="PoolBuddy" customModuleProvider="target">
                                         <rect key="frame" x="16" y="88" width="288" height="70"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="afB-YP-Mpm"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a79-ef-QVX">
                                         <rect key="frame" x="10" y="195" width="90" height="30"/>
@@ -1758,6 +1758,9 @@ Good Luck!</string>
                                         <rect key="frame" x="110" y="193" width="194" height="30"/>
                                         <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gq0-PG-VRG">
                                         <rect key="frame" x="10" y="35" width="225" height="25"/>
@@ -1774,6 +1777,9 @@ Good Luck!</string>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ahr-NP-Bnu" secondAttribute="height" multiplier="1:1" id="Ctp-PH-lj2"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1829,34 +1835,34 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="lNF-sh-HZy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="k2S-e4-bfv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="ger-fN-2JB">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BWf-6g-yUR">
-                                <rect key="frame" x="20" y="84" width="280" height="464"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="70S-hZ-fua">
-                                    <size key="itemSize" width="135" height="90"/>
+                                    <size key="itemSize" width="125" height="90"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="maint_cell" id="35P-Ao-gRh" customClass="MaintenanceCell" customModule="PoolBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="72.5" y="20" width="135" height="90"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="20" y="20" width="125" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="135" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="125" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genmaint" translatesAutoresizingMaskIntoConstraints="NO" id="p0a-1Z-KTo">
-                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="90"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="90"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At9-n0-e5X">
-                                                    <rect key="frame" x="0.0" y="65" width="135" height="25"/>
+                                                    <rect key="frame" x="0.0" y="65" width="125" height="25"/>
                                                     <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="d7w-eb-YfX"/>
@@ -1876,6 +1882,7 @@ Good Luck!</string>
                                             <constraint firstItem="p0a-1Z-KTo" firstAttribute="leading" secondItem="35P-Ao-gRh" secondAttribute="leading" id="k74-Oo-0wa"/>
                                             <constraint firstAttribute="bottom" secondItem="At9-n0-e5X" secondAttribute="bottom" id="mcW-M3-hGi"/>
                                         </constraints>
+                                        <size key="customSize" width="125" height="90"/>
                                         <connections>
                                             <outlet property="maintenanceImage" destination="p0a-1Z-KTo" id="e1j-fU-TYX"/>
                                             <outlet property="maintenanceLabel" destination="At9-n0-e5X" id="y4y-kw-eEN"/>
@@ -1892,18 +1899,21 @@ Good Luck!</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ger-fN-2JB" secondAttribute="trailing" id="HmC-zd-WQP"/>
-                            <constraint firstItem="lNF-sh-HZy" firstAttribute="top" secondItem="BWf-6g-yUR" secondAttribute="bottom" constant="20" id="QV8-kU-Izz"/>
+                            <constraint firstItem="lNF-sh-HZy" firstAttribute="top" secondItem="BWf-6g-yUR" secondAttribute="bottom" id="QV8-kU-Izz"/>
                             <constraint firstItem="lNF-sh-HZy" firstAttribute="top" secondItem="ger-fN-2JB" secondAttribute="bottom" id="bPf-zD-iTD"/>
                             <constraint firstItem="ger-fN-2JB" firstAttribute="top" secondItem="MAu-6d-HZ7" secondAttribute="bottom" id="gNV-OQ-qTK"/>
-                            <constraint firstItem="BWf-6g-yUR" firstAttribute="leading" secondItem="k2S-e4-bfv" secondAttribute="leading" constant="20" id="jMJ-Zm-UKT"/>
+                            <constraint firstItem="BWf-6g-yUR" firstAttribute="leading" secondItem="k2S-e4-bfv" secondAttribute="leading" id="jMJ-Zm-UKT"/>
                             <constraint firstItem="ger-fN-2JB" firstAttribute="leading" secondItem="k2S-e4-bfv" secondAttribute="leading" id="kd5-bV-nEr"/>
-                            <constraint firstAttribute="trailing" secondItem="BWf-6g-yUR" secondAttribute="trailing" constant="20" id="mBm-L8-lnb"/>
-                            <constraint firstItem="BWf-6g-yUR" firstAttribute="top" secondItem="MAu-6d-HZ7" secondAttribute="bottom" constant="20" id="p1r-KO-eWe"/>
+                            <constraint firstAttribute="trailing" secondItem="BWf-6g-yUR" secondAttribute="trailing" id="mBm-L8-lnb"/>
+                            <constraint firstItem="BWf-6g-yUR" firstAttribute="top" secondItem="MAu-6d-HZ7" secondAttribute="bottom" id="p1r-KO-eWe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pool Maintenance" id="jzK-Oy-b2z">
-                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="yZF-PE-bbB">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="yZF-PE-bbB">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="mainMenuButtonPressed:" destination="7cR-AH-iBa" id="o7r-Vq-VVa"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1913,7 +1923,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAG-cO-OU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="3367"/>
+            <point key="canvasLocation" x="918.75" y="3366.5492957746478"/>
         </scene>
         <!--Pool Maintenance Detail Scene-->
         <scene sceneID="7Gn-Y1-HJZ">
@@ -1924,14 +1934,14 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="aNf-aj-5WP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U7L-5Q-SWo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="xwa-T1-Uv3">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ytw-44-5rd" userLabel="Ghost View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOC-Jn-iQE" userLabel="Pool Buddy View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
@@ -1951,10 +1961,9 @@ Good Luck!</string>
                                             <constraint firstAttribute="bottom" secondItem="87D-e4-muM" secondAttribute="bottom" id="N92-7r-Kug"/>
                                             <constraint firstAttribute="trailing" secondItem="87D-e4-muM" secondAttribute="trailing" id="R0o-b0-4Vr"/>
                                             <constraint firstItem="87D-e4-muM" firstAttribute="leading" secondItem="pOC-Jn-iQE" secondAttribute="leading" constant="30" id="XTN-uO-Dyi"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="vnP-2o-aeY"/>
                                         </constraints>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-DE-Rpn">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-DE-Rpn">
                                         <rect key="frame" x="20" y="206" width="280" height="268"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -1964,6 +1973,9 @@ Good Luck!</string>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="generalmaintenance" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-7R-mB9">
                                         <rect key="frame" x="56" y="60" width="208" height="126"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1981,24 +1993,9 @@ Good Luck!</string>
                                     <constraint firstItem="pOC-Jn-iQE" firstAttribute="leading" secondItem="Ytw-44-5rd" secondAttribute="leading" id="dkY-5v-3SH"/>
                                 </constraints>
                             </view>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="qsK-O3-cG2">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Bej-RK-pSW"/>
-                                </constraints>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem id="jEO-XW-UAO"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="qsK-O3-cG2" secondAttribute="trailing" id="3N1-GS-cLa"/>
-                            <constraint firstItem="qsK-O3-cG2" firstAttribute="top" secondItem="U7L-5Q-SWo" secondAttribute="top" constant="20" id="VLm-L6-eJq"/>
                             <constraint firstItem="xwa-T1-Uv3" firstAttribute="top" secondItem="MBY-m7-WUg" secondAttribute="bottom" id="VQw-HN-GoA"/>
                             <constraint firstItem="Ytw-44-5rd" firstAttribute="leading" secondItem="U7L-5Q-SWo" secondAttribute="leading" id="cTQ-EP-z7x"/>
                             <constraint firstItem="aNf-aj-5WP" firstAttribute="top" secondItem="xwa-T1-Uv3" secondAttribute="bottom" id="chc-ox-gCf"/>
@@ -2006,7 +2003,6 @@ Good Luck!</string>
                             <constraint firstAttribute="trailing" secondItem="xwa-T1-Uv3" secondAttribute="trailing" id="h2M-dc-qAf"/>
                             <constraint firstItem="xwa-T1-Uv3" firstAttribute="leading" secondItem="U7L-5Q-SWo" secondAttribute="leading" id="h8k-zA-AJs"/>
                             <constraint firstItem="Ytw-44-5rd" firstAttribute="top" secondItem="MBY-m7-WUg" secondAttribute="bottom" id="ls5-9e-1U9"/>
-                            <constraint firstItem="qsK-O3-cG2" firstAttribute="leading" secondItem="U7L-5Q-SWo" secondAttribute="leading" id="okI-PF-hCZ"/>
                             <constraint firstAttribute="trailing" secondItem="Ytw-44-5rd" secondAttribute="trailing" id="sQF-Pw-yev"/>
                         </constraints>
                     </view>
@@ -2017,14 +2013,14 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsT-Vr-g90" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="3367"/>
+            <point key="canvasLocation" x="1702.5" y="3366.5492957746478"/>
         </scene>
         <!--Planner Navigation Controller-->
         <scene sceneID="agG-zG-SeU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tyo-JB-ITk" userLabel="Planner Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ecW-QW-Wnb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="ecW-QW-Wnb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2046,18 +2042,18 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="fS4-Tm-3P7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gCm-nc-YvS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="LE8-se-Y9t">
-                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <rect key="frame" x="0.0" y="-1416" width="320" height="1920"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sa9-nq-o4h" userLabel="Ghost View">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omx-MK-mag" userLabel="Pool Buddy View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OvX-Rp-5Wz">
                                         <rect key="frame" x="20" y="0.0" width="300" height="30"/>
@@ -2077,47 +2073,32 @@ Good Luck!</string>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aFx-O5-KFO">
-                                <rect key="frame" x="60" y="124" width="200" height="200"/>
+                                <rect key="frame" x="60" y="60" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="SiR-W8-DTz"/>
                                     <constraint firstAttribute="width" constant="200" id="o7p-Ye-EPA"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwx-kb-7fo">
-                                <rect key="frame" x="30" y="344" width="260" height="194"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwx-kb-7fo">
+                                <rect key="frame" x="30" y="280" width="260" height="194"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApL-nM-nSe">
-                                <rect key="frame" x="0.0" y="20" width="320" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="gaN-wo-sl2"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem id="cjp-od-bof">
-                                        <barButtonItem key="rightBarButtonItem" image="home" style="done" id="aMq-K6-Yql" userLabel="Home">
-                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <segue destination="A5u-FU-80L" kind="unwind" unwindAction="myUnwindAction:" id="7lz-zQ-sdv"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="sa9-nq-o4h" secondAttribute="trailing" id="8n0-H4-vtF"/>
                             <constraint firstItem="aFx-O5-KFO" firstAttribute="centerX" secondItem="gCm-nc-YvS" secondAttribute="centerX" id="95d-TQ-Z8Z"/>
-                            <constraint firstAttribute="trailing" secondItem="ApL-nM-nSe" secondAttribute="trailing" id="9PJ-a8-DsR"/>
                             <constraint firstItem="sa9-nq-o4h" firstAttribute="top" secondItem="gCm-nc-YvS" secondAttribute="top" id="FpU-uO-OSq"/>
                             <constraint firstItem="fS4-Tm-3P7" firstAttribute="top" secondItem="LE8-se-Y9t" secondAttribute="bottom" id="IsW-Rr-TaX"/>
                             <constraint firstItem="Iwx-kb-7fo" firstAttribute="top" secondItem="aFx-O5-KFO" secondAttribute="bottom" constant="20" id="LE2-5S-6sd"/>
                             <constraint firstItem="sa9-nq-o4h" firstAttribute="leading" secondItem="gCm-nc-YvS" secondAttribute="leading" id="PsE-bI-SOX"/>
-                            <constraint firstItem="LE8-se-Y9t" firstAttribute="top" secondItem="ApL-nM-nSe" secondAttribute="bottom" id="S3F-i9-DLH"/>
                             <constraint firstAttribute="trailing" secondItem="Omx-MK-mag" secondAttribute="trailing" id="SxT-Qp-wsr"/>
                             <constraint firstAttribute="trailing" secondItem="Iwx-kb-7fo" secondAttribute="trailing" constant="30" id="U09-Tq-Kb5"/>
                             <constraint firstItem="Omx-MK-mag" firstAttribute="top" secondItem="94T-AU-NiE" secondAttribute="bottom" id="b1r-ba-yHZ"/>
@@ -2125,9 +2106,7 @@ Good Luck!</string>
                             <constraint firstItem="aFx-O5-KFO" firstAttribute="top" secondItem="Omx-MK-mag" secondAttribute="bottom" constant="30" id="heZ-68-scd"/>
                             <constraint firstItem="LE8-se-Y9t" firstAttribute="leading" secondItem="gCm-nc-YvS" secondAttribute="leading" id="jff-oO-Prb"/>
                             <constraint firstItem="Omx-MK-mag" firstAttribute="leading" secondItem="gCm-nc-YvS" secondAttribute="leading" id="kxy-by-YLh"/>
-                            <constraint firstItem="ApL-nM-nSe" firstAttribute="top" secondItem="gCm-nc-YvS" secondAttribute="top" constant="20" id="lT7-hY-sUv"/>
                             <constraint firstItem="fS4-Tm-3P7" firstAttribute="top" secondItem="Iwx-kb-7fo" secondAttribute="bottom" constant="30" id="rTm-Ox-HCh"/>
-                            <constraint firstItem="ApL-nM-nSe" firstAttribute="leading" secondItem="gCm-nc-YvS" secondAttribute="leading" id="sE5-DB-djj"/>
                             <constraint firstItem="Iwx-kb-7fo" firstAttribute="leading" secondItem="gCm-nc-YvS" secondAttribute="leading" constant="30" id="vJ1-vO-gck"/>
                             <constraint firstAttribute="trailing" secondItem="LE8-se-Y9t" secondAttribute="trailing" id="vY7-R4-OIX"/>
                         </constraints>
@@ -2138,7 +2117,6 @@ Good Luck!</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrQ-V2-926" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="A5u-FU-80L" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1703" y="5626"/>
         </scene>
@@ -2151,14 +2129,14 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="N6n-hX-6aa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="duG-ay-5F1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="2wF-id-hus">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="249" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wow-e0-d3v">
-                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="Tba-IV-wOj">
@@ -2175,10 +2153,10 @@ Good Luck!</string>
                                             <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="V1N-cD-2om" userLabel="Gallery Images">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="V1N-cD-2om" userLabel="Gallery Images">
                                                     <rect key="frame" x="0.0" y="0.0" width="110" height="90"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IC3-zC-lVv">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IC3-zC-lVv">
                                                     <rect key="frame" x="0.0" y="90" width="110" height="20"/>
                                                     <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -2200,7 +2178,9 @@ Good Luck!</string>
                                             <constraint firstAttribute="bottom" secondItem="IC3-zC-lVv" secondAttribute="bottom" id="ldf-TG-FSg"/>
                                             <constraint firstAttribute="trailing" secondItem="V1N-cD-2om" secondAttribute="trailing" id="o9l-kx-7Jg"/>
                                         </constraints>
-                                        <size key="customSize" width="110" height="110"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="galleryImages" destination="V1N-cD-2om" id="Bq5-Mt-vBn"/>
                                             <outlet property="imageLabel" destination="IC3-zC-lVv" id="yHD-4Y-77a"/>
@@ -2215,7 +2195,7 @@ Good Luck!</string>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pools with Colored Algae" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c21-P5-wwD">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                                             <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="22"/>
+                                            <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -2236,8 +2216,8 @@ Good Luck!</string>
                                     <outlet property="delegate" destination="aiJ-v2-4lT" id="StC-56-qdg"/>
                                 </connections>
                             </collectionView>
-                            <searchBar contentMode="redraw" placeholder="Enter pool problem" translatesAutoresizingMaskIntoConstraints="NO" id="yGJ-wq-C5o">
-                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <searchBar opaque="NO" multipleTouchEnabled="YES" contentMode="redraw" placeholder="Enter pool problem" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGJ-wq-C5o">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="tI8-he-jih"/>
                                 </constraints>
@@ -2261,8 +2241,11 @@ Good Luck!</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Problems Gallery" id="DdT-Jf-JHr">
-                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="aiG-iF-HvD">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="aiG-iF-HvD">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="returnToMainMenu:" destination="aiJ-v2-4lT" id="cxK-dU-owy"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -2284,33 +2267,341 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="5Xq-Fm-1yV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6e5-4L-pCB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oU-51-F6X" customClass="BorderedLabels" customModule="PoolBuddy" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="288" height="60"/>
+                                <color key="backgroundColor" red="0.59499436620000001" green="0.80730670689999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0Nz-ZJ-ToZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UsF-Y1-en2">
+                                <rect key="frame" x="16" y="105" width="288" height="277"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aWN-Wz-KJl" userLabel="Top Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="65.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mey-kK-cYn" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="65.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="7"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="t7o-qB-yAN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP3-2L-3BY" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="73.5" y="0.0" width="68" height="65.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="8"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="5bW-tN-wCS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USD-wh-p3J" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="65.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="9"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="YFi-qg-RbQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULi-Gd-11W" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="220" y="0.0" width="68" height="65.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="48"/>
+                                                <color key="tintColor" red="0.28627450980000002" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="/"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onDividePressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="hAu-aG-HZb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pNY-00-RBx" userLabel="Second Stack View">
+                                        <rect key="frame" x="0.0" y="70.5" width="288" height="65.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkU-Em-LdX" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="65.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="4"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="5pU-Yd-RC0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DI4-gr-pqZ" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="73.5" y="0.0" width="68" height="65.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="5"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="NK4-zo-xG9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BF-WB-Yjl" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="65.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="6"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="ZZq-ky-asS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hc-rt-ljL" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="220" y="0.0" width="68" height="65.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="48"/>
+                                                <color key="tintColor" red="0.28627450980000002" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="x"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onMultiplyPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="iOe-vq-h3v"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gjO-O6-5QG" userLabel="Third Stack View">
+                                        <rect key="frame" x="0.0" y="141" width="288" height="65.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogg-nA-hvd" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="65.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="1"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="31c-9M-qcr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYV-N4-ZQK" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="73.5" y="0.0" width="68" height="65.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="2"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="jNG-mZ-E2s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8d-DL-T8n" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="65.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="3"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="mLN-Hd-oIB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNO-Va-jzL" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="220" y="0.0" width="68" height="65.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="60"/>
+                                                <color key="tintColor" red="0.28627450980000002" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="-"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onSubtractPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="o6d-1J-1ei"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="k9N-0w-gqX" userLabel="Bottom Stack View">
+                                        <rect key="frame" x="0.0" y="211.5" width="288" height="65.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APe-1H-Dn4" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="65.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="42"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onClearPressed:" destination="FHX-sr-L6b" eventType="touchUpInside" id="gNw-RV-uOC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJQ-jv-5ui" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="73.5" y="0.0" width="68" height="65.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="x0C-Ah-6vv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6B-cC-NFk" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="65.5"/>
+                                                <color key="backgroundColor" red="0.28627450980000002" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="48"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onEqualsPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="WRw-mA-hta"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXK-Pp-snB" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                                <rect key="frame" x="220" y="0.0" width="68" height="65.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="48"/>
+                                                <color key="tintColor" red="0.28627450980000002" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="+"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onAddPressedWithSender:" destination="FHX-sr-L6b" eventType="touchUpInside" id="Ivo-vo-eEV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="V6v-Vg-izu" userLabel="Segue Stack View">
+                                <rect key="frame" x="16" y="402" width="288" height="82"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIt-fC-tdl" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="140.5" height="82"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Chemicals"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrh-uu-sbI" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
+                                        <rect key="frame" x="147.5" y="0.0" width="140.5" height="82"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Maintenance"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Xq-Fm-1yV" firstAttribute="top" secondItem="V6v-Vg-izu" secondAttribute="bottom" constant="20" id="89e-Sb-LCK"/>
+                            <constraint firstItem="V6v-Vg-izu" firstAttribute="trailing" secondItem="UsF-Y1-en2" secondAttribute="trailing" id="FKP-ww-vdA"/>
+                            <constraint firstItem="V6v-Vg-izu" firstAttribute="top" secondItem="UsF-Y1-en2" secondAttribute="bottom" constant="20" id="GL9-ae-CK8"/>
+                            <constraint firstItem="V6v-Vg-izu" firstAttribute="leading" secondItem="UsF-Y1-en2" secondAttribute="leading" id="Iyu-iR-t5U"/>
+                            <constraint firstItem="3oU-51-F6X" firstAttribute="leading" secondItem="6e5-4L-pCB" secondAttribute="leadingMargin" id="M6A-uM-npa"/>
+                            <constraint firstItem="UsF-Y1-en2" firstAttribute="top" secondItem="3oU-51-F6X" secondAttribute="bottom" constant="25" id="PRn-KG-0dc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3oU-51-F6X" secondAttribute="trailing" id="RDT-eN-ZUw"/>
+                            <constraint firstItem="UsF-Y1-en2" firstAttribute="trailing" secondItem="3oU-51-F6X" secondAttribute="trailing" id="SiJ-ay-Uvg"/>
+                            <constraint firstItem="3oU-51-F6X" firstAttribute="top" secondItem="yh4-Mr-sCQ" secondAttribute="bottom" constant="20" id="YAi-Ko-SbX"/>
+                            <constraint firstItem="UsF-Y1-en2" firstAttribute="leading" secondItem="3oU-51-F6X" secondAttribute="leading" id="Ys1-77-y8u"/>
+                            <constraint firstItem="UsF-Y1-en2" firstAttribute="height" secondItem="6e5-4L-pCB" secondAttribute="height" multiplier="0.55" id="kYY-3x-WN9"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Pool Calculator" id="5b1-eV-Urh">
-                        <barButtonItem key="leftBarButtonItem" image="Image" style="done" id="c4I-g0-AtF">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="c4I-g0-AtF">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="mainMenuButtonPressed:" destination="FHX-sr-L6b" id="uWf-Ua-ata"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="calculatorTitle" destination="5b1-eV-Urh" id="Lwf-wi-Ra9"/>
+                        <outlet property="clearButton" destination="APe-1H-Dn4" id="qfu-lA-Gkj"/>
                         <outlet property="menuButton" destination="c4I-g0-AtF" id="JYi-uG-W46"/>
+                        <outlet property="outputScreen" destination="3oU-51-F6X" id="Gbu-YR-CnO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pi8-rg-MbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="4149"/>
+            <point key="canvasLocation" x="918.75" y="4148.2394366197186"/>
         </scene>
         <!--Calculator Navigation Controller-->
         <scene sceneID="ugF-CV-nUY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fPQ-QG-XKE" userLabel="Calculator Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="zS5-3q-uUM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="zS5-3q-uUM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2329,7 +2620,7 @@ Good Luck!</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fUf-uS-TPH" userLabel="Gallery Navigation Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Eqs-gw-Z22"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="hD2-BS-ces">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="hD2-BS-ces">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2348,7 +2639,7 @@ Good Luck!</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Thm-hY-FWv" userLabel="Cleaning Tools Navigation Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ebB-pi-e7c"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="TVc-Ky-EPV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="TVc-Ky-EPV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2366,7 +2657,7 @@ Good Luck!</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bg0-2G-zDR" userLabel="Maintenance Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="rEx-24-LjX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="rEx-24-LjX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2388,14 +2679,14 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="NsP-iS-Kkk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hhv-Fp-wqZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="jYe-Du-OJH">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41l-gQ-nUL" userLabel="ContentView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XWc-il-mbK">
                                         <rect key="frame" x="110" y="188" width="194" height="35"/>
@@ -2404,8 +2695,11 @@ Good Luck!</string>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ynd-vx-YE7">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ynd-vx-YE7" customClass="RoundedTextViews" customModule="PoolBuddy" customModuleProvider="target">
                                         <rect key="frame" x="16" y="88" width="288" height="70"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -2414,6 +2708,9 @@ Good Luck!</string>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltc-7G-EKU">
                                         <rect key="frame" x="10" y="191" width="90" height="29"/>
@@ -2439,6 +2736,9 @@ Good Luck!</string>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="nUB-rq-cmQ" secondAttribute="height" multiplier="1:1" id="wBB-6s-saw"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2489,29 +2789,9 @@ Good Luck!</string>
             </objects>
             <point key="canvasLocation" x="3248" y="4916"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="e5a-6S-ndY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wDQ-89-7ic" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="VWC-do-Qej">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="uuK-pQ-UNl" kind="relationship" relationship="rootViewController" id="BFs-qE-I8k"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QKw-RG-33I" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1536" y="6318"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Chemical Safety" width="240" height="198"/>
-        <image name="Image" width="22" height="22"/>
         <image name="Surface Debris" width="600" height="599"/>
         <image name="aquachek" width="400" height="400"/>
         <image name="calculator" width="225" height="225"/>

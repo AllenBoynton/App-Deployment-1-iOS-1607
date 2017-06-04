@@ -24,12 +24,12 @@ class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        self.revealViewController().rearViewRevealWidth = 325
+//        if self.revealViewController() != nil {
+//            menuButton.target = self.revealViewController()
+//            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//        }
+//        self.revealViewController().rearViewRevealWidth = 325
         
         navigationItem.title = "Chemicals"
         navigationController!.navigationBar.titleTextAttributes =
@@ -92,5 +92,9 @@ class ChemicalTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                 destination.descriptions = product.description
             }
         }
+    }
+    @IBAction func mainMenuButtonPressed(_ sender: UIBarButtonItem) {
+        
+        dismiss(animated: true, completion: nil)
     }
 }

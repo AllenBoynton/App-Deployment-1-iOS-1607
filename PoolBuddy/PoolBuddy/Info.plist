@@ -56,5 +56,7 @@
 	<false/>
 	<key>ATSApplicationFontsPath</key>
 	<string>KittenSlant.ttf</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>This will allow you to set and keep reminders.</string>
 </dict>
 </plist>

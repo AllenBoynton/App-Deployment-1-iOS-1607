@@ -69,7 +69,7 @@ class EditViewController: UIViewController, UITableViewDataSource, UITableViewDe
         formatter.dateFormat = "MM-dd-yyyy"
         if let dueDate = (reminder.dueDateComponents as NSDateComponents?)?.date{
             cell.detailTextLabel?.text = formatter.string(from: dueDate)
-        }else{
+        } else {
             cell.detailTextLabel?.text = "N/A"
         }
         return cell
@@ -92,7 +92,7 @@ class EditViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let reminderDetailsVC = segue.destination as! ReminderDetailsVC
             reminderDetailsVC.reminder = self.selectedReminder
             reminderDetailsVC.eventStore = eventStore
-        }else{
+        } else {
             let newReminderVC = segue.destination as! NewReminderVC
             newReminderVC.eventStore = eventStore
         }

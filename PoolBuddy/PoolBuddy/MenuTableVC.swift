@@ -12,8 +12,14 @@ class MenuTableVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationController?.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
     }
+    
+    @IBAction func returnToHomeScreenBtnPressed(_ sender: UIBarButtonItem) {
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

@@ -33,7 +33,7 @@ class CalculatorVC: UIViewController {
     var rightValStr   = ""
     var result        = ""
     
-    var buttonSound: AVAudioPlayer!
+//    var buttonSound: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,35 +42,35 @@ class CalculatorVC: UIViewController {
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
         
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        self.revealViewController().rearViewRevealWidth = 325
+//        if self.revealViewController() != nil {
+//            menuButton.target = self.revealViewController()
+//            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//        }
+//        self.revealViewController().rearViewRevealWidth = 325
         
         outputScreen.text = "0"
         
-        let path = Bundle.main.path(forResource: "btn", ofType: "wav")
-        let soundLocal = URL(fileURLWithPath: path!)
-        
-        do {
-            buttonSound = try AVAudioPlayer(contentsOf: soundLocal)
-            buttonSound.prepareToPlay()
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
+//        let path = Bundle.main.path(forResource: "btn", ofType: "wav")
+//        let soundLocal = URL(fileURLWithPath: path!)
+//        
+//        do {
+//            buttonSound = try AVAudioPlayer(contentsOf: soundLocal)
+//            buttonSound.prepareToPlay()
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
     }
     
-    func playSound() {
-        if buttonSound.isPlaying {
-            buttonSound.stop()
-        }
-        buttonSound.play()
-    }
+//    func playSound() {
+//        if buttonSound.isPlaying {
+//            buttonSound.stop()
+//        }
+//        buttonSound.play()
+//    }
     
     @IBAction func buttonPressed(sender: UIButton) {
-        playSound()
+//        playSound()
         
         runningNumber += "\(sender.tag)"
         outputScreen.text = runningNumber
@@ -97,13 +97,13 @@ class CalculatorVC: UIViewController {
     }
     
     @IBAction func onClearPressed(_ sender: Any) {
-        playSound()
+//        playSound()
         runningNumber = ""
         outputScreen.text = "0"
     }
     
     func processOperation(operation: Operation) {
-        playSound()
+//        playSound()
         if currentOperation != Operation.Empty {
             
             if runningNumber != "" {
@@ -143,4 +143,8 @@ class CalculatorVC: UIViewController {
         }
     }
 
+    @IBAction func mainMenuButtonPressed(_ sender: UIBarButtonItem) {
+        
+        dismiss(animated: true, completion: nil)
+    }
 }

@@ -29,12 +29,12 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
         
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        self.revealViewController().rearViewRevealWidth = 325
+//        if self.revealViewController() != nil {
+//            menuButton.target = self.revealViewController()
+//            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//        }
+//        self.revealViewController().rearViewRevealWidth = 325
         
         // Create collection view delegate
         collectionView.delegate = self
@@ -70,12 +70,12 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     
     // MARK: - UICollectionViewDataSource
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let itemWidth: CGFloat = collectionView.frame.width / 2.0 - 20.0 // 2 wide
-        
-        return CGSize(width: itemWidth, height: itemWidth)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        
+//        let itemWidth: CGFloat = collectionView.frame.width / 3.0 - 10.0 // 2 wide
+//        
+//        return CGSize(width: 125, height: 90)
+//    }
 
     // MARK: - Navigation
     
@@ -94,5 +94,9 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
                 destination.descriptions = product.description
             }
         }
+    }
+    @IBAction func mainMenuButtonPressed(_ sender: UIBarButtonItem) {
+        
+        dismiss(animated: true, completion: nil)
     }
 }

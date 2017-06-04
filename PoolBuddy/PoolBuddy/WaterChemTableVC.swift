@@ -24,12 +24,12 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        self.revealViewController().rearViewRevealWidth = 325
+//        if self.revealViewController() != nil {
+//            menuButton.target = self.revealViewController()
+//            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//        }
+//        self.revealViewController().rearViewRevealWidth = 325
         
         navigationItem.title = "Water Balance"
         navigationController!.navigationBar.titleTextAttributes =
@@ -89,5 +89,9 @@ class WaterChemTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                 destination.descriptions = product.description
             }
         }
+    }
+    @IBAction func mainMenuButtonPressed(_ sender: UIBarButtonItem) {
+        
+        dismiss(animated: true, completion: nil)
     }
 }

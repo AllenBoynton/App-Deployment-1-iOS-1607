@@ -35,12 +35,12 @@ class PlannerViewController: UIViewController, SFSafariViewControllerDelegate {
         contentView.layer.borderWidth = 2
         contentView.layer.borderColor = UIColor.black.cgColor
                 
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        self.revealViewController().rearViewRevealWidth = 325
+//        if self.revealViewController() != nil {
+//            menuButton.target = self.revealViewController()
+//            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//        }
+//        self.revealViewController().rearViewRevealWidth = 325
     }
     
     @IBAction func openWithSafariVC(_ sender: AnyObject) {
@@ -53,5 +53,10 @@ class PlannerViewController: UIViewController, SFSafariViewControllerDelegate {
     
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         controller.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func returnToMainMenu(_ sender: UIBarButtonItem) {
+        
+        dismiss(animated: true, completion: nil)
     }
 }
