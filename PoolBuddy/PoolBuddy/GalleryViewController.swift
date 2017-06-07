@@ -33,20 +33,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
         super.viewDidLoad()
         
         navigationItem.title = "Pool Problems Search Gallery"
-        navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
-        
-//        if self.revealViewController() != nil {
-//            menuButton.target = self.revealViewController()
-//            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-//        }
-//        self.revealViewController().rearViewRevealWidth = 325
-        
-        // Create collection view delegate
-        collectionView.delegate = self
-        collectionView.dataSource = self
-                
         
         //Setup the search controller
         searchController = ({

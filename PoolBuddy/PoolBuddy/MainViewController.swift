@@ -33,30 +33,20 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        if self.revealViewController() != nil {
-//            menuButton.target = self.revealViewController()
-//            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-//        }
-//        self.revealViewController().rearViewRevealWidth = 325
-        
-        navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
-        
-        prepareAudios()
+                
     }
 
     // Sound files
     func prepareAudios() {
         
-        let path1 = Bundle.main.path(forResource: "splash.mp3", ofType: nil)!
+        let path1 = URL.init(fileURLWithPath: Bundle.main.path(forResource: "splash", ofType: "mp3")!)
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path1))
+            audioPlayer = try AVAudioPlayer(contentsOf: path1)
+            audioPlayer.delegate = self as? AVAudioPlayerDelegate
             audioPlayer.prepareToPlay()
-        }
-        catch let err as NSError {
-            print("Something bad happened \(err). Try catching specific errors to narrow things down")
+            audioPlayer.play()
+        } catch let error as NSError {
+            print("audioPlayer error \(error.localizedDescription)")
         }
     }
 
@@ -64,6 +54,5 @@ class MainViewController: UIViewController {
         // Play sound effect
         audioPlayer.play()
     }
-    
 }
 

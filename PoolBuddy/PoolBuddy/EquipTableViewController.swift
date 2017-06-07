@@ -24,16 +24,7 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if self.revealViewController() != nil {
-//            menuButton.target = self.revealViewController()
-//            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-//        }
-//        self.revealViewController().rearViewRevealWidth = 325
-
         navigationItem.title = "Equipment"
-        navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
     }
 
     
@@ -52,12 +43,6 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
         // Text Color
         let header: UITableViewHeaderFooterView = (view as! UITableViewHeaderFooterView)
         header.textLabel!.textColor = UIColor.black
-        // Another way to set the background color
-        // Note: does not preserve gradient effect of original header
-        // header.contentView.backgroundColor = [UIColor blackColor];
-        // Another way to set the background color
-        // Note: does not preserve gradient effect of original header
-        // header.contentView.backgroundColor = [UIColor blackColor];
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

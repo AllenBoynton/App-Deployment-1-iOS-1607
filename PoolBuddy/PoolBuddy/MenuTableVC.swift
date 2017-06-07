@@ -13,7 +13,8 @@ class MenuTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.titleTextAttributes =
+        navigationItem.title = "Main Menu"
+        navigationController!.navigationBar.titleTextAttributes =
             ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
     }
     

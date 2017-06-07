@@ -30,9 +30,6 @@ class GalleryDetailVC: UIViewController {
         poolImage.layer.borderWidth = 2
         poolImage.layer.borderColor = UIColor.black.cgColor
         
-//        poolDescription.font = UIFont(name: "KittenSlant", size: 22)
-        
-        navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
+        poolDescription.font = UIFont(name: "KittenSlant", size: 18)
     }
 }

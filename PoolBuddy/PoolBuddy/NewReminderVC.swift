@@ -20,9 +20,6 @@ class NewReminderVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
-        
         dateTextField.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
         
         dateTextField.layer.borderWidth = 2
@@ -55,7 +52,7 @@ class NewReminderVC: UIViewController {
         do {
             try self.eventStore.save(reminder, commit: true)
             self.dismiss(animated: true, completion: nil)
-        }catch{
+        } catch {
             print("Error creating and saving new reminder : \(error)")
         }
     }

@@ -20,9 +20,6 @@ class EditViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
-        
         self.tableView.dataSource = self
         self.tableView.delegate = self
     
@@ -102,7 +99,7 @@ class EditViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.isEditing = !tableView.isEditing
         if tableView.isEditing{
             tableView.setEditing(true, animated: true)
-        }else{
+        } else {
             tableView.setEditing(false, animated: true)
         }
     }

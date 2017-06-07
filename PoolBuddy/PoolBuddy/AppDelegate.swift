@@ -29,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white] // setting constant color for all bar button items
         
+        let titleFont = UIFont(name: "KittenSlant", size: 20)
+        navigationBarAppearace.titleTextAttributes = [NSFontAttributeName: titleFont!] // Nav title font 
+        
         let customFont = UIFont(name: "KittenSlant", size: 17) // setting font for bar button back item
         UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: customFont!], for: UIControlState())
         

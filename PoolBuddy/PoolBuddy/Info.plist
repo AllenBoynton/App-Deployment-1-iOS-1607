@@ -58,5 +58,7 @@
 	<string>KittenSlant.ttf</string>
 	<key>NSRemindersUsageDescription</key>
 	<string>This will allow you to set and keep reminders.</string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 </dict>
 </plist>

@@ -23,9 +23,6 @@ class ReminderDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
-        
         dateTextField.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 18)
         dateTextField.layer.borderWidth = 2
         dateTextField.layer.borderColor = UIColor.black.cgColor
@@ -56,7 +53,7 @@ class ReminderDetailsVC: UIViewController {
         do {
             try self.eventStore.save(reminder, commit: true)
             self.navigationController?.popToRootViewController(animated: true)
-        }catch{
+        } catch {
             print("Error creating and saving new reminder : \(error)")
         }
     }

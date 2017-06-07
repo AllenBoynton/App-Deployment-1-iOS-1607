@@ -26,19 +26,6 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         super.viewDidLoad()
 
         navigationItem.title = "Pool Maintenance"
-        navigationController!.navigationBar.titleTextAttributes =
-            ([NSFontAttributeName: UIFont(name: "KittenSlant", size: 20)!])
-        
-//        if self.revealViewController() != nil {
-//            menuButton.target = self.revealViewController()
-//            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-//            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-//        }
-//        self.revealViewController().rearViewRevealWidth = 325
-        
-        // Create collection view delegate
-        collectionView.delegate = self
-        collectionView.dataSource = self
     }
 
     
@@ -95,6 +82,22 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
             }
         }
     }
+    
+    // Header protocol
+    
+    // Create view for header using supplementary view: CollectionReusableView
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "maint_header", for: indexPath) as! HeaderReusableView
+        
+        // Sourcing data from datasource within poolsingroup to isolate the group protocol
+        let poolCategory = poolMaintenance[indexPath.section]
+        let product = poolCategory.group
+        // Displays group protocol to header view label
+        headerView.sectionTitle.text = product
+        
+        return headerView
+    }
+    
     @IBAction func mainMenuButtonPressed(_ sender: UIBarButtonItem) {
         
         dismiss(animated: true, completion: nil)
