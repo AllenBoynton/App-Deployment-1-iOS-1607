@@ -18,10 +18,10 @@ class SwiftWebVCActivityChrome : SwiftWebVCActivity {
     override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
         for activityItem in activityItems {
             if activityItem is URL, UIApplication.shared.canOpenURL(URL(string: "googlechrome://")!) {
-                return true;
+                return true
             }
         }
-        return false;
+        return false
     }
     
     override func perform() {
@@ -29,7 +29,7 @@ class SwiftWebVCActivityChrome : SwiftWebVCActivity {
         let scheme: String! = inputURL.scheme
         
         // Replace the URL Scheme with the Chrome equivalent.
-        var chromeScheme: String? = nil;
+        var chromeScheme: String? = nil
         if scheme == "http" {
             chromeScheme = "googlechrome"
         }

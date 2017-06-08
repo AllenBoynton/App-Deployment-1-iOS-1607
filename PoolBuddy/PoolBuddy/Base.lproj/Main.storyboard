@@ -723,10 +723,10 @@
             </objects>
             <point key="canvasLocation" x="-720" y="6318"/>
         </scene>
-        <!--Custom Web View Controller-->
+        <!--Swift WebVC-->
         <scene sceneID="u5I-hB-Yjm">
             <objects>
-                <viewController storyboardIdentifier="SwiftWebVC" id="4Dt-LI-3Kl" customClass="CustomWebViewController" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwiftWebVC" id="4Dt-LI-3Kl" customClass="SwiftWebVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fgQ-Cf-2lz"/>
                         <viewControllerLayoutGuide type="bottom" id="MPW-Yd-IcK"/>
@@ -755,7 +755,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igh-N7-Clh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97.5" y="6317.9577464788736"/>
+            <point key="canvasLocation" x="81" y="6318"/>
         </scene>
         <!--Chemical Table VC-->
         <scene sceneID="0Re-oI-zb8">
