@@ -57,12 +57,12 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     
     // MARK: - UICollectionViewDataSource
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        
-//        let itemWidth: CGFloat = collectionView.frame.width / 3.0 - 10.0 // 2 wide
-//        
-//        return CGSize(width: 125, height: 90)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let itemWidth: CGFloat = collectionView.frame.width / 3.0 - 10.0 // 2 wide
+        
+        return CGSize(width: 125, height: 90)
+    }
 
     // MARK: - Navigation
     
