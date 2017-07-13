@@ -6,6 +6,8 @@
 //  Copyright © 2017 Full Sail. All rights reserved.
 //
 
+import UIKit
+
 class BorderedButtons: UIButton {
     
     // Creates rounded buttons for choice buttons
