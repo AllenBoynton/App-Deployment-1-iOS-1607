@@ -1,8 +1,9 @@
 ////
 ////  CustomWebViewController.swift
+////  PoolBuddy
 ////
-////  Created by Jordan Morgan on 6/25/15.
-////  Copyright © 2015 Jordan Morgan. All rights reserved.
+////  Created by Allen Boynton on 7/31/16.
+////  Copyright © 2016 Full Sail. All rights reserved.
 ////
 //
 //import UIKit

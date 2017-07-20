@@ -9,7 +9,6 @@
 import UIKit
 import EventKit
 
-
 class ReminderDetailsVC: UIViewController {
     
     var datePicker: UIDatePicker!

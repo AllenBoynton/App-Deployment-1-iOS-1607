@@ -1,9 +1,9 @@
 //
 //  SwiftModalWebVC.swift
+//  PoolBuddy
 //
-//  Created by Myles Ringle on 24/06/2015.
-//  Transcribed from code used in SVWebViewController.
-//  Copyright (c) 2015 Myles Ringle & Oliver Letterer. All rights reserved.
+//  Created by Allen Boynton on 7/4/16.
+//  Copyright © 2016 Full Sail. All rights reserved.
 //
 
 import UIKit
