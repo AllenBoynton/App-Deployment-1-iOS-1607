@@ -53,6 +53,7 @@ class MainViewController: UIViewController {
     @IBAction func menuButton(_ sender: UIBarButtonItem) {
         // Play sound effect
         audioPlayer.play()
+        print("Audio playing")
     }
 }
 

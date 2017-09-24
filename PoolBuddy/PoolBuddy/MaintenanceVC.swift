@@ -61,7 +61,7 @@ class MaintenanceVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         
         let itemWidth: CGFloat = collectionView.frame.width / 3.0 - 10.0 // 2 wide
         
-        return CGSize(width: 125, height: 90)
+        return CGSize(width: itemWidth, height: 90)
     }
 
     // MARK: - Navigation

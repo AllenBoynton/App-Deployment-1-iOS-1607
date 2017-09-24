@@ -39,6 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         toolBar.barTintColor = UIColor.black // Toolbar's color
         
+        application.statusBarStyle = .lightContent
+        
         return true
     }
 

@@ -86,8 +86,8 @@ class EquipTableViewController: UIViewController, UITableViewDelegate, UITableVi
             }
         }
     }
+    
     @IBAction func mainMenuButtonPressed(_ sender: UIBarButtonItem) {
-        
         dismiss(animated: true, completion: nil)
     }
 }

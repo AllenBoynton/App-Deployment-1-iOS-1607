@@ -60,6 +60,7 @@ class CleaningToolsTableVC: UIViewController, UITableViewDelegate, UITableViewDa
         
         let poolData = PoolData(label: product.label, image: product.image, label2: product.label2, image2: product.image2, description: product.description)
         cell.configureCell(poolData)
+        
         return cell
     }
     

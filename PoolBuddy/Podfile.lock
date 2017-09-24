@@ -1,15 +1,15 @@
 PODS:
-  - Alamofire (4.4.0)
-  - SwiftWebVC (0.4.0)
+  - Alamofire (4.5.1)
+  - SwiftWebVC (0.4.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4)
-  - SwiftWebVC
+  - Alamofire (~> 4.5)
+  - SwiftWebVC (~> 0.4)
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  SwiftWebVC: 3fa9e5a4ce7a28ad0402ad0374210c87ce03d821
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  SwiftWebVC: 17ad75e1fac143d421e0498fb40d7e37532f26d1
 
-PODFILE CHECKSUM: 392f5fed782b879f745ddb71543e1b12addfb003
+PODFILE CHECKSUM: 5f5853c33060c9bbb2ce83ab06d3a8d3cccf0cd3
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

@@ -19,7 +19,7 @@ class MaintenanceCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        layer.cornerRadius = 3.0
+        layer.cornerRadius = 5.0
         layer.borderWidth = 1
         layer.borderColor = UIColor.black.cgColor
     }

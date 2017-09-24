@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tAB-oH-fJc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tAB-oH-fJc">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,14 +26,14 @@
                         <viewControllerLayoutGuide type="bottom" id="B4q-e2-qXr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5pH-aE-eLB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Eey-yW-TWa">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="scD-1E-Til">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PfI-4i-1L3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="564"/>
+            <point key="canvasLocation" x="98" y="1184"/>
         </scene>
         <!--Equipment Detail VC-->
         <scene sceneID="fBE-Ak-eks">
@@ -123,14 +123,14 @@
                         <viewControllerLayoutGuide type="bottom" id="F2l-SB-Adp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6q6-5W-7nd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-7W-p3b">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WaR-Hu-A8f" userLabel="Ghost View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="440"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xth-Nd-NCB" userLabel="Pool Buddy View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
@@ -153,10 +153,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgB-5v-tPX" userLabel="Top BG View">
-                                        <rect key="frame" x="2" y="50" width="176" height="176"/>
+                                        <rect key="frame" x="13" y="50" width="154" height="153.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perflex" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-Z2-AWJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="176" height="176"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="153.5"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
@@ -170,10 +170,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYb-9E-ZrW" userLabel="Right BG View">
-                                        <rect key="frame" x="183" y="120.5" width="105.5" height="105.5"/>
+                                        <rect key="frame" x="172" y="111.5" width="92" height="92"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equipment1" translatesAutoresizingMaskIntoConstraints="NO" id="W8l-z2-Hc0" userLabel="Right Image">
-                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="105.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="92"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
@@ -191,14 +191,14 @@
                                         </variation>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-kF-ycO">
-                                        <rect key="frame" x="30" y="246" width="260" height="228"/>
+                                        <rect key="frame" x="30" y="223.5" width="260" height="186.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equipment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-Ee-Y7B">
-                                        <rect key="frame" x="183" y="90.5" width="106" height="30"/>
+                                        <rect key="frame" x="172" y="81.5" width="92.5" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kKA-pA-Ze9"/>
@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRP-Bt-LQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="563"/>
+            <point key="canvasLocation" x="878" y="1183"/>
         </scene>
         <!--Pool Buddy Home-->
         <scene sceneID="tne-QT-ifu">
@@ -281,14 +281,14 @@
                         <viewControllerLayoutGuide type="bottom" id="5KC-vM-V5k"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nFA-Dp-LXm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="v13-gP-c6J">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Buddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Jl-CW-urK">
-                                <rect key="frame" x="0.0" y="204" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="172" width="320" height="60"/>
                                 <fontDescription key="fontDescription" name="KittenSlant" family="Kitten Slant" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -296,7 +296,7 @@
                                 <size key="shadowOffset" width="3" height="-3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Pool Owner's Guide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7xk-1h-fY3">
-                                <rect key="frame" x="0.0" y="264" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="232" width="320" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="N5k-sc-wE5"/>
                                 </constraints>
@@ -307,16 +307,15 @@
                                 <size key="shadowOffset" width="2" height="-2"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2017 Allen Boynton. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oqT-tg-BU7">
-                                <rect key="frame" x="0.0" y="535" width="320" height="25"/>
+                                <rect key="frame" x="0.0" y="471" width="320" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="sPe-Ih-Ed8"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="ssE-p5-wgY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.99819225069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="shadowOffset" width="2" height="-2"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -363,12 +362,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tAB-oH-fJc" userLabel="Home Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="A4p-l7-kT5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="A4p-l7-kT5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -385,7 +384,7 @@
             <objects>
                 <tableViewController id="uuK-pQ-UNl" customClass="MenuTableVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="mLi-g2-b8B">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -405,7 +404,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equipment1" translatesAutoresizingMaskIntoConstraints="NO" id="ahA-86-fke" userLabel="Section Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equipment1" translatesAutoresizingMaskIntoConstraints="NO" id="ahA-86-fke" userLabel="Section Image" customClass="RoundedImageView" customModule="PoolBuddy" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="2" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="ahA-86-fke" secondAttribute="height" multiplier="1:1" id="lJM-lt-lMU"/>
@@ -439,7 +438,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Surface Debris" translatesAutoresizingMaskIntoConstraints="NO" id="4ny-52-UMR" userLabel="Section Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Surface Debris" translatesAutoresizingMaskIntoConstraints="NO" id="4ny-52-UMR" userLabel="Section Image" customClass="RoundedImageView" customModule="PoolBuddy" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="2" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="4ny-52-UMR" secondAttribute="height" multiplier="1:1" id="U1a-Ms-p7f"/>
@@ -458,7 +457,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="yxU-qD-epu" kind="show" identifier="tools_cell" id="oYs-rc-NxI"/>
+                                            <segue destination="yxU-qD-epu" kind="show" identifier="tools_cell" id="LWE-3F-oTo"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chemical_cell" id="ZE9-rm-N6f">
@@ -473,7 +472,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicals1" translatesAutoresizingMaskIntoConstraints="NO" id="6Fg-VD-yft" userLabel="Section Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chemicals1" translatesAutoresizingMaskIntoConstraints="NO" id="6Fg-VD-yft" userLabel="Section Image" customClass="RoundedImageView" customModule="PoolBuddy" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="6Fg-VD-yft" secondAttribute="height" multiplier="1:1" id="0Ya-Ga-8em"/>
@@ -507,7 +506,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testKit" translatesAutoresizingMaskIntoConstraints="NO" id="JsI-za-vru" userLabel="Section Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testKit" translatesAutoresizingMaskIntoConstraints="NO" id="JsI-za-vru" userLabel="Section Image" customClass="RoundedImageView" customModule="PoolBuddy" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="JsI-za-vru" secondAttribute="height" multiplier="1:1" id="YSH-wb-dTa"/>
@@ -541,7 +540,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service" translatesAutoresizingMaskIntoConstraints="NO" id="AQl-Rk-RWl" userLabel="Section Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service" translatesAutoresizingMaskIntoConstraints="NO" id="AQl-Rk-RWl" userLabel="Section Image" customClass="RoundedImageView" customModule="PoolBuddy" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="AQl-Rk-RWl" secondAttribute="height" multiplier="1:1" id="imd-TN-ZU3"/>
@@ -576,7 +575,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculator" translatesAutoresizingMaskIntoConstraints="NO" id="9Nz-re-Rq4" userLabel="Section Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculator" translatesAutoresizingMaskIntoConstraints="NO" id="9Nz-re-Rq4" userLabel="Section Image" customClass="RoundedImageView" customModule="PoolBuddy" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="9Nz-re-Rq4" secondAttribute="height" multiplier="1:1" id="q2z-nN-Qt0"/>
@@ -610,7 +609,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planner" translatesAutoresizingMaskIntoConstraints="NO" id="pUr-qj-bew" userLabel="Section Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planner" translatesAutoresizingMaskIntoConstraints="NO" id="pUr-qj-bew" userLabel="Section Image" customClass="RoundedImageView" customModule="PoolBuddy" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="pUr-qj-bew" secondAttribute="height" multiplier="1:1" id="if2-pe-O4G"/>
@@ -645,7 +644,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallery" translatesAutoresizingMaskIntoConstraints="NO" id="gaA-Ac-VEZ" userLabel="Section Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallery" translatesAutoresizingMaskIntoConstraints="NO" id="gaA-Ac-VEZ" userLabel="Section Image" customClass="RoundedImageView" customModule="PoolBuddy" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="gaA-Ac-VEZ" secondAttribute="height" multiplier="1:1" id="D7P-xd-No8"/>
@@ -667,7 +666,7 @@
                                             <segue destination="aiJ-v2-4lT" kind="show" identifier="photoCell" id="7zX-nO-XGr"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" id="hLs-Tt-45x" userLabel="chromeCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="webCell" id="hLs-Tt-45x">
                                         <rect key="frame" x="0.0" y="720" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hLs-Tt-45x" id="slO-7S-vyR">
@@ -680,7 +679,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googlechrome" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-Bh-xPe" userLabel="Section Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googlechrome" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-Bh-xPe" userLabel="Section Image" customClass="RoundedImageView" customModule="PoolBuddy" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="5" width="79.5" height="79.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="8tm-Bh-xPe" secondAttribute="height" multiplier="1:1" id="6qo-TN-TAI"/>
@@ -698,9 +697,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="4Dt-LI-3Kl" kind="show" id="X1k-PW-g8j"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -723,40 +719,6 @@
             </objects>
             <point key="canvasLocation" x="-720" y="6318"/>
         </scene>
-        <!--Swift WebVC-->
-        <scene sceneID="u5I-hB-Yjm">
-            <objects>
-                <viewController storyboardIdentifier="SwiftWebVC" id="4Dt-LI-3Kl" customClass="SwiftWebVC" customModule="PoolBuddy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fgQ-Cf-2lz"/>
-                        <viewControllerLayoutGuide type="bottom" id="MPW-Yd-IcK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rhv-d0-Hdj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h2-5u-BYm">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="6h2-5u-BYm" firstAttribute="top" secondItem="fgQ-Cf-2lz" secondAttribute="bottom" id="E83-Vw-XNK"/>
-                            <constraint firstAttribute="trailing" secondItem="6h2-5u-BYm" secondAttribute="trailing" id="GGJ-ne-x5r"/>
-                            <constraint firstItem="MPW-Yd-IcK" firstAttribute="top" secondItem="6h2-5u-BYm" secondAttribute="bottom" id="HDO-Mj-9uK"/>
-                            <constraint firstItem="6h2-5u-BYm" firstAttribute="leading" secondItem="rhv-d0-Hdj" secondAttribute="leading" id="kva-L1-0hE"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="webView" destination="6h2-5u-BYm" id="fkP-Mm-dUi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="igh-N7-Clh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="81" y="6318"/>
-        </scene>
         <!--Chemical Table VC-->
         <scene sceneID="0Re-oI-zb8">
             <objects>
@@ -766,14 +728,14 @@
                         <viewControllerLayoutGuide type="bottom" id="npW-Q1-epc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CHb-7c-qp7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="k2r-aL-lGH">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ny-L1-Ot0">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -851,7 +813,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gj-jK-mxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="1991"/>
+            <point key="canvasLocation" x="98" y="2631"/>
         </scene>
         <!--Chemical Detail VC-->
         <scene sceneID="9Lo-wg-6LU">
@@ -862,14 +824,14 @@
                         <viewControllerLayoutGuide type="bottom" id="J51-EO-5EP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Htb-uB-sIt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="Me4-k2-KkJ">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jnm-ex-TP6" userLabel="Ghost View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZi-Sm-DI0" userLabel="Pool Buddy View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
@@ -1002,7 +964,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6YM-6C-41r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="1990"/>
+            <point key="canvasLocation" x="878" y="2630"/>
         </scene>
         <!--Water Chemistry Table VC-->
         <scene sceneID="EWr-BY-V0q">
@@ -1013,14 +975,14 @@
                         <viewControllerLayoutGuide type="bottom" id="eJz-Ja-erC"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="aC3-xR-9wU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Nfk-cJ-lNF">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ynS-9c-AcL">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -1097,7 +1059,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDg-oe-RDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="2707"/>
+            <point key="canvasLocation" x="98" y="3355"/>
         </scene>
         <!--Water Chemistry Detail VC-->
         <scene sceneID="pWU-fR-Ta7">
@@ -1108,18 +1070,18 @@
                         <viewControllerLayoutGuide type="bottom" id="JaV-B0-wYe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LSe-1S-8bo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="rZ3-sa-gpE">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vap-5H-AWl" userLabel="Ghost View">
-                                <rect key="frame" x="0.0" y="94" width="320" height="474"/>
+                                <rect key="frame" x="0.0" y="30" width="320" height="474"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFZ-lc-Kys" userLabel="Pool Buddy View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="940-T5-1uE">
                                         <rect key="frame" x="30" y="0.0" width="290" height="30"/>
@@ -1139,14 +1101,14 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aquachek" translatesAutoresizingMaskIntoConstraints="NO" id="ehv-cO-3Vb">
-                                <rect key="frame" x="77" y="124" width="166" height="166"/>
+                                <rect key="frame" x="77" y="60" width="166" height="166"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ehv-cO-3Vb" secondAttribute="height" multiplier="1:1" id="648-xz-QMj"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uq-4D-hRv">
-                                <rect key="frame" x="30" y="310" width="260" height="228"/>
+                                <rect key="frame" x="30" y="246" width="260" height="228"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
@@ -1186,7 +1148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6X-nz-lfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="2706"/>
+            <point key="canvasLocation" x="878" y="3355"/>
         </scene>
         <!--Cleaning Tools-->
         <scene sceneID="E90-ye-dgU">
@@ -1197,14 +1159,14 @@
                         <viewControllerLayoutGuide type="bottom" id="USU-nW-RYA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UYy-n5-tqX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="u6U-ba-0Jz">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AZJ-7F-Mml">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -1279,7 +1241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bps-eE-6XR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="1268"/>
+            <point key="canvasLocation" x="98" y="1900"/>
         </scene>
         <!--Cleaning Tools DetailVC-->
         <scene sceneID="iYo-AO-8eK">
@@ -1290,14 +1252,14 @@
                         <viewControllerLayoutGuide type="bottom" id="nz8-js-krx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OR7-0d-ByI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="AaC-ex-Pki">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xii-Go-pDy" userLabel="Ghost View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjm-kB-tKm" userLabel="Pool Buddy View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
@@ -1320,10 +1282,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P36-Lt-4zQ" userLabel="Top BG View">
-                                        <rect key="frame" x="2" y="50" width="176" height="176.5"/>
+                                        <rect key="frame" x="1.5" y="50" width="177" height="176.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leafBagger" translatesAutoresizingMaskIntoConstraints="NO" id="1xi-0N-1iv">
-                                                <rect key="frame" x="0.0" y="0.0" width="176" height="176.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="176.5"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
@@ -1339,10 +1301,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-bf-hcY" userLabel="Right BG View">
-                                        <rect key="frame" x="183" y="129.5" width="97.5" height="97"/>
+                                        <rect key="frame" x="183.5" y="129.5" width="98" height="97"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floatingChlorinator" translatesAutoresizingMaskIntoConstraints="NO" id="dM4-6F-hSe" userLabel="Right Image">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.5" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="97"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
@@ -1362,7 +1324,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleaning Tools" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-Uo-FDs">
-                                        <rect key="frame" x="183" y="99.5" width="97.5" height="30"/>
+                                        <rect key="frame" x="183.5" y="99.5" width="98" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="COE-r5-eQl"/>
@@ -1416,7 +1378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F7V-8x-N0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879" y="1268"/>
+            <point key="canvasLocation" x="878" y="1899"/>
         </scene>
         <!--Planner Scene-->
         <scene sceneID="x3K-AA-Z0T">
@@ -1427,11 +1389,11 @@
                         <viewControllerLayoutGuide type="bottom" id="fOW-qj-s21"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EDY-lu-Uag">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lk0-1Z-WxK" userLabel="BG View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Qgg-x0-T0b">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
@@ -1520,7 +1482,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsI-AU-B1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="4914"/>
+            <point key="canvasLocation" x="98" y="5573"/>
         </scene>
         <!--Routine Reminder-->
         <scene sceneID="45s-CD-e73">
@@ -1531,14 +1493,14 @@
                         <viewControllerLayoutGuide type="bottom" id="1yT-oT-Dbp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="v1i-Vf-0z1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="Bc3-FP-ZNi">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdX-uD-r4f" customClass="RoundedTextViews" customModule="PoolBuddy" customModuleProvider="target">
-                                <rect key="frame" x="20" y="274" width="280" height="274"/>
+                                <rect key="frame" x="20" y="210" width="280" height="274"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Until you fall into a routine, we at A &amp; B Pools would like to start you off with the basics. You will find some default reminders that should be followed as best you can.
 
@@ -1552,14 +1514,14 @@ even needing a Planner, but until
 then… Use the Pool Planner.
 
 Good Luck!</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fununderwater" translatesAutoresizingMaskIntoConstraints="NO" id="xoG-10-jjJ">
-                                <rect key="frame" x="16" y="84" width="288" height="170"/>
+                                <rect key="frame" x="16" y="20" width="288" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="ZQp-JF-6et"/>
                                 </constraints>
@@ -1598,7 +1560,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mm-xp-lsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="4914"/>
+            <point key="canvasLocation" x="878" y="5572"/>
         </scene>
         <!--Pool Reminders-->
         <scene sceneID="fAg-To-Fhq">
@@ -1609,14 +1571,14 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="bae-1Y-x1y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3bF-NM-wEQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="agZ-sv-Uhf">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-cc-kJH" userLabel="Content View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K1q-Tx-hVL">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
@@ -1700,7 +1662,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Hr-bT-Op9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="4914"/>
+            <point key="canvasLocation" x="1658" y="5572"/>
         </scene>
         <!--New ReminderVC-->
         <scene sceneID="xn9-Kc-Ty2">
@@ -1839,7 +1801,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="onb-s2-Rkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="5625"/>
+            <point key="canvasLocation" x="1658" y="6318"/>
         </scene>
         <!--Pool Maintenance View Controller-->
         <scene sceneID="cBd-sh-H3P">
@@ -1850,14 +1812,14 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="lNF-sh-HZy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="k2S-e4-bfv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="ger-fN-2JB">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BWf-6g-yUR">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.25022372603416443" green="0.87701815366744995" blue="0.8175850510597229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="70S-hZ-fua">
@@ -1944,7 +1906,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAG-cO-OU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="3457"/>
+            <point key="canvasLocation" x="98" y="4110"/>
         </scene>
         <!--Pool Maintenance Detail Scene-->
         <scene sceneID="7Gn-Y1-HJZ">
@@ -1955,14 +1917,14 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="aNf-aj-5WP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U7L-5Q-SWo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater1" translatesAutoresizingMaskIntoConstraints="NO" id="xwa-T1-Uv3">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ytw-44-5rd" userLabel="Ghost View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOC-Jn-iQE" userLabel="Pool Buddy View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
@@ -2034,7 +1996,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsT-Vr-g90" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="3456"/>
+            <point key="canvasLocation" x="878" y="4109"/>
         </scene>
         <!--Gallery DetailVC-->
         <scene sceneID="Ng4-Np-Due">
@@ -2045,18 +2007,18 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="fS4-Tm-3P7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gCm-nc-YvS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="LE8-se-Y9t">
-                                <rect key="frame" x="0.0" y="-1352" width="320" height="1920"/>
+                                <rect key="frame" x="0.0" y="-1416" width="320" height="1920"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sa9-nq-o4h" userLabel="Ghost View">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omx-MK-mag" userLabel="Pool Buddy View">
-                                <rect key="frame" x="0.0" y="64" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OvX-Rp-5Wz">
                                         <rect key="frame" x="20" y="0.0" width="300" height="30"/>
@@ -2076,7 +2038,7 @@ Good Luck!</string>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aFx-O5-KFO">
-                                <rect key="frame" x="60" y="124" width="200" height="200"/>
+                                <rect key="frame" x="60" y="60" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="SiR-W8-DTz"/>
                                     <constraint firstAttribute="width" constant="200" id="o7p-Ye-EPA"/>
@@ -2086,7 +2048,7 @@ Good Luck!</string>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwx-kb-7fo">
-                                <rect key="frame" x="30" y="344" width="260" height="194"/>
+                                <rect key="frame" x="30" y="280" width="260" height="194"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
@@ -2121,7 +2083,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrQ-V2-926" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="5625"/>
+            <point key="canvasLocation" x="878" y="6318"/>
         </scene>
         <!--Problems Gallery-->
         <scene sceneID="iF6-oK-qOq">
@@ -2132,14 +2094,14 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="N6n-hX-6aa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="duG-ay-5F1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="2wF-id-hus">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="249" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wow-e0-d3v">
-                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="Tba-IV-wOj">
@@ -2220,7 +2182,7 @@ Good Luck!</string>
                                 </connections>
                             </collectionView>
                             <searchBar opaque="NO" multipleTouchEnabled="YES" contentMode="redraw" placeholder="Enter pool problem" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGJ-wq-C5o">
-                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="tI8-he-jih"/>
                                 </constraints>
@@ -2259,7 +2221,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVn-aF-qLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="5626"/>
+            <point key="canvasLocation" x="98" y="6318"/>
         </scene>
         <!--Pool Calculator-->
         <scene sceneID="IJS-6u-YH0">
@@ -2270,17 +2232,17 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="5Xq-Fm-1yV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6e5-4L-pCB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UsF-Y1-en2">
-                                <rect key="frame" x="16" y="169" width="288" height="312.5"/>
+                                <rect key="frame" x="16" y="105" width="288" height="277"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aWN-Wz-KJl" userLabel="Top Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="74.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="65.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mey-kK-cYn">
-                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="74.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="65.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2293,7 +2255,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP3-2L-3BY">
-                                                <rect key="frame" x="73.5" y="0.0" width="68" height="74.5"/>
+                                                <rect key="frame" x="73.5" y="0.0" width="68" height="65.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2306,7 +2268,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USD-wh-p3J">
-                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="74.5"/>
+                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="65.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2319,7 +2281,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULi-Gd-11W">
-                                                <rect key="frame" x="220" y="0.0" width="68" height="74.5"/>
+                                                <rect key="frame" x="220" y="0.0" width="68" height="65.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="48"/>
                                                 <color key="tintColor" red="0.28627450980000002" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2334,10 +2296,10 @@ Good Luck!</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pNY-00-RBx" userLabel="Second Stack View">
-                                        <rect key="frame" x="0.0" y="79.5" width="288" height="74.5"/>
+                                        <rect key="frame" x="0.0" y="70.5" width="288" height="65.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkU-Em-LdX" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="74.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="65.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2350,7 +2312,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DI4-gr-pqZ" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="73.5" y="0.0" width="68" height="74.5"/>
+                                                <rect key="frame" x="73.5" y="0.0" width="68" height="65.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2363,7 +2325,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BF-WB-Yjl" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="74.5"/>
+                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="65.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2376,7 +2338,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hc-rt-ljL" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="220" y="0.0" width="68" height="74.5"/>
+                                                <rect key="frame" x="220" y="0.0" width="68" height="65.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="48"/>
                                                 <color key="tintColor" red="0.28627450980000002" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2395,10 +2357,10 @@ Good Luck!</string>
                                         </userDefinedRuntimeAttributes>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gjO-O6-5QG" userLabel="Third Stack View">
-                                        <rect key="frame" x="0.0" y="159" width="288" height="74"/>
+                                        <rect key="frame" x="0.0" y="141" width="288" height="65.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogg-nA-hvd" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="74"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="65.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2411,7 +2373,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYV-N4-ZQK" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="73.5" y="0.0" width="68" height="74"/>
+                                                <rect key="frame" x="73.5" y="0.0" width="68" height="65.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2424,7 +2386,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8d-DL-T8n" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="74"/>
+                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="65.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2437,7 +2399,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNO-Va-jzL" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="220" y="0.0" width="68" height="74"/>
+                                                <rect key="frame" x="220" y="0.0" width="68" height="65.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="60"/>
                                                 <color key="tintColor" red="0.28627450980000002" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2456,10 +2418,10 @@ Good Luck!</string>
                                         </userDefinedRuntimeAttributes>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="k9N-0w-gqX" userLabel="Bottom Stack View">
-                                        <rect key="frame" x="0.0" y="238" width="288" height="74.5"/>
+                                        <rect key="frame" x="0.0" y="211.5" width="288" height="65.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APe-1H-Dn4" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="74.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="65.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="42"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2474,7 +2436,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJQ-jv-5ui" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="73.5" y="0.0" width="68" height="74.5"/>
+                                                <rect key="frame" x="73.5" y="0.0" width="68" height="65.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2487,7 +2449,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6B-cC-NFk" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="74.5"/>
+                                                <rect key="frame" x="146.5" y="0.0" width="68.5" height="65.5"/>
                                                 <color key="backgroundColor" red="0.28627450980000002" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="48"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2502,7 +2464,7 @@ Good Luck!</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXK-Pp-snB" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="220" y="0.0" width="68" height="74.5"/>
+                                                <rect key="frame" x="220" y="0.0" width="68" height="65.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="48"/>
                                                 <color key="tintColor" red="0.28627450980000002" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2523,10 +2485,10 @@ Good Luck!</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="V6v-Vg-izu" userLabel="Segue Stack View">
-                                <rect key="frame" x="16" y="501.5" width="288" height="46.5"/>
+                                <rect key="frame" x="16" y="402" width="288" height="82"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIt-fC-tdl" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="140.5" height="46.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140.5" height="82"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2536,7 +2498,7 @@ Good Luck!</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrh-uu-sbI" customClass="BorderedButtons" customModule="PoolBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="147.5" y="0.0" width="140.5" height="46.5"/>
+                                        <rect key="frame" x="147.5" y="0.0" width="140.5" height="82"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2552,7 +2514,7 @@ Good Luck!</string>
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oU-51-F6X" customClass="BorderedLabels" customModule="PoolBuddy" customModuleProvider="target">
-                                <rect key="frame" x="16" y="84" width="288" height="60"/>
+                                <rect key="frame" x="16" y="20" width="288" height="60"/>
                                 <color key="backgroundColor" red="0.59499436620000001" green="0.80730670689999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="0Nz-ZJ-ToZ"/>
@@ -2597,7 +2559,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pi8-rg-MbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="4183"/>
+            <point key="canvasLocation" x="98" y="4829"/>
         </scene>
         <!--Reminder Details Scene-->
         <scene sceneID="1XL-QE-A2s">
@@ -2608,14 +2570,14 @@ Good Luck!</string>
                         <viewControllerLayoutGuide type="bottom" id="NsP-iS-Kkk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hhv-Fp-wqZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poolwater2" translatesAutoresizingMaskIntoConstraints="NO" id="jYe-Du-OJH">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41l-gQ-nUL" userLabel="ContentView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XWc-il-mbK">
                                         <rect key="frame" x="110" y="188" width="194" height="35"/>
@@ -2716,7 +2678,7 @@ Good Luck!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ZT-WH-dKh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2424.375" y="4913.0281690140846"/>
+            <point key="canvasLocation" x="2432" y="5572"/>
         </scene>
     </scenes>
     <resources>

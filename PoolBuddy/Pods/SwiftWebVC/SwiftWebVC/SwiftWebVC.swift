@@ -87,6 +87,10 @@ public class SwiftWebVC: UIViewController {
     }
     
     public convenience init(urlString: String) {
+        var urlString = urlString
+        if !urlString.hasPrefix("https://") && !urlString.hasPrefix("http://") {
+            urlString = "https://"+urlString
+        }
         self.init(pageURL: URL(string: urlString)!)
     }
     
@@ -113,12 +117,12 @@ public class SwiftWebVC: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        updateToolbarItems()
     }
     
     override public func viewWillAppear(_ animated: Bool) {
         assert(self.navigationController != nil, "SVWebViewController needs to be contained in a UINavigationController. If you are presenting SVWebViewController modally, use SVModalWebViewController instead.")
         
+        updateToolbarItems()
         navBarTitle = UILabel()
         navBarTitle.backgroundColor = UIColor.clear
         if presentingViewController == nil {
@@ -131,7 +135,7 @@ public class SwiftWebVC: UIViewController {
         }
         navBarTitle.shadowOffset = CGSize(width: 0, height: 1);
         navBarTitle.font = UIFont(name: "HelveticaNeue-Medium", size: 17.0)
-        
+        navBarTitle.textAlignment = .center
         navigationItem.titleView = navBarTitle;
         
         super.viewWillAppear(true)
@@ -164,7 +168,6 @@ public class SwiftWebVC: UIViewController {
         backBarButtonItem.isEnabled = webView.canGoBack
         forwardBarButtonItem.isEnabled = webView.canGoForward
         
-        
         let refreshStopBarButtonItem: UIBarButtonItem = webView.isLoading ? stopBarButtonItem : refreshBarButtonItem
         
         let fixedSpace: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
@@ -194,14 +197,14 @@ public class SwiftWebVC: UIViewController {
         else {
             let items: NSArray = [fixedSpace, backBarButtonItem, flexibleSpace, forwardBarButtonItem, flexibleSpace, refreshStopBarButtonItem, flexibleSpace, actionBarButtonItem, fixedSpace]
             
-            if !closing {
+            if let navigationController = navigationController, !closing {
                 if presentingViewController == nil {
-                    navigationController!.toolbar.barTintColor = navigationController!.navigationBar.barTintColor
+                    navigationController.toolbar.barTintColor = navigationController.navigationBar.barTintColor
                 }
                 else {
-                    navigationController!.toolbar.barStyle = navigationController!.navigationBar.barStyle
+                    navigationController.toolbar.barStyle = navigationController.navigationBar.barStyle
                 }
-                navigationController!.toolbar.tintColor = navigationController!.navigationBar.tintColor
+                navigationController.toolbar.tintColor = navigationController.navigationBar.tintColor
                 toolbarItems = items as? [UIBarButtonItem]
             }
         }
@@ -308,7 +311,6 @@ extension SwiftWebVC: WKNavigationDelegate {
     
     public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
-        
         let url = navigationAction.request.url
         
         let hostAddress = navigationAction.request.url?.host
@@ -318,7 +320,6 @@ extension SwiftWebVC: WKNavigationDelegate {
                 UIApplication.shared.openURL(url!)
             }
         }
-        decisionHandler(.allow)
         
         // To connnect app store
         if hostAddress == "itunes.apple.com" {
