@@ -1,7 +1,4 @@
-# App-Deployment-1-iOS-1607
-***** MUST READ *****  Application Deployment 1 - iOS 1607
-
-Allen Boynton
+# Pool Buddy
 
 Pool Buddy App
 Version 1.32
