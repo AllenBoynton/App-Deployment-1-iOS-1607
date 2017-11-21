@@ -3,27 +3,20 @@
 Pool Buddy App
 Version 1.32
 
-This app is a memory matching game and is played by an end-facing user. The game is Pokémon themed and
-targeted for young children and adults, both male and female into their 30s and up. The app recognizes the device it
-is playing on and adjusts for both iPhone and iPad. The app connects to Apple’s Game Center using GameKit. The
-game uses Game Center’s leaderboard to track time and points scored. Authenticating the user asks proper
-permission to connect. It also creates notifications with GKGameCenterViewController and push notifications with
-attachments. An options menu allows the user to mute the background music. Another feature the user can utilize is
-changing the game screen’s background image using UIImagePickerController. Here the user can pull up the leader
-board and can choose the level of difficulty.
+The app is a new swimming pool owner’s guide to maintaining a swimming pool. It contains
+information regarding pool equipment, cleaning tools, pool chemicals, dosage guide, water balance, proper water
+chemistry, pool maintenance, pool calculator, reminders (using EventKit), a gallery of pool problems and video
+tutorials and WebKit.
+
 Responsibilities:
-• Involved solely in the life cycle of conception, design, prototype, and build.
-• Set up connection and authorization with Game Center for the best gaming
-• Followed best practices and built the app using Apple’s concept of Model-View-Controller.
-• Created every line of code with efficiency in mind.
-• Used proper completion handling to eliminate any crashes.
+• Implemented the project plan, concept, prototype, design, and build.
+• Used best practices with the application life cycle of Model-View-Controller.
+• Kept in touch with customer through Trello and created milestones to track progress and completion.
 • Developed the application using Swift 3 and Xcode 8 for iPhone and iPad.
-• Reviewed all and worked on code enhancement to achieve reusability.
-• Developed an Object Oriented Architecture using different design patterns.
-• Created a test group to learn proper flow of the application and ease of the UI.
-• Debugged and fixed the issues that were found during the different phases of the project.
-Environment: iOS, Swift, Xcode, Google Firebase, Game Center, NSUserNotification, Google Analytics, StoreKit,
-GameKit, AVFoundation, CocoaPods, UIKit.
+• Utilized EventKit for the user to create a planner for the user’s maintenance schedule.
+
+Environment: iOS, Swift, Xcode, Storyboard, EventKit, Alamofire, Homebrew, UITableView, SafariServices,
+AVFoundation, UICollectionView, UIKit.
 
 This is my project board by Trello: https://trello.com/b/i8Oy0DPb/project-docs-template-allen-boynton-pool-buddy
 
