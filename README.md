@@ -15,11 +15,7 @@ Responsibilities:
 • Developed the application using Swift 3 and Xcode 8 for iPhone and iPad.
 • Utilized EventKit for the user to create a planner for the user’s maintenance schedule.
 
-Environment: iOS, Swift, Xcode, Storyboard, EventKit, Alamofire, Homebrew, UITableView, SafariServices,
+Environment: iOS, Swift, Xcode, Storyboard, EventKit, Alamofire, UITableView, SafariServices,
 AVFoundation, UICollectionView, UIKit.
 
 This is my project board by Trello: https://trello.com/b/i8Oy0DPb/project-docs-template-allen-boynton-pool-buddy
-
-There is now cocoapods on my project and to run it, you MUST run the WHITE .xcworkspace file to run the application.
-
-* Readme is being updated soon to reflect a true READme file.
